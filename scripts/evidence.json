@@ -1,0 +1,402 @@
+{
+  "version": "2026-10-02-v1",
+  "method": "Síntese crítica dirigida, não revisão sistemática exaustiva; certeza formal apenas quando informada pela fonte.",
+  "items": [
+    {
+      "id": "evidence-20261002-qualidade",
+      "title": "Como avaliar a robustez da evidência na Unifisio",
+      "category": "Gestão e procedimentos",
+      "kind": "Procedimento interno",
+      "summary": "PERGUNTA / TEMA\nComo avaliar a robustez da evidência na Unifisio\n\nMÉTODO E QUALIDADE\nPolítica de seleção: formular PICO; priorizar diretrizes com síntese explícita, revisões sistemáticas e ensaios randomizados relevantes. Verificar registro, seleção e extração duplicadas, perdas, comparador, mascaramento possível, conflitos e aplicabilidade.\n\nRESULTADO PRINCIPAL\nGRADE avalia certeza por desfecho, considerando viés, inconsistência, indireção, imprecisão e viés de publicação. AMSTAR 2 avalia a condução de revisões; o desenho ou o nome da revista não garantem alta certeza.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nRegistrar magnitude e intervalo de confiança, relevância clínica, população e seguimento. Separar conclusão do estudo de adaptação clínica. Valorizar função, dor, retorno e eventos adversos.\n\nLIMITAÇÕES E CERTEZA\nEsta coleção é uma busca dirigida, sem protocolo prospectivo ou dupla revisão independente. Não foram atribuídas pontuações RoB 2, AMSTAR 2, AGREE II ou PEDro próprias. Certeza formal só é reproduzida quando informada pela fonte.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Cochrane Handbook, cap. 14: https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-14\nShea et al. AMSTAR 2. BMJ. 2017;358:j4008. DOI:10.1136/bmj.j4008",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-14"
+    },
+    {
+      "id": "evidence-20261002-cobertura",
+      "title": "Mapa das pesquisas recuperadas e lacunas da coleção",
+      "category": "Gestão e procedimentos",
+      "kind": "Procedimento interno",
+      "summary": "PERGUNTA / TEMA\nMapa das pesquisas recuperadas e lacunas da coleção\n\nMÉTODO E QUALIDADE\nOs temas foram recuperados do contexto disponível das pesquisas anteriores de Carlos e confrontados com fontes científicas. Esta lista não representa exportação integral de todo o histórico.\n\nRESULTADO PRINCIPAL\nO cadastro cobre ombro e beach tennis; cervical e DTM; lombalgia e dor; menisco, artrose, patelofemoral, LCA e EMG; tendões; quadril; fraturas; tornozelo pediátrico; plexo; corrida; equilíbrio; futebol juvenil; creatina e recuperação.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nUse os filtros por região e a busca por tema. Os registros incluem referência, método, conclusão e limites. Leia primeiro a política de qualidade.\n\nLIMITAÇÕES E CERTEZA\nLacunas explícitas: intervenções específicas de beach tennis, calendários após Sportvis, classificação isolada '3B', EMG em todas as articulações e protocolos universais pós-fratura. Existem registros de orientação crítica para essas lacunas, sem apresentá-las como evidência direta robusta. A coleção não transforma pesquisas anteriores em estudos produzidos pela Unifisio.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Registro editorial de cobertura e limitações da curadoria de 02/10/2026. Fontes científicas disponíveis nos registros de cada tema.",
+      "url": ""
+    },
+    {
+      "id": "evidence-20261002-ombro",
+      "title": "Manguito rotador: reabilitação ativa como tratamento inicial",
+      "category": "Ombro",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nManguito rotador: reabilitação ativa como tratamento inicial\n\nMÉTODO E QUALIDADE\nDiretriz clínica de 2025 sobre diagnóstico e tratamento não cirúrgico da tendinopatia do manguito em adultos, incluindo retorno à função e esporte.\n\nRESULTADO PRINCIPAL\nRecomenda programa ativo, com controle motor e/ou exercícios resistidos em diferentes cargas, como tratamento inicial para dor e incapacidade.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nDefinir objetivos funcionais; dosar carga conforme irritabilidade, capacidade e resposta entre sessões. Acompanhar dor, função e tolerância à tarefa, em vez de perseguir uma postura ideal.\n\nLIMITAÇÕES E CERTEZA\nDiretriz não equivale a certeza alta em todas as recomendações. Tendinopatia e ruptura completa não são populações intercambiáveis. A recomendação não demonstra superioridade universal de um exercício nem permite diagnosticar apenas por imagem.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Desmeules et al. Diretriz de tendinopatia do manguito rotador. JOSPT. 2025;55(4):235–274. DOI:10.2519/jospt.2025.13182",
+      "url": "https://doi.org/10.2519/jospt.2025.13182"
+    },
+    {
+      "id": "evidence-20261002-beach-tennis",
+      "title": "Beach tennis e ombro: adaptação clínica com evidência indireta",
+      "category": "Esporte e retorno",
+      "kind": "Protocolo clínico",
+      "summary": "PERGUNTA / TEMA\nBeach tennis e ombro: adaptação clínica com evidência indireta\n\nMÉTODO E QUALIDADE\nAplicação da diretriz de manguito de 2025 a uma modalidade específica; não é ensaio de beach tennis.\n\nRESULTADO PRINCIPAL\nReabilitação ativa tem respaldo para tendinopatia do manguito. Isso não valida uma sequência única de saques ou um calendário universal de retorno.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nProgredir exposição a golpes acima da cabeça, volume e intensidade; observar resposta e desempenho em treino antes da competição. Registrar a adaptação como interpretação clínica.\n\nLIMITAÇÕES E CERTEZA\nA evidência aqui é indireta para beach tennis. Não há, nesta curadoria, ensaio robusto específico que sustente um protocolo fechado da modalidade.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Desmeules et al. JOSPT. 2025. DOI:10.2519/jospt.2025.13182. Registro de extrapolação clínica, não de eficácia específica em beach tennis.",
+      "url": "https://doi.org/10.2519/jospt.2025.13182"
+    },
+    {
+      "id": "evidence-20261002-cervical",
+      "title": "Cervicalgia inespecífica: avaliação e tratamento conforme apresentação",
+      "category": "Coluna",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nCervicalgia inespecífica: avaliação e tratamento conforme apresentação\n\nMÉTODO E QUALIDADE\nDiretriz KNGF publicada em 2018 para fisioterapia de cervicalgia inespecífica, incluindo apresentações com radiculopatia. Referência complementar: diretriz JOSPT 2017.\n\nRESULTADO PRINCIPAL\nAs diretrizes organizam a avaliação, o prognóstico e as intervenções pela apresentação clínica. A existência de dor cervical não identifica automaticamente uma estrutura causal.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nRelacionar tratamento a incapacidade, mobilidade, força e objetivos; favorecer participação ativa e reavaliar resultados. Investigar sinais neurológicos ou de doença específica quando presentes.\n\nLIMITAÇÕES E CERTEZA\nNão transferir recomendações de cervicalgia inespecífica para trauma, mielopatia ou doença sistêmica. A seleção dirigida não estabeleceu uma classificação GRADE própria nem confirmou que essas sejam as últimas diretrizes de todas as sociedades.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Bier et al. Phys Ther. 2018;98(3):162–171. PMID:29228289. https://pubmed.ncbi.nlm.nih.gov/29228289/\nBlanpied et al. JOSPT. 2017. DOI:10.2519/jospt.2017.0302",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29228289/"
+    },
+    {
+      "id": "evidence-20261002-dtm",
+      "title": "DTM dolorosa crônica e cervical: o que a evidência permite concluir",
+      "category": "Dor crônica",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nDTM dolorosa crônica e cervical: o que a evidência permite concluir\n\nMÉTODO E QUALIDADE\nDiretriz BMJ 2023 apoiada por revisão sistemática e metanálise em rede de intervenções para dor crônica associada à DTM.\n\nRESULTADO PRINCIPAL\nHá recomendações fortes favoráveis a opções como mobilização assistida, exercícios supervisionados de mandíbula e postura, cuidados usuais e terapia cognitivo-comportamental. As recomendações variam conforme intervenção.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nAvaliar mandíbula e cervical quando ambas limitam atividades; selecionar estratégias ativas e decisão compartilhada. Encaminhar quando a avaliação odontológica ou interdisciplinar for necessária.\n\nLIMITAÇÕES E CERTEZA\nMelhora com uma intervenção não prova que DTM seja a causa de toda cervicalgia. A diretriz trata dor de pelo menos três meses; não valida tratamento indiferenciado de toda disfunção temporomandibular. Força da recomendação e certeza são conceitos distintos.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Busse et al. Diretriz de dor crônica associada à DTM. BMJ. 2023. DOI:10.1136/bmj-2023-076227\nRevisão de suporte: DOI:10.1136/bmj-2023-076226",
+      "url": "https://www.bmj.com/content/383/bmj-2023-076227"
+    },
+    {
+      "id": "evidence-20261002-lombar",
+      "title": "Lombalgia crônica inespecífica: efeito real do exercício",
+      "category": "Coluna",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nLombalgia crônica inespecífica: efeito real do exercício\n\nMÉTODO E QUALIDADE\nCochrane 2021: 249 ensaios; seleção independente, avaliação de viés e GRADE. Ensaios incorporados vieram de buscas até 2018; estudos posteriores aguardavam integração.\n\nRESULTADO PRINCIPAL\nComparado a ausência de tratamento, cuidados usuais ou placebo, exercício provavelmente melhora dor e função. Em escala de 0–100, diferenças médias aproximadas foram 15 pontos na dor e 7 na incapacidade; certeza moderada nessa comparação.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nEscolher atividade viável, progredir e acompanhar incapacidade e metas. O ganho funcional médio foi menor que o limiar de 10 pontos utilizado pela revisão.\n\nLIMITAÇÕES E CERTEZA\nA revisão não identifica um método vencedor universal. Comparações com outros tratamentos conservadores mostram diferenças menores. Não aplicar à dor por fratura, infecção, câncer ou emergência neurológica.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Hayden et al. Exercise therapy for chronic low back pain. Cochrane. 2021. DOI:10.1002/14651858.CD009790.pub2",
+      "url": "https://www.cochrane.org/evidence/CD009790_exercise-treatment-chronic-low-back-pain"
+    },
+    {
+      "id": "evidence-20261002-educacao-dor",
+      "title": "Educação em dor: complemento e limites da certeza",
+      "category": "Dor crônica",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nEducação em dor: complemento e limites da certeza\n\nMÉTODO E QUALIDADE\nVisão geral de revisões sistemáticas de 2023, focada na qualidade da pesquisa sobre educação em neurociência da dor. Complementada por umbrella review de 2023.\n\nRESULTADO PRINCIPAL\nOs resultados são heterogêneos. A umbrella review não encontrou melhora global consistente com educação isolada; combinações com intervenções ativas devem ser interpretadas conforme comparação e desfecho.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nExplicar dor em linguagem individualizada, relacionar a atividade e objetivos, validar a experiência e usar educação para apoiar decisões e participação.\n\nLIMITAÇÕES E CERTEZA\nNão prometer que entender dor eliminará sintomas. Dor persistente não exclui doença ou lesão relevante. Sobreposição de estudos entre revisões e limitações metodológicas impedem chamar todo o conjunto de alta certeza.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "A Call for Improving Research on Pain Neuroscience Education and Chronic Pain. 2023. PMID:37161889. https://pubmed.ncbi.nlm.nih.gov/37161889/\nPain neuroscience education: umbrella review. PMID:38075271. https://pubmed.ncbi.nlm.nih.gov/38075271/",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37161889/"
+    },
+    {
+      "id": "evidence-20261002-menisco",
+      "title": "Menisco degenerativo: fisioterapia versus meniscectomia em cinco anos",
+      "category": "Joelho",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nMenisco degenerativo: fisioterapia versus meniscectomia em cinco anos\n\nMÉTODO E QUALIDADE\nESCAPE: ensaio multicêntrico randomizado, 321 adultos de 45–70 anos, 16 sessões de fisioterapia; seguimento de cinco anos e análise por intenção de tratar.\n\nRESULTADO PRINCIPAL\nFisioterapia com exercício foi não inferior à meniscectomia parcial para função. A diferença de 3,5 pontos no IKDC ficou dentro da margem de 11 pontos; progressão radiográfica foi comparável.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nEm apresentação compatível, iniciar manejo conservador estruturado e monitorar resposta. Discutir expectativas e possibilidade de cirurgia posteriormente se sintomas persistirem.\n\nLIMITAÇÕES E CERTEZA\n32% do grupo de fisioterapia passou por cirurgia durante o seguimento. Sem mascaramento de pacientes/terapeutas. Excluídos joelho bloqueado e trauma exigindo cirurgia aguda. Não responde à conduta para raiz meniscal, lesão deslocada ou lesão traumática em jovens.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Noorduyn et al. ESCAPE, seguimento de cinco anos. JAMA Netw Open. 2022;5:e2220394. DOI:10.1001/jamanetworkopen.2022.20394",
+      "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2794027"
+    },
+    {
+      "id": "evidence-20261002-artrose-exercicio",
+      "title": "Artrose do joelho: fisioterapia versus infiltração com corticoide",
+      "category": "Joelho",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nArtrose do joelho: fisioterapia versus infiltração com corticoide\n\nMÉTODO E QUALIDADE\nEnsaio randomizado de 2020, 156 participantes, comparando fisioterapia e infiltração intra-articular com glicocorticoide; desfecho WOMAC em um ano.\n\nRESULTADO PRINCIPAL\nFisioterapia apresentou menos dor e incapacidade em um ano. Trata-se de comparação entre estratégias de cuidado, não de prova isolada de cada componente da fisioterapia.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nPriorizar plano de atividade e função sustentável; considerar preferências, acesso e reavaliação. Evitar depender exclusivamente do alívio de uma infiltração.\n\nLIMITAÇÕES E CERTEZA\nNão houve cegamento completo. Um ensaio não resolve todas as situações ou contraindicações, nem compara fisioterapia com todo tipo de produto injetável.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Deyle et al. Physical Therapy versus Glucocorticoid Injection for Osteoarthritis of the Knee. NEJM. 2020;382:1420–1429. DOI:10.1056/NEJMoa1905877",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32268027/"
+    },
+    {
+      "id": "evidence-20261002-ha-joelho",
+      "title": "Ácido hialurônico intra-articular na artrose: benefício e eventos adversos",
+      "category": "Joelho",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nÁcido hialurônico intra-articular na artrose: benefício e eventos adversos\n\nMÉTODO E QUALIDADE\nRevisão sistemática BMJ 2022; análise principal de dor em 24 grandes ensaios controlados por placebo, 8.997 participantes.\n\nRESULTADO PRINCIPAL\nBenefício médio para dor foi de cerca de 2 mm em escala de 100 mm, inferior ao limiar de relevância adotado. Houve associação com mais eventos adversos graves nos ensaios analisados.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nNa decisão compartilhada, discutir magnitude pequena do benefício médio, custo e alternativas. Manter reabilitação orientada à função.\n\nLIMITAÇÕES E CERTEZA\nAssociação de eventos graves não prova que todo evento tenha sido causado diretamente pelo produto. Resultado de artrose e via intra-articular não pode ser extrapolado para Sportvis, via peritendínea ou todas as formulações.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Pereira et al. Viscosupplementation for knee osteoarthritis. BMJ. 2022;378:e069722. DOI:10.1136/bmj-2022-069722",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9258606/"
+    },
+    {
+      "id": "evidence-20261002-ha-tendoes",
+      "title": "Sportvis e hialurônico em tecidos moles: não extrapolar da artrose",
+      "category": "Joelho",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nSportvis e hialurônico em tecidos moles: não extrapolar da artrose\n\nMÉTODO E QUALIDADE\nRevisão sistemática de 2022 com 19 ensaios e 1.629 participantes em diferentes indicações de tecidos moles; apenas um ensaio por indicação em Aquiles, tendão patelar e entorse.\n\nRESULTADO PRINCIPAL\nOs autores relataram benefícios em algumas indicações, com heterogeneidade muito alta em manguito e cotovelo. A evidência específica por tendão é escassa.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nConfirmar produto, indicação, via e condição tratada. Planejar exercício pela tolerância e avaliação clínica, respeitando orientação do procedimento.\n\nLIMITAÇÕES E CERTEZA\nEsta coleção não estabelece intervalo universal para retomar exercícios após Sportvis. Não demonstrou eficácia de cada marca nem superioridade consistente sobre reabilitação. Não misturar hialurônico intra-articular e peritendíneo.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "The Role of Hyaluronic Acid for Soft Tissue Indications: A Systematic Review and Meta-Analysis. 2022. PMID:35114853. https://pubmed.ncbi.nlm.nih.gov/35114853/\nEnsaio Aquiles versus ondas de choque: PMID:27639439.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35114853/"
+    },
+    {
+      "id": "evidence-20261002-patelofemoral",
+      "title": "Dor patelofemoral: exercício, educação e recursos individualizados",
+      "category": "Joelho",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nDor patelofemoral: exercício, educação e recursos individualizados\n\nMÉTODO E QUALIDADE\nGuia de melhores práticas de 2024 integra revisão de 65 ensaios considerados de alta qualidade pelos autores, entrevistas com pacientes e raciocínio de especialistas.\n\nRESULTADO PRINCIPAL\nExercício dirigido ao joelho, com ou sem trabalho do quadril, apoiado por educação, forma a base recomendada. Recursos complementares são selecionados conforme apresentação e preferências.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nRelacionar capacidade e carga a subir escadas, agachar, correr e saltar; acompanhar dor e função. Testar um recurso complementar apenas quando houver objetivo mensurável.\n\nLIMITAÇÕES E CERTEZA\nUma síntese de melhores práticas combina evidência e julgamento. A classificação dos ensaios é dos autores; não foi feita avaliação própria. Não comprova que todo valgo, assimetria ou alteração de imagem seja causa da dor.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Neal, Lack, Bartholomew, Morrissey. Guia de melhores práticas para dor patelofemoral. BJSM. 2024;58:1486–1495. DOI:10.1136/bjsports-2024-108110",
+      "url": "https://bjsm.bmj.com/content/58/24/1486"
+    },
+    {
+      "id": "evidence-20261002-orteses-pfp",
+      "title": "Órteses, mangas e cintas para dor patelofemoral",
+      "category": "Joelho",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nÓrteses, mangas e cintas para dor patelofemoral\n\nMÉTODO E QUALIDADE\nCochrane 2015 sobre órteses de joelho, incluindo estudos pequenos e com limitações; busca histórica deve ser reconhecida.\n\nRESULTADO PRINCIPAL\nNão há demonstração confiável de benefício adicional clinicamente importante de órtese com exercício sobre exercício isolado. A certeza foi muito baixa.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nSe houver teste de uso, definir tarefa e desfecho, prazo de reavaliação, custo, conforto e efeito individual. Manter abordagem ativa.\n\nLIMITAÇÕES E CERTEZA\nNão significa que nenhum indivíduo possa sentir alívio. Resultados não validam automaticamente um produto atual, nem se referem a órteses dos pés. Síntese antiga; a ausência de atualização nesta busca é uma limitação.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Smith et al. Knee orthoses for treating patellofemoral pain syndrome. Cochrane. 2015. DOI:10.1002/14651858.CD010513.pub2",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8763348/"
+    },
+    {
+      "id": "evidence-20261002-lca-rehab",
+      "title": "LCA: reabilitação por critérios e limites das recomendações",
+      "category": "Pós-operatório",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nLCA: reabilitação por critérios e limites das recomendações\n\nMÉTODO E QUALIDADE\nDiretriz Aspetar 2023 construída com revisão de ensaios e graduação da evidência. Abrange recuperação após reconstrução do LCA.\n\nRESULTADO PRINCIPAL\nExercício é elemento central; progressão precisa integrar mobilidade, força, controle, exposição e função. Várias decisões têm certeza limitada e exigem consenso clínico.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nReavaliar extensão, derrame, força e tolerância; integrar cadeia aberta e fechada conforme fase e condições. Separar retorno à corrida, ao treino e à competição.\n\nLIMITAÇÕES E CERTEZA\nNão usar tempo ou índice de simetria isoladamente como autorização. Reparos meniscais, outras lesões e instruções cirúrgicas alteram a progressão. Critérios da diretriz não são regras universais nem prova de risco zero.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Kotsifaki et al. Aspetar clinical practice guideline on rehabilitation after ACL reconstruction. BJSM. 2023;57:500–514. DOI:10.1136/bjsports-2022-106158",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11785408/"
+    },
+    {
+      "id": "evidence-20261002-lca-enxerto",
+      "title": "Enxerto patelar no LCA: benefícios, dor anterior e seleção",
+      "category": "Joelho",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nEnxerto patelar no LCA: benefícios, dor anterior e seleção\n\nMÉTODO E QUALIDADE\nDiretriz AAOS 2022 para lesões do LCA; recomendações consideram maturidade esquelética e atividade.\n\nRESULTADO PRINCIPAL\nRecomendação moderada: em pacientes esqueleticamente maduros, enxerto osso–tendão patelar–osso pode favorecer menor falha ou infecção; flexores podem favorecer menor dor anterior ou ao ajoelhar.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nDocumentar demandas de ajoelhamento, sintomas prévios, maturidade e esporte na discussão com a equipe cirúrgica. Ajustar reabilitação às morbidades da área doadora.\n\nLIMITAÇÕES E CERTEZA\nEsses fatores não constituem uma lista universal de contraindicações. Maturidade e idade não são equivalentes. A escolha é individual e cirúrgica; não declarar um enxerto melhor para todos.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "AAOS. Management of Anterior Cruciate Ligament Injuries. 2022. Página oficial de atualização das recomendações.",
+      "url": "https://www.aaos.org/aaos-home/newsroom/press-releases/aaos-updates-guideline-for-management-of-acl-injuries/"
+    },
+    {
+      "id": "evidence-20261002-ami",
+      "title": "Inibição muscular artrogênica: evidência e avaliação do quadríceps",
+      "category": "Joelho",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nInibição muscular artrogênica: evidência e avaliação do quadríceps\n\nMÉTODO E QUALIDADE\nScoping review de 2019 sobre intervenções após lesão/reconstrução do LCA; inclui desenhos e intervenções variados.\n\nRESULTADO PRINCIPAL\nOs autores identificaram suporte moderado para exercício e crioterapia no déficit de ativação. O desenho exploratório não demonstra superioridade definitiva de uma combinação.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nAvaliar extensão, derrame, dor, ativação e força. Relacionar estratégias adjuvantes à capacidade de treinar e verificar evolução funcional.\n\nLIMITAÇÕES E CERTEZA\nAtivação reduzida não equivale automaticamente a perda estrutural ou indicação de um aparelho. EMG de superfície isolado não confirma toda AMI. A revisão é histórica; a certeza não é alta para todos os recursos.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Sonnery-Cottet et al. Arthrogenic muscle inhibition after ACL reconstruction. BJSM. 2019;53:289–298. DOI:10.1136/bjsports-2017-098401",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6579490/"
+    },
+    {
+      "id": "evidence-20261002-emg-lca",
+      "title": "Biofeedback eletromiográfico após LCA: ganhos e ausência de efeitos",
+      "category": "Avaliação funcional",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nBiofeedback eletromiográfico após LCA: ganhos e ausência de efeitos\n\nMÉTODO E QUALIDADE\nRevisão sistemática e metanálise de 2024: oito artigos na síntese qualitativa e quatro na quantitativa; intervenções de 4–12 semanas.\n\nRESULTADO PRINCIPAL\nSugere ganhos de extensão; dois de três estudos de força favoreceram biofeedback. Não houve diferença significativa consistente em dor ou Lysholm.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nConsiderar recurso para uma meta específica de aprendizagem/ativação, junto ao exercício, medindo transferência para força e função.\n\nLIMITAÇÕES E CERTEZA\nPoucos estudos, intervenções curtas e resultados heterogêneos. Ganho eletromiográfico não comprova retorno esportivo seguro. Não extrapolar eficácia no LCA para artroplastia de joelho ou todas as regiões.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Ananías et al. Biofeedback após reconstrução do LCA. Physiotherapy. 2024;123:19–29. DOI:10.1016/j.physio.2023.12.005",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38244487/"
+    },
+    {
+      "id": "evidence-20261002-emg-ombro",
+      "title": "EMG e biofeedback do ombro: checar benefício clínico adicional",
+      "category": "Ombro",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nEMG e biofeedback do ombro: checar benefício clínico adicional\n\nMÉTODO E QUALIDADE\nRevisão sistemática e metanálise de 2021: cinco ensaios, 272 pessoas com dor no ombro.\n\nRESULTADO PRINCIPAL\nNão demonstrou superioridade do biofeedback para dor ou função. Para função, diferença padronizada −0,11 (IC95% −0,41 a 0,19); certeza muito baixa.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nDefinir uma tarefa e um objetivo de aprendizagem; comparar evolução clínica com o plano ativo e registrar transferência para atividades.\n\nLIMITAÇÕES E CERTEZA\nPoucos ensaios e certeza muito baixa impedem recomendação definitiva. Ausência de superioridade demonstrada não comprova equivalência. Alterar ativação escapular não prova corrigir a causa da dor; não anunciar alta certeza.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Kamonseki, Calixtre, Barreto, Camargo. Effects of electromyographic biofeedback interventions for shoulder pain and function. Clin Rehabil. 2021;35:952–963. DOI:10.1177/0269215521990950",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33517777/"
+    },
+    {
+      "id": "evidence-20261002-emg-padrao",
+      "title": "EMG de superfície: padronização e interpretação",
+      "category": "Avaliação funcional",
+      "kind": "Teste e avaliação",
+      "summary": "PERGUNTA / TEMA\nEMG de superfície: padronização e interpretação\n\nMÉTODO E QUALIDADE\nRecomendações técnicas SENIAM para sensores, posição e orientação dos eletrodos. São padrões de medida, não ensaios de eficácia.\n\nRESULTADO PRINCIPAL\nLocalização e fixação precisam ser consistentes para interpretar comparações. SENIAM oferece orientações para músculos específicos e distância entre eletrodos.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nRegistrar equipamento, músculo, preparo da pele, posição, tarefa, normalização e sessão. Associar medida elétrica à dinamometria e desempenho funcional.\n\nLIMITAÇÕES E CERTEZA\nEMG não mede diretamente força nem constitui diagnóstico isolado de lesão ou de toda atividade muscular profunda. Comparações dependem de técnica e artefatos. A atividade observada não prova causalidade clínica.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "SENIAM. European recommendations for surface electromyography. Localização: https://seniam.org/sensor_location.htm\nFixação: https://seniam.org/fixation.htm",
+      "url": "https://seniam.org/sensor_location.htm"
+    },
+    {
+      "id": "evidence-20261002-avaliacao",
+      "title": "Avaliação funcional: validade, confiabilidade e mudança relevante",
+      "category": "Avaliação funcional",
+      "kind": "Teste e avaliação",
+      "summary": "PERGUNTA / TEMA\nAvaliação funcional: validade, confiabilidade e mudança relevante\n\nMÉTODO E QUALIDADE\nMetodologia COSMIN para propriedades de instrumentos: validade, confiabilidade, erro de medida e responsividade. Considera também viabilidade.\n\nRESULTADO PRINCIPAL\nUm teste repetível não é necessariamente válido para qualquer finalidade. A mudança precisa ser interpretada em relação ao erro e à importância clínica no contexto específico.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nCombinar questionário validado, força e tarefas relevantes. Padronizar procedimento e registrar dor, fadiga e condições. Usar MDC e MIC/MCID apropriadas ao instrumento e à população.\n\nLIMITAÇÕES E CERTEZA\nNão adotar limites universais nem transportar valores entre testes. Associação e assimetria não provam patologia. A seleção de uma bateria pela clínica ainda precisa de justificativa e validação.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "COSMIN. Seleção de instrumentos e estudos de propriedades de medida. https://www.cosmin.nl/finding-right-tool/select-best-measurement-instrument/\nhttps://www.cosmin.nl/finding-right-tool/conducting-study-measurement-properties/",
+      "url": "https://www.cosmin.nl/finding-right-tool/select-best-measurement-instrument/"
+    },
+    {
+      "id": "evidence-20261002-simetria",
+      "title": "LCA: quando a simetria superestima a recuperação",
+      "category": "Esporte e retorno",
+      "kind": "Teste e avaliação",
+      "summary": "PERGUNTA / TEMA\nLCA: quando a simetria superestima a recuperação\n\nMÉTODO E QUALIDADE\nEstudo de 2017 sobre índices de simetria após reconstrução do LCA; evidência observacional, complementar às diretrizes.\n\nRESULTADO PRINCIPAL\nO membro contralateral pode perder capacidade; portanto, alcançar simetria pode esconder déficits bilaterais.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nIntegrar valores absolutos, referências apropriadas, evolução longitudinal, força, qualidade da tarefa e prontidão psicológica. A simetria é uma informação, não decisão completa.\n\nLIMITAÇÕES E CERTEZA\nEstudo observacional não define um limiar causal universal nem garante prevenção de segunda lesão. Não autorizar retorno só por 90% ou por um salto.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Wellsandt et al. Limb Symmetry Indexes Can Overestimate Knee Function After Anterior Cruciate Ligament Injury. 2017. PMID:28355978.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28355978/"
+    },
+    {
+      "id": "evidence-20261002-apoio-unipodal",
+      "title": "Apoio unipodal e quedas: utilidade sem um corte universal",
+      "category": "Avaliação funcional",
+      "kind": "Teste e avaliação",
+      "summary": "PERGUNTA / TEMA\nApoio unipodal e quedas: utilidade sem um corte universal\n\nMÉTODO E QUALIDADE\nRevisão sistemática de validade preditiva, publicada em 2021, incluindo pessoas de 60 anos ou mais com quedas registradas prospectivamente.\n\nRESULTADO PRINCIPAL\nApoio unipodal, alcance funcional e POMA isolados não mostraram capacidade preditiva consistente de quedas em todos os cenários.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nUsar apoio unipodal para acompanhar desempenho sob condições padronizadas, integrado a histórico de quedas, mobilidade, força e outros fatores.\n\nLIMITAÇÕES E CERTEZA\nDiscriminar pessoas com história de queda difere de prever quedas futuras. Não usar segundos isolados para diagnosticar risco em qualquer idade ou liberar esporte.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Functional Reach Test, Single-Leg Stance Test, and Tinetti POMA for the Prediction of Falls in Older Adults: revisão sistemática. 2021. PMID:34244801.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34244801/"
+    },
+    {
+      "id": "evidence-20261002-aquiles",
+      "title": "Aquiles na porção média: carga progressiva e distinção da inserção",
+      "category": "Tornozelo e pé",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nAquiles na porção média: carga progressiva e distinção da inserção\n\nMÉTODO E QUALIDADE\nDiretriz JOSPT revisada em 2024 para tendinopatia da porção média do Aquiles.\n\nRESULTADO PRINCIPAL\nRecomenda exercício de carga do tendão. Orienta frequência de pelo menos três vezes por semana e intensidade tolerada; não exige um único modelo de contração.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nDefinir capacidade e resposta à carga, progredir e acompanhar função. Diferenciar localização da dor antes de aplicar exercícios que aumentem compressão na inserção.\n\nLIMITAÇÕES E CERTEZA\nA diretriz é da porção média, não uma validação de todos os exercícios para insercional ou ruptura. Frequência não define sozinha dose ideal. A recomendação deve ser individualizada.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Chimenti et al. Diretriz de tendinopatia de Aquiles na porção média, revisão 2024. JOSPT. 2024;54(12):CPG1–CPG32. DOI:10.2519/jospt.2024.0302",
+      "url": "https://doi.org/10.2519/jospt.2024.0302"
+    },
+    {
+      "id": "evidence-20261002-ondas",
+      "title": "Ondas de choque: separar Aquiles médio, insercional e patelar",
+      "category": "Tornozelo e pé",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nOndas de choque: separar Aquiles médio, insercional e patelar\n\nMÉTODO E QUALIDADE\nRevisão sistemática de 2022 analisa separadamente Aquiles médio e insercional. Metanálise em rede de 2021 complementa para tendão patelar.\n\nRESULTADO PRINCIPAL\nPara Aquiles médio, a revisão relata evidência moderada favorável ao acréscimo a programa de carga. Para patelar, duas comparações com placebo, com excêntricos em ambos os grupos, não mostraram vantagem clara.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nConsiderar como recurso adjuvante em indicação específica, definindo desfecho e reavaliação. Priorizar plano ativo.\n\nLIMITAÇÕES E CERTEZA\nNão tratar todas as tendinopatias como equivalentes. Esses resultados não sustentam benefício universal, cura por imagem ou um protocolo único de equipamento, energia e sessões. A evidência insercional é diferente.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Paantjens et al. Revisão de ondas de choque em Aquiles. 2022. PMID:35552903. https://pubmed.ncbi.nlm.nih.gov/35552903/\nChalloumas et al. Tendinopatia patelar. 2021. PMID:34900334.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9106789/"
+    },
+    {
+      "id": "evidence-20261002-prp-aquiles",
+      "title": "PRP para Aquiles crônico: ensaio controlado por procedimento simulado",
+      "category": "Tornozelo e pé",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nPRP para Aquiles crônico: ensaio controlado por procedimento simulado\n\nMÉTODO E QUALIDADE\nEnsaio multicêntrico randomizado de 2021, com 240 pessoas em 24 centros; pacientes mascarados, desfecho VISA-A aos seis meses.\n\nRESULTADO PRINCIPAL\nPRP não melhorou disfunção em relação ao procedimento simulado. Diferença ajustada: −2,7 pontos; IC95% −8,8 a 3,3.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nDiscutir falta de benefício clínico demonstrado nesta indicação antes de acrescentar procedimento ao tratamento.\n\nLIMITAÇÕES E CERTEZA\nEstudo de uma estratégia de injeção na tendinopatia crônica da porção média. Não resolve todas as preparações, rupturas agudas ou aplicações em outros tendões. Não extrapolar para toda medicina regenerativa.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Kearney et al. PRP versus sham em tendinopatia crônica de Aquiles. JAMA. 2021;326:137–144. DOI:10.1001/jama.2021.6986",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34255009/"
+    },
+    {
+      "id": "evidence-20261002-patelar",
+      "title": "Tendinopatia patelar: exercício com certeza explicitamente limitada",
+      "category": "Joelho",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nTendinopatia patelar: exercício com certeza explicitamente limitada\n\nMÉTODO E QUALIDADE\nCochrane 2025: sete ensaios, 211 atletas; busca até setembro de 2023, seleção e extração independentes, avaliação de viés e GRADE.\n\nRESULTADO PRINCIPAL\nComparações de exercício com nenhum tratamento, corticoide ou cirurgia têm certeza baixa ou muito baixa em vários desfechos. Poucos estudos e perdas limitam conclusões.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nUsar programa individualizado de carga e monitorar VISA-P e tarefas. O ensaio de Breda de 2021 oferece uma comparação direta entre carga progressiva e excêntrica.\n\nLIMITAÇÕES E CERTEZA\nA Cochrane não comparou diretamente diferentes programas de fortalecimento; não invalida automaticamente essas comparações, mas também não prova exercício universalmente superior. Não transformar rankings de metanálise em alta certeza ou recomendar cirurgia por ausência de prova robusta.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Lopes et al. Exercise for patellar tendinopathy. Cochrane. 2025. DOI:10.1002/14651858.CD013078.pub2\nBreda et al. Carga progressiva versus excêntrica. BJSM. 2021. PMID:33219115. https://pubmed.ncbi.nlm.nih.gov/33219115/",
+      "url": "https://www.cochrane.org/pt/evidence/CD013078_do-strengthening-exercises-help-treatment-people-patellar-tendinopathy-jumpers-knee"
+    },
+    {
+      "id": "evidence-20261002-gluteal",
+      "title": "Tendinopatia glútea: educação e exercício versus corticoide",
+      "category": "Quadril",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nTendinopatia glútea: educação e exercício versus corticoide\n\nMÉTODO E QUALIDADE\nEnsaio randomizado de 2018, 204 adultos; comparou educação sobre carga com exercício, infiltração e aguardar/observar; seguimento até 52 semanas.\n\nRESULTADO PRINCIPAL\nEducação com exercício favoreceu melhora global em comparação ao corticoide em oito e 52 semanas. Em 52 semanas, a dor não diferiu claramente entre esses dois grupos.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nTrabalhar tolerância à carga e atividades que provocam sintomas, com fortalecimento e orientação. Acompanhar melhora global e dor separadamente.\n\nLIMITAÇÕES E CERTEZA\nNão extrapolar para toda dor lateral do quadril, artrose ou ruptura completa. Sem mascaramento de participantes/terapeutas. Resultado de um programa não valida todo exercício ou elimina necessidade de diagnóstico diferencial.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Mellor et al. Educação e exercício para tendinopatia glútea. BMJ. 2018;361:k1662. DOI:10.1136/bmj.k1662",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29720374/"
+    },
+    {
+      "id": "evidence-20261002-quadril-precaucoes",
+      "title": "Artroplastia do quadril: precauções e risco de luxação",
+      "category": "Pós-operatório",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nArtroplastia do quadril: precauções e risco de luxação\n\nMÉTODO E QUALIDADE\nRevisão de 2023: quatro ensaios e cinco estudos não randomizados, 8.835 pessoas com artrose primária e artroplastia por abordagem posterior; seleção dupla e GRADE.\n\nRESULTADO PRINCIPAL\nNão sustenta prescrição rotineira de restrições para todos. Nos ensaios, RR de luxação precoce 1,8, IC95% 0,6–5,2; certeza baixa e intervalo amplo.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nIndividualizar com equipe cirúrgica, fatores de risco e contexto. Trabalhar mobilidade funcional, força, segurança e prevenção de quedas.\n\nLIMITAÇÕES E CERTEZA\nAusência de diferença demonstrada não é prova de risco zero. Não extrapolar a revisões de prótese, instabilidade prévia, todas as abordagens ou populações de maior risco. O estudo não descreve todo mecanismo individual de luxação.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Korfitsen et al. Precauções após artroplastia posterior. Acta Orthop. 2023;94:141–151. DOI:10.2340/17453674.2023.11958",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37039064/"
+    },
+    {
+      "id": "evidence-20261002-radio",
+      "title": "Fratura distal do rádio: progressão de exercício e carga",
+      "category": "Cotovelo e mão",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nFratura distal do rádio: progressão de exercício e carga\n\nMÉTODO E QUALIDADE\nDiretriz de reabilitação JOSPT 2024, vinculada à estabilidade da fratura e ao tratamento realizado.\n\nRESULTADO PRINCIPAL\nRecomenda exercício adequadamente temporizado: mobilidade, deslizamento tendíneo, controle motor, tarefas funcionais e resistência progressiva, conforme estabilidade e manejo.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nIntegrar consolidação, fixação, dor, edema, amplitude, preensão e tarefa. Documentar liberação da equipe quando necessária.\n\nLIMITAÇÕES E CERTEZA\nOito semanas não autorizam automaticamente qualquer carga. Fratura estável, fixação rígida e tratamento conservador não seguem necessariamente a mesma progressão. Não inferir consolidação apenas por melhora da dor.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Distal Radius Fracture Rehabilitation. JOSPT. 2024;54(9):CPG1–CPG78. DOI:10.2519/jospt.2024.0301",
+      "url": "https://doi.org/10.2519/jospt.2024.0301"
+    },
+    {
+      "id": "evidence-20261002-entorse",
+      "title": "Entorse lateral: suporte externo, carga e reabilitação",
+      "category": "Tornozelo e pé",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nEntorse lateral: suporte externo, carga e reabilitação\n\nMÉTODO E QUALIDADE\nDiretriz JOSPT 2021 para entorse lateral e instabilidade crônica do tornozelo.\n\nRESULTADO PRINCIPAL\nRecomenda suporte externo e apoio progressivo após entorse aguda. Na instabilidade crônica, suporte isolado é insuficiente para melhora sustentada de equilíbrio e controle postural.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nCombinar proteção proporcional, mobilidade e treino funcional; acompanhar capacidade e retorno às tarefas. Não manter imobilização sem reavaliar indicação.\n\nLIMITAÇÕES E CERTEZA\nNão confundir entorse com fratura, lesão sindesmótica ou lesão osteocondral. Gravidade e lesões associadas mudam o manejo. Diretriz geral não resolve automaticamente dor persistente em criança.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Martin et al. Lateral Ankle Ligament Sprains Revision 2021. JOSPT. 2021;51(4):CPG1–CPG80. DOI:10.2519/jospt.2021.0302",
+      "url": "https://doi.org/10.2519/jospt.2021.0302"
+    },
+    {
+      "id": "evidence-20261002-tornozelo-crianca",
+      "title": "Tornozelo pediátrico: baixo risco agudo não explica dor prolongada",
+      "category": "Tornozelo e pé",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nTornozelo pediátrico: baixo risco agudo não explica dor prolongada\n\nMÉTODO E QUALIDADE\nEnsaio randomizado de 2007 comparou órtese removível e gesso em crianças de 5–18 anos com fraturas de baixo risco. Estudos da Low Risk Ankle Rule tratam triagem aguda.\n\nRESULTADO PRINCIPAL\nExiste suporte para tratamento funcional em lesões selecionadas de baixo risco. Isso não classifica toda dor infantil após entorse como benigna.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nPersistência ou piora exige nova avaliação do diagnóstico e da capacidade de apoio; reconsiderar lesão óssea, sindesmose e outras causas conforme exame.\n\nLIMITAÇÕES E CERTEZA\nNão extrapolar regra de pronto atendimento agudo para meses de sintomas. A seleção de baixo risco precisa ocorrer clinicamente. Não usar o ensaio para liberar toda criança sem diagnóstico ou para substituir avaliação específica.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Boutis et al. Brace versus casting in children with low-risk ankle fractures. 2007. PMID:17545357. https://pubmed.ncbi.nlm.nih.gov/17545357/\nLow Risk Ankle Rule: PMID:23939215.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17545357/"
+    },
+    {
+      "id": "evidence-20261002-weber-b",
+      "title": "Fratura Weber B estável: três versus seis semanas de imobilização",
+      "category": "Tornozelo e pé",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nFratura Weber B estável: três versus seis semanas de imobilização\n\nMÉTODO E QUALIDADE\nEnsaio multicêntrico randomizado de não inferioridade, 2019, em fraturas isoladas consideradas estáveis.\n\nRESULTADO PRINCIPAL\nTrês semanas com gesso ou órtese foram não inferiores a seis semanas de gesso para função em um ano.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nDiscutir imobilização e manejo funcional quando estabilidade foi confirmada e o caso corresponde à população estudada.\n\nLIMITAÇÕES E CERTEZA\nNão extrapolar a fraturas instáveis, comprometimento medial/sindesmótico ou qualquer idoso apenas porque a radiografia parece sem desvio. Estabilidade é critério essencial. Este estudo não responde a todos os tipos de fratura maleolar.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Kortekangas et al. Imobilização em Weber B estável. BMJ. 2019;364:k5432. DOI:10.1136/bmj.k5432. PMID:30674451.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6342249/"
+    },
+    {
+      "id": "evidence-20261002-wax",
+      "title": "Fratura de tornozelo operada: apoio em duas versus seis semanas",
+      "category": "Pós-operatório",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nFratura de tornozelo operada: apoio em duas versus seis semanas\n\nMÉTODO E QUALIDADE\nWAX: ensaio multicêntrico randomizado de não inferioridade, Lancet 2024, 561 adultos em 23 hospitais britânicos; fratura instável tratada cirurgicamente.\n\nRESULTADO PRINCIPAL\nApoio mais precoce foi não inferior ao tardio para recuperação funcional na população estudada.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nConsiderar progressão com equipe cirúrgica quando fixação, ferida, proteção e condições individuais permitem.\n\nLIMITAÇÕES E CERTEZA\nNão transferir automaticamente para fratura não operada, fixação inadequada, neuropatia ou todas as fraturas maleolares. Resultado funcional médio não equivale a permissão universal de apoio sem avaliar o caso.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Bretherton et al. WAX. Lancet. 2024;403:2787–2797. DOI:10.1016/S0140-6736(24)00710-4",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38848738/"
+    },
+    {
+      "id": "evidence-20261002-quadriceps-ruptura",
+      "title": "Ruptura do tendão do quadríceps: qualidade da evidência pós-reparo",
+      "category": "Joelho",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nRuptura do tendão do quadríceps: qualidade da evidência pós-reparo\n\nMÉTODO E QUALIDADE\nRevisão sistemática de 2025 sobre resultados após reparo. A síntese incluiu seis estudos, predominantemente séries e coortes, sem ensaio randomizado.\n\nRESULTADO PRINCIPAL\nA revisão descreve recuperação da função extensora, mas não permite escolher com alta certeza um calendário único de reabilitação.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nConfirmar diagnóstico, extensão da ruptura, reparo e orientação cirúrgica. Progredir mobilidade, carga e função conforme proteção necessária e reavaliação.\n\nLIMITAÇÕES E CERTEZA\nUma revisão de estudos observacionais continua limitada por esses desenhos. Não usar protocolos de tendinopatia ou de lesão muscular para ruptura completa. Este registro não contém avaliação formal própria do risco de viés.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Patients have restored extensor mechanism function with low complication rates following quadriceps tendon repair. Revisão sistemática. 2025. PMID:40510233.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40510233/"
+    },
+    {
+      "id": "evidence-20261002-grau3b",
+      "title": "Lesão de quadríceps '3B': esclarecer a classificação antes do protocolo",
+      "category": "Joelho",
+      "kind": "Protocolo clínico",
+      "summary": "PERGUNTA / TEMA\nLesão de quadríceps '3B': esclarecer a classificação antes do protocolo\n\nMÉTODO E QUALIDADE\nRegistro de limite diagnóstico: classificações de lesão muscular e descrição de ruptura tendínea não são intercambiáveis. O rótulo isolado não define a população de um ensaio.\n\nRESULTADO PRINCIPAL\nNão foi identificada nesta seleção evidência robusta que valide um protocolo universal para toda lesão chamada '3B'. A revisão de reparo tendíneo trata outra pergunta.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nIdentificar sistema de classificação, localização, extensão, tecido, integridade extensora e tratamento. Depois selecionar evidência correspondente.\n\nLIMITAÇÕES E CERTEZA\nNão converter nomenclatura sem conhecer laudo e sistema utilizado. Nenhum prazo fechado ou eficácia específica é afirmado aqui. Este é um registro de lacuna, não estudo de tratamento.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Referência contextual, não direta para '3B': revisão de reparo do tendão do quadríceps, 2025. PMID:40510233. https://pubmed.ncbi.nlm.nih.gov/40510233/",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40510233/"
+    },
+    {
+      "id": "evidence-20261002-plexo",
+      "title": "Plexo braquial traumático: tempo de avaliação e limites da reabilitação",
+      "category": "Cotovelo e mão",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nPlexo braquial traumático: tempo de avaliação e limites da reabilitação\n\nMÉTODO E QUALIDADE\nRevisão sistemática de 2018 sobre tempo até cirurgia em trauma por estiramento/impacto; 43 estudos, com evidência predominantemente observacional.\n\nRESULTADO PRINCIPAL\nOs estudos associaram cirurgia antes de seis meses a melhores resultados motores. A interpretação precisa considerar gravidade e possibilidade de recuperação espontânea.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nEncaminhar cedo para equipe de nervo periférico; integrar seguimento, exame e investigação indicada. Fisioterapia pode apoiar função e prevenção de limitações, sem atrasar avaliação especializada.\n\nLIMITAÇÕES E CERTEZA\nAssociação observacional não estabelece calendário causal para toda lesão. Não extrapolar para lesão neonatal, ferimento penetrante ou todo padrão de plexopatia. Exercício não comprova reinervação nem substitui decisão sobre reconstrução.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Martin et al. Timing of surgery in traumatic brachial plexus injury. J Neurosurg. 2018. PMID:29999446.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29999446/"
+    },
+    {
+      "id": "evidence-20261002-corrida",
+      "title": "Reeducação da corrida: mudanças biomecânicas versus prevenção de lesão",
+      "category": "Esporte e retorno",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nReeducação da corrida: mudanças biomecânicas versus prevenção de lesão\n\nMÉTODO E QUALIDADE\nRevisão sistemática e metanálise de 2022, 19 ensaios e 673 participantes; GRADE e subgrupos por tipo de retreinamento.\n\nRESULTADO PRINCIPAL\nCerteza moderada de que trabalhar cadência aumenta a frequência de passos e reduz taxa média de carga vertical. Outros efeitos, como economia e desempenho, têm certeza menor e resultados incertos.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nUsar feedback simples ou instrumentado para uma meta definida, progressão gradual e sintomas monitorados. Verificar retenção sem feedback.\n\nLIMITAÇÕES E CERTEZA\nMudar um marcador biomecânico não prova reduzir incidência de lesões. Não impor cadência ou tipo de pisada universal. Avaliação 2D, aceleração tibial e força de impacto medem coisas diferentes.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Doyle et al. Gait retraining in distance runners. JOSPT. 2022;52:192–A5. DOI:10.2519/jospt.2022.10585. PMID:35128941.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35128941/"
+    },
+    {
+      "id": "evidence-20261002-bosu",
+      "title": "Bosu e superfícies instáveis: efeitos adicionais são limitados",
+      "category": "Avaliação funcional",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nBosu e superfícies instáveis: efeitos adicionais são limitados\n\nMÉTODO E QUALIDADE\nRevisão sistemática e metanálise de 2015 compara treinamento de força em superfícies estáveis e instáveis em participantes saudáveis.\n\nRESULTADO PRINCIPAL\nTreinar com instabilidade melhora em relação a controle sem treino, mas vantagens adicionais sobre superfície estável foram limitadas e inconsistentes.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nEscolher superfície segundo objetivo: equilíbrio e desafio da tarefa ou produção de força/carga. Instabilidade é uma opção, não progressão obrigatória.\n\nLIMITAÇÕES E CERTEZA\nQualidade dos estudos relativamente baixa e heterogeneidade alta. Evidência de saudáveis não prova tratamento superior em lesão específica; maior ativação não equivale a maior força ou resultado clínico.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Behm et al. Strength training using unstable surfaces. Sports Med. 2015. DOI:10.1007/s40279-015-0384-x. PMID:26359066.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4656700/"
+    },
+    {
+      "id": "evidence-20261002-futebol",
+      "title": "Futebol infantil: prevenção multicomponente com FIFA 11+ Kids",
+      "category": "Esporte e retorno",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nFutebol infantil: prevenção multicomponente com FIFA 11+ Kids\n\nMÉTODO E QUALIDADE\nEnsaio randomizado por equipes, publicado online em 2022, avaliou programa de aquecimento em meninos praticantes de futebol.\n\nRESULTADO PRINCIPAL\nO programa reduziu taxas de lesões na população estudada. O resultado apoia uma estratégia organizada, não um exercício isolado.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nImplementar com treinamento dos profissionais, frequência e adesão registradas; integrar força, coordenação e progressões adequadas à idade.\n\nLIMITAÇÕES E CERTEZA\nRandomização por equipes exige considerar agrupamento e adesão. Não generalizar a todas as idades, meninas ou sessões de carga excessiva. Não demonstra que um único teste biomecânico consiga prever lesão individual.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Al Attar et al. FIFA 11+ Kids injury prevention trial. Sports Health. Publicação online 2022;volume 2023. DOI:10.1177/19417381221109224. PMID:35903029.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10170224/"
+    },
+    {
+      "id": "evidence-20261002-creatina",
+      "title": "Creatina: separar ganho com treinamento e uso sem exercício",
+      "category": "Esporte e retorno",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nCreatina: separar ganho com treinamento e uso sem exercício\n\nMÉTODO E QUALIDADE\nMetanálises de ensaios avaliam creatina associada a treinamento resistido. Revisão de 2024 em risco de incapacidade reuniu 33 ensaios, 1.076 participantes.\n\nRESULTADO PRINCIPAL\nHá suporte para ganhos de força e massa magra quando combinada ao treinamento em populações estudadas. Isso não demonstra equivalência de uso sem exercício nem eficácia para toda condição ortopédica.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nDefinir objetivo e contexto; integrar nutrição e treinamento quando indicados, em colaboração com profissional habilitado. Avaliar função, não apenas massa.\n\nLIMITAÇÕES E CERTEZA\nNão extrapolar resultados de saudáveis/idosos para toda lesão, imobilização ou paciente. Este registro não estabelece dose, segurança individual ou certeza GRADE própria. Suplementação não substitui reabilitação.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Metanálise creatina e treino em adultos <50 anos. 2024. DOI:10.3390/nu16213665. PMID:39519498. https://pubmed.ncbi.nlm.nih.gov/39519498/\nRevisão de função em risco de incapacidade: 2024. PMID:38417175.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39519498/"
+    },
+    {
+      "id": "evidence-20261002-recuperacao",
+      "title": "Sala de recuperação: massagem, compressão e imersão",
+      "category": "Esporte e retorno",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nSala de recuperação: massagem, compressão e imersão\n\nMÉTODO E QUALIDADE\nRevisão sistemática e metanálise de 2018 sobre métodos de recuperação após exercício, dor muscular tardia e fadiga.\n\nRESULTADO PRINCIPAL\nMassagem e algumas estratégias de compressão/imersão podem reduzir dor muscular tardia e fadiga percebida. Desfechos bioquímicos são distintos de desempenho e cicatrização.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nSelecionar conforme objetivo, preferência, tolerância e custo; medir utilidade entre sessões. Sono e organização da carga continuam parte do contexto clínico.\n\nLIMITAÇÕES E CERTEZA\nNão prometer acelerar reparo de lesão ou prevenir lesões apenas por reduzir dor ou creatina quinase. Protocolos e estudos heterogêneos; vestimenta compressiva não valida automaticamente bota de compressão pneumática. Comparações entre estudos não garantem ranking causal.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Dupuy et al. Post-exercise recovery techniques. Front Physiol. 2018;9:403. DOI:10.3389/fphys.2018.00403",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5932411/"
+    },
+    {
+      "id": "evidence-20261002-gelo-adaptacao",
+      "title": "Imersão fria: alívio agudo e possível redução da hipertrofia",
+      "category": "Esporte e retorno",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nImersão fria: alívio agudo e possível redução da hipertrofia\n\nMÉTODO E QUALIDADE\nMetanálise de 2024 com oito estudos de imersão fria após treino resistido; análise bayesiana e avaliação metodológica.\n\nRESULTADO PRINCIPAL\nSugere menor hipertrofia quando imersão fria é usada imediatamente após sessões de treino. O intervalo de credibilidade do efeito comparativo inclui ausência de efeito.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nConsiderar objetivo e calendário: recuperação aguda para competição e adaptação muscular de longo prazo são desfechos diferentes.\n\nLIMITAÇÕES E CERTEZA\nEstudos curtos e de qualidade limitada, predominantemente em jovens. Não concluir que todo uso de frio é prejudicial, nem extrapolar imersão repetida pós-treino para crioterapia localizada em uma condição clínica. O tamanho exato do efeito é incerto.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Piñero et al. Cold water immersion and resistance-training hypertrophy. Eur J Sport Sci. 2024;24:177–189. DOI:10.1002/ejsc.12074",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/ejsc.12074"
+    },
+    {
+      "id": "evidence-20261002-economia",
+      "title": "Custo-efetividade: evidência científica e custos locais",
+      "category": "Gestão e procedimentos",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nCusto-efetividade: evidência científica e custos locais\n\nMÉTODO E QUALIDADE\nAnálise econômica de 2018 vinculada a ensaio por equipes do FIFA 11+ Kids. É evidência econômica específica de programa, população e sistema de saúde.\n\nRESULTADO PRINCIPAL\nNo ensaio suíço, o programa reduziu custos de saúde relacionados a lesões em 51% e apresentou menor custo e risco de lesão que aquecimento habitual.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nNa Unifisio, registrar custo por participante, tempo, adesão, função, lesões e uso de serviços. Diferenciar custo-efetividade para o paciente/sistema e receita da clínica.\n\nLIMITAÇÕES E CERTEZA\nResultado econômico pertence ao estudo e sistema suíços. Não estima retorno de qualquer clínica ou aparelho. Não foi calculado ICER próprio nem demonstrada economia local; resultados internacionais não são automaticamente transferíveis ao Brasil.\n\nConsulta e curadoria assistida: 02/10/2026. Síntese crítica dirigida; consulte a fonte antes de aplicar doses ou critérios individuais.",
+      "reference": "Rössler et al. Análise de custo-efetividade do FIFA 11+ Kids. Publicação online 2018; BJSM. 2019;53:309–314. DOI:10.1136/bjsports-2018-099395. PMID:30131330.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30131330/"
+    }
+  ]
+}
