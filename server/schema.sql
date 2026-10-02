@@ -7,3 +7,6 @@ CREATE INDEX IF NOT EXISTS idx_materials_status_created ON materials(status,crea
 CREATE INDEX IF NOT EXISTS idx_materials_author ON materials(author_id);
 CREATE TABLE IF NOT EXISTS auth_limits(key TEXT PRIMARY KEY,count INTEGER NOT NULL,reset_at INTEGER NOT NULL);
 CREATE TABLE IF NOT EXISTS audit(id INTEGER PRIMARY KEY AUTOINCREMENT,actor_id TEXT REFERENCES users(id),action TEXT NOT NULL,subject_id TEXT NOT NULL,created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS images(id TEXT PRIMARY KEY,title TEXT NOT NULL,category TEXT NOT NULL,description TEXT NOT NULL DEFAULT '',material_id TEXT REFERENCES materials(id) ON DELETE SET NULL,visibility TEXT NOT NULL CHECK(visibility IN ('team','restricted')),status TEXT NOT NULL CHECK(status IN ('published','pending','rejected','archived')),file_key TEXT NOT NULL,file_name TEXT NOT NULL,mime TEXT NOT NULL,size INTEGER NOT NULL,width INTEGER NOT NULL,height INTEGER NOT NULL,author_id TEXT NOT NULL REFERENCES users(id),author_name TEXT NOT NULL,created_at TEXT NOT NULL,updated_at TEXT NOT NULL,review_note TEXT NOT NULL DEFAULT '');
+CREATE INDEX IF NOT EXISTS idx_images_status ON images(status,created_at);
+CREATE INDEX IF NOT EXISTS idx_images_author ON images(author_id);
