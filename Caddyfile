@@ -1,0 +1,3 @@
+{$BIBLIOTECA_DOMAIN} {
+    reverse_proxy biblioteca:3000
+}

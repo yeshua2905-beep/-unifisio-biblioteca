@@ -1,0 +1,29 @@
+services:
+  biblioteca:
+    build: .
+    environment:
+      NODE_ENV: production
+      PUBLIC_URL: https://${BIBLIOTECA_DOMAIN:?Defina BIBLIOTECA_DOMAIN}
+      DATA_DIR: /data
+      PORT: 3000
+    volumes:
+      - biblioteca_data:/data
+    restart: unless-stopped
+  proxy:
+    image: caddy:2
+    environment:
+      BIBLIOTECA_DOMAIN: ${BIBLIOTECA_DOMAIN}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - biblioteca
+    restart: unless-stopped
+volumes:
+  biblioteca_data:
+  caddy_data:
+  caddy_config:
