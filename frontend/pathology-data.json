@@ -1,0 +1,765 @@
+[
+  {
+    "id": "capsulite",
+    "title": "Capsulite adesiva",
+    "category": "Ombro",
+    "materialIds": [
+      "evidence-shoulder-20261001-capsulite"
+    ],
+    "mobility": [
+      "shoulder-slide"
+    ],
+    "strength": [
+      "shoulder-rotation"
+    ],
+    "restriction": "Capsulite primária: dosar pela irritabilidade. Em rigidez secundária ou pós-cirurgia, confirmar restrições. Não buscar “romper aderências” com força.",
+    "assessment": "Registrar rotação externa ativa/passiva, elevação, dor noturna e SPADI; escolher vestir-se ou alcançar uma prateleira.",
+    "manual": "Pode-se testar mobilização glenoumeral suave se houver objetivo de conforto/movimento. Intensidade depende da irritabilidade, sem mobilização agressiva na apresentação dolorosa.",
+    "progress": "Aumentar amplitude antes de resistência se o sono e a função estiverem estáveis; reavaliar trajetória e discutir avaliação médica se houver estagnação.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "manguito",
+    "title": "Tendinopatia do manguito rotador",
+    "category": "Ombro",
+    "materialIds": [
+      "evidence-shoulder-20261001-manguito",
+      "evidence-20261002-ombro",
+      "evidence-20261002-emg-ombro",
+      "evidence-20261002-beach-tennis"
+    ],
+    "mobility": [
+      "shoulder-slide"
+    ],
+    "strength": [
+      "shoulder-rotation"
+    ],
+    "restriction": "Plano conservador para tendinopatia; não usar como protocolo de reparo ou ruptura completa traumática.",
+    "assessment": "Medir elevação/rotação, força em posição padronizada, SPADI e tarefa acima da cabeça; examinar cervical quando indicado.",
+    "manual": "Recurso para alívio de curto prazo, caso facilite movimento; não interpretar melhora como correção de uma posição escapular universal.",
+    "progress": "Progredir resistência e alcance antes de velocidade e volume de saques; acompanhar resposta no dia seguinte.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "impacto",
+    "title": "Dor subacromial / síndrome do impacto",
+    "category": "Ombro",
+    "materialIds": [
+      "evidence-shoulder-20261001-subacromial"
+    ],
+    "mobility": [
+      "shoulder-slide"
+    ],
+    "strength": [
+      "shoulder-rotation"
+    ],
+    "restriction": "O termo “impacto” não confirma pinçamento como causa. Excluir trauma com fraqueza importante, capsulite e instabilidade.",
+    "assessment": "Comparar amplitude ativa/passiva, força e tolerância a alcance; registrar função e exposição repetida.",
+    "manual": "Teste opcional de conforto, associado ao exercício. Não usar “aumentar o espaço” como justificativa universal.",
+    "progress": "Aumentar exposição ao alcance conforme função e recuperação; sintomas persistentes exigem revisão diagnóstica.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "plexo",
+    "title": "Plexo braquial traumático",
+    "category": "Ombro",
+    "materialIds": [
+      "evidence-shoulder-20261001-plexo",
+      "evidence-20261002-plexo"
+    ],
+    "mobility": [
+      "shoulder-supported"
+    ],
+    "strength": [
+      "assisted-task"
+    ],
+    "restriction": "Déficit motor importante requer avaliação precoce de nervo periférico. Proteger pele insensível e evitar tração; não carregar músculo sem controle.",
+    "assessment": "Mapa motor/sensitivo por território, mobilidade livre, dor neuropática e QuickDASH. Distinguir lesão traumática adulta de lesão obstétrica.",
+    "manual": "Mobilidade assistida de articulações livres pode ser útil; evitar tensão neural provocativa. Mobilização articular não demonstra reinervação.",
+    "progress": "Resistência somente depois de ativação verificável e liberação; integrar acompanhamento especializado e terapia ocupacional.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "bankart",
+    "title": "Instabilidade anterior / Bankart",
+    "category": "Ombro",
+    "materialIds": [
+      "evidence-shoulder-20261001-bankart"
+    ],
+    "mobility": [
+      "shoulder-slide"
+    ],
+    "strength": [
+      "shoulder-rotation"
+    ],
+    "restriction": "Separar tratamento conservador de pós-reparo. Tipoia, zona segura e carga são definidos pelo procedimento; abdução com rotação externa pode exigir proteção.",
+    "assessment": "Registrar episódios, apreensão, amplitude permitida, força e OSIS/WOSI; não repetir provocação de instabilidade.",
+    "manual": "Não mobilizar em direção à instabilidade nem forçar rotação externa no reparo protegido. Recursos manuais não substituem estabilização quando indicada.",
+    "progress": "Avançar controle → resistência → apoio → velocidade e esporte conforme proteção, confiança e capacidade; calendário sozinho não libera.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "hillsachs",
+    "title": "Hill-Sachs / pós-remplissage",
+    "category": "Ombro",
+    "materialIds": [
+      "evidence-shoulder-20261001-hill-sachs"
+    ],
+    "mobility": [
+      "shoulder-supported"
+    ],
+    "strength": [
+      "shoulder-rotation"
+    ],
+    "restriction": "Identificar perda óssea, on/off-track, Bankart, remplissage ou Latarjet. No remplissage, proteger reparo posterior e obter liberação para rotação externa resistida.",
+    "assessment": "História de luxações, apreensão, força e tarefa; classificação óssea requer equipe/imagem e não teste funcional isolado.",
+    "manual": "Não tentar “corrigir” defeito ósseo por mobilização. Evitar alongamento posterior e final de arco enquanto o reparo precisa de proteção.",
+    "progress": "Progredir somente dentro do plano cirúrgico; restrição de rotação externa não é indicação automática de alongamento agressivo.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "lca",
+    "title": "Reconstrução do LCA",
+    "category": "Joelho",
+    "materialIds": [
+      "evidence-knee-20261001-lca",
+      "evidence-20261002-lca-rehab",
+      "evidence-20261002-lca-enxerto",
+      "evidence-20261002-ami",
+      "evidence-20261002-emg-lca",
+      "evidence-20261002-simetria"
+    ],
+    "mobility": [
+      "knee-flexion",
+      "knee-extension"
+    ],
+    "strength": [
+      "chair-rise",
+      "quad-set"
+    ],
+    "restriction": "Confirmar enxerto e reparos associados. Flexão, apoio e carga podem mudar com sutura meniscal ou outra cirurgia.",
+    "assessment": "Extensão, flexão, derrame, ativação e força do quadríceps, marcha; IKDC/KOOS e ACL-RSI quando aplicável.",
+    "manual": "Teste suave apenas se houver restrição relevante e permissão; priorizar recuperação ativa da amplitude. Não usar manobras agressivas.",
+    "progress": "Corrida e saltos exigem capacidade, resposta articular e proteção; considerar força absoluta, não apenas simetria.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "sutura",
+    "title": "Sutura / reparo meniscal",
+    "category": "Joelho",
+    "materialIds": [
+      "evidence-knee-20261001-sutura-meniscal"
+    ],
+    "mobility": [
+      "knee-flexion",
+      "knee-extension"
+    ],
+    "strength": [
+      "quad-set"
+    ],
+    "restriction": "Distinguir reparo longitudinal, radial e de raiz. Confirmar limite de flexão, apoio, órtese e proteção de flexão carregada; não aplicar meniscectomia.",
+    "assessment": "Relatório do reparo, derrame, amplitude autorizada, marcha protegida e função.",
+    "manual": "Não forçar flexão, rodar o joelho ou mobilizar além do arco prescrito para “ganhar mais rápido”.",
+    "progress": "Somar cicatrização e critérios funcionais antes de agachamento profundo, corrida ou giro; seguir trilha do tipo de reparo.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "meniscectomia",
+    "title": "Meniscectomia parcial",
+    "category": "Joelho",
+    "materialIds": [
+      "evidence-knee-20261001-meniscectomia"
+    ],
+    "mobility": [
+      "knee-flexion",
+      "knee-extension"
+    ],
+    "strength": [
+      "chair-rise"
+    ],
+    "restriction": "Confirmar meniscectomia parcial isolada e procedimentos associados. Não confundir com reparo que exige proteção.",
+    "assessment": "Derrame, amplitude, marcha, quadríceps e tolerância a escadas; questionário de joelho e tarefa.",
+    "manual": "Pode-se testar mobilidade suave em restrição relevante; exercícios ativos e carga progressiva permanecem centrais.",
+    "progress": "Progredir marcha, força e tarefas pela resposta e capacidade, sem dar alta apenas pelo tempo ou ausência de dor.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "tendao-patelar",
+    "title": "Reparo de ruptura do tendão patelar",
+    "category": "Joelho",
+    "materialIds": [
+      "evidence-knee-20261001-tendao-patelar"
+    ],
+    "mobility": [
+      "protected-motion"
+    ],
+    "strength": [
+      "protected-activation"
+    ],
+    "restriction": "Confirmar integridade do mecanismo extensor, técnica e limites escritos. Não fazer elevação ativa, extensão resistida ou flexão forçada sem permissão.",
+    "assessment": "Ferida, órtese, arco permitido, lag extensor quando o teste estiver liberado e marcha protegida.",
+    "manual": "Não mobilizar o reparo nem tracionar patela/tendão para ganhar amplitude; só técnica especificamente autorizada.",
+    "progress": "Evidência de calendários é limitada; ampliar arco e ativação somente com proteção e decisão da equipe.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "ptj",
+    "title": "Prótese total de joelho",
+    "category": "Joelho",
+    "materialIds": [
+      "evidence-knee-20261001-protese-total"
+    ],
+    "mobility": [
+      "knee-flexion",
+      "knee-extension"
+    ],
+    "strength": [
+      "chair-rise",
+      "quad-set"
+    ],
+    "restriction": "Artroplastia primária sem complicações não equivale a revisão, infecção ou reparo extensor. Confirmar apoio e intercorrências.",
+    "assessment": "Amplitude, derrame, marcha, TUG, sentar–levantar e força em condições padronizadas.",
+    "manual": "Se indicada e liberada, testar mobilização confortável para uma limitação específica; evitar pressão sobre ferida e mobilização agressiva.",
+    "progress": "Progredir autonomia, marcha e resistência; rigidez progressiva deve ser discutida cedo com equipe, sem insistir em força.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "tibia-diafise",
+    "title": "Fratura da diáfise da tíbia",
+    "category": "Tornozelo e pé",
+    "materialIds": [
+      "evidence-foot-20261001-tibia-diafise"
+    ],
+    "mobility": [
+      "ankle-motion"
+    ],
+    "strength": [
+      "calf-raise",
+      "supported-balance"
+    ],
+    "restriction": "Haste, placa e conservador têm permissões diferentes. Apoio depende de estabilidade e união, não apenas dor. Mobilidade de joelho e tornozelo somente livres e autorizados.",
+    "assessment": "Diagnóstico, estabilidade, ferida/pele, apoio escrito, dor/edema, amplitude livre, marcha e LEFS/FAAM conforme população.",
+    "manual": "Técnica suave somente após liberação e para articulação livre. Não manipular foco de fratura, mediopé protegido, implante transarticular ou artrodese. Se não há benefício mensurável, retirar.",
+    "progress": "Ao liberar carga: marcha → força bilateral → apoio unipodal → terreno/tarefa. Impacto somente com proteção cumprida, capacidade e consolidação quando exigida.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "pilao",
+    "title": "Fratura distal da tíbia / pilão",
+    "category": "Tornozelo e pé",
+    "materialIds": [
+      "evidence-foot-20261001-tibia-distal-pilao"
+    ],
+    "mobility": [
+      "ankle-motion"
+    ],
+    "strength": [
+      "calf-raise",
+      "supported-balance"
+    ],
+    "restriction": "Não extrapolar apoio precoce de fratura maleolar para pilão. Proteger partes moles e fixação. Se fixador cruza tornozelo, não tentar mobilizar através dele.",
+    "assessment": "Diagnóstico, estabilidade, ferida/pele, apoio escrito, dor/edema, amplitude livre, marcha e LEFS/FAAM conforme população.",
+    "manual": "Técnica suave somente após liberação e para articulação livre. Não manipular foco de fratura, mediopé protegido, implante transarticular ou artrodese. Se não há benefício mensurável, retirar.",
+    "progress": "Ao liberar carga: marcha → força bilateral → apoio unipodal → terreno/tarefa. Impacto somente com proteção cumprida, capacidade e consolidação quando exigida.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "fibula",
+    "title": "Fíbula / fraturas maleolares",
+    "category": "Tornozelo e pé",
+    "materialIds": [
+      "evidence-foot-20261001-fibula-maleolos",
+      "evidence-20261002-weber-b",
+      "evidence-20261002-wax"
+    ],
+    "mobility": [
+      "ankle-motion"
+    ],
+    "strength": [
+      "calf-raise",
+      "supported-balance"
+    ],
+    "restriction": "Weber B não confirma estabilidade sozinho. Avaliar medial/sindesmose e descartar Maisonneuve quando relevante. Movimento e apoio dependem da estabilidade confirmada e técnica.",
+    "assessment": "Diagnóstico, estabilidade, ferida/pele, apoio escrito, dor/edema, amplitude livre, marcha e LEFS/FAAM conforme população.",
+    "manual": "Técnica suave somente após liberação e para articulação livre. Não manipular foco de fratura, mediopé protegido, implante transarticular ou artrodese. Se não há benefício mensurável, retirar.",
+    "progress": "Ao liberar carga: marcha → força bilateral → apoio unipodal → terreno/tarefa. Impacto somente com proteção cumprida, capacidade e consolidação quando exigida.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "quinto-metatarsal",
+    "title": "Quinto metatarsal: avulsão, Jones e estresse",
+    "category": "Tornozelo e pé",
+    "materialIds": [
+      "evidence-foot-20261001-quinto-metatarsal"
+    ],
+    "mobility": [
+      "ankle-motion"
+    ],
+    "strength": [
+      "calf-raise",
+      "supported-balance"
+    ],
+    "restriction": "Distinguir zonas 1, 2 e 3. Jones/estresse pode exigir proteção maior; não testar união com saltos. Evitar tração e carga dolorosa na borda lateral na fase protegida.",
+    "assessment": "Diagnóstico, estabilidade, ferida/pele, apoio escrito, dor/edema, amplitude livre, marcha e LEFS/FAAM conforme população.",
+    "manual": "Técnica suave somente após liberação e para articulação livre. Não manipular foco de fratura, mediopé protegido, implante transarticular ou artrodese. Se não há benefício mensurável, retirar.",
+    "progress": "Ao liberar carga: marcha → força bilateral → apoio unipodal → terreno/tarefa. Impacto somente com proteção cumprida, capacidade e consolidação quando exigida.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "talus",
+    "title": "Fratura de tálus",
+    "category": "Tornozelo e pé",
+    "materialIds": [
+      "evidence-foot-20261001-talus"
+    ],
+    "mobility": [
+      "ankle-motion"
+    ],
+    "strength": [
+      "calf-raise",
+      "supported-balance"
+    ],
+    "restriction": "Colo/corpo e processos exigem trilhas diferentes; vigilância de união, necrose avascular e congruência. Não forçar bloqueio tibiotalar/subtalar; preservar articulações livres.",
+    "assessment": "Diagnóstico, estabilidade, ferida/pele, apoio escrito, dor/edema, amplitude livre, marcha e LEFS/FAAM conforme população.",
+    "manual": "Técnica suave somente após liberação e para articulação livre. Não manipular foco de fratura, mediopé protegido, implante transarticular ou artrodese. Se não há benefício mensurável, retirar.",
+    "progress": "Ao liberar carga: marcha → força bilateral → apoio unipodal → terreno/tarefa. Impacto somente com proteção cumprida, capacidade e consolidação quando exigida.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "calcaneo",
+    "title": "Fratura de calcâneo",
+    "category": "Tornozelo e pé",
+    "materialIds": [
+      "evidence-foot-20261001-calcaneo"
+    ],
+    "mobility": [
+      "ankle-motion"
+    ],
+    "strength": [
+      "calf-raise",
+      "supported-balance"
+    ],
+    "restriction": "Confirmar corpo/tuberosidade, ferida e eventual artrodese. Pele posterior ameaçada em avulsão exige urgência. Não alongar ou mobilizar articulação artrodesada.",
+    "assessment": "Diagnóstico, estabilidade, ferida/pele, apoio escrito, dor/edema, amplitude livre, marcha e LEFS/FAAM conforme população.",
+    "manual": "Técnica suave somente após liberação e para articulação livre. Não manipular foco de fratura, mediopé protegido, implante transarticular ou artrodese. Se não há benefício mensurável, retirar.",
+    "progress": "Ao liberar carga: marcha → força bilateral → apoio unipodal → terreno/tarefa. Impacto somente com proteção cumprida, capacidade e consolidação quando exigida.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "navicular",
+    "title": "Fratura de navicular: avulsão, corpo e estresse",
+    "category": "Tornozelo e pé",
+    "materialIds": [
+      "evidence-foot-20261001-navicular"
+    ],
+    "mobility": [
+      "ankle-motion"
+    ],
+    "strength": [
+      "calf-raise",
+      "supported-balance"
+    ],
+    "restriction": "Estresse navicular é alto risco; progressão ao impacto requer avaliação de consolidação. Evitar pressão/mobilização do mediopé ou carga sobre ponte transarticular.",
+    "assessment": "Diagnóstico, estabilidade, ferida/pele, apoio escrito, dor/edema, amplitude livre, marcha e LEFS/FAAM conforme população.",
+    "manual": "Técnica suave somente após liberação e para articulação livre. Não manipular foco de fratura, mediopé protegido, implante transarticular ou artrodese. Se não há benefício mensurável, retirar.",
+    "progress": "Ao liberar carga: marcha → força bilateral → apoio unipodal → terreno/tarefa. Impacto somente com proteção cumprida, capacidade e consolidação quando exigida.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "cuboide-cuneiformes",
+    "title": "Fraturas de cuboide e cuneiformes",
+    "category": "Tornozelo e pé",
+    "materialIds": [
+      "evidence-foot-20261001-cuboide-cuneiformes"
+    ],
+    "mobility": [
+      "ankle-motion"
+    ],
+    "strength": [
+      "calf-raise",
+      "supported-balance"
+    ],
+    "restriction": "Confirmar estabilidade das colunas e lesões associadas de Lisfranc/Chopart. Não mobilizar contra ponte, fios ou artrodese.",
+    "assessment": "Diagnóstico, estabilidade, ferida/pele, apoio escrito, dor/edema, amplitude livre, marcha e LEFS/FAAM conforme população.",
+    "manual": "Técnica suave somente após liberação e para articulação livre. Não manipular foco de fratura, mediopé protegido, implante transarticular ou artrodese. Se não há benefício mensurável, retirar.",
+    "progress": "Ao liberar carga: marcha → força bilateral → apoio unipodal → terreno/tarefa. Impacto somente com proteção cumprida, capacidade e consolidação quando exigida.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "chopart",
+    "title": "Lesão de Chopart",
+    "category": "Tornozelo e pé",
+    "materialIds": [
+      "evidence-foot-20261001-chopart"
+    ],
+    "mobility": [
+      "ankle-motion"
+    ],
+    "strength": [
+      "calf-raise",
+      "supported-balance"
+    ],
+    "restriction": "Confirmar talonavicular/calcaneocuboide, estabilidade e reconstrução; não tratar como entorse lateral simples. Na reconstrução protegida, não iniciar mobilização formal de mediopé sem autorização.",
+    "assessment": "Diagnóstico, estabilidade, ferida/pele, apoio escrito, dor/edema, amplitude livre, marcha e LEFS/FAAM conforme população.",
+    "manual": "Técnica suave somente após liberação e para articulação livre. Não manipular foco de fratura, mediopé protegido, implante transarticular ou artrodese. Se não há benefício mensurável, retirar.",
+    "progress": "Ao liberar carga: marcha → força bilateral → apoio unipodal → terreno/tarefa. Impacto somente com proteção cumprida, capacidade e consolidação quando exigida.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "lisfranc",
+    "title": "Lesão de Lisfranc",
+    "category": "Tornozelo e pé",
+    "materialIds": [
+      "evidence-foot-20261001-lisfranc"
+    ],
+    "mobility": [
+      "ankle-motion"
+    ],
+    "strength": [
+      "calf-raise",
+      "supported-balance"
+    ],
+    "restriction": "Distinguir estável, fixada e artrodesada. Apoio/propulsão dependem de estabilidade e procedimentos. Não mobilizar segmento fundido nem forçar flexão plantar sobre reconstrução protegida.",
+    "assessment": "Diagnóstico, estabilidade, ferida/pele, apoio escrito, dor/edema, amplitude livre, marcha e LEFS/FAAM conforme população.",
+    "manual": "Técnica suave somente após liberação e para articulação livre. Não manipular foco de fratura, mediopé protegido, implante transarticular ou artrodese. Se não há benefício mensurável, retirar.",
+    "progress": "Ao liberar carga: marcha → força bilateral → apoio unipodal → terreno/tarefa. Impacto somente com proteção cumprida, capacidade e consolidação quando exigida.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "entorse",
+    "title": "Entorse lateral / instabilidade crônica",
+    "category": "Tornozelo e pé",
+    "materialIds": [
+      "evidence-foot-20261001-entorse-lateral",
+      "evidence-20261002-entorse"
+    ],
+    "mobility": [
+      "ankle-motion"
+    ],
+    "strength": [
+      "calf-raise",
+      "supported-balance"
+    ],
+    "restriction": "Excluir fratura, sindesmose e lesão osteocondral; reconstrução ligamentar tem proteção própria. Evitar inversão que agrava o ligamento na fase inicial; apoio graduado com suporte quando indicado.",
+    "assessment": "Diagnóstico, estabilidade, ferida/pele, apoio escrito, dor/edema, amplitude livre, marcha e LEFS/FAAM conforme população.",
+    "manual": "Técnica suave somente após liberação e para articulação livre. Não manipular foco de fratura, mediopé protegido, implante transarticular ou artrodese. Se não há benefício mensurável, retirar.",
+    "progress": "Ao liberar carga: marcha → força bilateral → apoio unipodal → terreno/tarefa. Impacto somente com proteção cumprida, capacidade e consolidação quando exigida.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "deltoide",
+    "title": "Lesão ligamentar medial / deltoide",
+    "category": "Tornozelo e pé",
+    "materialIds": [
+      "evidence-foot-20261001-deltoide"
+    ],
+    "mobility": [
+      "ankle-motion"
+    ],
+    "strength": [
+      "calf-raise",
+      "supported-balance"
+    ],
+    "restriction": "Confirmar estabilidade medial e associação a sindesmose/fratura; evidência direta de doses é limitada. Evitar eversão/rotação externa forçada e carga que abra a mortise enquanto protegida.",
+    "assessment": "Diagnóstico, estabilidade, ferida/pele, apoio escrito, dor/edema, amplitude livre, marcha e LEFS/FAAM conforme população.",
+    "manual": "Técnica suave somente após liberação e para articulação livre. Não manipular foco de fratura, mediopé protegido, implante transarticular ou artrodese. Se não há benefício mensurável, retirar.",
+    "progress": "Ao liberar carga: marcha → força bilateral → apoio unipodal → terreno/tarefa. Impacto somente com proteção cumprida, capacidade e consolidação quando exigida.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "sindesmose",
+    "title": "Lesão da sindesmose",
+    "category": "Tornozelo e pé",
+    "materialIds": [
+      "evidence-foot-20261001-sindesmose"
+    ],
+    "mobility": [
+      "ankle-motion"
+    ],
+    "strength": [
+      "calf-raise",
+      "supported-balance"
+    ],
+    "restriction": "Distinguir estável/instável, parafuso/botão e fratura associada. Não copiar calendário de entorse lateral. Evitar rotação externa e dorsiflexão forçada durante proteção.",
+    "assessment": "Diagnóstico, estabilidade, ferida/pele, apoio escrito, dor/edema, amplitude livre, marcha e LEFS/FAAM conforme população.",
+    "manual": "Técnica suave somente após liberação e para articulação livre. Não manipular foco de fratura, mediopé protegido, implante transarticular ou artrodese. Se não há benefício mensurável, retirar.",
+    "progress": "Ao liberar carga: marcha → força bilateral → apoio unipodal → terreno/tarefa. Impacto somente com proteção cumprida, capacidade e consolidação quando exigida.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "cervical",
+    "title": "Cervicalgia inespecífica",
+    "category": "Coluna",
+    "materialIds": [
+      "evidence-20261002-cervical"
+    ],
+    "mobility": [
+      "neck-motion"
+    ],
+    "strength": [
+      "neck-isometric"
+    ],
+    "restriction": "Excluir trauma, mielopatia, déficit neurológico progressivo e doença específica. Não utilizar manipulação cervical de alta velocidade neste guia.",
+    "assessment": "Dor, NDI, rotação ativa, endurance tolerada e tarefa; examinar sinais neurológicos quando indicados.",
+    "manual": "Mobilização de baixa intensidade pode ser testada por profissional treinado após triagem. Não presumir que palpação identifica a causa nem forçar final de arco.",
+    "progress": "Progredir movimento e resistência junto às tarefas; reduzir dose se surgirem sintomas neurológicos ou piora sustentada.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "dtm",
+    "title": "DTM dolorosa crônica",
+    "category": "Dor crônica",
+    "materialIds": [
+      "evidence-20261002-dtm"
+    ],
+    "mobility": [
+      "jaw-motion"
+    ],
+    "strength": [
+      "jaw-control"
+    ],
+    "restriction": "Dor de pelo menos três meses: confirmar diagnóstico e avaliar necessidade odontológica. Não usar este roteiro para luxação, trauma, infecção ou bloqueio agudo.",
+    "assessment": "Dor, abertura confortável, desvio, mastigação, função e cervical quando limitada; considerar impacto psicossocial.",
+    "manual": "Mobilização assistida pode ser parte do cuidado, conforme diretriz BMJ, por profissional habilitado. Técnicas intraorais exigem treinamento, higiene e consentimento; não serão ilustradas como autoaplicação.",
+    "progress": "Aumentar tolerância à fala/mastigação e amplitude funcional; não perseguir abertura máxima ou corrigir todo ruído articular.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "lombalgia",
+    "title": "Lombalgia crônica inespecífica",
+    "category": "Coluna",
+    "materialIds": [
+      "evidence-20261002-lombar",
+      "evidence-20261002-educacao-dor"
+    ],
+    "mobility": [
+      "lumbar-motion"
+    ],
+    "strength": [
+      "chair-rise",
+      "walking"
+    ],
+    "restriction": "Após triagem para doença específica. Dor persistente não exclui patologia; alterações esfincterianas/déficit importante requerem avaliação urgente.",
+    "assessment": "Função, ODI/RMDQ quando apropriado, tarefa, sono e capacidade atual; não reduzir avaliação a postura.",
+    "manual": "Recurso opcional de conforto junto a cuidado ativo. Não prometer “realinhar vértebras” ou que uma técnica vence todas as outras.",
+    "progress": "Progredir tarefas, caminhada e resistência pelo objetivo e resposta, sem repouso prolongado automático.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "menisco-degenerativo",
+    "title": "Lesão meniscal degenerativa",
+    "category": "Joelho",
+    "materialIds": [
+      "evidence-20261002-menisco"
+    ],
+    "mobility": [
+      "knee-flexion",
+      "knee-extension"
+    ],
+    "strength": [
+      "chair-rise"
+    ],
+    "restriction": "Não extrapolar ESCAPE para bloqueio verdadeiro, raiz meniscal ou lesão traumática aguda em jovem.",
+    "assessment": "Derrame, arco, força, IKDC/KOOS e tolerância a escadas/agachamento.",
+    "manual": "Adjuvante de conforto/amplitude quando apropriado; não desloca nem “recoloca” o menisco.",
+    "progress": "Plano de exercício estruturado e reavaliação; bloqueio ou evolução incompatível exige rever diagnóstico e discutir equipe.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "artrose",
+    "title": "Artrose do joelho",
+    "category": "Joelho",
+    "materialIds": [
+      "evidence-20261002-artrose-exercicio",
+      "evidence-20261002-ha-joelho"
+    ],
+    "mobility": [
+      "knee-flexion",
+      "knee-extension"
+    ],
+    "strength": [
+      "chair-rise"
+    ],
+    "restriction": "Artrose sintomática avaliada; inflamação atípica, trauma ou bloqueio exigem triagem própria.",
+    "assessment": "Amplitude, força, marcha, tarefa e WOMAC/KOOS; integrar expectativas, capacidade e preferência.",
+    "manual": "NICE: considerar terapia manual somente junto ao exercício. Reavaliar efeito na tarefa; benefício não demonstra reposicionamento.",
+    "progress": "Aumentar atividade, resistência e autonomia; avaliar função separadamente de imagem e dor.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "patelofemoral",
+    "title": "Dor patelofemoral",
+    "category": "Joelho",
+    "materialIds": [
+      "evidence-20261002-patelofemoral",
+      "evidence-20261002-orteses-pfp"
+    ],
+    "mobility": [
+      "knee-flexion"
+    ],
+    "strength": [
+      "chair-rise",
+      "hip-abduction"
+    ],
+    "restriction": "Compatível com apresentação patelofemoral; não atribuir toda dor a valgo, posição da patela ou exame de imagem.",
+    "assessment": "Dor em agachar/escadas/correr, AKPS/KOOS-PF, força de joelho/quadril e tarefa.",
+    "manual": "Teste adjuvante individualizado se facilita atividade; não substitui exercício de joelho e educação.",
+    "progress": "Ajustar altura da cadeira/profundidade e carga; retomar corrida/saltos conforme capacidade e resposta.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "aquiles",
+    "title": "Tendinopatia do Aquiles — porção média",
+    "category": "Tornozelo e pé",
+    "materialIds": [
+      "evidence-20261002-aquiles",
+      "evidence-20261002-ondas",
+      "evidence-20261002-prp-aquiles"
+    ],
+    "mobility": [
+      "ankle-motion"
+    ],
+    "strength": [
+      "calf-raise"
+    ],
+    "restriction": "Diretriz para porção média; insercional e ruptura não são equivalentes. Não descer calcanhar abaixo de degrau como receita universal.",
+    "assessment": "Localização, VISA-A, capacidade de panturrilha, dor na tarefa e carga de corrida/saltos.",
+    "manual": "Não tornar massagem do tendão a intervenção principal. Testar recurso somente para uma limitação relevante; priorizar carga progressiva.",
+    "progress": "Progredir força, depois armazenamento de energia e corrida/saltos; monitorar função e resposta nas 24 horas seguintes.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "tendinopatia-patelar",
+    "title": "Tendinopatia patelar",
+    "category": "Joelho",
+    "materialIds": [
+      "evidence-20261002-patelar"
+    ],
+    "mobility": [
+      "knee-flexion"
+    ],
+    "strength": [
+      "chair-rise"
+    ],
+    "restriction": "Confirmar tendinopatia; ruptura/insuficiência extensora tem outro tratamento. Evidência não define um modelo vencedor universal.",
+    "assessment": "VISA-P, força, agachamento e tolerância a saltos; registrar carga esportiva.",
+    "manual": "Recurso de conforto não substitui carga; não prometer analgesia superior universal de isometria ou massagem.",
+    "progress": "Resistência tolerada → maior carga → tarefas elásticas e saltos → treino; reduzir picos de exposição conforme resposta.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "gluteal",
+    "title": "Tendinopatia glútea",
+    "category": "Quadril",
+    "materialIds": [
+      "evidence-20261002-gluteal"
+    ],
+    "mobility": [
+      "hip-active"
+    ],
+    "strength": [
+      "hip-abduction"
+    ],
+    "restriction": "Distinguir de artrose, ruptura e dor referida. Evitar compressão lateral excessiva: deitar no lado doloroso ou adução sustentada pode agravar.",
+    "assessment": "Tarefa, força de abdutores e tolerância a marcha/apoio unipodal; identificar compressões habituais.",
+    "manual": "Não pressionar intensamente sobre o trocânter/tendão irritável nem prescrever adução forçada para “alongar”.",
+    "progress": "Aumentar resistência de abdutores, marcha e tarefa; evitar que progressão aumente compressão ou provoque piora sustentada.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "artroplastia-quadril",
+    "title": "Prótese total de quadril",
+    "category": "Pós-operatório",
+    "materialIds": [
+      "evidence-20261002-quadril-precaucoes"
+    ],
+    "mobility": [
+      "hip-active"
+    ],
+    "strength": [
+      "hip-abduction",
+      "chair-rise"
+    ],
+    "restriction": "Confirmar abordagem, revisão, risco de luxação e precauções individuais. Revisão sobre abordagem posterior primária não libera todo caso.",
+    "assessment": "Ferida, marcha, apoio, transferências, força permitida e função.",
+    "manual": "Não forçar flexão, adução ou rotação para vencer precaução cirúrgica; não mobilizar prótese como articulação nativa.",
+    "progress": "Treinar transferências e marcha seguras; ampliar capacidade respeitando plano, sem impor nem retirar precauções universais.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "radio",
+    "title": "Fratura distal do rádio",
+    "category": "Cotovelo e mão",
+    "materialIds": [
+      "evidence-20261002-radio"
+    ],
+    "mobility": [
+      "wrist-motion"
+    ],
+    "strength": [
+      "grip"
+    ],
+    "restriction": "Carga depende de estabilidade, tratamento e liberação. Oito semanas ou melhora da dor não confirmam consolidação.",
+    "assessment": "Dor/edema, PRWE/QuickDASH, arco livre, dedos, preensão quando liberada e tarefa.",
+    "manual": "Após liberação, teste suave apenas na articulação livre; não pressionar foco/fixação ou forçar extensão enquanto protegida.",
+    "progress": "Movimento livre → preensão → resistência → apoio graduado somente quando permitido; observar edema e função posterior.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "pediatrico",
+    "title": "Tornozelo pediátrico: trauma e dor persistente",
+    "category": "Tornozelo e pé",
+    "materialIds": [
+      "evidence-20261002-tornozelo-crianca"
+    ],
+    "mobility": [
+      "ankle-motion"
+    ],
+    "strength": [
+      "child-play"
+    ],
+    "restriction": "Definir diagnóstico e risco; dor prolongada não é classificada automaticamente como entorse benigna. Não aplicar protocolo adulto de fratura.",
+    "assessment": "Marcha, apoio, dor focal, edema, crescimento e tarefa lúdica; envolver responsável.",
+    "manual": "Sem manobra agressiva, pressão sobre fise ou mobilização para substituir investigação de dor focal persistente.",
+    "progress": "Retorno gradual ao brincar conforme diagnóstico e apoio permitido; persistência ou piora exige reavaliação pediátrica.",
+    "scope": "Crianças com trauma avaliado; selecionar tarefas e dose pela idade e diagnóstico."
+  },
+  {
+    "id": "quadriceps",
+    "title": "Reparo de ruptura do tendão do quadríceps",
+    "category": "Joelho",
+    "materialIds": [
+      "evidence-20261002-quadriceps-ruptura"
+    ],
+    "mobility": [
+      "protected-motion"
+    ],
+    "strength": [
+      "protected-activation"
+    ],
+    "restriction": "Relatório cirúrgico e limites escritos prevalecem. Não aplicar treino de tendinopatia nem testar extensão resistida antes da liberação.",
+    "assessment": "Ferida, órtese, arco permitido, marcha e controle extensor quando seguro.",
+    "manual": "Não mobilizar/tracionar o reparo ou usar flexão agressiva para acelerar ganho.",
+    "progress": "Evidência majoritariamente observacional: ampliar mobilidade, ativação e carga por proteção e reavaliação especializada.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "grau3b",
+    "title": "Lesão de quadríceps “3B”: definir a classificação",
+    "category": "Joelho",
+    "materialIds": [
+      "evidence-20261002-grau3b"
+    ],
+    "mobility": [
+      "diagnosis-first"
+    ],
+    "strength": [
+      "diagnosis-first"
+    ],
+    "restriction": "“3B” isolado não identifica tecido, localização ou sistema de classificação. Não há protocolo universal seguro neste rótulo.",
+    "assessment": "Confirmar laudo, classificação, extensão, mecanismo extensor e tratamento; distinguir lesão muscular de ruptura tendínea.",
+    "manual": "Não prescrever técnica local sem esclarecer diagnóstico e risco.",
+    "progress": "Depois da definição, selecionar o guia correspondente; não criar dose ou prazo apenas com o rótulo.",
+    "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  }
+]
