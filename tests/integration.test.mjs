@@ -40,3 +40,21 @@ const t2=token();app.db.prepare('INSERT INTO invites(id,token_hash,email,name,ro
 }finally{await f.cleanup()}});
 test('Dados e hashes persistem ao reabrir o banco; senhas não são armazenadas em texto',async()=>{const f=await fixture();try{const row=f.app.db.prepare('SELECT password_hash FROM users WHERE id=?').get('admin');assert.notEqual(row.password_hash,f.password);assert.match(row.password_hash,/^scrypt:/);await f.call('/api/materials','POST',material());f.app.close();const restored=await createApp(f.options);assert.equal(restored.db.prepare('SELECT COUNT(*) AS n FROM materials').get().n,1);restored.close();await rm(f.dir,{recursive:true,force:true});}catch(e){await rm(f.dir,{recursive:true,force:true});throw e}});
 test('Tentativas de login em excesso são limitadas',async()=>{const f=await fixture();try{let res;for(let i=0;i<13;i++)res=await f.call('/api/auth/login','POST',{email:'desconhecido@example.org',password:'incorreta'},'');assert.equal(res.status,429)}finally{await f.cleanup()}});
+
+test('Nova abertura pede senha e revoga a sessão anterior no servidor',async()=>{const f=await fixture();try{
+ const {call,password}=f;
+ assert.equal((await call('/api/materials')).status,200);
+ const other=await call('/api/auth/login','POST',{email:'carlos@example.org',password},'');
+ assert.doesNotMatch(other.cookie,/Max-Age|Expires=/);
+ const otherCookie=other.cookie.split(';')[0];
+ const head=await call('/','HEAD');assert.equal(head.status,200);assert.equal(head.cookie,null);
+ assert.equal((await call('/api/materials')).status,200);
+ const page=await call('/');assert.equal(page.status,200);assert.match(page.cookie,/Max-Age=0/);
+ assert.equal((await call('/api/auth/me')).body.user,null);
+ assert.equal((await call('/api/materials')).status,401);
+ assert.equal((await call('/api/materials','GET',undefined,otherCookie)).status,200);
+ const login=await call('/api/auth/login','POST',{email:'carlos@example.org',password},'');
+ assert.equal(login.status,200);assert.equal((await call('/api/materials','GET',undefined,login.cookie.split(';')[0])).status,200);
+ const alias=await call('/index.html','GET',undefined,login.cookie.split(';')[0]);assert.equal(alias.status,200);
+ assert.equal((await call('/api/materials','GET',undefined,login.cookie.split(';')[0])).status,401);
+}finally{await f.cleanup()}});
