@@ -5,7 +5,7 @@ COPY dist ./dist
 COPY server ./server
 COPY scripts ./scripts
 COPY package.json ./package.json
-RUN mkdir -p /data && chown -R node:node /data /app
-USER node
+RUN mkdir -p /data && chown -R node:node /data /app && chmod 755 /app/scripts/entrypoint.sh
 EXPOSE 3000
+ENTRYPOINT ["/app/scripts/entrypoint.sh"]
 CMD ["node","server/index.mjs"]
