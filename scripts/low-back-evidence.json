@@ -1,0 +1,33 @@
+{
+  "version": "2026-10-02-v2",
+  "method": "Curadoria dirigida de ensaios randomizados relevantes; não revisão sistemática exaustiva. Qualidade descrita por características verificáveis, sem escore RoB 2 próprio.",
+  "items": [
+    {
+      "id": "evidence-20261002-lombar-restore",
+      "title": "Dor lombar crônica: terapia cognitivo-funcional — RESTORE (2023)",
+      "category": "Coluna",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nTerapia cognitivo-funcional (CFT) para dor lombar crônica incapacitante.\n\nMÉTODO E QUALIDADE\nEnsaio randomizado multicêntrico: 492 adultos, 20 clínicas australianas, alocação centralizada e registro prospectivo. Comparou cuidados usuais, CFT e CFT com biofeedback de movimento. Até sete sessões em 12 semanas e reforço na semana 26.\n\nRESULTADO PRINCIPAL\nNa semana 13, CFT reduziu incapacidade no Roland-Morris (0–24) em 4,6 pontos frente aos cuidados usuais (IC95% −5,9 a −3,4). O grupo com biofeedback também teve diferença de −4,6 pontos (−5,8 a −3,3). Efeitos semelhantes em 52 semanas.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nConsiderar abordagem individualizada que trabalhe crenças, emoções e comportamentos associados à limitação. CFT requer capacitação específica; não equivale a oferecer uma explicação genérica sobre dor. Biofeedback de movimento não é eletromiografia.\n\nLIMITAÇÕES E CERTEZA\nParticipantes e terapeutas sem mascaramento; desfecho autorrelatado e comparação com cuidados usuais heterogêneos. Não demonstra superioridade sobre todo programa ativo estruturado. Excluiu patologia vertebral grave. Não atribuímos classificação formal RoB 2.\n\nCuradoria assistida: 02/10/2026. Fonte: artigo e resumo no repositório Imperial College. Fator de impacto não verificado nesta inclusão; não usado como medida de qualidade.",
+      "reference": "Kent P, Haines T, O'Sullivan P et al. Cognitive functional therapy with or without movement sensor biofeedback versus usual care for chronic, disabling low back pain (RESTORE). The Lancet. 2023;401:1866–1877. DOI:10.1016/S0140-6736(23)00441-5. PMID:37146623.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37146623/"
+    },
+    {
+      "id": "evidence-20261002-lombar-restore-3anos",
+      "title": "Dor lombar crônica: resultados da CFT em três anos — RESTORE (2025)",
+      "category": "Coluna",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nPersistência dos efeitos da terapia cognitivo-funcional (CFT).\n\nMÉTODO E QUALIDADE\nSeguimento do mesmo ensaio RESTORE, não replicação independente. Análise por intenção de tratar; 312 dos 492 participantes originais responderam em três anos, com proporções semelhantes entre grupos.\n\nRESULTADO PRINCIPAL\nCFT versus cuidados usuais: incapacidade Roland-Morris (0–24) −3,5 pontos (IC95% −4,9 a −2,0); dor (0–10) −1,0 ponto (−1,6 a −0,5). CFT com biofeedback: incapacidade −4,1 (−5,6 a −2,6) e dor −1,5 (−2,1 a −0,9). A diferença de incapacidade entre as modalidades de CFT foi −0,6 (−2,2 a 0,9), sem significância estatística.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nAcompanhar função e metas além da intensidade de dor. O benefício médio em função não implica resolução completa dos sintomas. Não pressupor necessidade do sensor para obter benefício.\n\nLIMITAÇÕES E CERTEZA\nPerdas de cerca de 37% da amostra original reduzem confiança no seguimento; ausência de mascaramento e desfechos autorrelatados. Eventos adversos não foram coletados em três anos. Sem classificação formal RoB 2 própria.\n\nCuradoria assistida: 02/10/2026. Fonte: resumo do artigo no repositório Macquarie. Fator de impacto não verificado nesta inclusão.",
+      "reference": "Hancock M, Smith A, O'Sullivan P et al. Cognitive functional therapy with or without movement sensor biofeedback versus usual care for chronic, disabling low back pain (RESTORE): 3-year follow-up of a randomised, controlled trial. The Lancet Rheumatology. 2025;7:e789–e798. DOI:10.1016/S2665-9913(25)00135-3. PMID:40780241.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40780241/"
+    },
+    {
+      "id": "evidence-20261002-lombar-walkback",
+      "title": "Dor lombar: caminhada e educação para prevenir recorrências — WalkBack (2024)",
+      "category": "Coluna",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA / TEMA\nPrevenção de recorrência após recuperação de lombalgia inespecífica; não tratamento de um episódio ativo.\n\nMÉTODO E QUALIDADE\nEnsaio randomizado com registro prospectivo e 701 adultos. Caminhada progressiva individualizada e educação, com seis sessões de fisioterapia em seis meses, versus nenhum tratamento. Análise por intenção de tratar; seguimento de 12–36 meses e coleta mensal.\n\nRESULTADO PRINCIPAL\nRecorrência limitante de atividades: hazard ratio 0,72 (IC95% 0,60–0,85). Mediana até recorrência: 208 dias versus 112. Isso representa redução de 28% na taxa instantânea do evento; não redução absoluta de 28 pontos percentuais.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nApós recuperação, construir programa acessível e progressivo com acompanhamento. O estudo avaliou caminhada associada à educação, sem isolar o efeito de cada componente.\n\nLIMITAÇÕES E CERTEZA\nSem mascaramento de participantes e terapeutas; desfecho autorrelatado, controle sem tratamento e amostra 81% feminina. Mais eventos em membros inferiores no grupo de intervenção (100 versus 54), embora a proporção com algum evento fosse semelhante. Sem classificação formal RoB 2 própria.\n\nCuradoria assistida: 02/10/2026. Fonte: artigo completo de acesso aberto. Fator de impacto não verificado nesta inclusão.",
+      "reference": "Pocovi NC, Lin CWC, French SD et al. Effectiveness and cost-effectiveness of an individualised, progressive walking and education intervention for the prevention of low back pain recurrence in Australia (WalkBack): a randomised controlled trial. The Lancet. 2024;404:134–144. DOI:10.1016/S0140-6736(24)00755-4. PMID:38908392.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38908392/"
+    }
+  ]
+}
