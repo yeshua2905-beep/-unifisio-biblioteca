@@ -43,3 +43,23 @@ test('Formatos raster são detectados pelos bytes e dimensão excessiva é recus
 test("Formato jpeg real é reconhecido",()=>{const b=Buffer.from("/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAACAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFAEBAAAAAAAAAAAAAAAAAAAABv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AIIApD3/2Q==","base64");const f=imageFormat(b);assert.equal(f.mime,"image/jpeg");assert.equal(f.width,3);assert.equal(f.height,2)});
 
 test("Formato webp real é reconhecido",()=>{const b=Buffer.from("UklGRjgAAABXRUJQVlA4ICwAAADwAQCdASoDAAIAAUAmJaACdLoB+AAF9AAA/vFNr/xu7cy7W5/82BAzQ+dAAA==","base64");const f=imageFormat(b);assert.equal(f.mime,"image/webp");assert.equal(f.width,3);assert.equal(f.height,2)});
+
+
+test('A tela da galeria entrega o módulo como JavaScript para o navegador',async()=>{
+ const dir=await mkdtemp(resolve(tmpdir(),'unifisio-gallery-static-'));
+ const app=await createApp({dataDir:dir,staticDir:resolve('dist'),publicUrl:origin});
+ try{
+  const page=await app.handle(new Request(origin+'/imagens.html'));
+  assert.equal(page.status,200);
+  const html=await page.text();
+  const script=html.match(/<script type="module" src="([^"]+)"/)[1];
+  assert.equal(script,'/images-gallery.mjs?v=2');
+  const module=await app.handle(new Request(origin+script));
+  assert.equal(module.status,200);
+  assert.equal(module.headers.get('Content-Type'),'text/javascript; charset=utf-8');
+  assert.match(await module.text(),/addEventListener\('submit'/);
+  const head=await app.handle(new Request(origin+script,{method:'HEAD'}));
+  assert.equal(head.headers.get('Content-Type'),'text/javascript; charset=utf-8');
+  assert.equal(await head.text(),'');
+ }finally{app.close();await rm(dir,{recursive:true,force:true})}
+});
