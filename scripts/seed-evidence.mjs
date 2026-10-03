@@ -2,7 +2,7 @@ import {readFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {openDatabase,transaction} from '../server/database.mjs';
 
-const categories=new Set(['Ombro','Joelho','Coluna','Quadril','Tornozelo e pé','Cotovelo e mão','Dor crônica','Esporte e retorno','Pós-operatório','Avaliação funcional','Gestão e procedimentos']);
+const categories=new Set(['Ombro','Joelho','Coluna','Quadril','Tornozelo e pé','Cotovelo e mão','Dor crônica','Esporte e retorno','Lesões musculares','Pós-operatório','Avaliação funcional','Gestão e procedimentos']);
 const kinds=new Set(['Artigo científico','Protocolo clínico','Teste e avaliação','Material para paciente','Procedimento interno','Aula e treinamento']);
 export function validateCollection(collection){
  if(!collection||typeof collection.version!=='string'||!/^20\d{2}-\d{2}-\d{2}-v\d+$/.test(collection.version)||!Array.isArray(collection.items)||!collection.items.length)throw new Error('Coleção de evidências inválida.');

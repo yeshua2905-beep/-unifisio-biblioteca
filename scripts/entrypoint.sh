@@ -8,4 +8,5 @@ runuser -u node -- node /app/scripts/seed-shoulder.mjs
 runuser -u node -- node /app/scripts/seed-knee.mjs
 runuser -u node -- node /app/scripts/seed-foot.mjs
 runuser -u node -- node /app/scripts/seed-low-back.mjs
+runuser -u node -- node /app/scripts/seed-muscle.mjs
 exec runuser -u node -- "$@"

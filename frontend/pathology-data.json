@@ -761,5 +761,81 @@
     "manual": "Não prescrever técnica local sem esclarecer diagnóstico e risco.",
     "progress": "Depois da definição, selecionar o guia correspondente; não criar dose ou prazo apenas com o rótulo.",
     "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
+  },
+  {
+    "id": "muscular-grau-1",
+    "title": "Lesão muscular grau 1 (BAMIC)",
+    "category": "Lesões musculares",
+    "materialIds": [
+      "evidence-muscle-20261003-grade-1"
+    ],
+    "mobility": [
+      "muscle-motion"
+    ],
+    "strength": [
+      "muscle-activation"
+    ],
+    "restriction": "Classificação BAMIC; confirmar músculo e localização a/b/c. Progressão pelo exame e capacidade, sem calendário fixo.",
+    "assessment": "Registrar mecanismo, localização, marcha, amplitude, força padronizada quando segura e tarefa relevante. Verificar lesão tendínea/avulsão e déficit neurovascular.",
+    "manual": "Não realizar massagem profunda no foco agudo ou tensionar uma ruptura. Terapia manual pode ser recurso de conforto selecionado, sem substituir exercício ou prometer acelerar reparo.",
+    "progress": "Progredir carga, amplitude e velocidade pela tolerância e função; reavaliar resposta no dia seguinte. Sprint e tarefas máximas sem dor.",
+    "scope": "Plano conservador adaptável para adultos. Evidência concentrada em isquiotibiais; outros músculos e adolescentes exigem adaptação. Rupturas tendíneas específicas têm plano próprio."
+  },
+  {
+    "id": "muscular-grau-2",
+    "title": "Lesão muscular grau 2 (BAMIC)",
+    "category": "Lesões musculares",
+    "materialIds": [
+      "evidence-muscle-20261003-grade-2"
+    ],
+    "mobility": [
+      "muscle-motion"
+    ],
+    "strength": [
+      "muscle-activation"
+    ],
+    "restriction": "Classificação BAMIC; confirmar músculo e localização a/b/c. Progressão pelo exame e capacidade, sem calendário fixo.",
+    "assessment": "Registrar mecanismo, localização, marcha, amplitude, força padronizada quando segura e tarefa relevante. Verificar lesão tendínea/avulsão e déficit neurovascular.",
+    "manual": "Não realizar massagem profunda no foco agudo ou tensionar uma ruptura. Terapia manual pode ser recurso de conforto selecionado, sem substituir exercício ou prometer acelerar reparo.",
+    "progress": "Progredir carga, amplitude e velocidade pela tolerância e função; reavaliar resposta no dia seguinte. Sprint e tarefas máximas sem dor.",
+    "scope": "Plano conservador adaptável para adultos. Evidência concentrada em isquiotibiais; outros músculos e adolescentes exigem adaptação. Rupturas tendíneas específicas têm plano próprio."
+  },
+  {
+    "id": "muscular-grau-3",
+    "title": "Lesão muscular grau 3 (BAMIC)",
+    "category": "Lesões musculares",
+    "materialIds": [
+      "evidence-muscle-20261003-grade-3"
+    ],
+    "mobility": [
+      "muscle-motion"
+    ],
+    "strength": [
+      "muscle-activation"
+    ],
+    "restriction": "Classificação BAMIC; confirmar músculo e localização a/b/c. Progressão pelo exame e capacidade, sem calendário fixo.",
+    "assessment": "Registrar mecanismo, localização, marcha, amplitude, força padronizada quando segura e tarefa relevante. Verificar lesão tendínea/avulsão e déficit neurovascular.",
+    "manual": "Não realizar massagem profunda no foco agudo ou tensionar uma ruptura. Terapia manual pode ser recurso de conforto selecionado, sem substituir exercício ou prometer acelerar reparo.",
+    "progress": "Progredir carga, amplitude e velocidade pela tolerância e função; reavaliar resposta no dia seguinte. Sprint e tarefas máximas sem dor.",
+    "scope": "Plano conservador adaptável para adultos. Evidência concentrada em isquiotibiais; outros músculos e adolescentes exigem adaptação. Rupturas tendíneas específicas têm plano próprio."
+  },
+  {
+    "id": "muscular-grau-4",
+    "title": "Lesão muscular grau 4 (BAMIC)",
+    "category": "Lesões musculares",
+    "materialIds": [
+      "evidence-muscle-20261003-grade-4"
+    ],
+    "mobility": [
+      "muscle-motion"
+    ],
+    "strength": [
+      "muscle-activation"
+    ],
+    "restriction": "Grau 4: ruptura completa. Plano conservador somente após avaliação especializada e definição de apoio, movimento e carga.",
+    "assessment": "Registrar mecanismo, localização, marcha, amplitude, força padronizada quando segura e tarefa relevante. Verificar lesão tendínea/avulsão e déficit neurovascular.",
+    "manual": "Não realizar massagem profunda no foco agudo ou tensionar uma ruptura. Terapia manual pode ser recurso de conforto selecionado, sem substituir exercício ou prometer acelerar reparo.",
+    "progress": "Progredir carga, amplitude e velocidade pela tolerância e função; reavaliar resposta no dia seguinte. Sprint e tarefas máximas sem dor.",
+    "scope": "Plano conservador adaptável para adultos. Evidência concentrada em isquiotibiais; outros músculos e adolescentes exigem adaptação. Rupturas tendíneas específicas têm plano próprio."
   }
 ]
