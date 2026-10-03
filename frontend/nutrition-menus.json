@@ -1,0 +1,446 @@
+[
+  {
+    "id": "evidence-nutrition-20261003-menu-traditional",
+    "title": "Cardápio educativo — 1.500 kcal com arroz, feijão e frango",
+    "meals": [
+      {
+        "name": "Café da manhã",
+        "foods": [
+          {
+            "food": "Iogurte natural, desnatado",
+            "grams": 200,
+            "kcal100": 41,
+            "protein100": 3.8,
+            "tacoRow": 449,
+            "page": 54
+          },
+          {
+            "food": "Aveia em flocos, crua",
+            "grams": 40,
+            "kcal100": 394,
+            "protein100": 13.9,
+            "tacoRow": 7,
+            "page": 26
+          },
+          {
+            "food": "Banana prata, crua, sem casca",
+            "grams": 100,
+            "kcal100": 98,
+            "protein100": 1.3,
+            "tacoRow": 182,
+            "page": 36
+          }
+        ]
+      },
+      {
+        "name": "Almoço",
+        "foods": [
+          {
+            "food": "Arroz tipo 1, cozido",
+            "grams": 140,
+            "kcal100": 128,
+            "protein100": 2.5,
+            "tacoRow": 3,
+            "page": 26
+          },
+          {
+            "food": "Feijão carioca, cozido",
+            "grams": 120,
+            "kcal100": 76,
+            "protein100": 4.8,
+            "tacoRow": 561,
+            "page": 62
+          },
+          {
+            "food": "Peito de frango sem pele, grelhado",
+            "grams": 120,
+            "kcal100": 159,
+            "protein100": 32,
+            "tacoRow": 410,
+            "page": 52
+          },
+          {
+            "food": "Brócolis, cozido",
+            "grams": 100,
+            "kcal100": 25,
+            "protein100": 2.1,
+            "tacoRow": 100,
+            "page": 32
+          },
+          {
+            "food": "Azeite de oliva extra virgem",
+            "grams": 10,
+            "kcal100": 884,
+            "protein100": 0,
+            "tacoRow": 260,
+            "page": 42
+          }
+        ]
+      },
+      {
+        "name": "Lanche",
+        "foods": [
+          {
+            "food": "Iogurte natural, desnatado",
+            "grams": 170,
+            "kcal100": 41,
+            "protein100": 3.8,
+            "tacoRow": 449,
+            "page": 54
+          },
+          {
+            "food": "Banana prata, crua, sem casca",
+            "grams": 100,
+            "kcal100": 98,
+            "protein100": 1.3,
+            "tacoRow": 182,
+            "page": 36
+          }
+        ]
+      },
+      {
+        "name": "Jantar",
+        "foods": [
+          {
+            "food": "Arroz tipo 1, cozido",
+            "grams": 97,
+            "kcal100": 128,
+            "protein100": 2.5,
+            "tacoRow": 3,
+            "page": 26
+          },
+          {
+            "food": "Feijão carioca, cozido",
+            "grams": 100,
+            "kcal100": 76,
+            "protein100": 4.8,
+            "tacoRow": 561,
+            "page": 62
+          },
+          {
+            "food": "Ovo inteiro, cozido, sem casca",
+            "grams": 100,
+            "kcal100": 146,
+            "protein100": 13.3,
+            "tacoRow": 488,
+            "page": 56
+          },
+          {
+            "food": "Cenoura, cozida",
+            "grams": 100,
+            "kcal100": 30,
+            "protein100": 0.8,
+            "tacoRow": 109,
+            "page": 32
+          },
+          {
+            "food": "Azeite de oliva extra virgem",
+            "grams": 5,
+            "kcal100": 884,
+            "protein100": 0,
+            "tacoRow": 260,
+            "page": 42
+          }
+        ]
+      }
+    ],
+    "totalKcal": 1500.26,
+    "proteinGrams": 93.3
+  },
+  {
+    "id": "evidence-nutrition-20261003-menu-fish",
+    "title": "Cardápio educativo — 1.500 kcal com peixe e lentilha",
+    "meals": [
+      {
+        "name": "Café da manhã",
+        "foods": [
+          {
+            "food": "Iogurte natural, desnatado",
+            "grams": 200,
+            "kcal100": 41,
+            "protein100": 3.8,
+            "tacoRow": 449,
+            "page": 54
+          },
+          {
+            "food": "Aveia em flocos, crua",
+            "grams": 45,
+            "kcal100": 394,
+            "protein100": 13.9,
+            "tacoRow": 7,
+            "page": 26
+          },
+          {
+            "food": "Banana prata, crua, sem casca",
+            "grams": 100,
+            "kcal100": 98,
+            "protein100": 1.3,
+            "tacoRow": 182,
+            "page": 36
+          }
+        ]
+      },
+      {
+        "name": "Almoço",
+        "foods": [
+          {
+            "food": "Arroz integral, cozido",
+            "grams": 150,
+            "kcal100": 124,
+            "protein100": 2.6,
+            "tacoRow": 1,
+            "page": 26
+          },
+          {
+            "food": "Lentilha, cozida",
+            "grams": 120,
+            "kcal100": 93,
+            "protein100": 6.3,
+            "tacoRow": 577,
+            "page": 62
+          },
+          {
+            "food": "Merluza em filé, assada",
+            "grams": 140,
+            "kcal100": 122,
+            "protein100": 26.6,
+            "tacoRow": 301,
+            "page": 44
+          },
+          {
+            "food": "Brócolis, cozido",
+            "grams": 100,
+            "kcal100": 25,
+            "protein100": 2.1,
+            "tacoRow": 100,
+            "page": 32
+          },
+          {
+            "food": "Azeite de oliva extra virgem",
+            "grams": 10,
+            "kcal100": 884,
+            "protein100": 0,
+            "tacoRow": 260,
+            "page": 42
+          }
+        ]
+      },
+      {
+        "name": "Lanche",
+        "foods": [
+          {
+            "food": "Iogurte natural, desnatado",
+            "grams": 170,
+            "kcal100": 41,
+            "protein100": 3.8,
+            "tacoRow": 449,
+            "page": 54
+          },
+          {
+            "food": "Banana prata, crua, sem casca",
+            "grams": 100,
+            "kcal100": 98,
+            "protein100": 1.3,
+            "tacoRow": 182,
+            "page": 36
+          }
+        ]
+      },
+      {
+        "name": "Jantar",
+        "foods": [
+          {
+            "food": "Arroz integral, cozido",
+            "grams": 66,
+            "kcal100": 124,
+            "protein100": 2.6,
+            "tacoRow": 1,
+            "page": 26
+          },
+          {
+            "food": "Feijão carioca, cozido",
+            "grams": 120,
+            "kcal100": 76,
+            "protein100": 4.8,
+            "tacoRow": 561,
+            "page": 62
+          },
+          {
+            "food": "Ovo inteiro, cozido, sem casca",
+            "grams": 100,
+            "kcal100": 146,
+            "protein100": 13.3,
+            "tacoRow": 488,
+            "page": 56
+          },
+          {
+            "food": "Cenoura, cozida",
+            "grams": 100,
+            "kcal100": 30,
+            "protein100": 0.8,
+            "tacoRow": 109,
+            "page": 32
+          },
+          {
+            "food": "Azeite de oliva extra virgem",
+            "grams": 5,
+            "kcal100": 884,
+            "protein100": 0,
+            "tacoRow": 260,
+            "page": 42
+          }
+        ]
+      }
+    ],
+    "totalKcal": 1500.04,
+    "proteinGrams": 95.29
+  },
+  {
+    "id": "evidence-nutrition-20261003-menu-vegetarian",
+    "title": "Cardápio educativo — 1.500 kcal ovolactovegetariano",
+    "meals": [
+      {
+        "name": "Café da manhã",
+        "foods": [
+          {
+            "food": "Iogurte natural, desnatado",
+            "grams": 250,
+            "kcal100": 41,
+            "protein100": 3.8,
+            "tacoRow": 449,
+            "page": 54
+          },
+          {
+            "food": "Aveia em flocos, crua",
+            "grams": 30,
+            "kcal100": 394,
+            "protein100": 13.9,
+            "tacoRow": 7,
+            "page": 26
+          },
+          {
+            "food": "Banana prata, crua, sem casca",
+            "grams": 100,
+            "kcal100": 98,
+            "protein100": 1.3,
+            "tacoRow": 182,
+            "page": 36
+          }
+        ]
+      },
+      {
+        "name": "Almoço",
+        "foods": [
+          {
+            "food": "Arroz integral, cozido",
+            "grams": 150,
+            "kcal100": 124,
+            "protein100": 2.6,
+            "tacoRow": 1,
+            "page": 26
+          },
+          {
+            "food": "Lentilha, cozida",
+            "grams": 180,
+            "kcal100": 93,
+            "protein100": 6.3,
+            "tacoRow": 577,
+            "page": 62
+          },
+          {
+            "food": "Ovo inteiro, cozido, sem casca",
+            "grams": 100,
+            "kcal100": 146,
+            "protein100": 13.3,
+            "tacoRow": 488,
+            "page": 56
+          },
+          {
+            "food": "Brócolis, cozido",
+            "grams": 100,
+            "kcal100": 25,
+            "protein100": 2.1,
+            "tacoRow": 100,
+            "page": 32
+          },
+          {
+            "food": "Azeite de oliva extra virgem",
+            "grams": 10,
+            "kcal100": 884,
+            "protein100": 0,
+            "tacoRow": 260,
+            "page": 42
+          }
+        ]
+      },
+      {
+        "name": "Lanche",
+        "foods": [
+          {
+            "food": "Iogurte natural, desnatado",
+            "grams": 200,
+            "kcal100": 41,
+            "protein100": 3.8,
+            "tacoRow": 449,
+            "page": 54
+          },
+          {
+            "food": "Banana prata, crua, sem casca",
+            "grams": 100,
+            "kcal100": 98,
+            "protein100": 1.3,
+            "tacoRow": 182,
+            "page": 36
+          }
+        ]
+      },
+      {
+        "name": "Jantar",
+        "foods": [
+          {
+            "food": "Arroz integral, cozido",
+            "grams": 103,
+            "kcal100": 124,
+            "protein100": 2.6,
+            "tacoRow": 1,
+            "page": 26
+          },
+          {
+            "food": "Feijão carioca, cozido",
+            "grams": 150,
+            "kcal100": 76,
+            "protein100": 4.8,
+            "tacoRow": 561,
+            "page": 62
+          },
+          {
+            "food": "Ovo inteiro, cozido, sem casca",
+            "grams": 50,
+            "kcal100": 146,
+            "protein100": 13.3,
+            "tacoRow": 488,
+            "page": 56
+          },
+          {
+            "food": "Cenoura, cozida",
+            "grams": 100,
+            "kcal100": 30,
+            "protein100": 0.8,
+            "tacoRow": 109,
+            "page": 32
+          },
+          {
+            "food": "Azeite de oliva extra virgem",
+            "grams": 5,
+            "kcal100": 884,
+            "protein100": 0,
+            "tacoRow": 260,
+            "page": 42
+          }
+        ]
+      }
+    ],
+    "totalKcal": 1500.42,
+    "proteinGrams": 71.84
+  }
+]
