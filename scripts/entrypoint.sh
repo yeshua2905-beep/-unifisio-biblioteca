@@ -10,4 +10,5 @@ runuser -u node -- node /app/scripts/seed-foot.mjs
 runuser -u node -- node /app/scripts/seed-low-back.mjs
 runuser -u node -- node /app/scripts/seed-muscle.mjs
 runuser -u node -- node /app/scripts/seed-hip.mjs
+runuser -u node -- node /app/scripts/seed-nutrition.mjs
 exec runuser -u node -- "$@"

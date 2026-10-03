@@ -1,0 +1,113 @@
+{
+  "version": "2026-10-03-v3",
+  "items": [
+    {
+      "id": "evidence-nutrition-20261003-article-cochrane",
+      "title": "Low carb versus carboidratos equilibrados — Cochrane 2022",
+      "category": "Nutrição e alimentação",
+      "kind": "Artigo científico",
+      "summary": "LEITURA CRÍTICA — Curadoria assistida, 03/10/2026\n\nRevisão sistemática de 61 ensaios randomizados, 6.925 participantes. A diferença média de peso entre dietas foi pequena: aproximadamente 1 kg no curto prazo e menos de 1 kg em 1–2 anos. Certeza moderada a muito baixa conforme o desfecho; vários ensaios tinham risco de viés por dados ausentes. Eventos adversos pouco relatados. Aplicação: escolher padrão sustentável, sem prometer superioridade clínica de low carb. Não valida especificamente 1.500 kcal.\n\nQualidade: desenho e limitações descritos acima. Fator de impacto não foi usado como substituto da avaliação metodológica; valor anual não verificado.",
+      "reference": "Naude CE, Brand A, Schoonees A, Nguyen KA, Chaplin M, Volmink J. Low-carbohydrate versus balanced-carbohydrate diets for reducing weight and cardiovascular risk. Cochrane Database Syst Rev. 2022;1:CD013334. DOI: 10.1002/14651858.CD013334.pub2.",
+      "url": "https://doi.org/10.1002/14651858.CD013334.pub2"
+    },
+    {
+      "id": "evidence-nutrition-20261003-article-fasting",
+      "title": "Jejum intermitente versus restrição contínua — BMJ 2025",
+      "category": "Nutrição e alimentação",
+      "kind": "Artigo científico",
+      "summary": "LEITURA CRÍTICA — Curadoria assistida, 03/10/2026\n\nRevisão sistemática e metanálise em rede de 99 ensaios, 6.582 adultos. Jejum em dias alternados teve pequena vantagem sobre restrição contínua: −1,29 kg (IC95% −1,99 a −0,59; certeza moderada). Heterogeneidade de estratégias e duração limita extrapolação para manutenção. Aplicação: jejum não é requisito para perder peso e deve considerar preferência e tolerância. Comparações indiretas não demonstram que um cardápio fixo de 1.500 kcal é ideal.\n\nQualidade: desenho e limitações descritos acima. Fator de impacto não foi usado como substituto da avaliação metodológica; valor anual não verificado.",
+      "reference": "Semnani-Azad Z, Khan TA, Chiavaroli L et al. Intermittent fasting strategies and their effects on body weight and other cardiometabolic risk factors: systematic review and network meta-analysis of randomised clinical trials. BMJ. 2025;389:e082007. DOI: 10.1136/bmj-2024-082007.",
+      "url": "https://doi.org/10.1136/bmj-2024-082007"
+    },
+    {
+      "id": "evidence-nutrition-20261003-article-lookahead",
+      "title": "Intervenção intensiva no diabetes — Look AHEAD",
+      "category": "Nutrição e alimentação",
+      "kind": "Artigo científico",
+      "summary": "LEITURA CRÍTICA — Curadoria assistida, 03/10/2026\n\nEnsaio randomizado com 5.145 adultos com diabetes tipo 2 e sobrepeso/obesidade. Programa intensivo combinou restrição calórica, atividade física e acompanhamento; não reduziu significativamente o desfecho cardiovascular primário. Houve benefícios de peso e controle metabólico. Intervenção multicomponente: não permite atribuir resultados a 1.500 kcal isoladamente. Aplicação: não prometer prevenção de eventos cardiovasculares por este valor energético; coordenar mudanças alimentares com a equipe que acompanha medicamentos.\n\nQualidade: desenho e limitações descritos acima. Fator de impacto não foi usado como substituto da avaliação metodológica; valor anual não verificado.",
+      "reference": "Look AHEAD Research Group; Wing RR et al. Cardiovascular Effects of Intensive Lifestyle Intervention in Type 2 Diabetes. N Engl J Med. 2013;369:145–154. DOI: 10.1056/NEJMoa1212914.",
+      "url": "https://doi.org/10.1056/NEJMoa1212914"
+    },
+    {
+      "id": "evidence-nutrition-20261003-article-muscle",
+      "title": "Déficit energético e treinamento de força — metanálise",
+      "category": "Nutrição e alimentação",
+      "kind": "Artigo científico",
+      "summary": "LEITURA CRÍTICA — Curadoria assistida, 03/10/2026\n\nMetanálise e metarregressão: déficit energético prejudicou ganhos de massa magra com treinamento resistido; não houve diferença clara nos ganhos de força. A estimativa de cerca de 500 kcal/dia associada à ausência de ganho médio de massa magra é relação entre estudos, não limite seguro individual. Aplicação: avaliar energia e preservação muscular; proteína não compensa automaticamente energia insuficiente. Evidência indireta para cicatrização, pós-operatório e lesão muscular.\n\nQualidade: desenho e limitações descritos acima. Fator de impacto não foi usado como substituto da avaliação metodológica; valor anual não verificado.",
+      "reference": "Murphy C, Koehler K. Energy deficiency impairs resistance training gains in lean mass but not strength: a meta-analysis and meta-regression. Scand J Med Sci Sports. 2022;32:125–137. DOI: 10.1111/sms.14075.",
+      "url": "https://doi.org/10.1111/sms.14075"
+    },
+    {
+      "id": "evidence-nutrition-20261003-article-reds",
+      "title": "Disponibilidade energética e REDs — consenso IOC 2023",
+      "category": "Nutrição e alimentação",
+      "kind": "Artigo científico",
+      "summary": "LEITURA CRÍTICA — Curadoria assistida, 03/10/2026\n\nConsenso internacional fundamentado em literatura; não ensaio randomizado nem prova de eficácia de uma dieta. Baixa disponibilidade energética pode comprometer saúde e desempenho em mulheres e homens. Ingestão total isolada não diagnostica REDs e não existe um número energético universal. Aplicação: considerar carga de treino, função menstrual, lesões ósseas recorrentes, fadiga e desempenho. CAT2 é avaliação clínica especializada; não usar como autodiagnóstico. Ajustar alimentação e treino com equipe.\n\nQualidade: desenho e limitações descritos acima. Fator de impacto não foi usado como substituto da avaliação metodológica; valor anual não verificado.",
+      "reference": "Mountjoy M, Ackerman KE, Bailey DM et al. 2023 International Olympic Committee’s consensus statement on Relative Energy Deficiency in Sport (REDs). Br J Sports Med. 2023;57:1073–1097. DOI: 10.1136/bjsports-2023-106994.",
+      "url": "https://doi.org/10.1136/bjsports-2023-106994"
+    },
+    {
+      "id": "evidence-nutrition-20261003-article-nice",
+      "title": "Restrição energética individualizada — NICE NG246",
+      "category": "Nutrição e alimentação",
+      "kind": "Artigo científico",
+      "summary": "LEITURA CRÍTICA — Curadoria assistida, 03/10/2026\n\nDiretriz baseada em revisão de evidências, com recomendação de déficit energético individualizado, alimentação nutricionalmente equilibrada e suporte profissional. Não recomenda 1.500 kcal para todas as pessoas. NICE classifica dietas de 800–1.200 kcal como baixa energia; suas regras específicas não devem ser transferidas automaticamente para 1.500 kcal. Aplicação: avaliar necessidade e adequação, preferências, acesso e acompanhamento. Diretriz não equivale a ensaio clínico que valide nossos exemplos.\n\nQualidade: desenho e limitações descritos acima. Fator de impacto não foi usado como substituto da avaliação metodológica; valor anual não verificado.",
+      "reference": "National Institute for Health and Care Excellence. Overweight and obesity management. NICE guideline NG246. 2025. Capítulo Physical activity and diet. Diretriz; sem DOI.",
+      "url": "https://www.nice.org.uk/guidance/ng246/chapter/Physical-activity-and-diet"
+    },
+    {
+      "id": "evidence-nutrition-20261003-protocol-adult",
+      "title": "Protocolo — Avaliação antes de considerar 1.500 kcal",
+      "category": "Nutrição e alimentação",
+      "kind": "Protocolo clínico",
+      "summary": "PROPOSTA OPERACIONAL — Curadoria assistida, 03/10/2026\nNão é protocolo validado em ensaio.\n\nESCOPO\nAdultos com objetivo de controle de peso. 1.500 kcal é uma possibilidade após avaliação; não representa necessidade calculada nem déficit igual para todos.\n\nAVALIAÇÃO\nRegistrar objetivos, ingestão habitual, rotina, peso e sua trajetória, sono, atividade, fome, acesso a alimentos, preferências, alergias e histórico de restrição/compulsão. Estimar gasto energético individual e conferir adequação de proteína, fibras e micronutrientes. A meta pode precisar ser maior ou menor; evitar promessa de ritmo fixo de emagrecimento.\n\nPLANO\nNutricionista adapta alimentos e quantidades; acordar refeições sustentáveis e preservar alimentação variada. Os exemplos não foram validados como intervenção clínica e não substituem prescrição individual.\n\nCONTEXTOS QUE EXIGEM PLANO ESPECÍFICO\nGestação/lactação, menores de 18 anos, baixo peso, fragilidade, suspeita de transtorno alimentar, doença renal/hepática e recuperação cirúrgica: não aplicar os exemplos automaticamente. Diabetes com insulina ou medicamentos associados a hipoglicemia exige coordenação com equipe médica; não orientar ajuste de dose pelo sistema.",
+      "reference": "National Institute for Health and Care Excellence. Overweight and obesity management. NICE guideline NG246. 2025. Capítulo Physical activity and diet. Diretriz; sem DOI.\nNaude CE, Brand A, Schoonees A, Nguyen KA, Chaplin M, Volmink J. Low-carbohydrate versus balanced-carbohydrate diets for reducing weight and cardiovascular risk. Cochrane Database Syst Rev. 2022;1:CD013334. DOI: 10.1002/14651858.CD013334.pub2.",
+      "url": "https://www.nice.org.uk/guidance/ng246/chapter/Physical-activity-and-diet"
+    },
+    {
+      "id": "evidence-nutrition-20261003-protocol-monitor",
+      "title": "Protocolo — Acompanhamento da restrição energética",
+      "category": "Nutrição e alimentação",
+      "kind": "Protocolo clínico",
+      "summary": "PROPOSTA OPERACIONAL — Curadoria assistida, 03/10/2026\nNão é protocolo validado em ensaio.\n\nROTINA OPERACIONAL ADAPTÁVEL\nDefinir retorno após início conforme risco e disponibilidade, por exemplo em 2–4 semanas; esse intervalo é proposta operacional, não duração validada.\n\nREAVALIAR\nTrajetória de peso em condições comparáveis, fome/saciedade, adesão, qualidade alimentar, sintomas, força, funcionamento diário e bem-estar. Exames somente quando clinicamente indicados. Conferir proteína, fibras, cálcio, ferro e demais nutrientes conforme perfil. Não usar peso isolado como critério de sucesso.\n\nDECISÃO\nSe houver fome persistente, fadiga, piora funcional ou dificuldade de manter o plano, reavaliar energia, composição, contexto e objetivo. Sem resposta: revisar estimativa e execução antes de reduzir calorias automaticamente. Planejar manutenção e suporte contínuo; nenhuma composição elimina o problema da adesão.\n\nINTERRUPÇÃO E ENCAMINHAMENTO\nTontura recorrente, síncope, hipoglicemia, compulsão/purgação, perda excessiva ou deterioração clínica exigem avaliação profissional; sinais agudos importantes requerem atendimento imediato.",
+      "reference": "National Institute for Health and Care Excellence. Overweight and obesity management. NICE guideline NG246. 2025. Capítulo Physical activity and diet. Diretriz; sem DOI.\nLook AHEAD Research Group; Wing RR et al. Cardiovascular Effects of Intensive Lifestyle Intervention in Type 2 Diabetes. N Engl J Med. 2013;369:145–154. DOI: 10.1056/NEJMoa1212914.",
+      "url": "https://www.nice.org.uk/guidance/ng246/chapter/Physical-activity-and-diet"
+    },
+    {
+      "id": "evidence-nutrition-20261003-protocol-athlete",
+      "title": "Protocolo — Energia para atletas e reabilitação",
+      "category": "Nutrição e alimentação",
+      "kind": "Protocolo clínico",
+      "summary": "PROPOSTA OPERACIONAL — Curadoria assistida, 03/10/2026\nNão é protocolo validado em ensaio.\n\nESCOPO\nAtletas, pessoas fisicamente ativas e em recuperação de lesão. Não adotar 1.500 kcal por padrão nem supor que afastamento do esporte elimina necessidades de recuperação.\n\nAVALIAÇÃO EM EQUIPE\nNutricionista estima necessidade considerando tamanho corporal, carga e frequência do treino, gasto do exercício, evolução clínica e objetivos. Fisioterapeuta registra carga, função e recuperação; médico avalia sinais clínicos. Restrição para emagrecer pode conflitar com preservação muscular e recuperação.\n\nTRIAGEM\nInvestigar fadiga persistente, queda de desempenho, alteração menstrual, lesão óssea por estresse recorrente, perda de peso involuntária e mudanças de humor/comportamento alimentar. Sinais são inespecíficos; não diagnosticam REDs sozinhos. Encaminhar para avaliação especializada, sem cálculo diagnóstico automático por calorias.\n\nCONDUTA\nIndividualizar energia, carboidratos ao redor das demandas e proteína ao longo do dia; adequar micronutrientes e hidratação. Reavaliar quando a carga de treino muda. Diante de suspeita de baixa disponibilidade energética, revisar alimentação e treino com equipe. Nossos cardápios são exemplos para adultos avaliados, não protocolo esportivo de 1.500 kcal.",
+      "reference": "Mountjoy M, Ackerman KE, Bailey DM et al. 2023 International Olympic Committee’s consensus statement on Relative Energy Deficiency in Sport (REDs). Br J Sports Med. 2023;57:1073–1097. DOI: 10.1136/bjsports-2023-106994.\nMurphy C, Koehler K. Energy deficiency impairs resistance training gains in lean mass but not strength: a meta-analysis and meta-regression. Scand J Med Sci Sports. 2022;32:125–137. DOI: 10.1111/sms.14075.",
+      "url": "https://doi.org/10.1136/bjsports-2023-106994"
+    },
+    {
+      "id": "evidence-nutrition-20261003-menu-traditional",
+      "title": "Cardápio educativo — 1.500 kcal com arroz, feijão e frango",
+      "category": "Nutrição e alimentação",
+      "kind": "Material para paciente",
+      "summary": "EXEMPLO EDUCATIVO PARA ADULTOS — não é prescrição individual.\nTotal estimado: 1500.3 kcal; proteína estimada: 93.3 g. Não confirma adequação individual de proteína ou micronutrientes.\n\nCafé da manhã — 337.6 kcal\nIogurte natural, desnatado: 200 g — 82.0 kcal\nAveia em flocos, crua: 40 g — 157.6 kcal\nBanana prata, crua, sem casca: 100 g — 98.0 kcal\n\nAlmoço — 574.6 kcal\nArroz tipo 1, cozido: 140 g — 179.2 kcal\nFeijão carioca, cozido: 120 g — 91.2 kcal\nPeito de frango sem pele, grelhado: 120 g — 190.8 kcal\nBrócolis, cozido: 100 g — 25.0 kcal\nAzeite de oliva extra virgem: 10 g — 88.4 kcal\n\nLanche — 167.7 kcal\nIogurte natural, desnatado: 170 g — 69.7 kcal\nBanana prata, crua, sem casca: 100 g — 98.0 kcal\n\nJantar — 420.4 kcal\nArroz tipo 1, cozido: 97 g — 124.2 kcal\nFeijão carioca, cozido: 100 g — 76.0 kcal\nOvo inteiro, cozido, sem casca: 100 g — 146.0 kcal\nCenoura, cozida: 100 g — 30.0 kcal\nAzeite de oliva extra virgem: 5 g — 44.2 kcal\n\nMÉTODO\nPesos da parte comestível pronta, sem cascas/ossos; aveia pesada seca. Arroz, leguminosas, vegetais, ovo e proteínas preparados sem óleo adicional; todo azeite está contabilizado. Água sem calorias. Bebidas, açúcar, molhos e óleo adicionais mudam o total. As refeições podem ser reorganizadas; o número de refeições não tem superioridade demonstrada aqui.\n\nLIMITES\nCálculo = gramas × kcal TACO/100. Variação de marca, preparo e porção impede precisão real de 1 kcal; o alvo é aproximadamente 1.500 kcal. Alergias: leite, ovo e possível contaminação da aveia por glúten; a opção com peixe contém pescado. Substituições requerem recálculo, não troca grama por grama. Nutricionista deve conferir necessidade, nutrientes e preferências. Não aplicar automaticamente a atletas, gestantes, crianças ou pessoas com condições que exigem plano específico.",
+      "reference": "NEPA/UNICAMP. Tabela Brasileira de Composição de Alimentos (TACO). 4ª edição revisada e ampliada. 2011. kcal por 100 g da parte comestível; número do alimento e página constam no cálculo. Fonte de composição, não ensaio clínico.",
+      "url": "https://nepa.unicamp.br/tabela-brasileira-de-composicao-de-alimentos-4a-edicao/"
+    },
+    {
+      "id": "evidence-nutrition-20261003-menu-fish",
+      "title": "Cardápio educativo — 1.500 kcal com peixe e lentilha",
+      "category": "Nutrição e alimentação",
+      "kind": "Material para paciente",
+      "summary": "EXEMPLO EDUCATIVO PARA ADULTOS — não é prescrição individual.\nTotal estimado: 1500.0 kcal; proteína estimada: 95.3 g. Não confirma adequação individual de proteína ou micronutrientes.\n\nCafé da manhã — 357.3 kcal\nIogurte natural, desnatado: 200 g — 82.0 kcal\nAveia em flocos, crua: 45 g — 177.3 kcal\nBanana prata, crua, sem casca: 100 g — 98.0 kcal\n\nAlmoço — 581.8 kcal\nArroz integral, cozido: 150 g — 186.0 kcal\nLentilha, cozida: 120 g — 111.6 kcal\nMerluza em filé, assada: 140 g — 170.8 kcal\nBrócolis, cozido: 100 g — 25.0 kcal\nAzeite de oliva extra virgem: 10 g — 88.4 kcal\n\nLanche — 167.7 kcal\nIogurte natural, desnatado: 170 g — 69.7 kcal\nBanana prata, crua, sem casca: 100 g — 98.0 kcal\n\nJantar — 393.2 kcal\nArroz integral, cozido: 66 g — 81.8 kcal\nFeijão carioca, cozido: 120 g — 91.2 kcal\nOvo inteiro, cozido, sem casca: 100 g — 146.0 kcal\nCenoura, cozida: 100 g — 30.0 kcal\nAzeite de oliva extra virgem: 5 g — 44.2 kcal\n\nMÉTODO\nPesos da parte comestível pronta, sem cascas/ossos; aveia pesada seca. Arroz, leguminosas, vegetais, ovo e proteínas preparados sem óleo adicional; todo azeite está contabilizado. Água sem calorias. Bebidas, açúcar, molhos e óleo adicionais mudam o total. As refeições podem ser reorganizadas; o número de refeições não tem superioridade demonstrada aqui.\n\nLIMITES\nCálculo = gramas × kcal TACO/100. Variação de marca, preparo e porção impede precisão real de 1 kcal; o alvo é aproximadamente 1.500 kcal. Alergias: leite, ovo e possível contaminação da aveia por glúten; a opção com peixe contém pescado. Substituições requerem recálculo, não troca grama por grama. Nutricionista deve conferir necessidade, nutrientes e preferências. Não aplicar automaticamente a atletas, gestantes, crianças ou pessoas com condições que exigem plano específico.",
+      "reference": "NEPA/UNICAMP. Tabela Brasileira de Composição de Alimentos (TACO). 4ª edição revisada e ampliada. 2011. kcal por 100 g da parte comestível; número do alimento e página constam no cálculo. Fonte de composição, não ensaio clínico.",
+      "url": "https://nepa.unicamp.br/tabela-brasileira-de-composicao-de-alimentos-4a-edicao/"
+    },
+    {
+      "id": "evidence-nutrition-20261003-menu-vegetarian",
+      "title": "Cardápio educativo — 1.500 kcal ovolactovegetariano",
+      "category": "Nutrição e alimentação",
+      "kind": "Material para paciente",
+      "summary": "EXEMPLO EDUCATIVO PARA ADULTOS — não é prescrição individual.\nTotal estimado: 1500.4 kcal; proteína estimada: 71.8 g. Não confirma adequação individual de proteína ou micronutrientes.\n\nCafé da manhã — 318.7 kcal\nIogurte natural, desnatado: 250 g — 102.5 kcal\nAveia em flocos, crua: 30 g — 118.2 kcal\nBanana prata, crua, sem casca: 100 g — 98.0 kcal\n\nAlmoço — 612.8 kcal\nArroz integral, cozido: 150 g — 186.0 kcal\nLentilha, cozida: 180 g — 167.4 kcal\nOvo inteiro, cozido, sem casca: 100 g — 146.0 kcal\nBrócolis, cozido: 100 g — 25.0 kcal\nAzeite de oliva extra virgem: 10 g — 88.4 kcal\n\nLanche — 180.0 kcal\nIogurte natural, desnatado: 200 g — 82.0 kcal\nBanana prata, crua, sem casca: 100 g — 98.0 kcal\n\nJantar — 388.9 kcal\nArroz integral, cozido: 103 g — 127.7 kcal\nFeijão carioca, cozido: 150 g — 114.0 kcal\nOvo inteiro, cozido, sem casca: 50 g — 73.0 kcal\nCenoura, cozida: 100 g — 30.0 kcal\nAzeite de oliva extra virgem: 5 g — 44.2 kcal\n\nMÉTODO\nPesos da parte comestível pronta, sem cascas/ossos; aveia pesada seca. Arroz, leguminosas, vegetais, ovo e proteínas preparados sem óleo adicional; todo azeite está contabilizado. Água sem calorias. Bebidas, açúcar, molhos e óleo adicionais mudam o total. As refeições podem ser reorganizadas; o número de refeições não tem superioridade demonstrada aqui.\n\nLIMITES\nCálculo = gramas × kcal TACO/100. Variação de marca, preparo e porção impede precisão real de 1 kcal; o alvo é aproximadamente 1.500 kcal. Alergias: leite, ovo e possível contaminação da aveia por glúten; a opção com peixe contém pescado. Substituições requerem recálculo, não troca grama por grama. Nutricionista deve conferir necessidade, nutrientes e preferências. Não aplicar automaticamente a atletas, gestantes, crianças ou pessoas com condições que exigem plano específico.",
+      "reference": "NEPA/UNICAMP. Tabela Brasileira de Composição de Alimentos (TACO). 4ª edição revisada e ampliada. 2011. kcal por 100 g da parte comestível; número do alimento e página constam no cálculo. Fonte de composição, não ensaio clínico.",
+      "url": "https://nepa.unicamp.br/tabela-brasileira-de-composicao-de-alimentos-4a-edicao/"
+    }
+  ]
+}
