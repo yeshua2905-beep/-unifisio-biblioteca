@@ -1,0 +1,194 @@
+{
+  "version": "2026-10-03-v2",
+  "items": [
+    {
+      "id": "evidence-hip-20261003-protocol-artrose",
+      "title": "Protocolo — Artrose do quadril",
+      "category": "Quadril",
+      "kind": "Protocolo clínico",
+      "summary": "PROTOCOLO PROFISSIONAL ADAPTÁVEL — UNIFÍSIO\nCuradoria assistida, 03/10/2026. Proposta operacional; não é programa validado em ensaio clínico. Doses exemplificativas, ajustadas ao exame, capacidade e permissões. Sem calendário universal.\n\nESCOPO E BASE\nTratamento conservador da artrose sintomática. Exercício é uma opção, com benefícios médios modestos; não prometer regeneração da cartilagem. Discutir avaliação ortopédica quando limitação importante persiste apesar do cuidado adequado.\n\nAVALIAÇÃO E TESTES\nDor, marcha, rotação/flexão toleradas, força permitida; HOOS ou WOMAC e tarefa escolhida. Registrar sentar–levantar e tolerância à caminhada.\n\nFASE 1 — DOR, EDUCAÇÃO E MOBILIDADE\nCombinar metas e atividade tolerada. Mobilidade ativa confortável; exemplo: 5–10 movimentos sem forçar bloqueio. Fracionar caminhada; auxílio pode melhorar segurança.\n\nFASE 2 — FORÇA E CAPACIDADE\nSentar–levantar em cadeira alta, extensão/abdução do quadril e resistência de joelho conforme exame. Exemplo operacional: 1–2 séries de 8–12, em dias alternados. Associar condicionamento escolhido pela pessoa.\n\nFASE 3 — RETORNO À FUNÇÃO\nAmpliar marcha, degraus e tarefas reais, graduando carga. Reavaliar função e benefício percebido a cada 2–4 semanas. Dor aguda nova após queda ou incapacidade de apoiar exige investigar fratura.",
+      "reference": "Koc TA Jr et al. Hip Pain and Mobility Deficits—Hip Osteoarthritis: Revision 2025. JOSPT. 2025;55(11):CPG1–CPG31. Diretriz clínica. DOI: 10.2519/jospt.2025.0301. https://doi.org/10.2519/jospt.2025.0301\nHall M, Lawford BJ, Hinman RS, Dobson F, Spiers L, Kimp A, French HP, Reichenbach S, Hernandez-Molina G, Bennell KL. Exercise for osteoarthritis of the hip. Cochrane Database Syst Rev. 2026;7:CD007912. Publicado em 23/07/2026. DOI: 10.1002/14651858.CD007912.pub3. https://doi.org/10.1002/14651858.CD007912.pub3",
+      "url": "https://doi.org/10.2519/jospt.2025.0301"
+    },
+    {
+      "id": "evidence-hip-20261003-protocol-gluteal-protocol",
+      "title": "Protocolo — Tendinopatia glútea / síndrome dolorosa trocantérica",
+      "category": "Quadril",
+      "kind": "Protocolo clínico",
+      "summary": "PROTOCOLO PROFISSIONAL ADAPTÁVEL — UNIFÍSIO\nCuradoria assistida, 03/10/2026. Proposta operacional; não é programa validado em ensaio clínico. Doses exemplificativas, ajustadas ao exame, capacidade e permissões. Sem calendário universal.\n\nESCOPO E BASE\nDistinguir tendinopatia, ruptura, dor articular e dor referida. Dor lateral não equivale automaticamente a bursite. Educação e carga progressiva compõem o plano conservador.\n\nAVALIAÇÃO E TESTES\nLocalização, dor ao deitar, escadas, apoio unipodal e força abdutora quando tolerada. Registrar VISA-G ou tarefa funcional; exame e imagem interpretados em conjunto.\n\nFASE 1 — DOR E EDUCAÇÃO\nReduzir compressões provocativas: adaptar decúbito lateral com apoio e evitar adução sustentada que reproduza dor. Evitar alongamento lateral agressivo e pressão profunda no trocânter. Manter atividade tolerada.\n\nFASE 2 — FORÇA E CONTROLE\nAbdução em posição confortável → resistência progressiva → tarefas em apoio. Exemplo operacional liberado: 1–2 séries de 8–12 em dias alternados; ajustar ao sono, marcha e resposta posterior.\n\nFASE 3 — RETORNO E PREVENÇÃO\nProgredir caminhada, escadas, corrida e mudanças de direção conforme demanda. Reavaliar dor noturna e tarefa. Perda súbita de força após trauma exige investigar ruptura, sem aplicar esta trilha automaticamente.",
+      "reference": "Mellor R et al. Education plus exercise versus corticosteroid injection use versus a wait and see approach on global outcome and pain from gluteal tendinopathy. BMJ. 2018;361:k1662. Ensaio randomizado. DOI: 10.1136/bmj.k1662. https://doi.org/10.1136/bmj.k1662\nBremer T, Nicklen P, Fearon A, Morrissey D. The efficacy of gluteal tendinopathy treatments: A systematic review. Clin Rehabil. 2025;39(5):600–617. DOI: 10.1177/02692155251327298. https://doi.org/10.1177/02692155251327298",
+      "url": "https://doi.org/10.1136/bmj.k1662"
+    },
+    {
+      "id": "evidence-hip-20261003-protocol-fai",
+      "title": "Protocolo — Síndrome de impacto femoroacetabular (cam/pincer)",
+      "category": "Quadril",
+      "kind": "Protocolo clínico",
+      "summary": "PROTOCOLO PROFISSIONAL ADAPTÁVEL — UNIFÍSIO\nCuradoria assistida, 03/10/2026. Proposta operacional; não é programa validado em ensaio clínico. Doses exemplificativas, ajustadas ao exame, capacidade e permissões. Sem calendário universal.\n\nESCOPO E BASE\nSíndrome exige sintomas, sinais clínicos e imagem concordantes; morfologia cam/pincer isolada não define doença. Conservador procura melhorar capacidade e participação, sem promessa de modificar formato ósseo.\n\nAVALIAÇÃO E TESTES\nDor inguinal relacionada a movimento, mobilidade, força e tarefa; iHOT-12/33 ou HAGOS. FADIR/FABER contribuem ao exame, mas não confirmam diagnóstico sozinhos.\n\nFASE 1 — DOR E MOBILIDADE\nAdaptar provisoriamente flexão profunda e rotações provocativas; variar posição e amplitude. Não insistir no final de arco doloroso. Preservar condicionamento tolerado.\n\nFASE 2 — FORÇA E CONTROLE\nEscolher força de quadril/tronco e tarefa em amplitude tolerada. Exemplo operacional: 2 séries de 8–12, em dias alternados. Progredir amplitude, depois carga e velocidade pela resposta.\n\nFASE 3 — RETORNO E REAVALIAÇÃO\nRecuperar corrida, agachamento e giro segundo esporte. Persistência de limitação relevante após plano aderido requer revisão diagnóstica e discussão de opções. Cirurgia não é obrigação por achado de imagem.",
+      "reference": "Griffin DR et al. The Warwick Agreement on femoroacetabular impingement syndrome. BJSM. 2016;50:1169–1176. Consenso internacional. DOI: 10.1136/bjsports-2016-096743. https://doi.org/10.1136/bjsports-2016-096743\nTakla A et al. The 2019 ISHA physiotherapy agreement on assessment and treatment of FAIS. J Hip Preserv Surg. 2021;7(4):631–642 (volume de 2020; publicado online em 2021). Consenso; não ensaio clínico. DOI: 10.1093/jhps/hnaa043. https://doi.org/10.1093/jhps/hnaa043",
+      "url": "https://doi.org/10.1136/bjsports-2016-096743"
+    },
+    {
+      "id": "evidence-hip-20261003-protocol-labral",
+      "title": "Protocolo — Lesão labral do quadril: tratamento conservador",
+      "category": "Quadril",
+      "kind": "Protocolo clínico",
+      "summary": "PROTOCOLO PROFISSIONAL ADAPTÁVEL — UNIFÍSIO\nCuradoria assistida, 03/10/2026. Proposta operacional; não é programa validado em ensaio clínico. Doses exemplificativas, ajustadas ao exame, capacidade e permissões. Sem calendário universal.\n\nESCOPO E BASE\nAlteração labral em imagem pode ocorrer sem sintomas. Correlacionar história, exame e demanda; investigar artrose, impacto, displasia/instabilidade e outras causas. Exercício não demonstra reconstrução anatômica do labrum.\n\nAVALIAÇÃO E TESTES\nDor inguinal, episódios de bloqueio/apreensão, amplitude e força toleradas; iHOT ou HAGOS e tarefas. Travamento verdadeiro ou perda funcional progressiva exige revisão.\n\nFASE 1 — DOR, EDUCAÇÃO E MOBILIDADE\nAdaptar movimentos provocativos sem proibir toda atividade. Mobilidade em zona confortável, sem forçar rotação/flexão nem testar repetidamente o estalo.\n\nFASE 2 — FORÇA E CONTROLE\nTrabalhar quadril e tronco, apoio e transições em arcos tolerados. Exemplo operacional: 1–2 séries de 8–12 em dias alternados. Na instabilidade, evitar buscar amplitude extrema.\n\nFASE 3 — RETORNO E CRITÉRIOS\nGradualmente expor ao gesto necessário, incluindo giros se apropriado. Progredir por função e resposta; discutir avaliação especializada se incapacidade persiste. Este protocolo não serve para labrum suturado ou reconstruído.",
+      "reference": "Enseki KR et al. Hip Pain and Movement Dysfunction Associated With Nonarthritic Hip Joint Pain: A Revision. JOSPT. 2023;53(7):CPG1–CPG70. Diretriz clínica. DOI: 10.2519/jospt.2023.0302. https://doi.org/10.2519/jospt.2023.0302\nRegister B et al. Prevalence of abnormal hip findings in asymptomatic participants: a prospective, blinded study. Am J Sports Med. 2012;40:2720–2724. Estudo observacional. DOI: 10.1177/0363546512462124. https://doi.org/10.1177/0363546512462124",
+      "url": "https://doi.org/10.2519/jospt.2023.0302"
+    },
+    {
+      "id": "evidence-hip-20261003-protocol-adutores",
+      "title": "Protocolo — Dor inguinal relacionada aos adutores / pubalgia",
+      "category": "Quadril",
+      "kind": "Protocolo clínico",
+      "summary": "PROTOCOLO PROFISSIONAL ADAPTÁVEL — UNIFÍSIO\nCuradoria assistida, 03/10/2026. Proposta operacional; não é programa validado em ensaio clínico. Doses exemplificativas, ajustadas ao exame, capacidade e permissões. Sem calendário universal.\n\nESCOPO E BASE\n“Pubalgia” é um rótulo amplo. Diferenciar entidades adutora, iliopsoas, inguinal, púbica, articular e causas não musculoesqueléticas. Mais de uma pode coexistir.\n\nAVALIAÇÃO E TESTES\nPalpação dos adutores e adução resistida que reproduzam a dor habitual apoiam a entidade adutora. Registrar HAGOS, força autorizada, corrida, chute e mudança de direção.\n\nFASE 1 — DOR E EDUCAÇÃO\nReduzir temporariamente chutes/sprints provocativos, mantendo condicionamento tolerado. Não aplicar alongamento agressivo nem carga alta na ruptura aguda.\n\nFASE 2 — FORÇA E CONTROLE\nAdução leve → resistência dinâmica → maior alavanca e tarefa. Exemplo operacional: 1–2 séries de 8–12 em dias alternados. Copenhagen só quando houver capacidade; não como exercício obrigatório inicial.\n\nFASE 3 — RETORNO E CRITÉRIOS\nCorrida → aceleração → cortes → chute → treino completo pela resposta. Dor testicular aguda, massa inguinal dolorosa, sintomas abdominais ou sistêmicos exigem encaminhamento. Adolescentes com trauma na inserção precisam investigar avulsão.",
+      "reference": "Weir A et al. Doha agreement meeting on terminology and definitions in groin pain in athletes. BJSM. 2015;49:768–774. Consenso diagnóstico. DOI: 10.1136/bjsports-2015-094869. https://doi.org/10.1136/bjsports-2015-094869\nHölmich P et al. Effectiveness of active physical training as treatment for long-standing adductor-related groin pain in athletes. Lancet. 1999;353:439–443. Ensaio randomizado. DOI: 10.1016/S0140-6736(98)03340-6. https://doi.org/10.1016/S0140-6736(98)03340-6",
+      "url": "https://doi.org/10.1136/bjsports-2015-094869"
+    },
+    {
+      "id": "evidence-hip-20261003-protocol-iliopsoas",
+      "title": "Protocolo — Dor relacionada ao iliopsoas / ressalto interno",
+      "category": "Quadril",
+      "kind": "Protocolo clínico",
+      "summary": "PROTOCOLO PROFISSIONAL ADAPTÁVEL — UNIFÍSIO\nCuradoria assistida, 03/10/2026. Proposta operacional; não é programa validado em ensaio clínico. Doses exemplificativas, ajustadas ao exame, capacidade e permissões. Sem calendário universal.\n\nESCOPO E LIMITAÇÕES\nDor anterior/inguinal com exame compatível; ressalto indolor pode não requerer tratamento. Doses são adaptação clínica: evidência direta de programas específicos é limitada. Excluir lesão articular, fratura por estresse e avulsão.\n\nAVALIAÇÃO E TESTES\nPalpação e flexão resistida/alongamento tolerado associados à dor habitual apoiam hipótese de iliopsoas. Registrar marcha, subir escadas e elevar perna. Não confirmar diagnóstico por estalo isolado.\n\nFASE 1 — DOR E MOBILIDADE\nAdaptar flexão repetida e extensão provocativa, sem repouso absoluto. Movimento confortável, sem tentar reproduzir o ressalto repetidamente.\n\nFASE 2 — FORÇA E CONTROLE\nFlexão leve de quadril em posição apoiada, depois resistência e tarefa. Exemplo operacional: 1 série de 8–10 em dias alternados; não elevar carga se houver piora persistente.\n\nFASE 3 — RETORNO E REAVALIAÇÃO\nGraduar escadas, corrida e gesto esportivo. Ressalto doloroso persistente, bloqueio ou dor após prótese exige avaliação especializada; pós-tenotomia tem restrições próprias.",
+      "reference": "Weir A et al. Doha agreement meeting on terminology and definitions in groin pain in athletes. BJSM. 2015;49:768–774. Consenso diagnóstico. DOI: 10.1136/bjsports-2015-094869. https://doi.org/10.1136/bjsports-2015-094869\nEnseki KR et al. Hip Pain and Movement Dysfunction Associated With Nonarthritic Hip Joint Pain: A Revision. JOSPT. 2023;53(7):CPG1–CPG70. Diretriz clínica. DOI: 10.2519/jospt.2023.0302. https://doi.org/10.2519/jospt.2023.0302",
+      "url": "https://doi.org/10.1136/bjsports-2015-094869"
+    },
+    {
+      "id": "evidence-hip-20261003-protocol-ham-prox",
+      "title": "Protocolo — Tendinopatia proximal dos isquiotibiais",
+      "category": "Quadril",
+      "kind": "Protocolo clínico",
+      "summary": "PROTOCOLO PROFISSIONAL ADAPTÁVEL — UNIFÍSIO\nCuradoria assistida, 03/10/2026. Proposta operacional; não é programa validado em ensaio clínico. Doses exemplificativas, ajustadas ao exame, capacidade e permissões. Sem calendário universal.\n\nESCOPO E LIMITAÇÕES\nDor isquiática relacionada a carga/sentar, com diagnóstico diferencial de avulsão, lesão neural e dor lombar. A revisão de 2021 encontrou evidência limitada. ECA de 2025 não detectou diferença nos desfechos primários entre fisioterapia individualizada e ondas de choque; não prova equivalência. Plano abaixo é adaptação clínica.\n\nAVALIAÇÃO E TESTES\nDor ao sentar, corrida, flexão de quadril; força e testes provocativos graduados quando seguros. Registrar VISA-H ou tarefa. Estalo traumático, hematoma e grande fraqueza sugerem ruptura/avulsão.\n\nFASE 1 — DOR E EDUCAÇÃO\nAdaptar tempo sentado e flexão profunda provocativa. Evitar alongamento intenso sobre inserção irritável; manter atividade tolerada.\n\nFASE 2 — FORÇA E CAPACIDADE\nFlexão de joelho ou extensão de quadril em comprimento confortável → resistência maior → comprimento longo tolerado. Exemplo operacional: 1–2 séries de 8–12 em dias alternados; não exigir excêntrico como modalidade exclusiva.\n\nFASE 3 — RETORNO E CRITÉRIOS\nGraduar corrida, aceleração e gesto esportivo; registrar resposta até o dia seguinte. Persistência de déficit, dor neural ou suspeita de avulsão exige revisar diagnóstico.",
+      "reference": "Nasser AM et al. Proximal Hamstring Tendinopathy: A Systematic Review of Interventions. Int J Sports Phys Ther. 2021;16(2):288–305. Revisão sistemática; evidência limitada. DOI: 10.26603/001c.21250. https://doi.org/10.26603/001c.21250\nRich A, Ford J, Cook J, Hahne A. Physiotherapy Compared With Shockwave Therapy for the Treatment of Proximal Hamstring Tendinopathy: A Randomized Controlled Trial. Am J Sports Med. 2025;53(14):3396–3407. DOI: 10.1177/03635465251391134. Correção de janeiro de 2026: cabeçalhos dos grupos na Tabela 2 haviam sido trocados; consultar versão corrigida.",
+      "url": "https://doi.org/10.26603/001c.21250"
+    },
+    {
+      "id": "evidence-hip-20261003-protocol-ptq",
+      "title": "Protocolo — Prótese total de quadril: reabilitação por capacidade",
+      "category": "Quadril",
+      "kind": "Protocolo clínico",
+      "summary": "PROTOCOLO PROFISSIONAL ADAPTÁVEL — UNIFÍSIO\nCuradoria assistida, 03/10/2026. Proposta operacional; não é programa validado em ensaio clínico. Doses exemplificativas, ajustadas ao exame, capacidade e permissões. Sem calendário universal.\n\nESCOPO E RESTRIÇÕES\nArtroplastia primária eletiva; confirmar abordagem, reparo abdutor, revisão, estabilidade e apoio autorizado. Evidência sobre retirar precauções rotineiras na abordagem posterior não se aplica automaticamente a toda prótese.\n\nAVALIAÇÃO E TESTES\nFerida, dor, edema, marcha, transferência, força permitida; HOOS/Oxford Hip Score e metas. Checar risco de queda e uso de auxílio.\n\nFASE 1 — PROTEÇÃO E MOBILIDADE\nTransferências, marcha e atividade autorizada com auxílio. Mobilidade apenas dentro das permissões. Não impor nem retirar precauções sem considerar plano e risco individual.\n\nFASE 2 — FORÇA E CONTROLE\nQuando permitido: sentar–levantar de cadeira alta, extensão/abdução e degraus. Exemplo operacional: 1–2 séries de 8–12 em dias alternados; reparar abdutores pode exigir proteção adicional.\n\nFASE 3 — RETORNO À PARTICIPAÇÃO\nAumentar caminhada, endurance e equilíbrio. Esporte/impacto depende de capacidade, implante e decisão compartilhada. Dor súbita com deformidade/incapacidade de apoiar exige urgência por possível luxação/fratura. Febre/secreção e sinais de trombose requerem avaliação.",
+      "reference": "Korfitsen CB et al. Hip precautions after posterior-approach total hip arthroplasty. Acta Orthop. 2023;94:141–151. Revisão sistemática/metanálise, 8.835 participantes. DOI: 10.2340/17453674.2023.11958. https://doi.org/10.2340/17453674.2023.11958\nKonnyu KJ et al. Rehabilitation for Total Hip Arthroplasty: A Systematic Review. Am J Phys Med Rehabil. 2023;102(1):11–18 (online 2022). DOI: 10.1097/PHM.0000000000002007. https://doi.org/10.1097/PHM.0000000000002007",
+      "url": "https://doi.org/10.2340/17453674.2023.11958"
+    },
+    {
+      "id": "evidence-hip-20261003-protocol-artroscopia",
+      "title": "Protocolo — Artroscopia do quadril: labrum, osteoplastia e cápsula",
+      "category": "Quadril",
+      "kind": "Protocolo clínico",
+      "summary": "PROTOCOLO PROFISSIONAL ADAPTÁVEL — UNIFÍSIO\nCuradoria assistida, 03/10/2026. Proposta operacional; não é programa validado em ensaio clínico. Doses exemplificativas, ajustadas ao exame, capacidade e permissões. Sem calendário universal.\n\nESCOPO E RESTRIÇÕES\nIdentificar sutura/reconstrução labral, osteoplastia, fechamento capsular, microfratura e procedimentos associados. Apoio, amplitude e resistência variam; não aplicar calendário único.\n\nAVALIAÇÃO E TESTES\nFerida, dor/edema, marcha com auxílio, arco autorizado e ativação. Registrar iHOT e metas quando apropriado; não fazer testes de impacto/instabilidade na fase protegida.\n\nFASE 1 — PROTEÇÃO E MOBILIDADE\nTreinar marcha no apoio prescrito e transferências. Mobilidade ativa/assistida só autorizada; evitar tensão sobre reparos. Microfratura pode ampliar a proteção de apoio. Tenotomia exige plano próprio.\n\nFASE 2 — FORÇA E CONTROLE\nApós liberação: recuperar marcha e força com tarefas leves em arco permitido. Exemplo operacional: 1 série de 8–10, com progressão conforme controle e resposta. Não iniciar flexão resistida automaticamente após procedimentos do iliopsoas.\n\nFASE 3 — RETORNO E CRITÉRIOS\nRecuperar força, endurance e gesto; corrida e impacto têm liberação própria. Reavaliar antes de avançar. Alta considera demanda, confiança e exposição, além da cicatrização. Não prometer retorno por número de semanas.",
+      "reference": "Takla A et al. The 2019 ISHA physiotherapy agreement on assessment and treatment of FAIS. J Hip Preserv Surg. 2021;7(4):631–642 (volume de 2020; publicado online em 2021). Consenso; não ensaio clínico. DOI: 10.1093/jhps/hnaa043. https://doi.org/10.1093/jhps/hnaa043",
+      "url": "https://doi.org/10.1093/jhps/hnaa043"
+    },
+    {
+      "id": "evidence-hip-20261003-protocol-fratura-proximal",
+      "title": "Protocolo — Fratura proximal do fêmur: colo e região trocantérica",
+      "category": "Quadril",
+      "kind": "Protocolo clínico",
+      "summary": "PROTOCOLO PROFISSIONAL ADAPTÁVEL — UNIFÍSIO\nCuradoria assistida, 03/10/2026. Proposta operacional; não é programa validado em ensaio clínico. Doses exemplificativas, ajustadas ao exame, capacidade e permissões. Sem calendário universal.\n\nESCOPO E BASE\nReabilitação após fixação ou artroplastia; fratura sem estabilização não recebe esta trilha. Conferir procedimento, estabilidade, apoio e comorbidades. NICE CG124 orienta mobilização no dia seguinte à cirurgia salvo contraindicação médica/cirúrgica.\n\nAVALIAÇÃO E TESTES\nFerida, dor, estado clínico, cognição, força permitida e função prévia. Registrar transferências/marcha; TUG ou velocidade de marcha somente quando seguros.\n\nFASE 1 — PROTEÇÃO E MOBILIDADE\nMobilização assistida e transferências conforme condição clínica e apoio autorizado. Monitorar tontura/hipotensão e fadiga. Não ampliar apoio por ausência de dor isolada.\n\nFASE 2 — FORÇA E EQUILÍBRIO\nQuando liberado: sentar–levantar, força de membros inferiores e marcha com auxílio. Exemplo operacional: blocos de 5–8 repetições com pausas, adaptados à fragilidade.\n\nFASE 3 — RETORNO E PREVENÇÃO\nRecuperar autonomia, degraus e ambiente doméstico. Combinar prevenção de quedas e cuidado da saúde óssea com equipe. Dor focal crescente ou nova incapacidade de apoiar exige revisar fixação/consolidação; febre ou déficit neurovascular requerem avaliação.",
+      "reference": "Fairhall NJ et al. Interventions for improving mobility after hip fracture surgery in adults. Cochrane Database Syst Rev. 2022;9:CD001704. DOI: 10.1002/14651858.CD001704.pub5. https://doi.org/10.1002/14651858.CD001704.pub5\nNICE. Hip fracture: management, CG124. Diretriz, recomendações vigentes consultadas em 03/10/2026. https://www.nice.org.uk/guidance/cg124/chapter/recommendations",
+      "url": "https://doi.org/10.1002/14651858.CD001704.pub5"
+    },
+    {
+      "id": "evidence-hip-20261003-protocol-estresse-colo",
+      "title": "Protocolo — Fratura por estresse do colo femoral: suspeita e reabilitação",
+      "category": "Quadril",
+      "kind": "Protocolo clínico",
+      "summary": "PROTOCOLO PROFISSIONAL ADAPTÁVEL — UNIFÍSIO\nCuradoria assistida, 03/10/2026. Proposta operacional; não é programa validado em ensaio clínico. Doses exemplificativas, ajustadas ao exame, capacidade e permissões. Sem calendário universal.\n\nESCOPO E ENCAMINHAMENTO\nLesão de risco importante: dor inguinal relacionada a corrida/apoio, especialmente com piora progressiva, exige investigação. Suspender impacto e proteger apoio até avaliação. Radiografia inicial normal não exclui; RM pode esclarecer. Padrão, extensão e desvio determinam conduta especializada.\n\nAVALIAÇÃO E TESTES\nCarga recente, dor ao caminhar, repouso/noite, saúde óssea e disponibilidade energética. Não usar hop test ou corrida para confirmar suspeita. Incapacidade de apoiar ou piora súbita exige atendimento urgente.\n\nFASE 1 — PROTEÇÃO\nConservador apenas em padrão selecionado e acompanhado pela ortopedia. Respeitar apoio prescrito; manter segmentos e condicionamento somente se não tensionarem o foco.\n\nFASE 2 — FORÇA E MOBILIDADE\nApós autorização e evolução de consolidação, recuperar marcha e força progressivamente. Dose definida pelo plano; ausência de dor não comprova união nem libera impacto.\n\nFASE 3 — RETORNO E PREVENÇÃO\nImpacto/corrida após critérios clínicos e de consolidação definidos pela equipe. Revisar treino, nutrição e saúde óssea. Não aplicar Ottawa para excluir fratura do quadril. Este guia usa revisão clínica; não há dose universal apoiada por ECA.",
+      "reference": "Bernstein EM et al. Femoral Neck Stress Fractures: An Updated Review. J Am Acad Orthop Surg. 2022;30(7):302–311. Revisão clínica, não metanálise. DOI: 10.5435/JAAOS-D-21-00398. https://doi.org/10.5435/JAAOS-D-21-00398",
+      "url": "https://doi.org/10.5435/JAAOS-D-21-00398"
+    },
+    {
+      "id": "evidence-hip-20261003-article-oa-cochrane",
+      "title": "Artrose do quadril — exercício: Cochrane atualizada em 2026",
+      "category": "Quadril",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nRevisão sistemática de ensaios randomizados; 18 estudos, 1.368 participantes. Busca até fevereiro de 2025, publicada em julho de 2026; avaliação de risco de viés e GRADE.\n\nRESULTADOS E RELEVÂNCIA\nComparado a nenhum tratamento/cuidados usuais/educação limitada, exercício provavelmente produz pequenas melhorias de dor e função. Os ganhos médios apresentados (7,2/100 dor; 8,8/100 função) ficaram abaixo dos limiares de relevância usados pela revisão (12 e 13 pontos). Comparado a placebo/atenção, o benefício é menos claro; acrescentado a outra intervenção, pode produzir pouca ou nenhuma diferença.\n\nLIMITAÇÕES E APLICAÇÃO\nParticipantes não cegados, autorrelato e estudos pequenos. Benefício médio modesto não identifica quem responderá; combinar metas e reavaliação individual. Não prometer efeito grande nem interpretar média como ausência de qualquer benefício. Nota: a página pública mistura trechos do resumo antigo e novo; esta síntese usa o resumo atualizado e o registro PMID 42486497.\n\nCURADORIA\nConsultado em 03/10/2026. Síntese dirigida, não revisão sistemática própria. Fator de impacto da revista não verificado; não atribuir qualidade pelo FI isolado.",
+      "reference": "Hall M, Lawford BJ, Hinman RS, Dobson F, Spiers L, Kimp A, French HP, Reichenbach S, Hernandez-Molina G, Bennell KL. Exercise for osteoarthritis of the hip. Cochrane Database Syst Rev. 2026;7:CD007912. Publicado em 23/07/2026. DOI: 10.1002/14651858.CD007912.pub3. https://doi.org/10.1002/14651858.CD007912.pub3",
+      "url": "https://doi.org/10.1002/14651858.CD007912.pub3"
+    },
+    {
+      "id": "evidence-hip-20261003-article-glute-bremer",
+      "title": "Tendinopatia glútea — revisão crítica dos tratamentos (2025)",
+      "category": "Quadril",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nRevisão sistemática, buscas até agosto de 2024. Seleção de ECA considerados pelos autores de qualidade média/alta e baixo risco de viés. Heterogeneidade impediu metanálise; não foi aplicada avaliação própria RoB2/AMSTAR2 pela curadoria.\n\nRESULTADOS E RELEVÂNCIA\nEducação e exercício receberam apoio como abordagem central, com benefícios em dor e função. Os efeitos variam pelo prazo e comparador. Recursos como ondas de choque/infiltração não devem ser tratados como substitutos universais da recuperação de capacidade.\n\nLIMITAÇÕES E APLICAÇÃO\nPoucos ensaios demonstraram eficácia; comparação entre estudos heterogêneos não estabelece ranking definitivo. Não usar tamanho de efeito isolado como promessa individual. Reavaliar tarefa, dor e melhora percebida separadamente.\n\nCURADORIA\nConsultado em 03/10/2026. Síntese dirigida, não revisão sistemática própria. Fator de impacto da revista não verificado; não atribuir qualidade pelo FI isolado.",
+      "reference": "Bremer T, Nicklen P, Fearon A, Morrissey D. The efficacy of gluteal tendinopathy treatments: A systematic review. Clin Rehabil. 2025;39(5):600–617. DOI: 10.1177/02692155251327298. https://doi.org/10.1177/02692155251327298",
+      "url": "https://doi.org/10.1177/02692155251327298"
+    },
+    {
+      "id": "evidence-hip-20261003-article-glute-meta",
+      "title": "Tendinopatia glútea — exercício e certeza da evidência (2024)",
+      "category": "Quadril",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nRevisão sistemática/metanálise de cinco estudos, 747 participantes; buscas atualizadas em março de 2022. Avaliação PEDro e GRADE, sem RoB2 próprio desta curadoria.\n\nRESULTADOS\nExercício favoreceu função/sintomas versus intervenção mínima no curto e longo prazo. Comparações com corticoide não mostraram diferença clara consistente em dor, embora sucesso terapêutico tenha favorecido exercício. Certeza baixa a muito baixa e heterogeneidade importante.\n\nRELEVÂNCIA E LIMITAÇÕES\nResultados apoiam um programa ativo individualizado, sem afirmar superioridade para todos os desfechos. População predominantemente feminina de meia-idade; a revisão excluiu rupturas glúteas e outras doenças específicas. Ano de publicação não é ano de atualização da busca.\n\nCURADORIA\nConsultado em 03/10/2026. Síntese dirigida, não revisão sistemática própria. Fator de impacto da revista não verificado; não atribuir qualidade pelo FI isolado.",
+      "reference": "Cordeiro TTP, Rocha EAB, Silva RS. Effects of exercise-based interventions on gluteal tendinopathy. Systematic review with meta-analysis. Scientific Reports. 2024;14:3343. DOI: 10.1038/s41598-024-53283-x. https://doi.org/10.1038/s41598-024-53283-x",
+      "url": "https://doi.org/10.1038/s41598-024-53283-x"
+    },
+    {
+      "id": "evidence-hip-20261003-article-fai-trial",
+      "title": "Impacto femoroacetabular — artroscopia versus fisioterapia (UK FASHIoN)",
+      "category": "Quadril",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nEnsaio randomizado multicêntrico pragmático, 348 participantes; artroscopia versus terapia personalizada do quadril. Desfecho iHOT-33 em 12 meses; análise por intenção de tratar.\n\nRESULTADO E RELEVÂNCIA\nAmbos os grupos melhoraram. Diferença ajustada de 6,8 pontos (IC95% 1,7–12,0) favoreceu artroscopia; a estimativa pontual superou o limiar de 6,1 usado no ensaio, mas o intervalo incluiu efeitos menores. Cirurgia apresentou riscos adicionais.\n\nLIMITAÇÕES E APLICAÇÃO\nSem cegamento dos participantes; população selecionada com síndrome, não apenas cam/pincer em imagem. Não prova prevenção de artrose nem necessidade de operar todos. Oferecer decisão compartilhada, considerando sintomas, função, resposta ao conservador e risco.\n\nCURADORIA\nConsultado em 03/10/2026. Síntese dirigida, não revisão sistemática própria. Fator de impacto da revista não verificado; não atribuir qualidade pelo FI isolado.",
+      "reference": "Griffin DR et al. Hip arthroscopy versus best conservative care for FAIS (UK FASHIoN). Lancet. 2018;391:2225–2235. Ensaio randomizado multicêntrico. DOI: 10.1016/S0140-6736(18)31202-9. https://doi.org/10.1016/S0140-6736(18)31202-9",
+      "url": "https://doi.org/10.1016/S0140-6736(18)31202-9"
+    },
+    {
+      "id": "evidence-hip-20261003-article-surgery-trial",
+      "title": "Artrose grave — prótese versus treino resistido (NEJM, 2024)",
+      "category": "Quadril",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nEnsaio randomizado multicêntrico: 109 pessoas, idade média 67,6 anos, artrose grave com indicação cirúrgica; comparação de prótese e treino resistido. Desfecho Oxford Hip Score aos seis meses.\n\nRESULTADO E RELEVÂNCIA\nMelhora média de 15,9 versus 4,5 pontos; diferença de 11,4 (IC95% 8,9–14,0), favorável à cirurgia e clinicamente relevante no contexto estudado.\n\nLIMITAÇÕES E APLICAÇÃO\nSem cegamento; seguimento primário de seis meses e possibilidade de cruzamento entre tratamentos. Não extrapolar para artrose leve, toda pessoa com dor ou todo programa multimodal. Exercício pode integrar manejo e preparação, mas não deve adiar indefinidamente discussão cirúrgica quando indicada.\n\nCURADORIA\nConsultado em 03/10/2026. Síntese dirigida, não revisão sistemática própria. Fator de impacto da revista não verificado; não atribuir qualidade pelo FI isolado.",
+      "reference": "Frydendal T et al. Total Hip Replacement or Resistance Training for Severe Hip Osteoarthritis. NEJM. 2024;391:1610–1620. Ensaio randomizado multicêntrico. DOI: 10.1056/NEJMoa2400141. https://doi.org/10.1056/NEJMoa2400141",
+      "url": "https://doi.org/10.1056/NEJMoa2400141"
+    },
+    {
+      "id": "evidence-hip-20261003-article-ptq-rehab",
+      "title": "Prótese de quadril — comparação dos programas de reabilitação",
+      "category": "Quadril",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nRevisão sistemática de reabilitação após prótese eletiva unilateral por artrose primária; 15 estudos, buscas até maio de 2021. Extração e avaliação de viés com verificação independente; heterogeneidade impediu metanálise.\n\nRESULTADO E RELEVÂNCIA\nProgramas diversos não mostraram diferenças claras consistentes em dor, força, atividades diárias e qualidade de vida; força da evidência baixa.\n\nLIMITAÇÕES E APLICAÇÃO\nNão demonstra que reabilitação seja dispensável: compara programas/comparadores heterogêneos. Não há base para afirmar que um pacote único seja superior a todos. Ajustar supervisão, exercícios e frequência aos déficits, segurança e autonomia; não extrapolar a revisão complexa de prótese ou fratura.\n\nCURADORIA\nConsultado em 03/10/2026. Síntese dirigida, não revisão sistemática própria. Fator de impacto da revista não verificado; não atribuir qualidade pelo FI isolado.",
+      "reference": "Konnyu KJ et al. Rehabilitation for Total Hip Arthroplasty: A Systematic Review. Am J Phys Med Rehabil. 2023;102(1):11–18 (online 2022). DOI: 10.1097/PHM.0000000000002007. https://doi.org/10.1097/PHM.0000000000002007",
+      "url": "https://doi.org/10.1097/PHM.0000000000002007"
+    },
+    {
+      "id": "evidence-hip-20261003-article-adductor-trial",
+      "title": "Dor crônica dos adutores — treino ativo versus fisioterapia convencional",
+      "category": "Quadril",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nECA clássico de 1999 em atletas com dor inguinal crônica relacionada aos adutores; programa ativo de força/coordenação comparado a fisioterapia convencional. Estudo antigo, mantido como referência histórica direta, não chamado de evidência recente.\n\nRESULTADO E RELEVÂNCIA\nTreino ativo favoreceu retorno ao esporte sem dor no contexto estudado.\n\nLIMITAÇÕES E APLICAÇÃO\nPopulação e intervenções específicas; não extrapolar para hérnia, doença intra-articular, ruptura aguda ou toda “pubalgia”. Não copiar uma dose única por diagnóstico. Não foi feita reavaliação própria RoB2.\n\nCURADORIA\nConsultado em 03/10/2026. Síntese dirigida, não revisão sistemática própria. Fator de impacto da revista não verificado; não atribuir qualidade pelo FI isolado.",
+      "reference": "Hölmich P et al. Effectiveness of active physical training as treatment for long-standing adductor-related groin pain in athletes. Lancet. 1999;353:439–443. Ensaio randomizado. DOI: 10.1016/S0140-6736(98)03340-6. https://doi.org/10.1016/S0140-6736(98)03340-6",
+      "url": "https://doi.org/10.1016/S0140-6736(98)03340-6"
+    },
+    {
+      "id": "evidence-hip-20261003-article-ham-review",
+      "title": "Tendinopatia proximal dos isquiotibiais — limites da evidência",
+      "category": "Quadril",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nRevisão sistemática de intervenções, com poucos ensaios rigorosos e estudos heterogêneos. Inclui tratamento conservador e cirúrgico; não é demonstração de eficácia de um protocolo único.\n\nRESULTADO E LIMITAÇÕES\nEvidência insuficiente para recomendar uma intervenção sobre outra. Seleção de pacientes, desfechos e descrição dos tratamentos foram inconsistentes.\n\nAPLICAÇÃO\nUsar diagnóstico diferencial, manejo de carga e plano individual com medidas de evolução, reconhecendo extrapolação de princípios de outras tendinopatias. Não apresentar ondas de choque, PRP, excêntrico ou cirurgia como opção comprovadamente superior.\n\nCURADORIA\nConsultado em 03/10/2026. Síntese dirigida, não revisão sistemática própria. Fator de impacto da revista não verificado; não atribuir qualidade pelo FI isolado.\n\nATUALIZAÇÃO\nA revisão é de 2021 e antecede o ECA de Rich et al., 2025, cadastrado separadamente. Não representa sozinha toda a evidência atual.",
+      "reference": "Nasser AM et al. Proximal Hamstring Tendinopathy: A Systematic Review of Interventions. Int J Sports Phys Ther. 2021;16(2):288–305. Revisão sistemática; evidência limitada. DOI: 10.26603/001c.21250. https://doi.org/10.26603/001c.21250",
+      "url": "https://doi.org/10.26603/001c.21250"
+    },
+    {
+      "id": "evidence-hip-20261003-article-fracture-review",
+      "title": "Fratura do quadril — intervenções para recuperar mobilidade",
+      "category": "Quadril",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nRevisão Cochrane de ensaios após cirurgia de fratura do quadril; buscas até março de 2021. Considera programas hospitalares e após alta, avaliando mobilidade e função.\n\nRESULTADO E RELEVÂNCIA\nIntervenções direcionadas à mobilidade provavelmente melhoram a capacidade de movimentar-se e caminhar em comparação a ausência de tratamento adicional/cuidados usuais. A certeza varia por estratégia e desfecho.\n\nLIMITAÇÕES E APLICAÇÃO\nNão define dose universal ou apoio irrestrito para toda fixação. Associar mobilidade, força, equilíbrio e metas de autonomia, com condição clínica e proteção cirúrgica verificadas. Benefício funcional não implica automaticamente redução de toda complicação.\n\nCURADORIA\nConsultado em 03/10/2026. Síntese dirigida, não revisão sistemática própria. Fator de impacto da revista não verificado; não atribuir qualidade pelo FI isolado.",
+      "reference": "Fairhall NJ et al. Interventions for improving mobility after hip fracture surgery in adults. Cochrane Database Syst Rev. 2022;9:CD001704. DOI: 10.1002/14651858.CD001704.pub5. https://doi.org/10.1002/14651858.CD001704.pub5",
+      "url": "https://doi.org/10.1002/14651858.CD001704.pub5"
+    },
+    {
+      "id": "evidence-hip-20261003-article-ham-rct",
+      "title": "Tendinopatia proximal dos isquiotibiais — fisioterapia versus ondas de choque (2025)",
+      "category": "Quadril",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nECA multicêntrico com avaliador cego: 100 participantes, seis sessões de fisioterapia individualizada ou ondas de choque; ambos receberam educação. Desfechos primários: melhora global e VISA-H em 4, 12, 26 e 52 semanas; análise por intenção de tratar. Seguimento de 88% aos 12 meses.\n\nRESULTADO E RELEVÂNCIA\nNão foram detectadas diferenças significativas nos desfechos primários entre grupos em nenhum prazo. Alguns desfechos secundários favoreceram ondas de choque; não estabelecer superioridade global com base neles.\n\nLIMITAÇÕES E APLICAÇÃO\nAusência de diferença não prova equivalência. Comparador ativo e educação em ambos os braços não isolam efeito específico frente a placebo. Selecionar intervenção pela avaliação, metas e acesso, sem vender ondas de choque como superior. Correção editorial de janeiro de 2026 trocou cabeçalhos da Tabela 2; usar versão corrigida.\n\nCURADORIA\nConsultado em 03/10/2026; síntese dirigida. FI não verificado; sem reavaliação própria RoB2.",
+      "reference": "Rich A, Ford J, Cook J, Hahne A. Physiotherapy Compared With Shockwave Therapy for the Treatment of Proximal Hamstring Tendinopathy: A Randomized Controlled Trial. Am J Sports Med. 2025;53(14):3396–3407. DOI: 10.1177/03635465251391134. Correção de janeiro de 2026: cabeçalhos dos grupos na Tabela 2 haviam sido trocados; consultar versão corrigida.",
+      "url": "https://doi.org/10.1177/03635465251391134"
+    }
+  ]
+}

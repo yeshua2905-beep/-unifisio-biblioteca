@@ -652,7 +652,10 @@
     "title": "Tendinopatia glútea",
     "category": "Quadril",
     "materialIds": [
-      "evidence-20261002-gluteal"
+      "evidence-hip-20261003-protocol-gluteal-protocol",
+      "evidence-20261002-gluteal",
+      "evidence-hip-20261003-article-glute-bremer",
+      "evidence-hip-20261003-article-glute-meta"
     ],
     "mobility": [
       "hip-active"
@@ -660,8 +663,8 @@
     "strength": [
       "hip-abduction"
     ],
-    "restriction": "Distinguir de artrose, ruptura e dor referida. Evitar compressão lateral excessiva: deitar no lado doloroso ou adução sustentada pode agravar.",
-    "assessment": "Tarefa, força de abdutores e tolerância a marcha/apoio unipodal; identificar compressões habituais.",
+    "restriction": "Evitar compressão provocativa e diferenciar ruptura do tendão.",
+    "assessment": "Dor lateral, sono, VISA-G/tarefa, força abdutora e apoio tolerado.",
     "manual": "Não pressionar intensamente sobre o trocânter/tendão irritável nem prescrever adução forçada para “alongar”.",
     "progress": "Aumentar resistência de abdutores, marcha e tarefa; evitar que progressão aumente compressão ou provoque piora sustentada.",
     "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
@@ -671,7 +674,10 @@
     "title": "Prótese total de quadril",
     "category": "Pós-operatório",
     "materialIds": [
-      "evidence-20261002-quadril-precaucoes"
+      "evidence-hip-20261003-protocol-ptq",
+      "evidence-20261002-quadril-precaucoes",
+      "evidence-hip-20261003-article-surgery-trial",
+      "evidence-hip-20261003-article-ptq-rehab"
     ],
     "mobility": [
       "hip-active"
@@ -680,8 +686,8 @@
       "hip-abduction",
       "chair-rise"
     ],
-    "restriction": "Confirmar abordagem, revisão, risco de luxação e precauções individuais. Revisão sobre abordagem posterior primária não libera todo caso.",
-    "assessment": "Ferida, marcha, apoio, transferências, força permitida e função.",
+    "restriction": "Confirmar abordagem, reparos e apoio. Não usar regra universal de 90 graus ou ausência universal de precauções.",
+    "assessment": "Ferida, marcha, força permitida, HOOS/OHS e transferências.",
     "manual": "Não forçar flexão, adução ou rotação para vencer precaução cirúrgica; não mobilizar prótese como articulação nativa.",
     "progress": "Treinar transferências e marcha seguras; ampliar capacidade respeitando plano, sem impor nem retirar precauções universais.",
     "scope": "Adultos com diagnóstico confirmado. Os exemplos dependem da fase, irritabilidade, capacidade e permissões individuais."
@@ -837,5 +843,188 @@
     "manual": "Não realizar massagem profunda no foco agudo ou tensionar uma ruptura. Terapia manual pode ser recurso de conforto selecionado, sem substituir exercício ou prometer acelerar reparo.",
     "progress": "Progredir carga, amplitude e velocidade pela tolerância e função; reavaliar resposta no dia seguinte. Sprint e tarefas máximas sem dor.",
     "scope": "Plano conservador adaptável para adultos. Evidência concentrada em isquiotibiais; outros músculos e adolescentes exigem adaptação. Rupturas tendíneas específicas têm plano próprio."
+  },
+  {
+    "id": "hip-artrose",
+    "title": "Artrose do quadril",
+    "category": "Quadril",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-artrose",
+      "evidence-hip-20261003-article-oa-cochrane",
+      "evidence-hip-20261003-article-surgery-trial"
+    ],
+    "mobility": [
+      "hip-active"
+    ],
+    "strength": [
+      "chair-rise",
+      "hip-abduction"
+    ],
+    "restriction": "Dor e função compatíveis com artrose; não tratar toda dor inguinal como artrose.",
+    "assessment": "HOOS/WOMAC, marcha, tarefa, mobilidade e força padronizada.",
+    "manual": "Recurso complementar se houver benefício mensurável e permissão. Não forçar bloqueio, reparo ou foco de fratura; evitar manipulação/agressão sobre tecido protegido.",
+    "progress": "Progredir pela capacidade e resposta no dia seguinte, respeitando proteção e demanda; prazo ou simetria isolados não liberam esporte.",
+    "scope": "Adultos com diagnóstico confirmado; crianças/adolescentes, fraturas, reparos e apresentações complexas exigem avaliação e plano específicos."
+  },
+  {
+    "id": "hip-fai",
+    "title": "Síndrome de impacto femoroacetabular (cam/pincer)",
+    "category": "Quadril",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-fai",
+      "evidence-hip-20261003-article-fai-trial"
+    ],
+    "mobility": [
+      "hip-active"
+    ],
+    "strength": [
+      "chair-rise",
+      "hip-abduction"
+    ],
+    "restriction": "Não forçar flexão/rotação dolorosa; morfologia isolada não indica cirurgia.",
+    "assessment": "iHOT/HAGOS, tarefa, mobilidade, força; FADIR/FABER sem diagnóstico isolado.",
+    "manual": "Recurso complementar se houver benefício mensurável e permissão. Não forçar bloqueio, reparo ou foco de fratura; evitar manipulação/agressão sobre tecido protegido.",
+    "progress": "Progredir pela capacidade e resposta no dia seguinte, respeitando proteção e demanda; prazo ou simetria isolados não liberam esporte.",
+    "scope": "Adultos com diagnóstico confirmado; crianças/adolescentes, fraturas, reparos e apresentações complexas exigem avaliação e plano específicos."
+  },
+  {
+    "id": "hip-labral",
+    "title": "Lesão labral do quadril: tratamento conservador",
+    "category": "Quadril",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-labral",
+      "evidence-hip-20261003-article-fai-trial"
+    ],
+    "mobility": [
+      "hip-active"
+    ],
+    "strength": [
+      "chair-rise",
+      "hip-abduction"
+    ],
+    "restriction": "Imagem isolada não basta; sutura/reconstrução e displasia exigem plano próprio.",
+    "assessment": "Dor inguinal, bloqueio/apreensão, iHOT/HAGOS, mobilidade e tarefa.",
+    "manual": "Recurso complementar se houver benefício mensurável e permissão. Não forçar bloqueio, reparo ou foco de fratura; evitar manipulação/agressão sobre tecido protegido.",
+    "progress": "Progredir pela capacidade e resposta no dia seguinte, respeitando proteção e demanda; prazo ou simetria isolados não liberam esporte.",
+    "scope": "Adultos com diagnóstico confirmado; crianças/adolescentes, fraturas, reparos e apresentações complexas exigem avaliação e plano específicos."
+  },
+  {
+    "id": "hip-adutores",
+    "title": "Dor inguinal relacionada aos adutores / pubalgia",
+    "category": "Quadril",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-adutores",
+      "evidence-hip-20261003-article-adductor-trial"
+    ],
+    "mobility": [
+      "hip-active"
+    ],
+    "strength": [
+      "hip-adduction"
+    ],
+    "restriction": "Diferenciar adutor, púbis, canal inguinal, iliopsoas e causas não musculoesqueléticas.",
+    "assessment": "HAGOS, palpação e adução resistida, força, corrida/chute.",
+    "manual": "Recurso complementar se houver benefício mensurável e permissão. Não forçar bloqueio, reparo ou foco de fratura; evitar manipulação/agressão sobre tecido protegido.",
+    "progress": "Progredir pela capacidade e resposta no dia seguinte, respeitando proteção e demanda; prazo ou simetria isolados não liberam esporte.",
+    "scope": "Adultos com diagnóstico confirmado; crianças/adolescentes, fraturas, reparos e apresentações complexas exigem avaliação e plano específicos."
+  },
+  {
+    "id": "hip-iliopsoas",
+    "title": "Dor relacionada ao iliopsoas / ressalto interno",
+    "category": "Quadril",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-iliopsoas"
+    ],
+    "mobility": [
+      "hip-active"
+    ],
+    "strength": [
+      "hip-flexion-light"
+    ],
+    "restriction": "Ressalto isolado não define doença. Pós-prótese e pós-tenotomia exigem avaliação específica.",
+    "assessment": "Dor habitual, flexão resistida tolerada, marcha e escadas.",
+    "manual": "Recurso complementar se houver benefício mensurável e permissão. Não forçar bloqueio, reparo ou foco de fratura; evitar manipulação/agressão sobre tecido protegido.",
+    "progress": "Progredir pela capacidade e resposta no dia seguinte, respeitando proteção e demanda; prazo ou simetria isolados não liberam esporte.",
+    "scope": "Adultos com diagnóstico confirmado; crianças/adolescentes, fraturas, reparos e apresentações complexas exigem avaliação e plano específicos."
+  },
+  {
+    "id": "hip-ham-prox",
+    "title": "Tendinopatia proximal dos isquiotibiais",
+    "category": "Quadril",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-ham-prox",
+      "evidence-hip-20261003-article-ham-review",
+      "evidence-hip-20261003-article-ham-rct"
+    ],
+    "mobility": [
+      "hip-active"
+    ],
+    "strength": [
+      "hamstring-light"
+    ],
+    "restriction": "Tendinopatia não é ruptura completa/avulsão; ajustar compressão e comprimento.",
+    "assessment": "Dor ao sentar/correr, VISA-H/tarefa e força autorizada.",
+    "manual": "Recurso complementar se houver benefício mensurável e permissão. Não forçar bloqueio, reparo ou foco de fratura; evitar manipulação/agressão sobre tecido protegido.",
+    "progress": "Progredir pela capacidade e resposta no dia seguinte, respeitando proteção e demanda; prazo ou simetria isolados não liberam esporte.",
+    "scope": "Adultos com diagnóstico confirmado; crianças/adolescentes, fraturas, reparos e apresentações complexas exigem avaliação e plano específicos."
+  },
+  {
+    "id": "hip-artroscopia",
+    "title": "Artroscopia do quadril: labrum, osteoplastia e cápsula",
+    "category": "Quadril",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-artroscopia"
+    ],
+    "mobility": [
+      "hip-active"
+    ],
+    "strength": [
+      "chair-rise"
+    ],
+    "restriction": "Apoio/arco/carga dependem dos procedimentos. Confirmar microfratura, cápsula, labrum e iliopsoas.",
+    "assessment": "Ferida, iHOT/tarefa, marcha e amplitudes permitidas.",
+    "manual": "Recurso complementar se houver benefício mensurável e permissão. Não forçar bloqueio, reparo ou foco de fratura; evitar manipulação/agressão sobre tecido protegido.",
+    "progress": "Progredir pela capacidade e resposta no dia seguinte, respeitando proteção e demanda; prazo ou simetria isolados não liberam esporte.",
+    "scope": "Adultos com diagnóstico confirmado; crianças/adolescentes, fraturas, reparos e apresentações complexas exigem avaliação e plano específicos."
+  },
+  {
+    "id": "hip-fratura-proximal",
+    "title": "Fratura proximal do fêmur: colo e região trocantérica",
+    "category": "Quadril",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-fratura-proximal",
+      "evidence-hip-20261003-article-fracture-review"
+    ],
+    "mobility": [
+      "hip-active"
+    ],
+    "strength": [
+      "chair-rise",
+      "supported-balance"
+    ],
+    "restriction": "Plano depende de fixação/estabilidade; mobilização precoce não autoriza apoio irrestrito em todo caso.",
+    "assessment": "Função prévia, estado clínico, transferências, marcha e força permitida.",
+    "manual": "Recurso complementar se houver benefício mensurável e permissão. Não forçar bloqueio, reparo ou foco de fratura; evitar manipulação/agressão sobre tecido protegido.",
+    "progress": "Progredir pela capacidade e resposta no dia seguinte, respeitando proteção e demanda; prazo ou simetria isolados não liberam esporte.",
+    "scope": "Adultos com diagnóstico confirmado; crianças/adolescentes, fraturas, reparos e apresentações complexas exigem avaliação e plano específicos."
+  },
+  {
+    "id": "hip-estresse-colo",
+    "title": "Fratura por estresse do colo femoral: suspeita e reabilitação",
+    "category": "Quadril",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-estresse-colo"
+    ],
+    "mobility": [
+      "hip-protected"
+    ],
+    "strength": [
+      "hip-protected"
+    ],
+    "restriction": "Suspeita: suspender impacto, proteger apoio e encaminhar. Sem exercícios provocativos ou salto.",
+    "assessment": "Dor inguinal/apoio, carga, saúde óssea e imagem conforme avaliação médica.",
+    "manual": "Recurso complementar se houver benefício mensurável e permissão. Não forçar bloqueio, reparo ou foco de fratura; evitar manipulação/agressão sobre tecido protegido.",
+    "progress": "Progredir pela capacidade e resposta no dia seguinte, respeitando proteção e demanda; prazo ou simetria isolados não liberam esporte.",
+    "scope": "Adultos com diagnóstico confirmado; crianças/adolescentes, fraturas, reparos e apresentações complexas exigem avaliação e plano específicos."
   }
 ]
