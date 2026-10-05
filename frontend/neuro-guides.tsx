@@ -1,0 +1,10 @@
+import {useState} from 'react';
+type Material={id:string;title:string;kind:string;category:string;summary:string;status:string};
+const sections=[['protocols','Protocolos por condição'],['articles','Artigos e diretrizes'],['imagery','Imagética motora'],['assessment','Avaliação e evolução']];
+export default function NeuroGuides({materials,category,onSelectMaterial}:{materials:Material[];category:string;onSelectMaterial:(id:string)=>void}){
+ const [section,setSection]=useState('protocols');
+ const available=materials.filter(m=>m.category==='Neurofuncional'&&m.status==='published');
+ if(!available.length||!['Todas as áreas','Neurofuncional'].includes(category))return null;
+ const selected=available.filter(m=>section==='imagery'?/imagética|observação de ação/i.test(m.title):section==='articles'?m.kind==='Artigo científico':section==='assessment'?m.kind==='Teste e avaliação':m.kind==='Protocolo clínico'&&!m.id.endsWith('-imagery'));
+ return <section className="pathology-hub nutrition-hub" aria-label="Neurofuncional"><h2>Reabilitação neurofuncional</h2><p>AVC, Parkinson, esclerose múltipla, lesão medular incompleta, TCE, paralisia cerebral, ELA, Guillain-Barré e hipofunção vestibular periférica.</p><p className="nutrition-notice">Consulte a população e a certeza de cada recomendação. Os protocolos são adaptações clínicas; a dose depende da avaliação e da fase.</p><div className="path-tabs" aria-label="Conteúdo neurofuncional">{sections.map(([value,label])=><button key={value} type="button" aria-pressed={section===value} onClick={()=>setSection(value)}>{label}</button>)}</div>{section==='imagery'&&<p>Prática mental, observação de ação e terapia do espelho são recursos diferentes. Compare os estudos e abra o roteiro de aplicação complementar.</p>}<p role="status">{selected.length} materiais nesta seleção</p><div className="nutrition-cards">{selected.map(m=><article key={m.id}><span>{m.kind}</span><h3>{m.title}</h3><p>{m.summary.split('\n\n')[0].split('\n').slice(1).join(' ')}</p><button type="button" onClick={()=>onSelectMaterial(m.id)}>Abrir material completo</button></article>)}</div></section>
+}

@@ -1,0 +1,221 @@
+{
+  "version": "2026-10-05-v30",
+  "items": [
+    {
+      "id": "evidence-neuro-20261005-avc",
+      "title": "AVC: diretriz de reabilitação e intensidade — NICE 2023",
+      "category": "Neurofuncional",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nDiretriz com revisão de evidências e recomendações por domínio.\n\nRESULTADOS E RELEVÂNCIA\nRecomenda reabilitação conforme necessidades: pelo menos 3 horas/dia, 5 dias/semana, somando as terapias da equipe, conforme participação. Não são 3 horas isoladas de fisioterapia.\n\nLIMITAÇÕES E CERTEZA\nAdaptar ao contexto, tolerância e objetivos; quando não tolerado, manter acesso às terapias necessárias. Recomendações não têm certeza uniforme.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "NICE. Stroke rehabilitation in adults. NG236, 2023. Diretriz clínica.",
+      "url": "https://www.nice.org.uk/guidance/ng236/chapter/Recommendations"
+    },
+    {
+      "id": "evidence-neuro-20261005-parkinson-cpg",
+      "title": "Parkinson: manejo fisioterapêutico — APTA 2022",
+      "category": "Neurofuncional",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nDiretriz clínica fundamentada em avaliação de estudos; consultar também a correção de 2022.\n\nRESULTADOS E RELEVÂNCIA\nPrioriza exercício aeróbico, resistência, equilíbrio, pistas externas e prática funcional.\n\nLIMITAÇÕES E CERTEZA\nA recomendação depende do domínio e capacidade; não pressupõe cura ou prevenção comprovada da progressão.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "Osborne JA et al. Physical Therapist Management of Parkinson Disease: A Clinical Practice Guideline From the APTA. Physical Therapy. 2022;102:pzab302. DOI: 10.1093/ptj/pzab302. Correção: 10.1093/ptj/pzac098.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9046970/"
+    },
+    {
+      "id": "evidence-neuro-20261005-parkinson-review",
+      "title": "Parkinson: tipos de exercício — Cochrane 2024",
+      "category": "Neurofuncional",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nRevisão sistemática e metanálise em rede: 154 ECA, 7.837 participantes.\n\nRESULTADOS E RELEVÂNCIA\nVárias modalidades beneficiam sintomas motores e qualidade de vida. Comparações não estabelecem um vencedor universal.\n\nLIMITAÇÕES E CERTEZA\nPredomínio de doença leve/moderada, sem comprometimento cognitivo importante; confiança varia entre comparações e eventos adversos são mal descritos.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "Ernst M et al. Physical exercise for people with Parkinson’s disease: a systematic review and network meta-analysis. Cochrane Database Syst Rev. 2024;4:CD013856. DOI: 10.1002/14651858.CD013856.pub3.",
+      "url": "https://www.cochrane.org/evidence/CD013856_physical-exercise-people-parkinsons-disease-what-type-exercise-works-best"
+    },
+    {
+      "id": "evidence-neuro-20261005-em-review",
+      "title": "Esclerose múltipla: panorama da reabilitação — Cochrane 2019",
+      "category": "Neurofuncional",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nOverview de revisões Cochrane; qualidade metodológica avaliada pelos autores.\n\nRESULTADOS E RELEVÂNCIA\nEvidência moderada para benefícios de exercício em mobilidade, força, fadiga e qualidade de vida.\n\nLIMITAÇÕES E CERTEZA\nRevisões heterogêneas e busca histórica; benefícios funcionais não equivalem a modificar o curso da doença.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "Amatya B, Khan F, Galea M. Rehabilitation for people with multiple sclerosis: an overview of Cochrane Reviews. Cochrane Database Syst Rev. 2019;1:CD012732. DOI: 10.1002/14651858.CD012732.pub2.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30637728/"
+    },
+    {
+      "id": "evidence-neuro-20261005-em-exercise",
+      "title": "Esclerose múltipla: exercício por nível funcional — Kalb 2020",
+      "category": "Neurofuncional",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nRecomendações baseadas em evidência e opinião de especialistas, conforme incapacidade.\n\nRESULTADOS E RELEVÂNCIA\nIncentiva atividade regular e progressão individual; adaptações e assistência ganham importância com maior incapacidade.\n\nLIMITAÇÕES E CERTEZA\nNos níveis mais elevados de incapacidade parte das doses deriva de consenso, não de ECA robustos.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "Kalb R et al. Exercise and lifestyle physical activity recommendations for people with multiple sclerosis throughout the disease course. Multiple Sclerosis Journal. 2020;26:1459–1469. DOI: 10.1177/1352458520915629.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7575303/"
+    },
+    {
+      "id": "evidence-neuro-20261005-locomotor",
+      "title": "AVC, lesão medular incompleta e TCE: marcha crônica — diretriz 2020",
+      "category": "Neurofuncional",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nDiretriz para pessoas deambuladoras, mais de 6 meses após a lesão.\n\nRESULTADOS E RELEVÂNCIA\nPrática de marcha em intensidade moderada/alta pode melhorar velocidade e distância, quando clinicamente apropriada.\n\nLIMITAÇÕES E CERTEZA\nNão extrapolar a lesão medular completa, fase aguda ou pessoa sem marcha. Intensidade exige triagem e monitorização.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "Hornby TG et al. Clinical Practice Guideline to Improve Locomotor Function Following Chronic Stroke, Incomplete Spinal Cord Injury, and Brain Injury. J Neurol Phys Ther. 2020;44:49–100. PMID: 31834165.",
+      "url": "https://neuropt.org/practice-resources/anpt-clinical-practice-guidelines/locomotor-cpg--chronic-cva--sci-and-tbi"
+    },
+    {
+      "id": "evidence-neuro-20261005-pc",
+      "title": "Paralisia cerebral: intervenções e qualidade — Novak 2020",
+      "category": "Neurofuncional",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nRevisão sistemática de intervenções pediátricas, com classificação por intervenção e GRADE.\n\nRESULTADOS E RELEVÂNCIA\nDestaca prática ativa dirigida a metas, tarefas e opções como treino bimanual/CIMT em populações selecionadas.\n\nLIMITAÇÕES E CERTEZA\nNão agrega todas as terapias como igualmente eficazes. Evidência e dose mudam com intervenção, idade e perfil; síntese cobre literatura até 2019.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "Novak I et al. State of the Evidence Traffic Lights 2019: Systematic Review of Interventions for Preventing and Treating Children with Cerebral Palsy. Current Neurology and Neuroscience Reports. 2020;20:3. DOI: 10.1007/s11910-020-1022-z.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7035308/"
+    },
+    {
+      "id": "evidence-neuro-20261005-vest",
+      "title": "Hipofunção vestibular periférica: diretriz atualizada 2022",
+      "category": "Neurofuncional",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nDiretriz com avaliação crítica da literatura; população com hipofunção objetivamente confirmada.\n\nRESULTADOS E RELEVÂNCIA\nForte respaldo para reabilitação supervisionada, estabilidade do olhar e equilíbrio.\n\nLIMITAÇÕES E CERTEZA\nDoses têm menor certeza que a eficácia geral. Não se aplica automaticamente a tontura inespecífica, VPPB ou lesão vestibular central.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "Hall CD et al. Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline From the ANPT/APTA. J Neurol Phys Ther. 2022;46:118–177. DOI: 10.1097/NPT.0000000000000382.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/"
+    },
+    {
+      "id": "evidence-neuro-20261005-ela",
+      "title": "ELA: manutenção funcional e cuidado respiratório — NICE NG42",
+      "category": "Neurofuncional",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nDiretriz de doença do neurônio motor, incluindo manejo multidisciplinar.\n\nRESULTADOS E RELEVÂNCIA\nExercício e assistência devem considerar capacidade, fadiga, conforto e necessidades respiratórias.\n\nLIMITAÇÕES E CERTEZA\nObjetivo funcional e de suporte; a diretriz não demonstra reversão da neurodegeneração por fortalecimento.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "NICE. Motor neurone disease: assessment and management. NG42, 2016, atualização 2019. Diretriz clínica.",
+      "url": "https://www.nice.org.uk/guidance/ng42/chapter/Recommendations"
+    },
+    {
+      "id": "evidence-neuro-20261005-gbs",
+      "title": "Guillain-Barré: diretriz EAN/PNS 2023 e limites da reabilitação",
+      "category": "Neurofuncional",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nDiretriz com AGREE II/GRADE e perguntas PICO.\n\nRESULTADOS E RELEVÂNCIA\nReconhece importância da reabilitação nas fases aguda e crônica.\n\nLIMITAÇÕES E CERTEZA\nO próprio documento identifica escassez de estudos adequados para fisioterapia; não classificar uma dose específica de exercício como comprovada.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "van Doorn PA et al. European Academy of Neurology/Peripheral Nerve Society Guideline on diagnosis and treatment of Guillain–Barré syndrome. European Journal of Neurology. 2023;30:3646–3674. DOI: 10.1111/ene.16073.",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/ene.16073"
+    },
+    {
+      "id": "evidence-neuro-20261005-imagery-cochrane",
+      "title": "Imagética motora após AVC: membro superior — Cochrane 2020",
+      "category": "Neurofuncional",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\n25 estudos, 676 participantes; avaliação de risco de viés e GRADE.\n\nRESULTADOS E RELEVÂNCIA\nPrática mental adicionada à terapia: atividade do braço SMD 0,66 (IC95% 0,39–0,94), certeza moderada. Para atividades diárias, SMD 0,08 (−0,24–0,39), certeza baixa.\n\nLIMITAÇÕES E CERTEZA\nDose ótima e manutenção incertas. Prática mental isolada não tem benefício estabelecido frente à terapia convencional. SMD não é ganho em pontos de uma escala.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "Barclay RE, Stevenson TJ, Poluha W, Semenko B, Schubert J. Mental practice for treating upper extremity deficits in individuals with hemiparesis after stroke. Cochrane Database Syst Rev. 2020;5:CD005950. DOI: 10.1002/14651858.CD005950.pub5.",
+      "url": "https://www.cochrane.org/evidence/CD005950_mental-practice-improve-arm-function-and-arm-movement-individuals-hemiparesis-after-stroke"
+    },
+    {
+      "id": "evidence-neuro-20261005-imagery-gait",
+      "title": "Imagética motora após AVC: marcha — revisão 2024",
+      "category": "Neurofuncional",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nRevisão sistemática de ECA; 16 estudos, busca até dezembro de 2022.\n\nRESULTADOS E RELEVÂNCIA\nCadência imediatamente após intervenção: SMD 1,22 (IC95% 0,59–1,85). Apesar desse resultado, os autores consideram os achados globais inconclusivos pela heterogeneidade.\n\nLIMITAÇÕES E CERTEZA\nNão transportar a certeza moderada do braço para a marcha. Consulta ao resumo; sem extração própria de efeito agregado ou AMSTAR 2.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "Effects of motor imagery training on gait performance in individuals after stroke: a systematic review and meta-analysis. Disability and Rehabilitation. Publicação online 2024. DOI: 10.1080/09638288.2024.2337091. PMID: 38638087. Autoria não confirmada nesta consulta; verificar no original.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38638087/"
+    },
+    {
+      "id": "evidence-neuro-20261005-imagery-ao",
+      "title": "Observação de ação com imagética motora — Lin 2025",
+      "category": "Neurofuncional",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nRevisão sistemática/metanálise de membro superior pós-AVC; avaliação dos ECA com RoB 2.\n\nRESULTADOS E RELEVÂNCIA\nSete ECA com FMA-UE (189 participantes): SMD 0,58 (IC95% 0,13–1,04) a favor da combinação. Diferença padronizada não é ganho de pontos nem comprova relevância individual.\n\nLIMITAÇÕES E CERTEZA\nResultados não provam ganho universal nem superioridade a toda terapia ativa. Protocolos/comparadores heterogêneos; sem atribuição própria de certeza GRADE nesta ficha.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "Lin D, Eaves DL, Franklin JD, Robinson JR, Binks JA, Emerson JR. Combined action observation and motor imagery practice for upper limb recovery following stroke: a systematic review and meta-analysis. Frontiers in Neurology. 2025;16:1567421. DOI: 10.3389/fneur.2025.1567421.",
+      "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2025.1567421/full"
+    },
+    {
+      "id": "evidence-neuro-20261005-protocol-avc",
+      "title": "AVC: avaliação, treino orientado à tarefa e progressão",
+      "category": "Neurofuncional",
+      "kind": "Protocolo clínico",
+      "summary": "ESCOPO E BASE\nRoteiro clínico adaptado pela curadoria; não é reprodução de protocolo validado. AVC confirmado, clinicamente estável; distinguir fase e déficit.\n\nAVALIAÇÃO E REGISTRO\nRegistrar assistência, comunicação/cognição, sensibilidade, dor e tarefa prioritária. Escolher FMA-UE/ARAT para braço e 10 m/6 min para marcha quando viável.\n\nCONDUTA E DOSE\nTreinar tarefas relevantes: alcançar, transferir e caminhar. Fracionar pelo nível funcional; registrar minutos ativos, repetições e assistência. Meta NICE de 3 horas envolve toda a equipe, não dose obrigatória individual.\n\nREAVALIAÇÃO E SEGURANÇA\nProgredir complexidade/volume conforme qualidade e recuperação. Proteger ombro parético; novo déficit focal exige urgência. Reavaliar mesmas medidas e metas.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "NICE. Stroke rehabilitation in adults. NG236, 2023. Diretriz clínica.",
+      "url": "https://www.nice.org.uk/guidance/ng236/chapter/Recommendations"
+    },
+    {
+      "id": "evidence-neuro-20261005-protocol-parkinson",
+      "title": "Parkinson: força, equilíbrio, pistas e marcha",
+      "category": "Neurofuncional",
+      "kind": "Protocolo clínico",
+      "summary": "ESCOPO E BASE\nRoteiro clínico adaptado pela curadoria; não é reprodução de protocolo validado. Diagnóstico confirmado; registrar estágio, flutuações e medicação.\n\nAVALIAÇÃO E REGISTRO\nRegistrar quedas/freezing, ortostatismo e tarefa prioritária; considerar Mini-BESTest, TUG e velocidade da marcha, com supervisão.\n\nCONDUTA E DOSE\nCombinar prática funcional, resistência e aeróbico adaptados. Testar pistas visuais/auditivas na tarefa e manter se ajudam. Definir dose e supervisão pela resposta, capacidade e risco de queda.\n\nREAVALIAÇÃO E SEGURANÇA\nProgredir uma variável por vez. Registrar horário ON/OFF nas comparações. Hipotensão, queda recorrente ou piora súbita requerem revisão com equipe.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "Osborne JA et al. Physical Therapist Management of Parkinson Disease: A Clinical Practice Guideline From the APTA. Physical Therapy. 2022;102:pzab302. DOI: 10.1093/ptj/pzab302. Correção: 10.1093/ptj/pzac098.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9046970/"
+    },
+    {
+      "id": "evidence-neuro-20261005-protocol-em",
+      "title": "Esclerose múltipla: exercício e manejo de fadiga",
+      "category": "Neurofuncional",
+      "kind": "Protocolo clínico",
+      "summary": "ESCOPO E BASE\nRoteiro clínico adaptado pela curadoria; não é reprodução de protocolo validado. Diagnóstico confirmado, com plano ajustado à incapacidade e flutuações.\n\nAVALIAÇÃO E REGISTRO\nRegistrar fadiga, tolerância térmica, sono, mobilidade e participação; selecionar uma medida funcional viável.\n\nCONDUTA E DOSE\nCombinar resistência, aeróbico e tarefas, com pausas e adaptações ambientais. Progredir gradualmente; metas de atividade são individualizadas, não exigência imediata. Usar assistência se necessária.\n\nREAVALIAÇÃO E SEGURANÇA\nReavaliar função e recuperação após sessões. Deterioração neurológica nova/persistente deve ser discutida com equipe; ajustar durante surtos, infecções e fadiga desproporcional.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "Kalb R et al. Exercise and lifestyle physical activity recommendations for people with multiple sclerosis throughout the disease course. Multiple Sclerosis Journal. 2020;26:1459–1469. DOI: 10.1177/1352458520915629.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7575303/"
+    },
+    {
+      "id": "evidence-neuro-20261005-protocol-medular",
+      "title": "Lesão medular incompleta: marcha na fase crônica",
+      "category": "Neurofuncional",
+      "kind": "Protocolo clínico",
+      "summary": "ESCOPO E BASE\nRoteiro clínico adaptado pela curadoria; não é reprodução de protocolo validado. Deambuladores, lesão motora incompleta há mais de 6 meses; não protocolo agudo ou de lesão completa.\n\nAVALIAÇÃO E REGISTRO\nConfirmar nível, capacidade e apoio; examinar pele, dor e resposta cardiovascular.\n\nCONDUTA E DOSE\nPriorizar prática de passos; ajustar intensidade e suporte à capacidade. Registrar tempo ativo, distância e esforço percebido. Não impor intensidade alta sem triagem.\n\nREAVALIAÇÃO E SEGURANÇA\nProgredir volume/intensidade sob supervisão; sintomas de disreflexia autonômica ou instabilidade exigem interrupção e avaliação imediata.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "Hornby TG et al. Clinical Practice Guideline to Improve Locomotor Function Following Chronic Stroke, Incomplete Spinal Cord Injury, and Brain Injury. J Neurol Phys Ther. 2020;44:49–100. PMID: 31834165.",
+      "url": "https://neuropt.org/practice-resources/anpt-clinical-practice-guidelines/locomotor-cpg--chronic-cva--sci-and-tbi"
+    },
+    {
+      "id": "evidence-neuro-20261005-protocol-tce",
+      "title": "TCE: treino de marcha na fase crônica",
+      "category": "Neurofuncional",
+      "kind": "Protocolo clínico",
+      "summary": "ESCOPO E BASE\nRoteiro clínico adaptado pela curadoria; não é reprodução de protocolo validado. TCE, deambulador há mais de 6 meses; integrar plano cognitivo/comportamental da equipe.\n\nAVALIAÇÃO E REGISTRO\nRegistrar marcha, equilíbrio, atenção, fadiga e capacidade de seguir instruções.\n\nCONDUTA E DOSE\nPraticar marcha significativa com supervisão e intensidade apropriada. Fracionar sessões e reduzir distrações quando necessário; medir velocidade/distância em condições padronizadas.\n\nREAVALIAÇÃO E SEGURANÇA\nAumentar desafio apenas com segurança e aprendizagem. Crises, alteração de consciência ou piora neurológica exigem avaliação. Não extrapolar esta diretriz ao TCE agudo.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "Hornby TG et al. Clinical Practice Guideline to Improve Locomotor Function Following Chronic Stroke, Incomplete Spinal Cord Injury, and Brain Injury. J Neurol Phys Ther. 2020;44:49–100. PMID: 31834165.",
+      "url": "https://neuropt.org/practice-resources/anpt-clinical-practice-guidelines/locomotor-cpg--chronic-cva--sci-and-tbi"
+    },
+    {
+      "id": "evidence-neuro-20261005-protocol-pc",
+      "title": "Paralisia cerebral: metas, tarefas e participação",
+      "category": "Neurofuncional",
+      "kind": "Protocolo clínico",
+      "summary": "ESCOPO E BASE\nRoteiro clínico adaptado pela curadoria; não é reprodução de protocolo validado. Crianças com diagnóstico confirmado; intervenção conforme perfil motor e objetivos familiares.\n\nAVALIAÇÃO E REGISTRO\nRegistrar GMFCS, função manual, dor e tarefa escolhida pela família; GMFM quando adequado.\n\nCONDUTA E DOSE\nPriorizar prática ativa de tarefas e brincadeiras. Selecionar treino bimanual/CIMT conforme indicação, não automaticamente. Dose acompanha idade, objetivo, capacidade e tolerância.\n\nREAVALIAÇÃO E SEGURANÇA\nReavaliar transferência para cotidiano. Evitar prometer normalização universal do movimento; revisar órteses e necessidades ortopédicas com equipe.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "Novak I et al. State of the Evidence Traffic Lights 2019: Systematic Review of Interventions for Preventing and Treating Children with Cerebral Palsy. Current Neurology and Neuroscience Reports. 2020;20:3. DOI: 10.1007/s11910-020-1022-z.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7035308/"
+    },
+    {
+      "id": "evidence-neuro-20261005-protocol-vest",
+      "title": "Hipofunção vestibular periférica: olhar e equilíbrio",
+      "category": "Neurofuncional",
+      "kind": "Protocolo clínico",
+      "summary": "ESCOPO E BASE\nRoteiro clínico adaptado pela curadoria; não é reprodução de protocolo validado. Hipofunção confirmada; não aplicar como protocolo de qualquer tontura ou VPPB.\n\nAVALIAÇÃO E REGISTRO\nRegistrar DHI, estabilidade visual e equilíbrio/marcha; selecionar avaliação compatível com o diagnóstico.\n\nCONDUTA E DOSE\nReabilitação supervisionada. Na unilateral crônica, diretriz sugere estabilidade do olhar em 3–5 blocos/dia, total de pelo menos 20 min/dia por 4–6 semanas; dose com certeza menor. Ajustar sintomas e segurança.\n\nREAVALIAÇÃO E SEGURANÇA\nNão usar movimentos oculares isolados como treino de estabilização. Sintomas neurológicos novos requerem avaliação; alta por metas e evolução, não por dias fixos.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "Hall CD et al. Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline From the ANPT/APTA. J Neurol Phys Ther. 2022;46:118–177. DOI: 10.1097/NPT.0000000000000382.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/"
+    },
+    {
+      "id": "evidence-neuro-20261005-protocol-ela",
+      "title": "ELA: conservação de função, conforto e assistência",
+      "category": "Neurofuncional",
+      "kind": "Protocolo clínico",
+      "summary": "ESCOPO E BASE\nRoteiro clínico adaptado pela curadoria; não é reprodução de protocolo validado. Cuidado multidisciplinar; não protocolo de hipertrofia ou reversão da doença.\n\nAVALIAÇÃO E REGISTRO\nRegistrar tarefas, fadiga, amplitude, transferências e sintomas respiratórios.\n\nCONDUTA E DOSE\nMobilidade ativa/assistida/passiva conforme capacidade; atividade submáxima adaptada e recursos de assistência. Treinar cuidadores quando apropriado; evitar esforço que comprometa função restante.\n\nREAVALIAÇÃO E SEGURANÇA\nRever continuamente carga e equipamentos. Dispneia, ortopneia ou tosse ineficaz demandam avaliação respiratória especializada; não definir dose máxima universal.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "NICE. Motor neurone disease: assessment and management. NG42, 2016, atualização 2019. Diretriz clínica.",
+      "url": "https://www.nice.org.uk/guidance/ng42/chapter/Recommendations"
+    },
+    {
+      "id": "evidence-neuro-20261005-protocol-gbs",
+      "title": "Guillain-Barré: proteção e recuperação funcional gradual",
+      "category": "Neurofuncional",
+      "kind": "Protocolo clínico",
+      "summary": "ESCOPO E BASE\nRoteiro clínico adaptado pela curadoria; não é reprodução de protocolo validado. Após diagnóstico e estabilização; fase aguda exige vigilância médica.\n\nAVALIAÇÃO E REGISTRO\nRegistrar fraqueza, fadiga, autonomia, função respiratória e sinais autonômicos.\n\nCONDUTA E DOSE\nMobilidade e tarefas com assistência, seguida de atividade graduada conforme recuperação. Dose individual: evidência para séries/cargas específicas é escassa. Evitar testar exaustão como critério de melhora.\n\nREAVALIAÇÃO E SEGURANÇA\nMonitorar recuperação e fadiga após sessão. Fraqueza ascendente, dispneia, disfagia ou instabilidade autonômica exigem avaliação urgente.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "van Doorn PA et al. European Academy of Neurology/Peripheral Nerve Society Guideline on diagnosis and treatment of Guillain–Barré syndrome. European Journal of Neurology. 2023;30:3646–3674. DOI: 10.1111/ene.16073.",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/ene.16073"
+    },
+    {
+      "id": "evidence-neuro-20261005-protocol-imagery",
+      "title": "Imagética motora: aplicação complementar após AVC",
+      "category": "Neurofuncional",
+      "kind": "Protocolo clínico",
+      "summary": "ESCOPO E BASE\nRoteiro clínico adaptado pela curadoria; não é reprodução de protocolo validado. Ensaio mental de movimento sem execução; distinto de terapia do espelho e observação de ação. Melhor respaldo para braço pós-AVC.\n\nAVALIAÇÃO E REGISTRO\nVerificar compreensão, atenção e possibilidade de imaginar a tarefa; não excluir apenas por afasia. Definir tarefa e medir desempenho real, como alcance/ARAT.\n\nCONDUTA E DOSE\nRoteiro operacional adaptável: observar/demonstrar tarefa; imaginar em primeira pessoa movimento e sensação; depois praticar fisicamente quando possível. Exemplo de teste: bloco de 3–5 min com pausas, sem tratar essa dose como validada.\n\nREAVALIAÇÃO E SEGURANÇA\nRegistrar minutos, conteúdo, adesão e fadiga; reavaliar desempenho real. Usar como complemento. Dose ótima e impacto em atividades diárias permanecem incertos; não substituir prática ativa.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "Barclay RE, Stevenson TJ, Poluha W, Semenko B, Schubert J. Mental practice for treating upper extremity deficits in individuals with hemiparesis after stroke. Cochrane Database Syst Rev. 2020;5:CD005950. DOI: 10.1002/14651858.CD005950.pub5.\nLin D, Eaves DL, Franklin JD, Robinson JR, Binks JA, Emerson JR. Combined action observation and motor imagery practice for upper limb recovery following stroke: a systematic review and meta-analysis. Frontiers in Neurology. 2025;16:1567421. DOI: 10.3389/fneur.2025.1567421.",
+      "url": "https://www.cochrane.org/evidence/CD005950_mental-practice-improve-arm-function-and-arm-movement-individuals-hemiparesis-after-stroke"
+    },
+    {
+      "id": "evidence-neuro-20261005-assessment",
+      "title": "Neurofuncional: registro de evolução e escolha de desfechos",
+      "category": "Neurofuncional",
+      "kind": "Teste e avaliação",
+      "summary": "ESCOPO\nFicha operacional da clínica, sem afirmar validação de uma bateria única.\n\nREGISTRO\nDiagnóstico/fase, meta da pessoa, assistência, tarefa, instrumento escolhido, condição de teste, medicação, fadiga e eventos adversos. Repetir o mesmo procedimento.\n\nINTERPRETAÇÃO\nAVC: selecionar medidas de braço e marcha por objetivo. Parkinson: medir equilíbrio/marcha e registrar ON/OFF. Crianças: considerar nível funcional e tarefa familiar. Não transportar MCID ou pontos de corte entre populações.\n\nREAVALIAÇÃO\nPlanejar data conforme objetivo e evolução. Decisão depende de mudança funcional, segurança e relevância para a pessoa, não apenas significância estatística.\n\nCURADORIA\n05/10/2026. Síntese dirigida, sem revisão sistemática própria. RoB 2/AMSTAR 2 não pontuados pela clínica; certeza informada quando atribuída pela fonte. Fator de impacto não verificado; não empregado como substituto da qualidade metodológica.",
+      "reference": "NICE. Stroke rehabilitation in adults. NG236, 2023. Diretriz clínica.\nOsborne JA et al. Physical Therapist Management of Parkinson Disease: A Clinical Practice Guideline From the APTA. Physical Therapy. 2022;102:pzab302. DOI: 10.1093/ptj/pzab302. Correção: 10.1093/ptj/pzac098.\nNovak I et al. State of the Evidence Traffic Lights 2019: Systematic Review of Interventions for Preventing and Treating Children with Cerebral Palsy. Current Neurology and Neuroscience Reports. 2020;20:3. DOI: 10.1007/s11910-020-1022-z.",
+      "url": "https://www.nice.org.uk/guidance/ng236/chapter/Recommendations"
+    }
+  ]
+}
