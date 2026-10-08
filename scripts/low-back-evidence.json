@@ -1,6 +1,6 @@
 {
-  "version": "2026-10-02-v2",
-  "method": "Curadoria dirigida de ensaios randomizados relevantes; não revisão sistemática exaustiva. Qualidade descrita por características verificáveis, sem escore RoB 2 próprio.",
+  "version": "2026-10-08-v1",
+  "method": "Curadoria dirigida de revisões sistemáticas, ensaios e diretrizes; não busca sistemática exaustiva. Cert e limitações descritas por desfecho, sem atribuir escore próprio RoB 2 ou AMSTAR 2; fator de impacto não verificado.",
   "items": [
     {
       "id": "evidence-20261002-lombar-restore",
@@ -28,6 +28,42 @@
       "summary": "PERGUNTA / TEMA\nPrevenção de recorrência após recuperação de lombalgia inespecífica; não tratamento de um episódio ativo.\n\nMÉTODO E QUALIDADE\nEnsaio randomizado com registro prospectivo e 701 adultos. Caminhada progressiva individualizada e educação, com seis sessões de fisioterapia em seis meses, versus nenhum tratamento. Análise por intenção de tratar; seguimento de 12–36 meses e coleta mensal.\n\nRESULTADO PRINCIPAL\nRecorrência limitante de atividades: hazard ratio 0,72 (IC95% 0,60–0,85). Mediana até recorrência: 208 dias versus 112. Isso representa redução de 28% na taxa instantânea do evento; não redução absoluta de 28 pontos percentuais.\n\nAPLICAÇÃO CLÍNICA — INTERPRETAÇÃO DA CURADORIA\nApós recuperação, construir programa acessível e progressivo com acompanhamento. O estudo avaliou caminhada associada à educação, sem isolar o efeito de cada componente.\n\nLIMITAÇÕES E CERTEZA\nSem mascaramento de participantes e terapeutas; desfecho autorrelatado, controle sem tratamento e amostra 81% feminina. Mais eventos em membros inferiores no grupo de intervenção (100 versus 54), embora a proporção com algum evento fosse semelhante. Sem classificação formal RoB 2 própria.\n\nCuradoria assistida: 02/10/2026. Fonte: artigo completo de acesso aberto. Fator de impacto não verificado nesta inclusão.",
       "reference": "Pocovi NC, Lin CWC, French SD et al. Effectiveness and cost-effectiveness of an individualised, progressive walking and education intervention for the prevention of low back pain recurrence in Australia (WalkBack): a randomised controlled trial. The Lancet. 2024;404:134–144. DOI:10.1016/S0140-6736(24)00755-4. PMID:38908392.",
       "url": "https://pubmed.ncbi.nlm.nih.gov/38908392/"
+    },
+    {
+      "id": "evidence-20261008-lombar-exercicio-agudo",
+      "title": "Dor lombar aguda: limites da evidência para exercício — Cochrane (2023)",
+      "category": "Coluna",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA\nExercício estruturado em lombalgia inespecífica com duração de até seis semanas.\n\nMÉTODO\nRevisão Cochrane: 23 ensaios, 2.674 participantes; busca até novembro de 2021.\n\nRESULTADOS\nNão foi demonstrado benefício clinicamente relevante sobre dor ou função no curto prazo frente a placebo ou nenhum tratamento. A certeza é muito baixa: não permite concluir ineficácia definitiva.\n\nAPLICAÇÃO — INTERPRETAÇÃO DA CURADORIA\nNão prometer que um protocolo específico de exercício acelera a resolução do episódio agudo com base nesta revisão. A comparação de exercício estruturado não equivale à comparação entre manter atividades habituais e repousar.\n\nLIMITAÇÕES\nPoucos participantes nas comparações principais, heterogeneidade e risco de viés. Relato insuficiente de eventos adversos impede conclusão sobre segurança.\n\nCuradoria: 08/10/2026. Fator de impacto não verificado; sem avaliação formal própria RoB 2/AMSTAR 2.",
+      "reference": "IJzelenberg W, Oosterhuis T, Hayden JA, Koes BW, van Tulder MW, Rubinstein SM, de Zoete A. Exercise therapy for treatment of acute non-specific low back pain. Cochrane Database of Systematic Reviews. 2023;8:CD009365. DOI:10.1002/14651858.CD009365.pub2.",
+      "url": "https://www.cochrane.org/pt/evidence/CD009365_exercise-therapy-treating-acute-non-specific-low-back-pain"
+    },
+    {
+      "id": "evidence-20261008-lombar-psicologia-fisioterapia",
+      "title": "Dor lombar crônica: intervenções psicológicas com fisioterapia — BMJ (2022)",
+      "category": "Coluna",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA\nIntervenções psicológicas para lombalgia crônica inespecífica.\n\nMÉTODO\nRevisão sistemática com metanálise em rede: 97 ensaios, 13.136 participantes e 17 modalidades de tratamento.\n\nRESULTADOS\nTerapia cognitivo-comportamental e educação sobre dor associadas à fisioterapia melhoraram função após a intervenção, com evidência de qualidade moderada nas comparações principais. Os benefícios diminuem com o tempo; manutenção em longo prazo é menos segura.\n\nAPLICAÇÃO — INTERPRETAÇÃO DA CURADORIA\nIntegrar exercício estruturado a estratégias para medo, evitação e autogerenciamento. Encaminhar para cuidado psicológico quando indicado; educação genérica isolada não reproduz os programas estudados.\n\nLIMITAÇÕES\nComparações indiretas e diferenças entre programas exigem cautela com rankings. Não atribuir a toda modalidade psicológica o mesmo efeito, nem interpretar dor como imaginária. Sem escore AMSTAR 2 próprio.\n\nCuradoria: 08/10/2026. Fator de impacto não verificado; sem avaliação formal própria RoB 2/AMSTAR 2.",
+      "reference": "Ho EK, Chen L, Simic M et al. Psychological interventions for chronic, non-specific low back pain: systematic review with network meta-analysis. BMJ. 2022;376:e067718. DOI:10.1136/bmj-2021-067718. PMID:35354560.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8965745/"
+    },
+    {
+      "id": "evidence-20261008-lombar-opal",
+      "title": "Dor lombar aguda: opioide não superou placebo — OPAL (2023)",
+      "category": "Coluna",
+      "kind": "Artigo científico",
+      "summary": "PERGUNTA\nCurso curto de opioide para lombalgia ou cervicalgia inespecífica de até 12 semanas.\n\nMÉTODO\nEnsaio randomizado com triplo mascaramento e placebo; 347 participantes. Oxicodona-naloxona ou placebo por até seis semanas, ambos com cuidados recomendados.\n\nRESULTADOS\nDor em seis semanas: 2,78 versus 2,25/10; diferença ajustada +0,53 (IC95% −0,00 a 1,07). O opioide não foi superior ao placebo. Constipação foi mais frequente com opioide.\n\nAPLICAÇÃO — INTERPRETAÇÃO DA CURADORIA\nO ensaio não sustenta usar rotineiramente o regime avaliado para esse quadro. Decisões e mudanças de medicação cabem ao prescritor.\n\nLIMITAÇÕES\nAmostra inclui lombalgia e cervicalgia, perdas até seis semanas e avaliação de um regime específico. Não extrapolar automaticamente para dor oncológica, pós-operatória ou todas as situações dolorosas. Fonte consultada: resumo do artigo.\n\nCuradoria: 08/10/2026. Fator de impacto não verificado; sem avaliação formal própria RoB 2/AMSTAR 2.",
+      "reference": "Jones CMP, Day RO, Koes BW et al. Opioid analgesia for acute low back pain and neck pain (the OPAL trial): a randomised placebo-controlled trial. The Lancet. 2023;402:304–312. DOI:10.1016/S0140-6736(23)00404-X. PMID:37392748.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37392748/"
+    },
+    {
+      "id": "evidence-20261008-lombar-oms",
+      "title": "Dor lombar crônica primária: diretriz de cuidado — OMS (2023)",
+      "category": "Coluna",
+      "kind": "Protocolo clínico",
+      "summary": "ESCOPO\nManejo não cirúrgico de adultos com dor lombar crônica primária em atenção primária e comunitária, incluindo idosos.\n\nMÉTODO\nDiretriz internacional baseada em sínteses de evidências; não é um ensaio clínico.\n\nRECOMENDAÇÕES\nIntegra educação e autocuidado, exercício e intervenções psicológicas; algumas terapias manuais podem compor o cuidado. Desaconselha oferecer rotineiramente tração, cintas lombares e opioides para essa população.\n\nAPLICAÇÃO — INTERPRETAÇÃO DA CURADORIA\nPriorizar participação ativa, metas funcionais e cuidado coordenado. Usar a diretriz para orientar escolhas, sem equiparar a certeza de todas as intervenções.\n\nLIMITAÇÕES\nO escopo é lombalgia crônica primária, não fratura, infecção, câncer ou outras causas específicas. Recomendação contra uso rotineiro não é prova de que toda intervenção tenha efeito exatamente zero. ISBN:9789240081789; DOI não informado.\n\nCuradoria: 08/10/2026. Fator de impacto não verificado; sem avaliação formal própria RoB 2/AMSTAR 2.",
+      "reference": "World Health Organization. WHO guideline for non-surgical management of chronic primary low back pain in adults in primary and community care settings. Geneva: WHO; 2023. ISBN:9789240081789.",
+      "url": "https://www.who.int/publications/i/item/9789240081789"
     }
   ]
 }
