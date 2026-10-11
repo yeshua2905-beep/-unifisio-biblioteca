@@ -1,0 +1,53 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtemp,mkdir,writeFile,rm} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {resolve} from 'node:path';
+import {createApp} from '../server/app.mjs';
+import {hashPassword} from '../server/security.mjs';
+import guides from '../server/protocol-guides.json' with {type:'json'};
+import sourceGuides from '../frontend/pathology-data.json' with {type:'json'};
+const origin='https://protocol.example';
+test('Cadastro manual mantém protocolo, revisão, permissões e persistência',async()=>{
+ const dir=await mkdtemp(resolve(tmpdir(),'manual-exercises-'));await mkdir(resolve(dir,'public'));await writeFile(resolve(dir,'public/index.html'),'<!doctype html>');
+ const options={dataDir:resolve(dir,'data'),publicUrl:origin,staticDir:resolve(dir,'public')};let app=await createApp(options);
+ try{
+  assert.deepEqual(guides,sourceGuides.map(({id,materialIds})=>({id,materialIds})));
+  const password='Uma senha apenas para testes',hash=await hashPassword(password),cookies={};
+  for(const role of ['admin','professional','reader']){app.db.prepare('INSERT INTO users(id,email,name,password_hash,role,created_at) VALUES(?,?,?,?,?,?)').run(role,role+'@example.org',role,hash,role,new Date().toISOString());}
+  const call=async(path,method='GET',payload,cookie=cookies.admin,requestOrigin=origin)=>{const response=await app.handle(new Request(origin+path,{method,headers:{Origin:requestOrigin,Cookie:cookie||'','Content-Type':'application/json'},...(payload===undefined?{}:{body:JSON.stringify(payload)})}));return {status:response.status,data:await response.json(),cookie:response.headers.get('set-cookie')?.split(';')[0]}};
+  for(const role of ['admin','professional','reader'])cookies[role]=(await call('/api/auth/login','POST',{email:role+'@example.org',password},'')).cookie;
+  const guide=guides[0],second=guides[1],mid=guide.materialIds[0],now=new Date().toISOString();
+  for(const id of new Set([mid,second.materialIds[0],'other-protocol','private-protocol','article']))app.db.prepare('INSERT INTO materials(id,title,category,kind,summary,status,author_id,author_name,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?,?,?)').run(id,id,'Joelho',id==='article'?'Artigo científico':'Protocolo clínico','Resumo',id==='private-protocol'?'pending':'published','admin','admin',now,now);
+  const listing=(kind,id,cookie)=>call('/api/protocol-exercises?'+new URLSearchParams({targetKind:kind,targetId:id}),'GET',undefined,cookie);
+  const entry={targetKind:'guide',targetId:guide.id,title:'Exercício manual de teste',steps:'Posição e execução registradas.',dose:'Dose registrada pelo profissional.',chain:'Cadeia cinética fechada',url:'https://example.org/video'};
+  assert.equal((await listing('guide',guide.id,'')).status,401);
+  assert.equal((await call('/api/protocol-exercises','POST',entry,cookies.reader)).status,403);
+  assert.equal((await call('/api/protocol-exercises','POST',entry,cookies.admin,'https://evil.example')).status,403);
+  for(const invalid of [{...entry,targetId:'fake'},{...entry,title:''},{...entry,dose:''},{...entry,title:'a'.repeat(181)},{...entry,url:'javascript:alert(1)'},{...entry,chain:'qualquer'},{...entry,targetKind:'material',targetId:'article'}])assert.ok([400,404].includes((await call('/api/protocol-exercises','POST',invalid)).status));
+  const suggestion=await call('/api/protocol-exercises','POST',{...entry,status:'published'},cookies.professional);assert.equal(suggestion.status,201);assert.equal(suggestion.data.status,'pending');
+  assert.equal((await listing('guide',guide.id,cookies.reader)).data.exercises.length,0);
+  let row=(await listing('guide',guide.id,cookies.professional)).data.exercises[0];assert.equal(row.canEdit,true);
+  assert.equal((await call('/api/protocol-exercises','PATCH',{id:row.id,revision:row.revision,status:'published'},cookies.professional)).status,403);
+  assert.equal((await call('/api/protocol-exercises','PUT',{...entry,id:row.id,revision:row.revision,title:'Nome revisado'},cookies.professional)).status,200);
+  assert.equal((await call('/api/protocol-exercises','PUT',{...entry,id:row.id,revision:row.revision},cookies.professional)).status,409);
+  row=(await listing('guide',guide.id)).data.exercises[0];assert.equal(row.title,'Nome revisado');
+  assert.equal((await call('/api/protocol-exercises','PATCH',{id:row.id,revision:row.revision,status:'published'})).status,200);
+  row=(await listing('guide',guide.id,cookies.reader)).data.exercises[0];assert.equal(row.canEdit,false);assert.equal(row.chain,entry.chain);
+  assert.equal((await call('/api/protocol-exercises','PUT',{...entry,id:row.id,revision:row.revision},cookies.professional)).status,403);
+  assert.equal((await listing('guide',second.id,cookies.reader)).data.exercises.length,0);
+  assert.equal((await listing('material',mid,cookies.reader)).data.exercises.length,0);
+  const own=await call('/api/protocol-exercises','POST',{...entry,targetKind:'material',targetId:mid});assert.equal(own.data.status,'published');
+  assert.equal((await listing('material','other-protocol',cookies.reader)).data.exercises.length,0);
+  assert.equal((await listing('material','private-protocol',cookies.reader)).status,404);
+  const materialRow=(await listing('material',mid)).data.exercises[0];
+  assert.equal((await call('/api/protocol-exercises','PATCH',{id:materialRow.id,revision:materialRow.revision,status:'archived'})).status,200);
+  assert.equal((await listing('material',mid,cookies.reader)).data.exercises.length,0);
+  assert.equal(app.db.prepare('SELECT status FROM protocol_exercises WHERE id=?').get(materialRow.id).status,'archived');
+  app.close();app=await createApp(options);
+  assert.equal((await listing('guide',guide.id,cookies.reader)).data.exercises[0].title,'Nome revisado');
+  assert.equal(app.db.prepare("SELECT COUNT(*) AS n FROM audit WHERE action LIKE 'protocol_exercise_%'").get().n,5);
+  app.db.prepare("UPDATE materials SET status='archived' WHERE id=?").run(mid);
+  assert.equal((await listing('guide',guide.id,cookies.reader)).status,404);
+ }finally{app.close();await rm(dir,{recursive:true,force:true})}
+});

@@ -13,6 +13,7 @@ import {pipeline} from 'node:stream/promises';
 const runFile=promisify(execFile);
 import {openDatabase,transaction} from './database.mjs';
 import {hashPassword,verifyPassword,token,digest,passwordValid,validEmail,safeString,consumeLimit} from './security.mjs';
+import {createProtocolExercisesHandler} from './protocol-exercises.mjs';
 import {imageFormat} from './image-format.mjs';
 import {categories,kinds} from './catalog.mjs';
 const MAX_BODY=16*1024*1024, WEEK=7*86400000;
@@ -32,6 +33,7 @@ export async function createApp({dataDir,publicUrl,staticDir,secure=true,trustPr
  function newSession(u){const t=token();db.prepare('INSERT INTO sessions(token_hash,user_id,expires_at) VALUES(?,?,?)').run(digest(t),u.id,Date.now()+WEEK);return t;}
  function rate(ip,email=''){if(!consumeLimit(db,'ip:'+digest(ip),40,15*60000)||!consumeLimit(db,'email:'+digest(email),12,15*60000))reject(429,'Muitas tentativas. Aguarde 15 minutos e tente novamente.');}
  async function body(req){const n=Number(req.headers.get('content-length')||0);if(n>MAX_BODY)reject(413,'Arquivo muito grande.');try{const data=await req.json();if(!data||typeof data!=='object'||Array.isArray(data))throw 0;return data}catch{reject(400,'Dados inválidos.')}}
+ const protocolExercises=createProtocolExercisesHandler({db,required,body,reject,json,audit});
  async function handle(req,ip='local'){
  try{const url=new URL(req.url),path=url.pathname,method=req.method;
  if(path==='/health'&&method==='GET'){db.prepare('SELECT 1').get();return json({status:'ok'})}
@@ -47,6 +49,7 @@ export async function createApp({dataDir,publicUrl,staticDir,secure=true,trustPr
  if(path==='/api/invites'&&method==='POST'){const actor=required(req,true);const p=await body(req);const email=safeString(p.email,254)?.toLowerCase(),name=safeString(p.name,100);const role=p.role||'professional',kind=p.kind||'invite';if(!validEmail(email)||!name||!['admin','professional','reader'].includes(role)||!['invite','reset'].includes(kind))reject(400,'Confira nome, e-mail e permissão.');const existing=db.prepare('SELECT * FROM users WHERE email=?').get(email);if(kind==='invite'&&existing)reject(409,'Este profissional já está cadastrado.');if(kind==='reset'&&!existing?.active)reject(400,'Não há uma conta ativa para esse e-mail.');const t=token(),id=randomUUID(),expires=Date.now()+(kind==='reset'?3600000:WEEK);transaction(db,()=>{db.prepare('UPDATE invites SET used_at=? WHERE email=? AND kind=? AND used_at IS NULL').run(Date.now(),email,kind);db.prepare('INSERT INTO invites(id,token_hash,email,name,role,kind,expires_at,created_by,created_at) VALUES(?,?,?,?,?,?,?,?,?)').run(id,digest(t),email,name,existing?.role||role,kind,expires,actor.id,new Date().toISOString());audit(actor.id,kind==='reset'?'reset_link_created':'invite_created',id)});return json({id,link:`${origin}/#convite=${encodeURIComponent(t)}`,expires_at:expires},201)}
  if(path==='/api/invites'&&method==='DELETE'){const actor=required(req,true);const p=await body(req);if(typeof p.id!=='string')reject(400,'Convite inválido.');db.prepare('UPDATE invites SET used_at=? WHERE id=? AND used_at IS NULL').run(Date.now(),p.id);audit(actor.id,'invite_revoked',p.id);return json({ok:true})}
 
+ if(path==='/api/protocol-exercises')return await protocolExercises(req,url);
  if(path==='/api/catalog'&&method==='GET'){required(req);return json({categories,kinds})}
  if(path==='/api/activity'&&method==='GET'){const u=required(req);return json({activity:db.prepare('SELECT material_id,favorite,last_opened FROM material_activity WHERE user_id=?').all(u.id)})}
  if(path==='/api/activity'&&method==='POST'){const u=required(req),p=await body(req);const row=db.prepare('SELECT * FROM materials WHERE id=?').get(p.id);if(!row||(u.role!=='admin'&&row.status!=='published'&&row.author_id!==u.id))reject(404,'Material não encontrado.');if(p.favorite!==undefined&&typeof p.favorite!=='boolean')reject(400,'Favorito inválido.');if(p.opened!==undefined&&typeof p.opened!=='boolean')reject(400,'Acesso inválido.');const old=db.prepare('SELECT * FROM material_activity WHERE user_id=? AND material_id=?').get(u.id,p.id);db.prepare('INSERT INTO material_activity(user_id,material_id,favorite,last_opened) VALUES(?,?,?,?) ON CONFLICT(user_id,material_id) DO UPDATE SET favorite=excluded.favorite,last_opened=excluded.last_opened').run(u.id,p.id,p.favorite===undefined?(old?.favorite||0):(p.favorite?1:0),p.opened?new Date().toISOString():(old?.last_opened||null));return json({ok:true})}

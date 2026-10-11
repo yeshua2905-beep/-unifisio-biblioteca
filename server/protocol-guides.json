@@ -1,0 +1,339 @@
+[
+  {
+    "id": "capsulite",
+    "materialIds": [
+      "evidence-shoulder-20261001-capsulite"
+    ]
+  },
+  {
+    "id": "manguito",
+    "materialIds": [
+      "evidence-shoulder-20261001-manguito",
+      "evidence-20261002-ombro",
+      "evidence-20261002-emg-ombro",
+      "evidence-20261002-beach-tennis"
+    ]
+  },
+  {
+    "id": "impacto",
+    "materialIds": [
+      "evidence-shoulder-20261001-subacromial"
+    ]
+  },
+  {
+    "id": "plexo",
+    "materialIds": [
+      "evidence-shoulder-20261001-plexo",
+      "evidence-20261002-plexo"
+    ]
+  },
+  {
+    "id": "bankart",
+    "materialIds": [
+      "evidence-shoulder-20261001-bankart"
+    ]
+  },
+  {
+    "id": "hillsachs",
+    "materialIds": [
+      "evidence-shoulder-20261001-hill-sachs"
+    ]
+  },
+  {
+    "id": "lca",
+    "materialIds": [
+      "evidence-knee-20261001-lca",
+      "evidence-20261002-lca-rehab",
+      "evidence-20261002-lca-enxerto",
+      "evidence-20261002-ami",
+      "evidence-20261002-emg-lca",
+      "evidence-20261002-simetria"
+    ]
+  },
+  {
+    "id": "sutura",
+    "materialIds": [
+      "evidence-knee-20261001-sutura-meniscal"
+    ]
+  },
+  {
+    "id": "meniscectomia",
+    "materialIds": [
+      "evidence-knee-20261001-meniscectomia"
+    ]
+  },
+  {
+    "id": "tendao-patelar",
+    "materialIds": [
+      "evidence-knee-20261001-tendao-patelar"
+    ]
+  },
+  {
+    "id": "ptj",
+    "materialIds": [
+      "evidence-knee-20261001-protese-total"
+    ]
+  },
+  {
+    "id": "tibia-diafise",
+    "materialIds": [
+      "evidence-foot-20261001-tibia-diafise"
+    ]
+  },
+  {
+    "id": "pilao",
+    "materialIds": [
+      "evidence-foot-20261001-tibia-distal-pilao"
+    ]
+  },
+  {
+    "id": "fibula",
+    "materialIds": [
+      "evidence-foot-20261001-fibula-maleolos",
+      "evidence-20261002-weber-b",
+      "evidence-20261002-wax"
+    ]
+  },
+  {
+    "id": "quinto-metatarsal",
+    "materialIds": [
+      "evidence-foot-20261001-quinto-metatarsal"
+    ]
+  },
+  {
+    "id": "talus",
+    "materialIds": [
+      "evidence-foot-20261001-talus"
+    ]
+  },
+  {
+    "id": "calcaneo",
+    "materialIds": [
+      "evidence-foot-20261001-calcaneo"
+    ]
+  },
+  {
+    "id": "navicular",
+    "materialIds": [
+      "evidence-foot-20261001-navicular"
+    ]
+  },
+  {
+    "id": "cuboide-cuneiformes",
+    "materialIds": [
+      "evidence-foot-20261001-cuboide-cuneiformes"
+    ]
+  },
+  {
+    "id": "chopart",
+    "materialIds": [
+      "evidence-foot-20261001-chopart"
+    ]
+  },
+  {
+    "id": "lisfranc",
+    "materialIds": [
+      "evidence-foot-20261001-lisfranc"
+    ]
+  },
+  {
+    "id": "entorse",
+    "materialIds": [
+      "evidence-foot-20261001-entorse-lateral",
+      "evidence-20261002-entorse"
+    ]
+  },
+  {
+    "id": "deltoide",
+    "materialIds": [
+      "evidence-foot-20261001-deltoide"
+    ]
+  },
+  {
+    "id": "sindesmose",
+    "materialIds": [
+      "evidence-foot-20261001-sindesmose"
+    ]
+  },
+  {
+    "id": "cervical",
+    "materialIds": [
+      "evidence-20261002-cervical"
+    ]
+  },
+  {
+    "id": "dtm",
+    "materialIds": [
+      "evidence-20261002-dtm"
+    ]
+  },
+  {
+    "id": "lombalgia",
+    "materialIds": [
+      "evidence-20261002-lombar",
+      "evidence-20261002-educacao-dor"
+    ]
+  },
+  {
+    "id": "menisco-degenerativo",
+    "materialIds": [
+      "evidence-20261002-menisco"
+    ]
+  },
+  {
+    "id": "artrose",
+    "materialIds": [
+      "evidence-20261002-artrose-exercicio",
+      "evidence-20261002-ha-joelho"
+    ]
+  },
+  {
+    "id": "patelofemoral",
+    "materialIds": [
+      "evidence-20261002-patelofemoral",
+      "evidence-20261002-orteses-pfp"
+    ]
+  },
+  {
+    "id": "aquiles",
+    "materialIds": [
+      "evidence-20261002-aquiles",
+      "evidence-20261002-ondas",
+      "evidence-20261002-prp-aquiles"
+    ]
+  },
+  {
+    "id": "tendinopatia-patelar",
+    "materialIds": [
+      "evidence-20261002-patelar"
+    ]
+  },
+  {
+    "id": "gluteal",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-gluteal-protocol",
+      "evidence-20261002-gluteal",
+      "evidence-hip-20261003-article-glute-bremer",
+      "evidence-hip-20261003-article-glute-meta"
+    ]
+  },
+  {
+    "id": "artroplastia-quadril",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-ptq",
+      "evidence-20261002-quadril-precaucoes",
+      "evidence-hip-20261003-article-surgery-trial",
+      "evidence-hip-20261003-article-ptq-rehab"
+    ]
+  },
+  {
+    "id": "radio",
+    "materialIds": [
+      "evidence-20261002-radio"
+    ]
+  },
+  {
+    "id": "pediatrico",
+    "materialIds": [
+      "evidence-20261002-tornozelo-crianca"
+    ]
+  },
+  {
+    "id": "quadriceps",
+    "materialIds": [
+      "evidence-20261002-quadriceps-ruptura"
+    ]
+  },
+  {
+    "id": "grau3b",
+    "materialIds": [
+      "evidence-20261002-grau3b"
+    ]
+  },
+  {
+    "id": "muscular-grau-1",
+    "materialIds": [
+      "evidence-muscle-20261003-grade-1"
+    ]
+  },
+  {
+    "id": "muscular-grau-2",
+    "materialIds": [
+      "evidence-muscle-20261003-grade-2"
+    ]
+  },
+  {
+    "id": "muscular-grau-3",
+    "materialIds": [
+      "evidence-muscle-20261003-grade-3"
+    ]
+  },
+  {
+    "id": "muscular-grau-4",
+    "materialIds": [
+      "evidence-muscle-20261003-grade-4"
+    ]
+  },
+  {
+    "id": "hip-artrose",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-artrose",
+      "evidence-hip-20261003-article-oa-cochrane",
+      "evidence-hip-20261003-article-surgery-trial"
+    ]
+  },
+  {
+    "id": "hip-fai",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-fai",
+      "evidence-hip-20261003-article-fai-trial"
+    ]
+  },
+  {
+    "id": "hip-labral",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-labral",
+      "evidence-hip-20261003-article-fai-trial"
+    ]
+  },
+  {
+    "id": "hip-adutores",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-adutores",
+      "evidence-hip-20261003-article-adductor-trial"
+    ]
+  },
+  {
+    "id": "hip-iliopsoas",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-iliopsoas"
+    ]
+  },
+  {
+    "id": "hip-ham-prox",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-ham-prox",
+      "evidence-hip-20261003-article-ham-review",
+      "evidence-hip-20261003-article-ham-rct"
+    ]
+  },
+  {
+    "id": "hip-artroscopia",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-artroscopia"
+    ]
+  },
+  {
+    "id": "hip-fratura-proximal",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-fratura-proximal",
+      "evidence-hip-20261003-article-fracture-review"
+    ]
+  },
+  {
+    "id": "hip-estresse-colo",
+    "materialIds": [
+      "evidence-hip-20261003-protocol-estresse-colo"
+    ]
+  }
+]

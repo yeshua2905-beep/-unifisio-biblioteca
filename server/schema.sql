@@ -14,3 +14,12 @@ CREATE INDEX IF NOT EXISTS idx_images_author ON images(author_id);
 CREATE TABLE IF NOT EXISTS material_versions(id INTEGER PRIMARY KEY AUTOINCREMENT,material_id TEXT NOT NULL REFERENCES materials(id),snapshot TEXT NOT NULL,actor_id TEXT NOT NULL REFERENCES users(id),created_at TEXT NOT NULL);
 CREATE INDEX IF NOT EXISTS idx_versions_material ON material_versions(material_id,id);
 CREATE TABLE IF NOT EXISTS material_activity(user_id TEXT NOT NULL REFERENCES users(id),material_id TEXT NOT NULL REFERENCES materials(id),favorite INTEGER NOT NULL DEFAULT 0,last_opened TEXT,PRIMARY KEY(user_id,material_id));
+
+CREATE TABLE IF NOT EXISTS protocol_exercises(
+ id TEXT PRIMARY KEY,target_kind TEXT NOT NULL CHECK(target_kind IN ('guide','material')),target_id TEXT NOT NULL,
+ title TEXT NOT NULL,steps TEXT NOT NULL,dose TEXT NOT NULL,phase TEXT NOT NULL DEFAULT '',equipment TEXT NOT NULL DEFAULT '',chain TEXT NOT NULL DEFAULT '',
+ restriction TEXT NOT NULL DEFAULT '',progress TEXT NOT NULL DEFAULT '',reference TEXT NOT NULL DEFAULT '',url TEXT NOT NULL DEFAULT '',
+ status TEXT NOT NULL CHECK(status IN ('published','pending','archived')),author_id TEXT NOT NULL REFERENCES users(id),
+ created_at TEXT NOT NULL,updated_at TEXT NOT NULL,revision INTEGER NOT NULL DEFAULT 1
+);
+CREATE INDEX IF NOT EXISTS idx_protocol_exercises_target ON protocol_exercises(target_kind,target_id,status);
