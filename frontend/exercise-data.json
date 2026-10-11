@@ -100,6 +100,11 @@
       "title": "Treino da musculatura intrínseca do pé · Revisão sistemática e metanálise 2023",
       "url": "https://pubmed.ncbi.nlm.nih.gov/35724360/",
       "scope": "Síntese sobre treinamento intrínseco e função do pé. Não valida dose ótima nem aplicação automática em fraturas ou em todas as tendinopatias."
+    },
+    "ccf-acl": {
+      "title": "Aspetar · Recomendações de exercícios em cadeia aberta e fechada",
+      "url": "https://www.aspetar.com/en/professionals/aspetar-clinical-guidelines/recommendations-on-rehabilitation-after-aclr",
+      "scope": "Recomenda combinação de cadeias no pós-LCA. Categoria de cadeia não determina segurança isoladamente; arco, carga e procedimentos associados importam."
     }
   },
   "exercises": [
@@ -121,7 +126,8 @@
         "aaos-shoulder"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-rc-in",
@@ -141,7 +147,8 @@
         "aaos-shoulder"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-row",
@@ -161,7 +168,8 @@
         "aaos-shoulder"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-scaption",
@@ -180,7 +188,8 @@
         "rc"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-serratus",
@@ -199,7 +208,8 @@
         "rc"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética fechada"
     },
     {
       "id": "ex-wall-push",
@@ -218,7 +228,8 @@
         "aaos-shoulder"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética fechada"
     },
     {
       "id": "ex-biceps",
@@ -237,7 +248,8 @@
         "aaos-shoulder"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-triceps",
@@ -256,7 +268,8 @@
         "aaos-shoulder"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-quad-iso",
@@ -276,7 +289,8 @@
         "aaos-knee"
       ],
       "phase": "Ativação",
-      "dose": "5–10 contrações de 5 segundos, com pausas; intensidade submáxima inicial."
+      "dose": "5–10 contrações de 5 segundos, com pausas; intensidade submáxima inicial.",
+      "chain": "Mista ou conforme execução"
     },
     {
       "id": "ex-knee-ext",
@@ -296,7 +310,8 @@
         "pfp"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-chair",
@@ -316,7 +331,8 @@
         "pfp"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética fechada"
     },
     {
       "id": "ex-squat",
@@ -334,10 +350,12 @@
       "sourceIds": [
         "acl",
         "pfp",
-        "aaos-knee"
+        "aaos-knee",
+        "ccf-acl"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética fechada"
     },
     {
       "id": "ex-legpress",
@@ -353,10 +371,12 @@
       "restriction": "Não copiar arco ou semanas entre procedimentos; considerar reparo meniscal e cartilagem.",
       "progress": "Aumentar carga mantendo arco e controle.",
       "sourceIds": [
-        "acl"
+        "acl",
+        "ccf-acl"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética fechada"
     },
     {
       "id": "ex-step",
@@ -373,10 +393,12 @@
       "progress": "Aumentar altura ou carga quando completar com controle.",
       "sourceIds": [
         "acl",
-        "pfp"
+        "pfp",
+        "ccf-acl"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética fechada"
     },
     {
       "id": "ex-step-down",
@@ -393,10 +415,12 @@
       "progress": "Aumentar profundidade ou carga com resposta estável.",
       "sourceIds": [
         "pfp",
-        "acl"
+        "acl",
+        "ccf-acl"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética fechada"
     },
     {
       "id": "ex-split",
@@ -413,10 +437,12 @@
       "progress": "Evoluir carga e reduzir assistência.",
       "sourceIds": [
         "acl",
-        "pfp"
+        "pfp",
+        "ccf-acl"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética fechada"
     },
     {
       "id": "ex-hamcurl",
@@ -437,7 +463,8 @@
         "aaos-knee"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-knee-iso-loaded",
@@ -456,7 +483,8 @@
         "pat"
       ],
       "phase": "Ativação",
-      "dose": "Exemplo: 4 sustentações de 20–30 segundos, pausa de 60–90 segundos; adaptar força e duração."
+      "dose": "Exemplo: 4 sustentações de 20–30 segundos, pausa de 60–90 segundos; adaptar força e duração.",
+      "chain": "Mista ou conforme execução"
     },
     {
       "id": "ex-calf-two",
@@ -477,7 +505,8 @@
         "ank"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética fechada"
     },
     {
       "id": "ex-calf-one",
@@ -496,7 +525,8 @@
         "ach"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética fechada"
     },
     {
       "id": "ex-soleus",
@@ -516,7 +546,8 @@
         "aaos-foot"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética fechada"
     },
     {
       "id": "ex-calf-ecc",
@@ -535,7 +566,8 @@
         "ach"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética fechada"
     },
     {
       "id": "ex-dorsi",
@@ -554,7 +586,8 @@
         "aaos-foot"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-eversion",
@@ -574,7 +607,8 @@
         "ank"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-inversion",
@@ -593,7 +627,8 @@
         "aaos-foot"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-toe-curl",
@@ -613,7 +648,8 @@
         "foot-intrinsic"
       ],
       "phase": "Ativação",
-      "dose": "1–2 séries de 8–12 movimentos controlados; ajustar à fadiga local."
+      "dose": "1–2 séries de 8–12 movimentos controlados; ajustar à fadiga local.",
+      "chain": "Mista ou conforme execução"
     },
     {
       "id": "ex-short-foot",
@@ -632,7 +668,8 @@
         "foot-intrinsic"
       ],
       "phase": "Ativação",
-      "dose": "5–8 sustentações de 5 segundos; objetivo inicial é controle, sem carga máxima."
+      "dose": "5–8 sustentações de 5 segundos; objetivo inicial é controle, sem carga máxima.",
+      "chain": "Cadeia cinética fechada"
     },
     {
       "id": "ex-bridge",
@@ -652,7 +689,8 @@
         "lbp"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética fechada"
     },
     {
       "id": "ex-hip-abd",
@@ -672,7 +710,8 @@
         "aaos-hip"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-side-walk",
@@ -692,7 +731,8 @@
         "pfp"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Mista ou conforme execução"
     },
     {
       "id": "ex-hip-ext",
@@ -711,7 +751,8 @@
         "aaos-hip"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-hip-flex",
@@ -730,7 +771,8 @@
         "aaos-hip"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-adductor-iso",
@@ -749,7 +791,8 @@
         "groin"
       ],
       "phase": "Ativação",
-      "dose": "4–5 contrações de 10–20 segundos, com descanso; ajustar à irritabilidade."
+      "dose": "4–5 contrações de 10–20 segundos, com descanso; ajustar à irritabilidade.",
+      "chain": "Mista ou conforme execução"
     },
     {
       "id": "ex-adductor-side",
@@ -769,7 +812,8 @@
         "aaos-hip"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-copenhagen",
@@ -789,7 +833,8 @@
         "groin"
       ],
       "phase": "Capacidade avançada",
-      "dose": "Começar com 2 séries de 4–6 repetições assistidas ou sustentações breves; recuperação conforme resposta."
+      "dose": "Começar com 2 séries de 4–6 repetições assistidas ou sustentações breves; recuperação conforme resposta.",
+      "chain": "Cadeia cinética fechada"
     },
     {
       "id": "ex-ham-iso",
@@ -808,7 +853,8 @@
         "ham"
       ],
       "phase": "Ativação",
-      "dose": "4 contrações de 10–20 segundos, submáximas, com pausas."
+      "dose": "4 contrações de 10–20 segundos, submáximas, com pausas.",
+      "chain": "Mista ou conforme execução"
     },
     {
       "id": "ex-rdl",
@@ -828,7 +874,8 @@
         "lbp"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética fechada"
     },
     {
       "id": "ex-ham-slider",
@@ -847,7 +894,8 @@
         "ham"
       ],
       "phase": "Capacidade avançada",
-      "dose": "2 séries de 5–8 repetições controladas, sem falha, com 2 minutos de descanso."
+      "dose": "2 séries de 5–8 repetições controladas, sem falha, com 2 minutos de descanso.",
+      "chain": "Mista ou conforme execução"
     },
     {
       "id": "ex-nordic",
@@ -866,7 +914,8 @@
         "ham"
       ],
       "phase": "Capacidade avançada",
-      "dose": "2 séries de 3–5 repetições assistidas, descanso amplo; evitar aumento brusco de volume."
+      "dose": "2 séries de 3–5 repetições assistidas, descanso amplo; evitar aumento brusco de volume.",
+      "chain": "Mista ou conforme execução"
     },
     {
       "id": "ex-bird-dog",
@@ -886,7 +935,8 @@
         "aaos-spine"
       ],
       "phase": "Ativação",
-      "dose": "1–2 séries de 6–8 por lado, sustentar 3–5 segundos quando tolerado."
+      "dose": "1–2 séries de 6–8 por lado, sustentar 3–5 segundos quando tolerado.",
+      "chain": "Mista ou conforme execução"
     },
     {
       "id": "ex-dead-bug",
@@ -905,7 +955,8 @@
         "lbp"
       ],
       "phase": "Ativação",
-      "dose": "1–2 séries de 6–10 alternâncias controladas."
+      "dose": "1–2 séries de 6–10 alternâncias controladas.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-side-plank",
@@ -925,7 +976,8 @@
         "aaos-spine"
       ],
       "phase": "Carga progressiva",
-      "dose": "3 sustentações de 10–20 segundos por lado, com descanso; ajustar à capacidade."
+      "dose": "3 sustentações de 10–20 segundos por lado, com descanso; ajustar à capacidade.",
+      "chain": "Cadeia cinética fechada"
     },
     {
       "id": "ex-carry",
@@ -944,7 +996,8 @@
         "lbp"
       ],
       "phase": "Capacidade avançada",
-      "dose": "3 percursos curtos de 15–30 segundos com descanso; carga pela capacidade."
+      "dose": "3 percursos curtos de 15–30 segundos com descanso; carga pela capacidade.",
+      "chain": "Mista ou conforme execução"
     },
     {
       "id": "ex-neck-iso",
@@ -963,7 +1016,8 @@
         "neck"
       ],
       "phase": "Ativação",
-      "dose": "5 contrações de 3–5 segundos por direção selecionada, com pausas."
+      "dose": "5 contrações de 3–5 segundos por direção selecionada, com pausas.",
+      "chain": "Mista ou conforme execução"
     },
     {
       "id": "ex-neck-nod",
@@ -982,7 +1036,8 @@
         "neck"
       ],
       "phase": "Ativação",
-      "dose": "5–8 repetições de 3–5 segundos, sem fadiga que altere movimento."
+      "dose": "5–8 repetições de 3–5 segundos, sem fadiga que altere movimento.",
+      "chain": "Mista ou conforme execução"
     },
     {
       "id": "ex-wrist-ext",
@@ -1002,7 +1057,8 @@
         "aaos-elbow"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-wrist-flex",
@@ -1022,7 +1078,8 @@
         "aaos-elbow"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-pronation",
@@ -1042,7 +1099,8 @@
         "aaos-elbow"
       ],
       "phase": "Carga progressiva",
-      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha.",
+      "chain": "Cadeia cinética aberta"
     },
     {
       "id": "ex-grip",
@@ -1061,7 +1119,8 @@
         "wrist"
       ],
       "phase": "Ativação",
-      "dose": "1–2 séries de 8–12 apertos de 3 segundos, submáximos, com pausas."
+      "dose": "1–2 séries de 8–12 apertos de 3 segundos, submáximos, com pausas.",
+      "chain": "Mista ou conforme execução"
     },
     {
       "id": "ex-muscle-iso",
@@ -1080,7 +1139,8 @@
         "ham"
       ],
       "phase": "Ativação",
-      "dose": "Exemplo após liberação: 3–5 contrações de 5–15 segundos; não aplicar automaticamente a todo grau."
+      "dose": "Exemplo após liberação: 3–5 contrações de 5–15 segundos; não aplicar automaticamente a todo grau.",
+      "chain": "Mista ou conforme execução"
     },
     {
       "id": "ex-muscle-dynamic",
@@ -1099,7 +1159,221 @@
         "ham"
       ],
       "phase": "Carga progressiva",
-      "dose": "Exemplo após liberação: 1–2 séries de 6–10, submáximas; dose específica ao músculo e fase."
+      "dose": "Exemplo após liberação: 1–2 séries de 6–10, submáximas; dose específica ao músculo e fase.",
+      "chain": "Mista ou conforme execução"
+    },
+    {
+      "id": "ex-wall-squat",
+      "title": "Agachamento isométrico na parede",
+      "region": "Joelho",
+      "muscles": "Quadríceps e glúteos",
+      "equipment": "Parede firme",
+      "steps": [
+        "Encoste o tronco na parede e deixe pés à frente em posição estável.",
+        "Desça apenas até o arco autorizado, mantendo plantas dos pés apoiadas.",
+        "Sustente respirando e retorne com ajuda se necessário."
+      ],
+      "restriction": "Não usar flexão profunda como padrão. Confirmar apoio, arco e contração liberados em sutura meniscal e reparo extensor; ajustar dor patelofemoral.",
+      "progress": "Aumentar tempo ou resistência mantendo recuperação estável; não aumentar todos os parâmetros juntos.",
+      "sourceIds": [
+        "acl",
+        "pfp",
+        "ccf-acl"
+      ],
+      "phase": "Ativação",
+      "chain": "Cadeia cinética fechada",
+      "dose": "3–4 sustentações de 15–30 segundos, pausa de 60 segundos; reduzir ângulo e tempo se necessário."
+    },
+    {
+      "id": "ex-legpress-one",
+      "title": "Leg press unilateral",
+      "region": "Joelho",
+      "muscles": "Quadríceps e glúteos",
+      "equipment": "Leg press",
+      "steps": [
+        "Ajuste banco, carga e arco; mantenha pé do lado treinado apoiado na plataforma.",
+        "Empurre sem travar o joelho nem girar a pelve.",
+        "Volte no arco liberado com controle."
+      ],
+      "restriction": "Usar após tolerar versão bilateral e quando carga unilateral for permitida. Confirmar enxerto, menisco, cartilagem e reparos associados.",
+      "progress": "Aumentar carga preservando arco, controle e resposta do joelho.",
+      "sourceIds": [
+        "acl",
+        "ccf-acl"
+      ],
+      "phase": "Carga progressiva",
+      "chain": "Cadeia cinética fechada",
+      "dose": "Exemplo após liberação: 2 séries de 8–12 repetições, 2–3 dias por semana; 1–2 minutos de descanso. Adaptar carga, arco e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-chair-one",
+      "title": "Sentar e levantar com predominância unilateral",
+      "region": "Joelho",
+      "muscles": "Quadríceps e glúteos",
+      "equipment": "Cadeira alta e apoio",
+      "steps": [
+        "Cadeira firme contra a parede; coloque o pé a treinar sob o corpo e o outro ligeiramente à frente.",
+        "Levante usando predominantemente o lado treinado, com mão ou outro pé para assistência.",
+        "Sente com controle; não começar sem ajuda se houver risco de queda."
+      ],
+      "restriction": "Exige apoio e flexão liberados. Não é teste obrigatório de simetria nem tarefa inicial após reparo.",
+      "progress": "Reduzir assistência antes de buscar execução totalmente unilateral.",
+      "sourceIds": [
+        "acl",
+        "pfp",
+        "ccf-acl"
+      ],
+      "phase": "Capacidade avançada",
+      "chain": "Cadeia cinética fechada",
+      "dose": "2 séries de 5–8 repetições assistidas; descanso de 1–2 minutos."
+    },
+    {
+      "id": "ex-step-lateral",
+      "title": "Subida lateral em degrau baixo",
+      "region": "Quadril",
+      "muscles": "Glúteos e quadríceps",
+      "equipment": "Degrau estável e corrimão",
+      "steps": [
+        "Fique ao lado de degrau baixo com apoio ao alcance.",
+        "Coloque o pé treinado sobre o degrau e eleve o corpo sem impulso brusco.",
+        "Desça de forma controlada."
+      ],
+      "restriction": "Apoio unilateral e arco necessários devem estar liberados. Na tendinopatia glútea, ajustar amplitude e evitar compressão provocativa.",
+      "progress": "Evoluir altura ou carga, mantendo pelve e tronco controlados.",
+      "sourceIds": [
+        "glut",
+        "pfp",
+        "acl",
+        "ccf-acl"
+      ],
+      "phase": "Carga progressiva",
+      "chain": "Cadeia cinética fechada",
+      "dose": "Exemplo após liberação: 2 séries de 8–12 repetições, 2–3 dias por semana; 1–2 minutos de descanso. Adaptar carga, arco e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-hip-thrust",
+      "title": "Elevação de quadril com tronco apoiado",
+      "region": "Quadril",
+      "muscles": "Glúteo máximo e isquiotibiais",
+      "equipment": "Banco estável acolchoado",
+      "steps": [
+        "Apoie parte superior do tronco em banco firme, pés no chão e joelhos dobrados.",
+        "Eleve pelve até posição confortável, sem hiperestender a coluna.",
+        "Desça com controle; inicie sem peso externo."
+      ],
+      "restriction": "Confirmar apoio e extensão liberados em artroplastia, reparo de glúteos ou isquiotibiais; não apoiar sobre ferida.",
+      "progress": "Aumentar carga acolchoada sobre pelve somente após tolerar execução sem peso.",
+      "sourceIds": [
+        "aaos-hip",
+        "lbp"
+      ],
+      "phase": "Carga progressiva",
+      "chain": "Cadeia cinética fechada",
+      "dose": "Exemplo após liberação: 2 séries de 8–12 repetições, 2–3 dias por semana; 1–2 minutos de descanso. Adaptar carga, arco e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-quad-weight",
+      "title": "Transferência de carga em quatro apoios",
+      "region": "Ombro",
+      "muscles": "Cintura escapular e controle do tronco",
+      "equipment": "Colchonete ou bancada",
+      "steps": [
+        "Mãos e joelhos apoiados em superfície firme; use bancada se tolerar melhor.",
+        "Transfira suavemente o tronco para a frente e para os lados, mantendo mãos apoiadas.",
+        "Retorne ao centro sem colapsar cotovelos ou ombros."
+      ],
+      "restriction": "Confirmar descarga no ombro e punho; não aplicar em instabilidade aguda, reparo protegido ou plexo sem controle suficiente. É treino de tolerância/controle, não força máxima.",
+      "progress": "Ampliar transferência ou reduzir assistência após tolerar apoio.",
+      "sourceIds": [
+        "rc"
+      ],
+      "phase": "Ativação",
+      "chain": "Cadeia cinética fechada",
+      "dose": "2 blocos de 30–45 segundos de movimentos pequenos e controlados, com descanso."
+    },
+    {
+      "id": "ex-plank-bench",
+      "title": "Prancha inclinada na bancada",
+      "region": "Ombro",
+      "muscles": "Serrátil, peitoral, tríceps e tronco",
+      "equipment": "Bancada firme",
+      "steps": [
+        "Mãos na bancada, pés atrás em base estável.",
+        "Sustente tronco inclinado em posição confortável, respirando normalmente.",
+        "Encerre antes de perder controle; aproxime pés para facilitar."
+      ],
+      "restriction": "Exige descarga permitida em ambos os membros superiores. Adaptar punho; não aplicar em reparo de ombro ou fratura não liberados.",
+      "progress": "Afastar pés ou baixar apoio em etapas; solo não é obrigatório.",
+      "sourceIds": [
+        "rc",
+        "lbp"
+      ],
+      "phase": "Carga progressiva",
+      "chain": "Cadeia cinética fechada",
+      "dose": "3 sustentações de 10–20 segundos com 45–60 segundos de descanso."
+    },
+    {
+      "id": "ex-push-bench",
+      "title": "Flexão de braços na bancada",
+      "region": "Ombro",
+      "muscles": "Peitoral, tríceps e serrátil anterior",
+      "equipment": "Bancada estável",
+      "steps": [
+        "Mãos apoiadas em bancada firme e corpo inclinado.",
+        "Dobre cotovelos aproximando tronco sem forçar ombro além do arco permitido.",
+        "Empurre a bancada para retornar."
+      ],
+      "restriction": "Mais exigente que versão na parede; confirmar carga, estabilidade de ombro e extensão do punho liberadas.",
+      "progress": "Aumentar repetições ou baixar apoio conforme capacidade.",
+      "sourceIds": [
+        "rc",
+        "aaos-shoulder"
+      ],
+      "phase": "Carga progressiva",
+      "chain": "Cadeia cinética fechada",
+      "dose": "Exemplo após liberação: 2 séries de 8–12 repetições, 2–3 dias por semana; 1–2 minutos de descanso. Adaptar carga, arco e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-plank-plus",
+      "title": "Empurrar a bancada com braços estendidos",
+      "region": "Ombro",
+      "muscles": "Serrátil anterior e estabilizadores escapulares",
+      "equipment": "Bancada firme",
+      "steps": [
+        "Mãos fixas na bancada, cotovelos quase estendidos.",
+        "Empurre a superfície afastando discretamente o tronco e permitindo movimento das escápulas.",
+        "Retorne sem dobrar cotovelos ou perder posição do corpo."
+      ],
+      "restriction": "Não exigir posição rígida da escápula. Carga no ombro/punho precisa estar liberada; em instabilidade ou reparo respeitar arco e descarga.",
+      "progress": "Evoluir inclinação antes de adicionar carga.",
+      "sourceIds": [
+        "rc"
+      ],
+      "phase": "Carga progressiva",
+      "chain": "Cadeia cinética fechada",
+      "dose": "Exemplo após liberação: 2 séries de 8–12 repetições, 2–3 dias por semana; 1–2 minutos de descanso. Adaptar carga, arco e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-knee-band-stand",
+      "title": "Extensão terminal do joelho em pé com elástico",
+      "region": "Joelho",
+      "muscles": "Quadríceps",
+      "equipment": "Elástico e âncora firme",
+      "steps": [
+        "Elástico preso à frente, passando atrás do joelho com contato confortável; pé treinado permanece no chão.",
+        "Partindo de pequena flexão permitida, estenda joelho controladamente contra tensão.",
+        "Volte sem hiperestender, rodar pé ou deslocar corpo."
+      ],
+      "restriction": "Confirmar extensão e apoio liberados; não comprimir ferida nem usar após reparo extensor sem permissão. CCF não autoriza qualquer carga no LCA.",
+      "progress": "Aumentar tensão mantendo pé apoiado e extensão controlada.",
+      "sourceIds": [
+        "acl",
+        "aaos-knee",
+        "ccf-acl"
+      ],
+      "phase": "Carga progressiva",
+      "chain": "Cadeia cinética fechada",
+      "dose": "Exemplo após liberação: 2 séries de 8–12 repetições, 2–3 dias por semana; 1–2 minutos de descanso. Adaptar carga, arco e volume à capacidade, sem exigir falha."
     }
   ],
   "profileExercises": {
@@ -1114,7 +1388,11 @@
       "ex-row",
       "ex-scaption",
       "ex-serratus",
-      "ex-wall-push"
+      "ex-wall-push",
+      "ex-quad-weight",
+      "ex-plank-bench",
+      "ex-push-bench",
+      "ex-plank-plus"
     ],
     "impacto": [
       "ex-rc-out",
@@ -1122,17 +1400,25 @@
       "ex-row",
       "ex-scaption",
       "ex-serratus",
-      "ex-wall-push"
+      "ex-wall-push",
+      "ex-quad-weight",
+      "ex-plank-bench",
+      "ex-push-bench",
+      "ex-plank-plus"
     ],
     "bankart": [
       "ex-rc-out",
       "ex-row",
-      "ex-serratus"
+      "ex-serratus",
+      "ex-quad-weight",
+      "ex-plank-bench"
     ],
     "hillsachs": [
       "ex-rc-out",
       "ex-row",
-      "ex-serratus"
+      "ex-serratus",
+      "ex-quad-weight",
+      "ex-plank-bench"
     ],
     "lca": [
       "ex-quad-iso",
@@ -1141,7 +1427,11 @@
       "ex-legpress",
       "ex-step",
       "ex-hamcurl",
-      "ex-split"
+      "ex-split",
+      "ex-wall-squat",
+      "ex-legpress-one",
+      "ex-chair-one",
+      "ex-knee-band-stand"
     ],
     "sutura": [
       "ex-quad-iso",
@@ -1154,41 +1444,62 @@
       "ex-knee-ext",
       "ex-squat",
       "ex-step",
-      "ex-hamcurl"
+      "ex-hamcurl",
+      "ex-wall-squat",
+      "ex-legpress-one",
+      "ex-chair-one",
+      "ex-knee-band-stand"
     ],
     "menisco-degenerativo": [
       "ex-chair",
       "ex-knee-ext",
       "ex-squat",
       "ex-step",
-      "ex-hamcurl"
+      "ex-hamcurl",
+      "ex-wall-squat",
+      "ex-legpress-one",
+      "ex-chair-one",
+      "ex-knee-band-stand"
     ],
     "artrose": [
       "ex-chair",
       "ex-knee-ext",
       "ex-squat",
       "ex-step",
-      "ex-hamcurl"
+      "ex-hamcurl",
+      "ex-wall-squat",
+      "ex-legpress-one",
+      "ex-chair-one",
+      "ex-knee-band-stand"
     ],
     "ptj": [
       "ex-chair",
       "ex-knee-ext",
       "ex-squat",
       "ex-step",
-      "ex-hamcurl"
+      "ex-hamcurl",
+      "ex-wall-squat",
+      "ex-legpress-one",
+      "ex-chair-one",
+      "ex-knee-band-stand"
     ],
     "patelofemoral": [
       "ex-knee-ext",
       "ex-chair",
       "ex-step-down",
       "ex-hip-abd",
-      "ex-side-walk"
+      "ex-side-walk",
+      "ex-wall-squat",
+      "ex-chair-one",
+      "ex-step-lateral"
     ],
     "tendinopatia-patelar": [
       "ex-knee-iso-loaded",
       "ex-knee-ext",
       "ex-squat",
-      "ex-legpress"
+      "ex-legpress",
+      "ex-wall-squat",
+      "ex-legpress-one"
     ],
     "tendao-patelar": [
       "ex-quad-iso",
@@ -1286,25 +1597,33 @@
     "gluteal": [
       "ex-hip-abd",
       "ex-side-walk",
-      "ex-bridge"
+      "ex-bridge",
+      "ex-step-lateral",
+      "ex-hip-thrust"
     ],
     "hip-artrose": [
       "ex-chair",
       "ex-bridge",
       "ex-hip-abd",
-      "ex-hip-ext"
+      "ex-hip-ext",
+      "ex-step-lateral",
+      "ex-hip-thrust"
     ],
     "hip-fai": [
       "ex-chair",
       "ex-bridge",
       "ex-hip-abd",
-      "ex-hip-ext"
+      "ex-hip-ext",
+      "ex-step-lateral",
+      "ex-hip-thrust"
     ],
     "hip-labral": [
       "ex-chair",
       "ex-bridge",
       "ex-hip-abd",
-      "ex-hip-ext"
+      "ex-hip-ext",
+      "ex-step-lateral",
+      "ex-hip-thrust"
     ],
     "artroplastia-quadril": [
       "ex-chair",
@@ -1332,7 +1651,8 @@
     "hip-ham-prox": [
       "ex-ham-iso",
       "ex-bridge",
-      "ex-rdl"
+      "ex-rdl",
+      "ex-hip-thrust"
     ],
     "muscular-grau-1": [
       "ex-muscle-iso",
@@ -1356,7 +1676,8 @@
       "ex-bird-dog",
       "ex-dead-bug",
       "ex-side-plank",
-      "ex-carry"
+      "ex-carry",
+      "ex-hip-thrust"
     ],
     "cervical": [
       "ex-neck-iso",
