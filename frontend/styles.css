@@ -134,3 +134,5 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .clinical-hero[data-exercise="true"]{display:none}
 
 .exercise-chain{font-size:11px!important;color:#236b59!important;font-weight:700}.exercise-filters{grid-template-columns:repeat(2,minmax(0,1fr))}@media(max-width:700px){.exercise-filters{grid-template-columns:1fr}}
+
+.quick-search-related{margin:28px 0}.quick-search-related h2{font-size:20px;color:#183f60;margin:20px 0 14px}.quick-search-related .quick-grid{margin-bottom:24px}

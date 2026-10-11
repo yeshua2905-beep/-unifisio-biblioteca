@@ -33,3 +33,21 @@ test('Metadados, favoritos, histórico e backup preservam dados e permissões',a
  const restored=new DatabaseSync(resolve(dir,'restored/library.sqlite'));assert.equal(restored.prepare('SELECT summary FROM materials WHERE id=?').get(id).summary,'Texto original');assert.equal(restored.prepare('PRAGMA integrity_check').get().integrity_check,'ok');restored.close();assert.equal(await readFile(resolve(dir,'restored/uploads/exemplo.pdf'),'utf8'),'%PDF-1.4\narquivo de teste');
  }finally{app.close();await rm(dir,{recursive:true,force:true})}
 });
+test('Busca acompanha digitação, pontuação e siglas clínicas sem confundir Aquiles com calcâneo',()=>{
+ const record=(title,summary='')=>({title,summary,category:'',kind:'',reference:''});
+ const acl=record('Reabilitação do ligamento cruzado anterior','Fortalecimento');
+ for(const q of ['l','lc','LCA','L.C.A.','LCA, força','ACL'])assert.equal(matchesQuery(acl,q),true,q);
+ for(let n=1;n<='reabilitacao'.length;n++)assert.equal(matchesQuery(acl,'reabilitacao'.slice(0,n)),true);
+ for(const [title,queries] of [
+  ['Prótese total de joelho',['PTJ','ATJ','TKA']],
+  ['Artroplastia total de quadril',['PTQ','ATQ','THA','pt','at']],
+  ['Rotação externa do manguito rotador',['MR','mr rot']],
+  ['Cadeia cinética fechada',['CCF','CKC','cadeia cinetica fec']],
+  ['Questionário VISA-P',['VISA P','visa-p','VISA - P','visap']],
+  ['Lesão labral superior',['SLAP']],
+  ['Disfunção temporomandibular',['DTM']]
+ ])for(const q of queries)assert.equal(matchesQuery(record(title),q),true,title+': '+q);
+ assert.equal(matchesQuery(record('Fratura do calcâneo'),'Aquiles'),false);
+ assert.equal(matchesQuery(record('Local de atendimento'),'LCA'),false);
+ assert.equal(matchesQuery(acl,'joelho ombro'),false);
+});
