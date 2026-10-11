@@ -37,3 +37,12 @@ CREATE INDEX IF NOT EXISTS idx_care_tasks_plan ON care_tasks(plan_id,position);
 CREATE TABLE IF NOT EXISTS care_logs(id TEXT PRIMARY KEY,patient_id TEXT NOT NULL REFERENCES patients(id),task_id TEXT NOT NULL REFERENCES care_tasks(id),performed_date TEXT NOT NULL,status TEXT NOT NULL CHECK(status IN ('done','partial','skipped')),pain INTEGER CHECK(pain BETWEEN 0 AND 10),difficulty INTEGER CHECK(difficulty BETWEEN 0 AND 10),comment TEXT NOT NULL DEFAULT '',revision INTEGER NOT NULL DEFAULT 1,created_at TEXT NOT NULL,updated_at TEXT NOT NULL,UNIQUE(patient_id,task_id,performed_date));
 CREATE INDEX IF NOT EXISTS idx_care_logs_patient_date ON care_logs(patient_id,performed_date);
 CREATE TABLE IF NOT EXISTS care_feedback(id TEXT PRIMARY KEY,log_id TEXT NOT NULL REFERENCES care_logs(id),author_id TEXT NOT NULL REFERENCES users(id),text TEXT NOT NULL,created_at TEXT NOT NULL);
+
+CREATE TABLE IF NOT EXISTS care_measurements(
+ id TEXT PRIMARY KEY,patient_id TEXT NOT NULL REFERENCES patients(id),plan_id TEXT NOT NULL REFERENCES care_plans(id),performed_date TEXT NOT NULL,
+ eva_before INTEGER NOT NULL CHECK(eva_before BETWEEN 0 AND 100),borg_before INTEGER NOT NULL CHECK(borg_before BETWEEN 6 AND 20),before_at TEXT NOT NULL,
+ eva_after INTEGER CHECK(eva_after BETWEEN 0 AND 100),borg_after INTEGER CHECK(borg_after BETWEEN 6 AND 20),after_at TEXT,
+ revision INTEGER NOT NULL DEFAULT 1,UNIQUE(patient_id,plan_id,performed_date),
+ CHECK((eva_after IS NULL AND borg_after IS NULL AND after_at IS NULL) OR (eva_after IS NOT NULL AND borg_after IS NOT NULL AND after_at IS NOT NULL))
+);
+CREATE INDEX IF NOT EXISTS idx_care_measurements_patient ON care_measurements(patient_id,performed_date);
