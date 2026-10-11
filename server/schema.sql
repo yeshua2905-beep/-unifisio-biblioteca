@@ -23,3 +23,17 @@ CREATE TABLE IF NOT EXISTS protocol_exercises(
  created_at TEXT NOT NULL,updated_at TEXT NOT NULL,revision INTEGER NOT NULL DEFAULT 1
 );
 CREATE INDEX IF NOT EXISTS idx_protocol_exercises_target ON protocol_exercises(target_kind,target_id,status);
+
+CREATE TABLE IF NOT EXISTS patients(id TEXT PRIMARY KEY,email TEXT NOT NULL COLLATE NOCASE UNIQUE,name TEXT NOT NULL,phone TEXT NOT NULL DEFAULT '',owner_id TEXT NOT NULL REFERENCES users(id),password_hash TEXT,active INTEGER NOT NULL DEFAULT 1 CHECK(active IN (0,1)),revision INTEGER NOT NULL DEFAULT 1,created_at TEXT NOT NULL,updated_at TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS idx_patients_owner ON patients(owner_id,active);
+CREATE TABLE IF NOT EXISTS patient_sessions(token_hash TEXT PRIMARY KEY,patient_id TEXT NOT NULL REFERENCES patients(id),expires_at INTEGER NOT NULL);
+CREATE INDEX IF NOT EXISTS idx_patient_sessions_patient ON patient_sessions(patient_id);
+CREATE TABLE IF NOT EXISTS patient_invites(id TEXT PRIMARY KEY,token_hash TEXT NOT NULL UNIQUE,patient_id TEXT NOT NULL REFERENCES patients(id),kind TEXT NOT NULL CHECK(kind IN ('activate','reset')),expires_at INTEGER NOT NULL,used_at INTEGER,created_by TEXT NOT NULL REFERENCES users(id),created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS care_plans(id TEXT PRIMARY KEY,patient_id TEXT NOT NULL REFERENCES patients(id),author_id TEXT NOT NULL REFERENCES users(id),title TEXT NOT NULL,goal TEXT NOT NULL DEFAULT '',instructions TEXT NOT NULL DEFAULT '',start_date TEXT NOT NULL,end_date TEXT NOT NULL,status TEXT NOT NULL CHECK(status IN ('draft','active','completed','archived')),revision INTEGER NOT NULL DEFAULT 1,created_at TEXT NOT NULL,updated_at TEXT NOT NULL,published_at TEXT);
+CREATE INDEX IF NOT EXISTS idx_care_plans_patient ON care_plans(patient_id,status);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_care_one_active ON care_plans(patient_id) WHERE status='active';
+CREATE TABLE IF NOT EXISTS care_tasks(id TEXT PRIMARY KEY,plan_id TEXT NOT NULL REFERENCES care_plans(id) ON DELETE CASCADE,kind TEXT NOT NULL CHECK(kind IN ('exercise','conduct')),title TEXT NOT NULL,steps TEXT NOT NULL,dose TEXT NOT NULL,days TEXT NOT NULL,equipment TEXT NOT NULL DEFAULT '',restriction TEXT NOT NULL DEFAULT '',url TEXT NOT NULL DEFAULT '',position INTEGER NOT NULL);
+CREATE INDEX IF NOT EXISTS idx_care_tasks_plan ON care_tasks(plan_id,position);
+CREATE TABLE IF NOT EXISTS care_logs(id TEXT PRIMARY KEY,patient_id TEXT NOT NULL REFERENCES patients(id),task_id TEXT NOT NULL REFERENCES care_tasks(id),performed_date TEXT NOT NULL,status TEXT NOT NULL CHECK(status IN ('done','partial','skipped')),pain INTEGER CHECK(pain BETWEEN 0 AND 10),difficulty INTEGER CHECK(difficulty BETWEEN 0 AND 10),comment TEXT NOT NULL DEFAULT '',revision INTEGER NOT NULL DEFAULT 1,created_at TEXT NOT NULL,updated_at TEXT NOT NULL,UNIQUE(patient_id,task_id,performed_date));
+CREATE INDEX IF NOT EXISTS idx_care_logs_patient_date ON care_logs(patient_id,performed_date);
+CREATE TABLE IF NOT EXISTS care_feedback(id TEXT PRIMARY KEY,log_id TEXT NOT NULL REFERENCES care_logs(id),author_id TEXT NOT NULL REFERENCES users(id),text TEXT NOT NULL,created_at TEXT NOT NULL);
