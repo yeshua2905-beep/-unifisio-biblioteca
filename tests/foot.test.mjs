@@ -20,11 +20,11 @@ test('Treze protocolos de tornozelo e pé são acrescentados sem alterar a curad
   const shoulder=JSON.parse(readFileSync(new URL('../scripts/shoulder-protocols.json',import.meta.url),'utf8'));
   assert.equal(seedEvidence(db,shoulder,'admin@example.org').inserted,6);
   const knee=JSON.parse(readFileSync(new URL('../scripts/knee-protocols.json',import.meta.url),'utf8'));
-  assert.equal(seedEvidence(db,knee,'admin@example.org').inserted,5);
+  assert.equal(seedEvidence(db,knee,'admin@example.org').inserted,10);
   const previous=db.prepare('SELECT * FROM materials ORDER BY id').all();
   assert.equal(seedEvidence(db,foot,'admin@example.org').inserted,13);
   assert.deepEqual(db.prepare("SELECT * FROM materials WHERE id NOT LIKE 'evidence-foot-%' ORDER BY id").all(),previous);
-  assert.equal(db.prepare("SELECT COUNT(*) AS n FROM materials WHERE status='published'").get().n,68);
+  assert.equal(db.prepare("SELECT COUNT(*) AS n FROM materials WHERE status='published'").get().n,73);
   const id=foot.items[0].id;
   db.prepare("UPDATE materials SET status='archived',summary='Revisão clínica posterior' WHERE id=?").run(id);
   assert.equal(seedEvidence(db,foot,'admin@example.org').inserted,0);

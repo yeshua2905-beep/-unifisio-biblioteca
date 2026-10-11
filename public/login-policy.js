@@ -1,4 +1,1 @@
-// Restoring a cached window must go through the server's fresh-login policy.
-window.addEventListener('pageshow', function (event) {
-  if (event.persisted) window.location.reload();
-});
+// Sessão protegida por cookie de sessão; navegação interna preserva o acesso.

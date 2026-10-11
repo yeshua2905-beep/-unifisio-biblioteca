@@ -10,3 +10,7 @@ CREATE TABLE IF NOT EXISTS audit(id INTEGER PRIMARY KEY AUTOINCREMENT,actor_id T
 CREATE TABLE IF NOT EXISTS images(id TEXT PRIMARY KEY,title TEXT NOT NULL,category TEXT NOT NULL,description TEXT NOT NULL DEFAULT '',material_id TEXT REFERENCES materials(id) ON DELETE SET NULL,visibility TEXT NOT NULL CHECK(visibility IN ('team','restricted')),status TEXT NOT NULL CHECK(status IN ('published','pending','rejected','archived')),file_key TEXT NOT NULL,file_name TEXT NOT NULL,mime TEXT NOT NULL,size INTEGER NOT NULL,width INTEGER NOT NULL,height INTEGER NOT NULL,author_id TEXT NOT NULL REFERENCES users(id),author_name TEXT NOT NULL,created_at TEXT NOT NULL,updated_at TEXT NOT NULL,review_note TEXT NOT NULL DEFAULT '');
 CREATE INDEX IF NOT EXISTS idx_images_status ON images(status,created_at);
 CREATE INDEX IF NOT EXISTS idx_images_author ON images(author_id);
+
+CREATE TABLE IF NOT EXISTS material_versions(id INTEGER PRIMARY KEY AUTOINCREMENT,material_id TEXT NOT NULL REFERENCES materials(id),snapshot TEXT NOT NULL,actor_id TEXT NOT NULL REFERENCES users(id),created_at TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS idx_versions_material ON material_versions(material_id,id);
+CREATE TABLE IF NOT EXISTS material_activity(user_id TEXT NOT NULL REFERENCES users(id),material_id TEXT NOT NULL REFERENCES materials(id),favorite INTEGER NOT NULL DEFAULT 0,last_opened TEXT,PRIMARY KEY(user_id,material_id));

@@ -1,5 +1,5 @@
 const $=s=>document.querySelector(s);
-const areas=['Ombro','Joelho','Coluna','Quadril','Tornozelo e pé','Cotovelo e mão','Dor crônica','Esporte e retorno','Pós-operatório','Avaliação funcional','Gestão e procedimentos'];
+let areas=[];
 const labels={published:'Publicada',pending:'Em revisão',rejected:'Devolvida',archived:'Arquivada'};
 let user,images=[],materials=[],editing=null,selected=null,busy=false;
 const node=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e};
@@ -19,4 +19,4 @@ async function removeImage(){if(!confirm('Excluir esta imagem e seu arquivo defi
 $('#form').addEventListener('submit',e=>{e.preventDefault();void run(async()=>{const f=new FormData($('#form'));if(editing)f.set('id',editing.id);await api('/api/images',{method:editing?'PUT':'POST',body:f});$('#editor').close();if(!user.isAdmin)$('#view').value='mine';await load()},'#form-error')});
 $('#form').elements.file.addEventListener('change',e=>{const file=e.target.files[0];$('#preview').hidden=true;$('#form-error').textContent='';if(!file)return;if(file.size>10*1024*1024){$('#form-error').textContent='Selecione uma imagem de até 10 MB.';e.target.value='';return}const reader=new FileReader();reader.onload=()=>{$('#preview').src=reader.result;$('#preview').hidden=false};reader.readAsDataURL(file)});
 for(const b of document.querySelectorAll('[data-close]'))b.addEventListener('click',()=>{if(!busy)document.getElementById(b.dataset.close).close()});for(const d of document.querySelectorAll('dialog'))d.addEventListener('cancel',e=>{if(busy)e.preventDefault()});
-$('#add').addEventListener('click',()=>void openEditor());$('#refresh').addEventListener('click',()=>void load());$('#query').addEventListener('input',render);$('#view').addEventListener('change',render);$('#category').addEventListener('change',render);option($('#category'),'','Todas as áreas');for(const c of areas){option($('#category'),c,c);option($('#form').elements.category,c,c)}void load();
+$('#add').addEventListener('click',()=>void openEditor());$('#refresh').addEventListener('click',()=>void load());$('#query').addEventListener('input',render);$('#view').addEventListener('change',render);$('#category').addEventListener('change',render);option($('#category'),'','Todas as áreas');async function initialize(){try{const d=await api('/api/catalog');areas=d.categories;for(const c of areas){option($('#category'),c,c);option($('#form').elements.category,c,c)}await load()}catch(e){showError('#message',e)}}void initialize();
