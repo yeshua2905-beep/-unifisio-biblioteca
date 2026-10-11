@@ -1,0 +1,1373 @@
+{
+  "reviewedAt": "2026-10-10",
+  "sources": {
+    "rc": {
+      "title": "Desmeules et al. · Manguito rotador · Diretriz 2025",
+      "url": "https://doi.org/10.2519/jospt.2025.13182",
+      "scope": "Reabilitação ativa com resistência e/ou controle motor na tendinopatia do manguito; não é protocolo de reparo cirúrgico."
+    },
+    "acl": {
+      "title": "Kotsifaki et al. · Aspetar · Diretriz LCA 2023",
+      "url": "https://doi.org/10.1136/bjsports-2022-106158",
+      "scope": "Fortalecimento após reconstrução de LCA; ajustar arco, enxerto e procedimentos associados."
+    },
+    "pfp": {
+      "title": "Neal et al. · Dor patelofemoral · Guia 2024",
+      "url": "https://doi.org/10.1136/bjsports-2024-108110",
+      "scope": "Exercícios de joelho, com ou sem exercícios de quadril, combinados com educação."
+    },
+    "ach": {
+      "title": "Chimenti et al. · Aquiles porção média · Diretriz 2024",
+      "url": "https://doi.org/10.2519/jospt.2024.0302",
+      "scope": "Carga progressiva do tendão na tendinopatia de porção média. Não extrapolar diretamente para ruptura, tenorrafia ou apresentação insercional."
+    },
+    "pat": {
+      "title": "Breda et al. · Tendinopatia patelar · ECA 2021",
+      "url": "https://doi.org/10.1136/bjsports-2020-103403",
+      "scope": "Ensaio de carga progressiva na tendinopatia patelar; não sustenta exercícios após reparo de ruptura."
+    },
+    "glut": {
+      "title": "Mellor et al. · Tendinopatia glútea · ECA 2018",
+      "url": "https://doi.org/10.1136/bmj.k1662",
+      "scope": "Educação sobre carga e exercícios na tendinopatia glútea. A combinação foi estudada; não atribuir efeito a um exercício isolado."
+    },
+    "lbp": {
+      "title": "George et al. · Lombalgia · Diretriz 2021",
+      "url": "https://doi.org/10.2519/jospt.2021.0304",
+      "scope": "Exercício de tronco e exercício geral para lombalgia; não estabelece um movimento universalmente superior."
+    },
+    "ank": {
+      "title": "Martin et al. · Entorse lateral · Diretriz 2021",
+      "url": "https://doi.org/10.2519/jospt.2021.0302",
+      "scope": "Reabilitação estruturada, incluindo exercícios e treino neuromuscular; não é protocolo para toda fratura ou lesão de sindesmose."
+    },
+    "ham": {
+      "title": "Hamstring Strain Injury in Athletes · Diretriz 2022",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35164536/",
+      "scope": "Reabilitação de lesão dos isquiotibiais. Não extrapolar para todo músculo ou avulsão completa."
+    },
+    "groin": {
+      "title": "Hölmich et al. · Dor relacionada a adutores · ECA 1999",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9989713/",
+      "scope": "Treino ativo na dor persistente relacionada a adutores; referência clássica, não evidência para ruptura aguda."
+    },
+    "neck": {
+      "title": "Blanpied et al. · Cervicalgia · Diretriz 2017",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28666405/",
+      "scope": "Exercícios cervicais e escapulares conforme apresentação; excluir trauma e sinais neurológicos relevantes."
+    },
+    "wrist": {
+      "title": "Reabilitação da fratura distal do rádio · Diretriz 2024",
+      "url": "https://doi.org/10.2519/jospt.2024.0301",
+      "scope": "Carga submáxima progressiva em situações selecionadas de fratura estável; estabilidade, complicações e permissões governam a indicação."
+    },
+    "aaos-shoulder": {
+      "title": "AAOS · Condicionamento do ombro",
+      "url": "https://orthoinfo.aaos.org/globalassets/pdfs/2022-rotator-cuff-and-shoulder-conditioning-program.pdf",
+      "scope": "Material educativo de exercícios; não ensaio comparativo nem autorização pós-operatória."
+    },
+    "aaos-knee": {
+      "title": "AAOS · Condicionamento do joelho",
+      "url": "https://www.orthoinfo.org/recovery/knee-conditioning-program/",
+      "scope": "Repertório educativo de exercícios; seleção clínica e permissões continuam necessárias."
+    },
+    "aaos-hip": {
+      "title": "AAOS · Condicionamento do quadril",
+      "url": "https://www.orthoinfo.org/recovery/hip-conditioning-program/",
+      "scope": "Repertório educativo; não substitui restrições de artroplastia ou artroscopia."
+    },
+    "aaos-foot": {
+      "title": "AAOS · Condicionamento do pé e tornozelo",
+      "url": "https://www.orthoinfo.org/recovery/foot-and-ankle-conditioning-program",
+      "scope": "Repertório educativo geral, não demonstra eficácia específica para cada tendão ou fratura."
+    },
+    "aaos-spine": {
+      "title": "AAOS · Condicionamento da coluna",
+      "url": "https://www.orthoinfo.org/recovery/spine-conditioning-program/",
+      "scope": "Repertório educativo de fortalecimento; adaptar à resposta e ao diagnóstico."
+    },
+    "aaos-elbow": {
+      "title": "AAOS · Exercícios para epicondilalgia",
+      "url": "https://www.orthoinfo.org/recovery/epicondylitis-therapeutic-exercise-program/",
+      "scope": "Material educativo de carga dos músculos do antebraço; não cobre todos os diagnósticos da mão."
+    },
+    "copenhagen": {
+      "title": "Harøy et al. · Treino de adutores · ECA por grupos 2019",
+      "url": "https://doi.org/10.1136/bjsports-2017-098937",
+      "scope": "Programa preventivo em futebolistas homens com níveis de progressão. Não prova eficácia do Copenhagen isolado na reabilitação de toda dor inguinal; uso clínico após avaliação é adaptação."
+    },
+    "foot-intrinsic": {
+      "title": "Treino da musculatura intrínseca do pé · Revisão sistemática e metanálise 2023",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35724360/",
+      "scope": "Síntese sobre treinamento intrínseco e função do pé. Não valida dose ótima nem aplicação automática em fraturas ou em todas as tendinopatias."
+    }
+  },
+  "exercises": [
+    {
+      "id": "ex-rc-out",
+      "title": "Rotação externa com elástico",
+      "region": "Ombro",
+      "muscles": "Infraespinal e redondo menor",
+      "equipment": "Elástico e âncora firme",
+      "steps": [
+        "Cotovelo junto ao corpo, dobrado, com uma toalha entre braço e tronco.",
+        "Com a tração puxando a mão para dentro, gire o antebraço para fora no arco autorizado.",
+        "Retorne lentamente sem girar o tronco."
+      ],
+      "restriction": "Após Bankart, reparo do manguito ou instabilidade, confirmar arco e resistência liberados.",
+      "progress": "Aumentar tensão mantendo cotovelo e tronco estáveis.",
+      "sourceIds": [
+        "rc",
+        "aaos-shoulder"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-rc-in",
+      "title": "Rotação interna com elástico",
+      "region": "Ombro",
+      "muscles": "Subescapular e rotadores internos",
+      "equipment": "Elástico",
+      "steps": [
+        "Cotovelo ao lado do tronco; âncora do lado do braço exercitado.",
+        "Puxe a mão em direção ao abdome, no arco permitido.",
+        "Volte controlando, sem inclinar o corpo."
+      ],
+      "restriction": "Reparo de subescapular e estabilização exigem permissão específica.",
+      "progress": "Aumentar resistência mantendo arco tolerado.",
+      "sourceIds": [
+        "rc",
+        "aaos-shoulder"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-row",
+      "title": "Remada com elástico",
+      "region": "Ombro",
+      "muscles": "Trapézio médio, romboides e dorsal",
+      "equipment": "Elástico",
+      "steps": [
+        "Prenda o elástico à frente em ponto seguro.",
+        "Puxe os cotovelos para trás sem elevar os ombros nem forçar sua extensão.",
+        "Devolva a tensão devagar."
+      ],
+      "restriction": "Não levar o braço além do arco permitido em estabilização ou reparo.",
+      "progress": "Aumentar carga sem perder controle ou provocar apreensão.",
+      "sourceIds": [
+        "rc",
+        "aaos-shoulder"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-scaption",
+      "title": "Elevação no plano da escápula",
+      "region": "Ombro",
+      "muscles": "Deltoide e manguito rotador",
+      "equipment": "Peso leve opcional",
+      "steps": [
+        "Braços ligeiramente à frente da linha lateral, polegares apontando para cima.",
+        "Eleve até a altura permitida e tolerável, sem impulso.",
+        "Desça lentamente."
+      ],
+      "restriction": "Movimento ativo e carga precisam estar liberados no pós-operatório.",
+      "progress": "Aumentar primeiro capacidade no arco escolhido, depois carga.",
+      "sourceIds": [
+        "rc"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-serratus",
+      "title": "Empurrar a parede com alcance",
+      "region": "Ombro",
+      "muscles": "Serrátil anterior e cintura escapular",
+      "equipment": "Parede",
+      "steps": [
+        "Mãos na parede à altura confortável, cotovelos quase estendidos.",
+        "Afaste o tronco da parede empurrando pelas mãos e deixando escápulas se moverem.",
+        "Retorne sem afundar o tronco."
+      ],
+      "restriction": "Não usar se descarga no membro superior estiver proibida.",
+      "progress": "Evoluir inclinação; bancada antes do chão.",
+      "sourceIds": [
+        "rc"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-wall-push",
+      "title": "Flexão de braços na parede",
+      "region": "Ombro",
+      "muscles": "Peitoral, tríceps e serrátil",
+      "equipment": "Parede",
+      "steps": [
+        "Mãos apoiadas e pés afastados conforme capacidade.",
+        "Dobre cotovelos aproximando o tronco da parede.",
+        "Empurre e retorne, sem bloquear a respiração."
+      ],
+      "restriction": "Confirmar descarga, estabilidade e extensão do punho permitidas.",
+      "progress": "Passar a apoio mais baixo somente com capacidade.",
+      "sourceIds": [
+        "aaos-shoulder"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-biceps",
+      "title": "Flexão de cotovelo com peso",
+      "region": "Cotovelo e mão",
+      "muscles": "Bíceps e braquial",
+      "equipment": "Halter leve",
+      "steps": [
+        "Braço ao lado do corpo, palma voltada para cima.",
+        "Dobre o cotovelo sem lançar o ombro à frente.",
+        "Desça devagar."
+      ],
+      "restriction": "Após SLAP, tenodese ou reparo de bíceps, só iniciar resistência liberada.",
+      "progress": "Aumentar carga com amplitude estável.",
+      "sourceIds": [
+        "aaos-shoulder"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-triceps",
+      "title": "Extensão de cotovelo com elástico",
+      "region": "Cotovelo e mão",
+      "muscles": "Tríceps",
+      "equipment": "Elástico",
+      "steps": [
+        "Âncora alta e segura; cotovelo ao lado do corpo.",
+        "Estenda cotovelo dentro do arco autorizado.",
+        "Volte lentamente sem deslocar ombro."
+      ],
+      "restriction": "Reparo de tríceps, fratura ou dor no cotovelo exigem plano específico.",
+      "progress": "Aumentar tensão sem compensação.",
+      "sourceIds": [
+        "aaos-shoulder"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-quad-iso",
+      "title": "Contração isométrica do quadríceps",
+      "region": "Joelho",
+      "muscles": "Quadríceps",
+      "equipment": "Toalha opcional",
+      "steps": [
+        "Perna apoiada no ângulo autorizado.",
+        "Contraia a frente da coxa, sem elevar a perna nem empurrar o reparo.",
+        "Relaxe entre tentativas."
+      ],
+      "restriction": "Até isometria precisa de permissão após reparo patelar ou quadricipital.",
+      "progress": "Evoluir para extensão ativa/resistida apenas quando liberada.",
+      "sourceIds": [
+        "acl",
+        "aaos-knee"
+      ],
+      "phase": "Ativação",
+      "dose": "5–10 contrações de 5 segundos, com pausas; intensidade submáxima inicial."
+    },
+    {
+      "id": "ex-knee-ext",
+      "title": "Extensão de joelho sentado",
+      "region": "Joelho",
+      "muscles": "Quadríceps",
+      "equipment": "Caneleira ou máquina",
+      "steps": [
+        "Sente com coxa apoiada.",
+        "Estenda o joelho no arco selecionado pelo fisioterapeuta.",
+        "Retorne controlando sem impulso."
+      ],
+      "restriction": "LCA: escolher arco conforme enxerto, fase e dor; não liberar extensão terminal carregada automaticamente. Reparo extensor exige liberação própria.",
+      "progress": "Aumentar carga e arco separadamente, monitorando derrame e dor.",
+      "sourceIds": [
+        "acl",
+        "pfp"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-chair",
+      "title": "Sentar e levantar",
+      "region": "Joelho",
+      "muscles": "Quadríceps e glúteo máximo",
+      "equipment": "Cadeira firme",
+      "steps": [
+        "Encoste a cadeira na parede, pés no chão.",
+        "Levante com controle; mãos podem ajudar se necessário.",
+        "Sente devagar sem se jogar."
+      ],
+      "restriction": "Confirmar apoio e flexão permitidos em fratura, sutura meniscal e artroplastia.",
+      "progress": "Reduzir assistência; depois aumentar carga ou diminuir altura.",
+      "sourceIds": [
+        "aaos-knee",
+        "pfp"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-squat",
+      "title": "Agachamento com apoio",
+      "region": "Joelho",
+      "muscles": "Quadríceps e glúteos",
+      "equipment": "Bancada ou barra",
+      "steps": [
+        "Segure apoio firme com pés em base confortável.",
+        "Dobre quadris e joelhos até amplitude autorizada.",
+        "Suba sem impulso e com carga bem distribuída."
+      ],
+      "restriction": "Sutura meniscal e fratura podem limitar apoio e profundidade; tendão reparado exige permissão.",
+      "progress": "Evoluir profundidade e carga uma de cada vez.",
+      "sourceIds": [
+        "acl",
+        "pfp",
+        "aaos-knee"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-legpress",
+      "title": "Leg press no arco autorizado",
+      "region": "Joelho",
+      "muscles": "Quadríceps e glúteos",
+      "equipment": "Leg press",
+      "steps": [
+        "Ajuste banco e pés; selecione carga baixa para aprender.",
+        "Empurre sem travar joelhos e sem levantar pelve.",
+        "Volte dentro do arco liberado."
+      ],
+      "restriction": "Não copiar arco ou semanas entre procedimentos; considerar reparo meniscal e cartilagem.",
+      "progress": "Aumentar carga mantendo arco e controle.",
+      "sourceIds": [
+        "acl"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-step",
+      "title": "Subida em degrau baixo",
+      "region": "Joelho",
+      "muscles": "Quadríceps e glúteos",
+      "equipment": "Degrau estável e apoio",
+      "steps": [
+        "Coloque o pé do membro treinado no degrau baixo.",
+        "Suba usando esse membro, com ajuda do apoio se preciso.",
+        "Desça devagar sem queda ou impulso do pé de trás."
+      ],
+      "restriction": "Apoio unipodal e flexão necessários devem estar liberados.",
+      "progress": "Aumentar altura ou carga quando completar com controle.",
+      "sourceIds": [
+        "acl",
+        "pfp"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-step-down",
+      "title": "Descida controlada de degrau",
+      "region": "Joelho",
+      "muscles": "Quadríceps e estabilizadores do quadril",
+      "equipment": "Degrau baixo",
+      "steps": [
+        "Fique no degrau com apoio disponível.",
+        "Flexione a perna de apoio e encoste o outro calcanhar no chão.",
+        "Volte sem despencar nem buscar profundidade máxima."
+      ],
+      "restriction": "Usar após tolerar tarefas bilaterais; não antecipar em reparos protegidos.",
+      "progress": "Aumentar profundidade ou carga com resposta estável.",
+      "sourceIds": [
+        "pfp",
+        "acl"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-split",
+      "title": "Agachamento em base dividida",
+      "region": "Joelho",
+      "muscles": "Quadríceps e glúteos",
+      "equipment": "Apoio firme",
+      "steps": [
+        "Um pé à frente e outro atrás, apoio ao lado.",
+        "Desça em amplitude confortável mantendo equilíbrio.",
+        "Suba distribuindo esforço conforme objetivo."
+      ],
+      "restriction": "Confirmar apoio e arco; evitar se instabilidade impede controle.",
+      "progress": "Evoluir carga e reduzir assistência.",
+      "sourceIds": [
+        "acl",
+        "pfp"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-hamcurl",
+      "title": "Flexão de joelho resistida",
+      "region": "Joelho",
+      "muscles": "Isquiotibiais",
+      "equipment": "Elástico, caneleira ou máquina",
+      "steps": [
+        "Com coxa apoiada, dobre o joelho contra resistência.",
+        "Mantenha quadril estável.",
+        "Retorne lentamente."
+      ],
+      "restriction": "Enxerto dos flexores, reparo ou avulsão dos isquiotibiais exigem momento de carga específico.",
+      "progress": "Aumentar resistência e comprimento muscular gradualmente.",
+      "sourceIds": [
+        "acl",
+        "ham",
+        "aaos-knee"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-knee-iso-loaded",
+      "title": "Isometria do quadríceps com resistência",
+      "region": "Joelho",
+      "muscles": "Quadríceps e tendão patelar",
+      "equipment": "Máquina extensora ou resistência fixa",
+      "steps": [
+        "Escolha ângulo de joelho tolerado e autorizado.",
+        "Produza força sem mover o joelho, respirando normalmente.",
+        "Relaxe e descanse entre sustentações."
+      ],
+      "restriction": "Tendinopatia avaliada; não aplicar em ruptura/reparo patelar. Analgesia imediata não é garantida.",
+      "progress": "Passar a carga dinâmica lenta conforme tolerância.",
+      "sourceIds": [
+        "pat"
+      ],
+      "phase": "Ativação",
+      "dose": "Exemplo: 4 sustentações de 20–30 segundos, pausa de 60–90 segundos; adaptar força e duração."
+    },
+    {
+      "id": "ex-calf-two",
+      "title": "Elevação bilateral de panturrilha",
+      "region": "Tornozelo e pé",
+      "muscles": "Gastrocnêmio e sóleo",
+      "equipment": "Bancada",
+      "steps": [
+        "Em pé no chão plano, mãos no apoio.",
+        "Eleve os dois calcanhares sem impulso.",
+        "Desça lentamente até o solo."
+      ],
+      "restriction": "Exige apoio e contração liberados. Não usar degrau em Aquiles insercional irritável ou reparo protegido.",
+      "progress": "Transferir gradualmente mais carga para um lado.",
+      "sourceIds": [
+        "ach",
+        "aaos-foot",
+        "ank"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-calf-one",
+      "title": "Elevação unilateral de panturrilha",
+      "region": "Tornozelo e pé",
+      "muscles": "Gastrocnêmio e sóleo",
+      "equipment": "Apoio e peso opcional",
+      "steps": [
+        "Em solo plano, apoie-se com mãos para equilíbrio.",
+        "Eleve o calcanhar usando uma perna.",
+        "Desça com controle sem reduzir altura a cada repetição."
+      ],
+      "restriction": "Somente com apoio unipodal e força liberados; não iniciar em tenorrafia sem protocolo.",
+      "progress": "Aumentar carga preservando altura e ritmo.",
+      "sourceIds": [
+        "ach"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-soleus",
+      "title": "Elevação de calcanhar sentado",
+      "region": "Tornozelo e pé",
+      "muscles": "Sóleo com participação do gastrocnêmio",
+      "equipment": "Cadeira e peso acolchoado",
+      "steps": [
+        "Sente com pés no chão e joelhos dobrados.",
+        "Eleve calcanhares mantendo antepé apoiado.",
+        "Desça devagar; carga sobre coxa somente se permitida."
+      ],
+      "restriction": "Contração plantar precisa estar liberada em ruptura, tenorrafia ou fratura.",
+      "progress": "Aumentar carga ou passar a execução unilateral.",
+      "sourceIds": [
+        "ach",
+        "aaos-foot"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-calf-ecc",
+      "title": "Descida lenta do calcanhar",
+      "region": "Tornozelo e pé",
+      "muscles": "Tríceps sural",
+      "equipment": "Apoio",
+      "steps": [
+        "Em chão plano, suba com ambos os pés.",
+        "Quando autorizado, transfira carga ao lado treinado e desça lentamente.",
+        "Volte a usar ambos os pés para subir."
+      ],
+      "restriction": "Sem degrau por padrão; não é técnica obrigatória nem superior universal a outras cargas. Não aplicar em reparo protegido.",
+      "progress": "Evoluir resistência; não precisar perseguir dor.",
+      "sourceIds": [
+        "ach"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-dorsi",
+      "title": "Dorsiflexão com elástico",
+      "region": "Tornozelo e pé",
+      "muscles": "Tibial anterior",
+      "equipment": "Elástico",
+      "steps": [
+        "Sentado, elástico puxando o antepé para baixo.",
+        "Puxe ponta do pé em direção à canela.",
+        "Retorne sem mover toda a perna."
+      ],
+      "restriction": "Confirmar movimento e resistência liberados; não forçar órtese ou reparo.",
+      "progress": "Aumentar tensão mantendo amplitude.",
+      "sourceIds": [
+        "aaos-foot"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-eversion",
+      "title": "Eversão com elástico",
+      "region": "Tornozelo e pé",
+      "muscles": "Fibulares longo e curto",
+      "equipment": "Elástico",
+      "steps": [
+        "Sentado, perna apoiada; elástico puxando antepé para dentro.",
+        "Leve o antepé para fora sem girar joelho ou quadril.",
+        "Retorne devagar."
+      ],
+      "restriction": "Evitar se eversão estiver restringida por lesão deltoide, reparo ou fratura; ajustar à tendinopatia de fibulares avaliada.",
+      "progress": "Aumentar tensão e depois integrar tarefa de apoio.",
+      "sourceIds": [
+        "aaos-foot",
+        "ank"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-inversion",
+      "title": "Inversão com elástico",
+      "region": "Tornozelo e pé",
+      "muscles": "Tibial posterior e inversores",
+      "equipment": "Elástico",
+      "steps": [
+        "Perna apoiada; elástico puxando antepé para fora.",
+        "Leve antepé para dentro com controle.",
+        "Volte devagar sem rodar toda a perna."
+      ],
+      "restriction": "Não aplicar inversão se entorse lateral aguda ou reparo exigir proteção. Não promete isolar totalmente tibial posterior.",
+      "progress": "Evoluir carga e tarefas funcionais autorizadas.",
+      "sourceIds": [
+        "aaos-foot"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-toe-curl",
+      "title": "Flexão dos dedos com toalha",
+      "region": "Tornozelo e pé",
+      "muscles": "Flexores dos dedos e musculatura do pé",
+      "equipment": "Toalha",
+      "steps": [
+        "Sentado, pé sobre toalha no chão.",
+        "Puxe pequena parte da toalha com dedos, sem prender a respiração.",
+        "Solte e repita, sem garra sustentada dolorosa."
+      ],
+      "restriction": "Confirmar carga do antepé em fratura metatarsal ou lesão do mediopé.",
+      "progress": "Aumentar resistência leve somente com boa resposta.",
+      "sourceIds": [
+        "aaos-foot",
+        "foot-intrinsic"
+      ],
+      "phase": "Ativação",
+      "dose": "1–2 séries de 8–12 movimentos controlados; ajustar à fadiga local."
+    },
+    {
+      "id": "ex-short-foot",
+      "title": "Encurtamento ativo do arco do pé",
+      "region": "Tornozelo e pé",
+      "muscles": "Musculatura intrínseca do pé",
+      "equipment": "Sem equipamento",
+      "steps": [
+        "Sentado, calcanhar e base dos dedos apoiados.",
+        "Aproxime suavemente a base do hálux do calcanhar elevando discretamente o arco.",
+        "Relaxe sem enrolar os dedos."
+      ],
+      "restriction": "Exemplo de controle local; não corrige toda alteração de pisada. Confirmar permissão no mediopé.",
+      "progress": "Evoluir de sentado para em pé após liberar apoio.",
+      "sourceIds": [
+        "foot-intrinsic"
+      ],
+      "phase": "Ativação",
+      "dose": "5–8 sustentações de 5 segundos; objetivo inicial é controle, sem carga máxima."
+    },
+    {
+      "id": "ex-bridge",
+      "title": "Ponte de quadril",
+      "region": "Quadril",
+      "muscles": "Glúteo máximo e isquiotibiais",
+      "equipment": "Colchonete",
+      "steps": [
+        "Deitado com joelhos dobrados e pés apoiados.",
+        "Eleve a pelve até altura confortável.",
+        "Desça com controle, sem buscar hiperextensão lombar."
+      ],
+      "restriction": "Artroplastia, reparo de glúteos ou isquiotibiais exigem permissão.",
+      "progress": "Aumentar carga; unilateral só após boa capacidade.",
+      "sourceIds": [
+        "aaos-hip",
+        "lbp"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-hip-abd",
+      "title": "Abdução de quadril em pé",
+      "region": "Quadril",
+      "muscles": "Glúteo médio e mínimo",
+      "equipment": "Apoio e elástico opcional",
+      "steps": [
+        "Segure apoio firme com tronco confortável.",
+        "Leve a perna para o lado sem inclinar tronco.",
+        "Volte devagar sem cruzar pernas."
+      ],
+      "restriction": "Após reparo de abdutores, confirmar abdução ativa/resistida. Na tendinopatia glútea evitar compressão provocativa.",
+      "progress": "Aumentar tensão sem inclinar pelve.",
+      "sourceIds": [
+        "glut",
+        "aaos-hip"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-side-walk",
+      "title": "Passos laterais com elástico",
+      "region": "Quadril",
+      "muscles": "Abdutores do quadril",
+      "equipment": "Elástico",
+      "steps": [
+        "Elástico acima dos joelhos para iniciar; base confortável.",
+        "Faça passos pequenos para o lado sem cruzar os pés.",
+        "Mantenha controle e repita para ambos os lados."
+      ],
+      "restriction": "Exige apoio liberado e equilíbrio. Ajustar compressão e amplitude na tendinopatia glútea.",
+      "progress": "Aumentar resistência ou distância; não precisar agachar fundo.",
+      "sourceIds": [
+        "glut",
+        "pfp"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-hip-ext",
+      "title": "Extensão de quadril em pé",
+      "region": "Quadril",
+      "muscles": "Glúteo máximo",
+      "equipment": "Apoio e elástico opcional",
+      "steps": [
+        "Segure apoio; leve perna discretamente para trás.",
+        "Mantenha tronco sem arco lombar excessivo.",
+        "Retorne com controle."
+      ],
+      "restriction": "Via anterior da artroplastia pode restringir extensão; confirmar arco.",
+      "progress": "Aumentar resistência no arco permitido.",
+      "sourceIds": [
+        "aaos-hip"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-hip-flex",
+      "title": "Flexão de quadril sentada resistida",
+      "region": "Quadril",
+      "muscles": "Iliopsoas e flexores do quadril",
+      "equipment": "Cadeira e carga leve",
+      "steps": [
+        "Sentado, tronco apoiado e pés no chão.",
+        "Eleve uma coxa discretamente no arco tolerado.",
+        "Abaixe devagar sem balançar o tronco."
+      ],
+      "restriction": "Dor anterior, FAI, labro, tenotomia ou reparo podem limitar flexão e resistência.",
+      "progress": "Aumentar carga sem provocar dor ou ressalto.",
+      "sourceIds": [
+        "aaos-hip"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-adductor-iso",
+      "title": "Adução isométrica com almofada",
+      "region": "Quadril",
+      "muscles": "Adutores",
+      "equipment": "Almofada",
+      "steps": [
+        "Deitado com joelhos dobrados e almofada entre eles.",
+        "Pressione com intensidade tolerada, sem prender respiração.",
+        "Relaxe entre sustentações."
+      ],
+      "restriction": "Não usar como liberação de ruptura aguda, avulsão ou reparo.",
+      "progress": "Aumentar força antes de alavanca longa.",
+      "sourceIds": [
+        "groin"
+      ],
+      "phase": "Ativação",
+      "dose": "4–5 contrações de 10–20 segundos, com descanso; ajustar à irritabilidade."
+    },
+    {
+      "id": "ex-adductor-side",
+      "title": "Adução de quadril deitada",
+      "region": "Quadril",
+      "muscles": "Adutores",
+      "equipment": "Colchonete",
+      "steps": [
+        "Deite de lado; perna superior apoiada à frente sem comprimir foco doloroso.",
+        "Eleve discretamente a perna inferior.",
+        "Desça sem impulso."
+      ],
+      "restriction": "Não aplicar se adução ativa/resistida estiver proibida.",
+      "progress": "Aumentar amplitude ou peso leve.",
+      "sourceIds": [
+        "groin",
+        "aaos-hip"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-copenhagen",
+      "title": "Copenhagen com alavanca curta",
+      "region": "Quadril",
+      "muscles": "Adutores e tronco",
+      "equipment": "Banco estável e supervisão",
+      "steps": [
+        "De lado, apoie o joelho superior em banco firme e antebraço no solo.",
+        "Eleve a pelve com ajuda do apoio, mantendo alavanca curta.",
+        "Desça com controle."
+      ],
+      "restriction": "Exercício avançado: requer tolerância a cargas mais simples. Não aplicar em lesão aguda importante ou pós-reparo.",
+      "progress": "Evoluir volume antes de alavanca longa.",
+      "sourceIds": [
+        "copenhagen",
+        "groin"
+      ],
+      "phase": "Capacidade avançada",
+      "dose": "Começar com 2 séries de 4–6 repetições assistidas ou sustentações breves; recuperação conforme resposta."
+    },
+    {
+      "id": "ex-ham-iso",
+      "title": "Isometria dos flexores com calcanhar",
+      "region": "Lesões musculares",
+      "muscles": "Isquiotibiais",
+      "equipment": "Colchonete",
+      "steps": [
+        "Deitado, joelho dobrado e calcanhar apoiado.",
+        "Pressione calcanhar como se o arrastasse, sem mover perna.",
+        "Relaxe entre tentativas."
+      ],
+      "restriction": "Escolher comprimento pelo local da lesão; avulsão, ruptura completa ou reparo exigem proteção específica.",
+      "progress": "Evoluir força e comprimento separadamente.",
+      "sourceIds": [
+        "ham"
+      ],
+      "phase": "Ativação",
+      "dose": "4 contrações de 10–20 segundos, submáximas, com pausas."
+    },
+    {
+      "id": "ex-rdl",
+      "title": "Levantamento romeno com apoio",
+      "region": "Lesões musculares",
+      "muscles": "Isquiotibiais, glúteos e extensores do tronco",
+      "equipment": "Apoio e carga opcional",
+      "steps": [
+        "Em pé, joelhos levemente dobrados.",
+        "Leve quadris para trás e incline tronco, sem buscar alongamento máximo.",
+        "Volte pela extensão do quadril com controle."
+      ],
+      "restriction": "Não iniciar em ruptura aguda extensa ou reparo; tendinopatia proximal pode exigir menor flexão do quadril.",
+      "progress": "Aumentar carga e amplitude em etapas.",
+      "sourceIds": [
+        "ham",
+        "lbp"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-ham-slider",
+      "title": "Flexão de joelho com deslizamento",
+      "region": "Lesões musculares",
+      "muscles": "Isquiotibiais e glúteos",
+      "equipment": "Toalhas ou discos deslizantes",
+      "steps": [
+        "Deitado, calcanhares sobre superfície deslizante.",
+        "Com pelve elevada se tolerado, afaste lentamente os calcanhares no arco escolhido.",
+        "Retorne com assistência ou reduza alavanca se necessário."
+      ],
+      "restriction": "Requer tolerância a ponte e carga dos flexores; não usar em reparo protegido.",
+      "progress": "Aumentar amplitude antes de versão unilateral.",
+      "sourceIds": [
+        "ham"
+      ],
+      "phase": "Capacidade avançada",
+      "dose": "2 séries de 5–8 repetições controladas, sem falha, com 2 minutos de descanso."
+    },
+    {
+      "id": "ex-nordic",
+      "title": "Nordic assistido",
+      "region": "Lesões musculares",
+      "muscles": "Isquiotibiais",
+      "equipment": "Apoio acolchoado e fixação segura",
+      "steps": [
+        "Ajoelhado, tornozelos fixados com segurança e tronco alinhado.",
+        "Incline-se lentamente à frente no arco controlável, usando elástico ou apoio para assistência.",
+        "Amorteça com mãos e retorne com ajuda."
+      ],
+      "restriction": "Não é exercício inicial para qualquer lesão. Exige joelhos tolerantes e recuperação suficiente; contraindicado em reparo não liberado.",
+      "progress": "Reduzir assistência gradualmente.",
+      "sourceIds": [
+        "ham"
+      ],
+      "phase": "Capacidade avançada",
+      "dose": "2 séries de 3–5 repetições assistidas, descanso amplo; evitar aumento brusco de volume."
+    },
+    {
+      "id": "ex-bird-dog",
+      "title": "Extensão alternada em quatro apoios",
+      "region": "Coluna",
+      "muscles": "Extensores do tronco e glúteos",
+      "equipment": "Colchonete",
+      "steps": [
+        "Em quatro apoios com carga tolerada em mãos e joelhos.",
+        "Estenda uma perna; acrescente braço oposto apenas se controlar a tarefa.",
+        "Retorne sem exigir imobilidade rígida da coluna."
+      ],
+      "restriction": "Ajustar se sintomas irradiados piorarem; punho ou joelho operados podem impedir apoio.",
+      "progress": "Aumentar tempo, alcance ou resistência.",
+      "sourceIds": [
+        "lbp",
+        "aaos-spine"
+      ],
+      "phase": "Ativação",
+      "dose": "1–2 séries de 6–8 por lado, sustentar 3–5 segundos quando tolerado."
+    },
+    {
+      "id": "ex-dead-bug",
+      "title": "Alternância de braços e pernas deitada",
+      "region": "Coluna",
+      "muscles": "Abdominais e controle do tronco",
+      "equipment": "Colchonete",
+      "steps": [
+        "Deitado, joelhos dobrados na posição tolerada.",
+        "Mova um braço ou deslize uma perna; avance a combinação oposta conforme controle.",
+        "Volte respirando, sem forçar coluna contra o chão."
+      ],
+      "restriction": "Reduzir alavanca se houver piora; não atribuir lombalgia automaticamente a fraqueza de core.",
+      "progress": "Aumentar alcance e resistência gradualmente.",
+      "sourceIds": [
+        "lbp"
+      ],
+      "phase": "Ativação",
+      "dose": "1–2 séries de 6–10 alternâncias controladas."
+    },
+    {
+      "id": "ex-side-plank",
+      "title": "Prancha lateral com joelhos apoiados",
+      "region": "Coluna",
+      "muscles": "Abdominais laterais e cintura escapular",
+      "equipment": "Colchonete",
+      "steps": [
+        "De lado, antebraço e joelhos apoiados.",
+        "Eleve a pelve apenas até sustentar com conforto.",
+        "Desça e descanse sem prender respiração."
+      ],
+      "restriction": "Não usar se ombro ou quadril não tolerarem apoio; adaptar à resposta lombar.",
+      "progress": "Evoluir duração e só depois alavanca.",
+      "sourceIds": [
+        "lbp",
+        "aaos-spine"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "3 sustentações de 10–20 segundos por lado, com descanso; ajustar à capacidade."
+    },
+    {
+      "id": "ex-carry",
+      "title": "Caminhada carregando peso",
+      "region": "Coluna",
+      "muscles": "Tronco, preensão e membros inferiores",
+      "equipment": "Peso leve",
+      "steps": [
+        "Segure peso permitido em uma ou ambas as mãos.",
+        "Caminhe em terreno seguro, respirando normalmente.",
+        "Encerre antes de perder marcha ou preensão."
+      ],
+      "restriction": "Confirmar capacidade cardiovascular, equilíbrio e permissão de carga; não usar em fratura protegida.",
+      "progress": "Aumentar distância ou carga separadamente.",
+      "sourceIds": [
+        "lbp"
+      ],
+      "phase": "Capacidade avançada",
+      "dose": "3 percursos curtos de 15–30 segundos com descanso; carga pela capacidade."
+    },
+    {
+      "id": "ex-neck-iso",
+      "title": "Isometria cervical suave",
+      "region": "Coluna",
+      "muscles": "Musculatura cervical",
+      "equipment": "Própria mão",
+      "steps": [
+        "Sentado, cabeça confortável; mão na testa ou lateral.",
+        "Faça pressão suave sem mover cabeça.",
+        "Relaxe respirando entre tentativas."
+      ],
+      "restriction": "Não aplicar em trauma não avaliado, instabilidade ou sintomas neurológicos novos.",
+      "progress": "Aumentar tolerância e duração antes de intensidade.",
+      "sourceIds": [
+        "neck"
+      ],
+      "phase": "Ativação",
+      "dose": "5 contrações de 3–5 segundos por direção selecionada, com pausas."
+    },
+    {
+      "id": "ex-neck-nod",
+      "title": "Flexão craniocervical de baixa carga",
+      "region": "Coluna",
+      "muscles": "Flexores profundos cervicais",
+      "equipment": "Toalha",
+      "steps": [
+        "Deitado, cabeça apoiada.",
+        "Faça pequeno gesto de sim sem levantar cabeça nem apertar mandíbula.",
+        "Relaxe entre repetições."
+      ],
+      "restriction": "Controle motor de baixa carga; não teste máximo nem tratamento universal de tontura.",
+      "progress": "Evoluir sustentação conforme qualidade.",
+      "sourceIds": [
+        "neck"
+      ],
+      "phase": "Ativação",
+      "dose": "5–8 repetições de 3–5 segundos, sem fadiga que altere movimento."
+    },
+    {
+      "id": "ex-wrist-ext",
+      "title": "Extensão de punho com peso leve",
+      "region": "Cotovelo e mão",
+      "muscles": "Extensores do punho",
+      "equipment": "Halter leve",
+      "steps": [
+        "Antebraço apoiado, palma para baixo e mão além da borda.",
+        "Eleve a mão sem levantar antebraço.",
+        "Desça com controle."
+      ],
+      "restriction": "Após fratura do rádio, confirmar resistência e estabilidade; epicondilalgia exige ajuste de carga.",
+      "progress": "Aumentar peso ou alavanca gradualmente.",
+      "sourceIds": [
+        "wrist",
+        "aaos-elbow"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-wrist-flex",
+      "title": "Flexão de punho com peso leve",
+      "region": "Cotovelo e mão",
+      "muscles": "Flexores do punho",
+      "equipment": "Halter leve",
+      "steps": [
+        "Antebraço apoiado, palma para cima.",
+        "Dobre o punho para cima no arco autorizado.",
+        "Desça devagar sem apertar excessivamente o peso."
+      ],
+      "restriction": "Reparo tendíneo, fratura ou dor ulnar exigem plano específico.",
+      "progress": "Aumentar peso com arco tolerado.",
+      "sourceIds": [
+        "wrist",
+        "aaos-elbow"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-pronation",
+      "title": "Pronação e supinação resistidas",
+      "region": "Cotovelo e mão",
+      "muscles": "Pronadores e supinadores",
+      "equipment": "Peso de alavanca curta",
+      "steps": [
+        "Cotovelo apoiado e dobrado, segure carga leve perto do centro.",
+        "Gire antebraço entre palma para cima e para baixo no arco liberado.",
+        "Mantenha cotovelo e ombro estáveis."
+      ],
+      "restriction": "Confirmar integridade radioulnar e carga; não usar alavanca longa inicialmente após fratura.",
+      "progress": "Alongar alavanca ou aumentar peso, um de cada vez.",
+      "sourceIds": [
+        "wrist",
+        "aaos-elbow"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Ponto de partida: 2 séries de 8–12 repetições, 2–3 dias/semana, com 1–2 minutos de descanso. Ajustar carga e volume à capacidade, sem exigir falha."
+    },
+    {
+      "id": "ex-grip",
+      "title": "Preensão submáxima com massa",
+      "region": "Cotovelo e mão",
+      "muscles": "Flexores dos dedos e musculatura da mão",
+      "equipment": "Massa terapêutica ou toalha",
+      "steps": [
+        "Antebraço apoiado e punho confortável.",
+        "Aperte suavemente o material sem prender a respiração.",
+        "Relaxe completamente entre tentativas."
+      ],
+      "restriction": "Fratura estável selecionada pode permitir carga precoce; confirmar caso e restrições. Não usar em reparo de flexores sem protocolo.",
+      "progress": "Aumentar resistência e tarefas de preensão.",
+      "sourceIds": [
+        "wrist"
+      ],
+      "phase": "Ativação",
+      "dose": "1–2 séries de 8–12 apertos de 3 segundos, submáximos, com pausas."
+    },
+    {
+      "id": "ex-muscle-iso",
+      "title": "Isometria do músculo lesionado em posição protegida",
+      "region": "Lesões musculares",
+      "muscles": "Músculo identificado na avaliação",
+      "equipment": "Resistência fixa escolhida pelo profissional",
+      "steps": [
+        "O profissional define posição pelo músculo e local da lesão.",
+        "Faça contração submáxima sem mudar posição.",
+        "Relaxe e registre resposta durante e após."
+      ],
+      "restriction": "Não há posição universal. BAMIC 3/4, lesão tendínea ou avulsão exigem plano especializado.",
+      "progress": "Evoluir carga e comprimento conforme músculo e protocolo.",
+      "sourceIds": [
+        "ham"
+      ],
+      "phase": "Ativação",
+      "dose": "Exemplo após liberação: 3–5 contrações de 5–15 segundos; não aplicar automaticamente a todo grau."
+    },
+    {
+      "id": "ex-muscle-dynamic",
+      "title": "Resistência dinâmica do músculo identificado",
+      "region": "Lesões musculares",
+      "muscles": "Músculo identificado na avaliação",
+      "equipment": "Elástico, máquina ou peso adequado",
+      "steps": [
+        "Escolha movimento que recrute o músculo avaliado em arco liberado.",
+        "Execute fase de contração e retorno controlados.",
+        "Reduza resistência se houver dor aguda ou perda de função."
+      ],
+      "restriction": "A diretriz de isquiotibiais apoia esse grupo; para outros músculos a seleção é adaptação clínica, não protocolo validado pelo grau.",
+      "progress": "Ampliar comprimento, carga e depois velocidade conforme demanda.",
+      "sourceIds": [
+        "ham"
+      ],
+      "phase": "Carga progressiva",
+      "dose": "Exemplo após liberação: 1–2 séries de 6–10, submáximas; dose específica ao músculo e fase."
+    }
+  ],
+  "profileExercises": {
+    "capsulite": [
+      "ex-rc-out",
+      "ex-row",
+      "ex-scaption"
+    ],
+    "manguito": [
+      "ex-rc-out",
+      "ex-rc-in",
+      "ex-row",
+      "ex-scaption",
+      "ex-serratus",
+      "ex-wall-push"
+    ],
+    "impacto": [
+      "ex-rc-out",
+      "ex-rc-in",
+      "ex-row",
+      "ex-scaption",
+      "ex-serratus",
+      "ex-wall-push"
+    ],
+    "bankart": [
+      "ex-rc-out",
+      "ex-row",
+      "ex-serratus"
+    ],
+    "hillsachs": [
+      "ex-rc-out",
+      "ex-row",
+      "ex-serratus"
+    ],
+    "lca": [
+      "ex-quad-iso",
+      "ex-knee-ext",
+      "ex-squat",
+      "ex-legpress",
+      "ex-step",
+      "ex-hamcurl",
+      "ex-split"
+    ],
+    "sutura": [
+      "ex-quad-iso",
+      "ex-chair",
+      "ex-squat",
+      "ex-step"
+    ],
+    "meniscectomia": [
+      "ex-chair",
+      "ex-knee-ext",
+      "ex-squat",
+      "ex-step",
+      "ex-hamcurl"
+    ],
+    "menisco-degenerativo": [
+      "ex-chair",
+      "ex-knee-ext",
+      "ex-squat",
+      "ex-step",
+      "ex-hamcurl"
+    ],
+    "artrose": [
+      "ex-chair",
+      "ex-knee-ext",
+      "ex-squat",
+      "ex-step",
+      "ex-hamcurl"
+    ],
+    "ptj": [
+      "ex-chair",
+      "ex-knee-ext",
+      "ex-squat",
+      "ex-step",
+      "ex-hamcurl"
+    ],
+    "patelofemoral": [
+      "ex-knee-ext",
+      "ex-chair",
+      "ex-step-down",
+      "ex-hip-abd",
+      "ex-side-walk"
+    ],
+    "tendinopatia-patelar": [
+      "ex-knee-iso-loaded",
+      "ex-knee-ext",
+      "ex-squat",
+      "ex-legpress"
+    ],
+    "tendao-patelar": [
+      "ex-quad-iso",
+      "ex-knee-ext",
+      "ex-chair"
+    ],
+    "quadriceps": [
+      "ex-quad-iso",
+      "ex-knee-ext",
+      "ex-chair"
+    ],
+    "entorse": [
+      "ex-calf-two",
+      "ex-dorsi",
+      "ex-eversion",
+      "ex-inversion",
+      "ex-short-foot"
+    ],
+    "deltoide": [
+      "ex-calf-two",
+      "ex-dorsi",
+      "ex-short-foot"
+    ],
+    "sindesmose": [
+      "ex-calf-two",
+      "ex-dorsi",
+      "ex-short-foot"
+    ],
+    "tibia-diafise": [
+      "ex-calf-two",
+      "ex-dorsi",
+      "ex-eversion",
+      "ex-toe-curl"
+    ],
+    "pilao": [
+      "ex-calf-two",
+      "ex-dorsi",
+      "ex-eversion",
+      "ex-toe-curl"
+    ],
+    "fibula": [
+      "ex-calf-two",
+      "ex-dorsi",
+      "ex-eversion",
+      "ex-toe-curl"
+    ],
+    "quinto-metatarsal": [
+      "ex-calf-two",
+      "ex-dorsi",
+      "ex-eversion",
+      "ex-toe-curl"
+    ],
+    "talus": [
+      "ex-calf-two",
+      "ex-dorsi",
+      "ex-eversion",
+      "ex-toe-curl"
+    ],
+    "calcaneo": [
+      "ex-calf-two",
+      "ex-dorsi",
+      "ex-eversion",
+      "ex-toe-curl"
+    ],
+    "navicular": [
+      "ex-calf-two",
+      "ex-dorsi",
+      "ex-eversion",
+      "ex-toe-curl"
+    ],
+    "cuboide-cuneiformes": [
+      "ex-calf-two",
+      "ex-dorsi",
+      "ex-eversion",
+      "ex-toe-curl"
+    ],
+    "chopart": [
+      "ex-calf-two",
+      "ex-dorsi",
+      "ex-eversion",
+      "ex-toe-curl"
+    ],
+    "lisfranc": [
+      "ex-calf-two",
+      "ex-dorsi",
+      "ex-eversion",
+      "ex-toe-curl"
+    ],
+    "aquiles": [
+      "ex-calf-two",
+      "ex-calf-one",
+      "ex-soleus",
+      "ex-calf-ecc"
+    ],
+    "gluteal": [
+      "ex-hip-abd",
+      "ex-side-walk",
+      "ex-bridge"
+    ],
+    "hip-artrose": [
+      "ex-chair",
+      "ex-bridge",
+      "ex-hip-abd",
+      "ex-hip-ext"
+    ],
+    "hip-fai": [
+      "ex-chair",
+      "ex-bridge",
+      "ex-hip-abd",
+      "ex-hip-ext"
+    ],
+    "hip-labral": [
+      "ex-chair",
+      "ex-bridge",
+      "ex-hip-abd",
+      "ex-hip-ext"
+    ],
+    "artroplastia-quadril": [
+      "ex-chair",
+      "ex-hip-abd",
+      "ex-hip-ext"
+    ],
+    "hip-artroscopia": [
+      "ex-chair",
+      "ex-hip-abd",
+      "ex-hip-ext"
+    ],
+    "hip-fratura-proximal": [
+      "ex-chair",
+      "ex-hip-abd",
+      "ex-hip-ext"
+    ],
+    "hip-adutores": [
+      "ex-adductor-iso",
+      "ex-adductor-side",
+      "ex-copenhagen"
+    ],
+    "hip-iliopsoas": [
+      "ex-hip-flex"
+    ],
+    "hip-ham-prox": [
+      "ex-ham-iso",
+      "ex-bridge",
+      "ex-rdl"
+    ],
+    "muscular-grau-1": [
+      "ex-muscle-iso",
+      "ex-muscle-dynamic"
+    ],
+    "muscular-grau-2": [
+      "ex-muscle-iso",
+      "ex-muscle-dynamic"
+    ],
+    "muscular-grau-3": [
+      "ex-muscle-iso",
+      "ex-muscle-dynamic"
+    ],
+    "muscular-grau-4": [
+      "ex-muscle-iso",
+      "ex-muscle-dynamic"
+    ],
+    "lombalgia": [
+      "ex-chair",
+      "ex-bridge",
+      "ex-bird-dog",
+      "ex-dead-bug",
+      "ex-side-plank",
+      "ex-carry"
+    ],
+    "cervical": [
+      "ex-neck-iso",
+      "ex-neck-nod",
+      "ex-row"
+    ],
+    "radio": [
+      "ex-grip",
+      "ex-wrist-ext",
+      "ex-wrist-flex",
+      "ex-pronation"
+    ]
+  }
+}
