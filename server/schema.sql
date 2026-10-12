@@ -48,3 +48,10 @@ CREATE TABLE IF NOT EXISTS care_measurements(
  CHECK((eva_after IS NULL AND borg_after IS NULL AND after_at IS NULL) OR (eva_after IS NOT NULL AND borg_after IS NOT NULL AND after_at IS NOT NULL))
 );
 CREATE INDEX IF NOT EXISTS idx_care_measurements_patient ON care_measurements(patient_id,performed_date);
+
+CREATE TABLE IF NOT EXISTS care_function_goals(id TEXT PRIMARY KEY,patient_id TEXT NOT NULL REFERENCES patients(id),author_id TEXT NOT NULL REFERENCES users(id),title TEXT NOT NULL,active INTEGER NOT NULL DEFAULT 1 CHECK(active IN (0,1)),revision INTEGER NOT NULL DEFAULT 1,created_at TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS idx_function_goals_patient ON care_function_goals(patient_id,active);
+CREATE TABLE IF NOT EXISTS care_function_logs(id TEXT PRIMARY KEY,patient_id TEXT NOT NULL REFERENCES patients(id),goal_id TEXT NOT NULL REFERENCES care_function_goals(id),performed_date TEXT NOT NULL,score INTEGER NOT NULL CHECK(score BETWEEN 0 AND 10),comment TEXT NOT NULL DEFAULT '',revision INTEGER NOT NULL DEFAULT 1,created_at TEXT NOT NULL,updated_at TEXT NOT NULL,UNIQUE(patient_id,goal_id,performed_date));
+CREATE INDEX IF NOT EXISTS idx_function_logs_patient ON care_function_logs(patient_id,performed_date);
+CREATE TABLE IF NOT EXISTS care_progress_notes(id TEXT PRIMARY KEY,patient_id TEXT NOT NULL REFERENCES patients(id),author_id TEXT NOT NULL REFERENCES users(id),text TEXT NOT NULL,created_at TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS idx_progress_notes_patient ON care_progress_notes(patient_id,created_at);

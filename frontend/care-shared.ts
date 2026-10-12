@@ -2,7 +2,7 @@ export type Patient={id:string;name:string;email:string;phone?:string;active?:bo
 export type CareTask={id?:string;kind:'exercise'|'conduct';title:string;steps:string;dose:string;days:number[];equipment:string;restriction:string;url:string};
 export type CarePlan={id:string;title:string;goal:string;instructions:string;start_date:string;end_date:string;status:'draft'|'active'|'completed'|'archived';revision:number;author_name:string;tasks:CareTask[];published_at?:string};
 export type CareLog={id:string;task_id:string;plan_id:string;task_title:string;plan_title:string;performed_date:string;status:'done'|'partial'|'skipped';pain:number|null;difficulty:number|null;comment:string;revision:number;feedback:{id:string;text:string;author_name:string;created_at:string}[]};
-export type CareDashboard={patient:Patient;today:string;plans:CarePlan[];logs:CareLog[];measurements:CareMeasurement[]};
+export type CareDashboard={patient:Patient;today:string;plans:CarePlan[];logs:CareLog[];measurements:CareMeasurement[];functionalGoals:FunctionalGoal[];functionalLogs:FunctionalLog[];progressNotes:ProgressNote[]};
 export const dayNames=['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'];
 export const statusNames={done:'Realizada',partial:'Parcial',skipped:'Não realizada'};
 export const planStatus={draft:'Rascunho',active:'Em acompanhamento',completed:'Encerrado',archived:'Arquivado'};
@@ -12,3 +12,6 @@ export async function careRequest(url:string,method='GET',payload?:unknown){cons
 export function taskDays(task:CareTask){return task.days.length===7?'Todos os dias':task.days.map(d=>dayNames[d]).join(', ')}
 
 export type CareMeasurement={id:string;plan_id:string;plan_title:string;performed_date:string;eva_before:number;borg_before:number;borg_scale?:'rpe6_20'|'modified0_10';before_at:string;eva_after:number|null;borg_after:number|null;after_at:string|null;revision:number};
+export type FunctionalGoal={id:string;title:string;active:boolean;revision:number;created_at:string;author_name:string};
+export type FunctionalLog={id:string;goal_id:string;goal_title:string;performed_date:string;score:number;comment:string;revision:number;created_at:string;updated_at:string};
+export type ProgressNote={id:string;text:string;author_name:string;created_at:string};
