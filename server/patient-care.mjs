@@ -37,19 +37,22 @@ export function createPatientCareHandler({db,required,body,reject,json,audit,rat
    const patient=patientRequired(req),input=await body(req);
    if(typeof input.plan_id!=='string'||input.plan_id.length>100||!validDate(input.performed_date)||!['before','after'].includes(input.phase))reject(400,'Registro de sessão inválido.');
    if(!Number.isInteger(input.eva)||input.eva<0||input.eva>100)reject(400,'Marque a posição da dor na EVA.');
-   if(!Number.isInteger(input.borg)||input.borg<6||input.borg>20)reject(400,'Selecione o esforço na Borg RPE de 6 a 20.');
+   if(input.borg_scale!==undefined&&!['rpe6_20','modified0_10'].includes(input.borg_scale))reject(400,'Escala de esforço inválida.');
    let id;
    transaction(db,()=>{
     const plan=db.prepare("SELECT * FROM care_plans WHERE id=? AND patient_id=? AND status IN ('active','completed')").get(input.plan_id,patient.id);
     if(!plan)reject(404,'Plano não disponível.');
     const old=db.prepare('SELECT * FROM care_measurements WHERE patient_id=? AND plan_id=? AND performed_date=?').get(patient.id,plan.id,input.performed_date);
+    const borgScale=old?.borg_scale||input.borg_scale||'rpe6_20';
+    if(old&&input.borg_scale!==undefined&&input.borg_scale!==old.borg_scale)reject(400,'Use a mesma escala de esforço nas duas etapas da sessão.');
+    if(borgScale==='modified0_10'?![0,0.5,1,2,3,4,5,6,7,8,9,10].includes(input.borg):!Number.isInteger(input.borg)||input.borg<6||input.borg>20)reject(400,borgScale==='modified0_10'?'Selecione o esforço de 0 a 10, incluindo 0,5.':'Selecione o esforço na Borg RPE de 6 a 20.');
     if(old){if(!Number.isSafeInteger(input.revision)||input.revision!==old.revision)reject(409,'A sessão foi atualizada. Recarregue antes de salvar.');}
     else if(input.revision!==undefined)reject(409,'Recarregue a sessão antes de salvar.');
     const now=new Date().toISOString(),today=localDate();
     if(input.phase==='before'){
      if(old)reject(409,'O registro anterior ao exercício já foi salvo.');
      if(plan.status!=='active'||input.performed_date!==today||today<plan.start_date||today>plan.end_date||!tasks(plan.id).some(t=>t.kind==='exercise'&&t.days.includes(new Date(today+'T12:00:00Z').getUTCDay())))reject(400,'Registre antes de iniciar os exercícios programados para hoje.');
-     id=randomUUID();db.prepare('INSERT INTO care_measurements(id,patient_id,plan_id,performed_date,eva_before,borg_before,before_at) VALUES(?,?,?,?,?,?,?)').run(id,patient.id,plan.id,today,input.eva,input.borg,now);
+     id=randomUUID();db.prepare('INSERT INTO care_measurements(id,patient_id,plan_id,performed_date,eva_before,borg_before,before_at,borg_scale) VALUES(?,?,?,?,?,?,?,?)').run(id,patient.id,plan.id,today,input.eva,input.borg,now,borgScale);
     }else{
      if(!old)reject(409,'Preencha primeiro o registro antes de iniciar.');
      if(old.after_at)reject(409,'Esta sessão já tem o registro depois de terminar.');

@@ -40,9 +40,11 @@ CREATE TABLE IF NOT EXISTS care_feedback(id TEXT PRIMARY KEY,log_id TEXT NOT NUL
 
 CREATE TABLE IF NOT EXISTS care_measurements(
  id TEXT PRIMARY KEY,patient_id TEXT NOT NULL REFERENCES patients(id),plan_id TEXT NOT NULL REFERENCES care_plans(id),performed_date TEXT NOT NULL,
- eva_before INTEGER NOT NULL CHECK(eva_before BETWEEN 0 AND 100),borg_before INTEGER NOT NULL CHECK(borg_before BETWEEN 6 AND 20),before_at TEXT NOT NULL,
- eva_after INTEGER CHECK(eva_after BETWEEN 0 AND 100),borg_after INTEGER CHECK(borg_after BETWEEN 6 AND 20),after_at TEXT,
+ eva_before INTEGER NOT NULL CHECK(eva_before BETWEEN 0 AND 100),borg_before REAL NOT NULL,before_at TEXT NOT NULL,
+ eva_after INTEGER CHECK(eva_after BETWEEN 0 AND 100),borg_after REAL,after_at TEXT,
+ borg_scale TEXT NOT NULL DEFAULT 'rpe6_20' CHECK(borg_scale IN ('rpe6_20','modified0_10')),
  revision INTEGER NOT NULL DEFAULT 1,UNIQUE(patient_id,plan_id,performed_date),
+ CHECK((borg_scale='rpe6_20' AND borg_before BETWEEN 6 AND 20 AND borg_before=CAST(borg_before AS INTEGER) AND (borg_after IS NULL OR (borg_after BETWEEN 6 AND 20 AND borg_after=CAST(borg_after AS INTEGER)))) OR (borg_scale='modified0_10' AND borg_before IN (0,0.5,1,2,3,4,5,6,7,8,9,10) AND (borg_after IS NULL OR borg_after IN (0,0.5,1,2,3,4,5,6,7,8,9,10)))),
  CHECK((eva_after IS NULL AND borg_after IS NULL AND after_at IS NULL) OR (eva_after IS NOT NULL AND borg_after IS NOT NULL AND after_at IS NOT NULL))
 );
 CREATE INDEX IF NOT EXISTS idx_care_measurements_patient ON care_measurements(patient_id,performed_date);

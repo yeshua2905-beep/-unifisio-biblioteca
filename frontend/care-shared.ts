@@ -11,4 +11,4 @@ export const moveDate=(s:string,n:number)=>new Date(Date.parse(s)+n*86400000).to
 export async function careRequest(url:string,method='GET',payload?:unknown){const r=await fetch(url,{method,cache:'no-store',...(payload===undefined?{}:{headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})});const d=await r.json();if(!r.ok){const e=new Error(d.error||'Não foi possível concluir.') as Error&{status:number};e.status=r.status;throw e;}return d;}
 export function taskDays(task:CareTask){return task.days.length===7?'Todos os dias':task.days.map(d=>dayNames[d]).join(', ')}
 
-export type CareMeasurement={id:string;plan_id:string;plan_title:string;performed_date:string;eva_before:number;borg_before:number;before_at:string;eva_after:number|null;borg_after:number|null;after_at:string|null;revision:number};
+export type CareMeasurement={id:string;plan_id:string;plan_title:string;performed_date:string;eva_before:number;borg_before:number;borg_scale?:'rpe6_20'|'modified0_10';before_at:string;eva_after:number|null;borg_after:number|null;after_at:string|null;revision:number};
