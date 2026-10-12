@@ -28,3 +28,24 @@ test('Revogar a sessão durante o envio bloqueia escalas e evolução sem persis
   }
  }finally{app.close();await rm(dir,{recursive:true,force:true})}
 });
+
+
+test('Revogar a sessão profissional durante o envio bloqueia alterações clínicas',async()=>{
+ const dir=await mkdtemp(resolve(tmpdir(),'professional-session-race-'));await mkdir(resolve(dir,'public'));await writeFile(resolve(dir,'public/index.html'),'<!doctype html>');
+ const app=await createApp({dataDir:resolve(dir,'data'),publicUrl:origin,staticDir:resolve(dir,'public')});
+ try{
+  const now=new Date().toISOString(),hash=await hashPassword('Senha longa somente para teste');
+  app.db.prepare('INSERT INTO users(id,email,name,password_hash,role,created_at) VALUES(?,?,?,?,?,?)').run('pro','pro@example.org','Profissional',hash,'professional',now);
+  app.db.prepare('INSERT INTO patients(id,email,name,owner_id,created_at,updated_at) VALUES(?,?,?,?,?,?)').run('patient','patient@example.org','Paciente','pro',now,now);
+  const cases=[['daily-scales',{performed_date:localDate(),moment:'now',eva:50,borg:3},'care_daily_scales'],['function-goals',{title:'Subir escadas'},'care_function_goals'],['progress-notes',{text:'Mantenha o acompanhamento.'},'care_progress_notes']];
+  for(const [action,payload,table] of cases){
+   app.db.prepare('INSERT INTO sessions(token_hash,user_id,expires_at) VALUES(?,?,?)').run(digest('test-session'),'pro',Date.now()+60000);
+   let controller;const stream=new ReadableStream({start(c){controller=c;c.enqueue(new TextEncoder().encode(JSON.stringify(payload).slice(0,1)))}});
+   const pending=app.handle(new Request(origin+'/api/care/patients/patient/'+action,{method:'POST',headers:{Origin:origin,Cookie:'__Host-unifisio=test-session','Content-Type':'application/json'},body:stream,duplex:'half'}));
+   await nextTurn();app.db.prepare('DELETE FROM sessions WHERE user_id=?').run('pro');
+   controller.enqueue(new TextEncoder().encode(JSON.stringify(payload).slice(1)));controller.close();
+   assert.equal((await pending).status,401,action);
+   assert.equal(app.db.prepare('SELECT COUNT(*) AS count FROM '+table).get().count,0,table);
+  }
+ }finally{app.close();await rm(dir,{recursive:true,force:true})}
+});

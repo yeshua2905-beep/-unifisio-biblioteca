@@ -67,7 +67,7 @@ export default function ExerciseCoach({task,onReview,onClose}:{task:CareTask;onR
    const current=runRef.current,c=config.current;if(!c||current.paused||!['prepare','exercise','release','rest'].includes(current.stage))return;
    const now=performance.now();if(now<deadline.current)return;
    // Atrasos longos pausam o guia; nunca acumulamos contagens para recuperar tempo.
-   if(now-deadline.current>1500){remaining.current=1000;sync({...current,paused:true});stopSound();setMessage('A contagem foi pausada após uma interrupção. Continue quando estiver pronto.');return}
+   if(now-deadline.current>1500){operation.current++;inFlight.current=false;remaining.current=1000;sync({...current,paused:true});stopSound();setMessage('A contagem foi pausada após uma interrupção. Continue quando estiver pronto.');return}
    const tick=nextCoachTick(current,c);sync(tick.run);
    if(tick.cue&&(tick.phaseStart||current.stage==='prepare'||(c.mode==='reps'&&['exercise','release'].includes(current.stage))||soundRef.current==='beep'||tick.run.count<=3)){
     // Short countdown cues never interrupt a longer movement command.
@@ -95,11 +95,11 @@ export default function ExerciseCoach({task,onReview,onClose}:{task:CareTask;onR
  const duration=run.stage==='exercise'?(c?.mode==='reps'?c.repSeconds:c?.seconds):run.stage==='release'?c?.releaseSeconds:run.stage==='prepare'?3:c?.restSeconds;
  const fill=duration?Math.min(100,Math.max(0,(duration-run.count)/duration*100)):0;
  const label=run.paused?'Pausado':run.stage==='prepare'?'Prepare-se':run.stage==='release'?'Relaxe':run.stage==='rest'?'Descanse':run.stage==='next'?'Próxima série':run.stage==='finished'?'Concluído':c?.command||'Execute';
- const audioControls=<fieldset className="coach-audio"><legend>Acompanhar com</legend>{([{value:'voice',label:'Voz',icon:Volume2},{value:'beep',label:'Som',icon:Volume2},{value:'off',label:'Silencioso',icon:VolumeX}] as const).map(option=><label key={option.value} className={sound===option.value?'selected':''}><input type="radio" name="coach-sound" value={option.value} checked={sound===option.value} disabled={option.value==='voice'&&!voiceAvailable} onChange={()=>chooseSound(option.value)}/><option.icon size={18}/>{option.label}</label>)}{sound!=='off'&&<button type="button" className="coach-test" onClick={testAudio}><Volume2 size={18}/> Testar áudio</button>}</fieldset>;
+ const audioControls=<fieldset className="coach-audio"><legend>Como você quer acompanhar?</legend>{([{value:'voice',label:'Voz',icon:Volume2},{value:'beep',label:'Som',icon:Volume2},{value:'off',label:'Silencioso',icon:VolumeX}] as const).map(option=><label key={option.value} className={sound===option.value?'selected':''}><input type="radio" name="coach-sound" value={option.value} checked={sound===option.value} disabled={option.value==='voice'&&!voiceAvailable} onChange={()=>chooseSound(option.value)}/><option.icon size={18}/>{option.label}</label>)}{sound!=='off'&&<button type="button" className="coach-test" onClick={testAudio}><Volume2 size={18}/> Testar áudio</button>}</fieldset>;
  return <section ref={root} tabIndex={-1} className="exercise-coach" aria-label={'Guia de treino: '+task.title}>
-  <header className="coach-header"><button type="button" className="coach-back" onClick={()=>{reset();onClose()}} aria-label="Voltar aos exercícios"><ArrowLeft size={22}/></button><div><span className="eyebrow">GUIA DE EXERCÍCIOS</span><h3>{task.title}</h3></div><span className="coach-timer-label">Timer</span></header>
+  <header className="coach-header"><button type="button" className="coach-back" onClick={()=>{reset();onClose()}} aria-label="Voltar aos exercícios"><ArrowLeft size={22}/></button><div><span className="eyebrow">GUIA DE EXERCÍCIOS</span><h3>{task.title}</h3></div><span className="coach-timer-label">Passo a passo</span></header>
   {run.stage==='ready'?<div className="coach-ready">
-   <ExerciseArt title={task.title} kind={art.illustration} custom={art.illustrationImage} small/><div className="coach-dose"><strong>Sua prescrição</strong><p className="preserve">{task.dose}</p></div>
+   <div className="coach-prescription"><ExerciseArt title={task.title} kind={art.illustration} custom={art.illustrationImage} small/><div className="coach-dose"><strong>Seu exercício de hoje</strong><p className="preserve">{task.dose}</p><span className="coach-note">Acompanhe o desenho e siga a orientação do seu fisioterapeuta.</span></div></div>
    {task.coach&&<div className="coach-dose-chips"><span>{sets} séries</span><span>{mode==='reps'?reps+' repetições':seconds+' s por série'}</span>{mode==='reps'&&<span>{repSeconds} s por repetição</span>}<span>{restSeconds} s de descanso</span></div>}
    {audioControls}
    {message&&<p className="coach-message" role="status">{message}</p>}
@@ -110,11 +110,11 @@ export default function ExerciseCoach({task,onReview,onClose}:{task:CareTask;onR
    </details>
    {!task.coach&&<button type="button" className="primary coach-main" onClick={()=>void start()} disabled={!valid}><Play size={22}/> Iniciar exercício</button>}
    {!valid&&<small className="coach-note">Preencha os campos com os valores da prescrição para iniciar.</small>}
-   <p className="coach-footer">A voz acompanha o comando e a contagem. Teste o áudio e ajuste o volume antes de iniciar.</p>
+   <p className="coach-footer">Escolha como prefere acompanhar. Use “Testar áudio” antes de começar.</p>
   </div>:<>
    <div className={'coach-stage '+run.stage+(run.paused?' paused':'')}>
-    <div key={run.stage+run.set+':'+run.rep} className="coach-fill" aria-hidden="true" style={{height:fill+'%',animationDuration:(duration||1)+'s',animationPlayState:run.paused?'paused':'running'}}/>
-    <div className="coach-timer-content"><p className="coach-series">Série {run.set} de {c?.sets}</p>
+    <div key={run.stage+run.set+':'+run.rep} className="coach-fill" aria-hidden="true" style={{height:fill+'%'}}/>
+    <div className="coach-timer-content"><div className="coach-run-meta"><p className="coach-series">Série <strong>{run.set}</strong> de {c?.sets}</p>{c?.mode==='reps'&&['exercise','release'].includes(run.stage)&&<p className="coach-repetition">Repetição <strong>{run.rep}</strong> de {c.reps}</p>}</div>
      <h4>{label}</h4>{run.stage!=='finished'&&<ExerciseArt title={task.title==='Timer com comando'?'':task.title} kind={c?.illustration||art.illustration} custom={c?.illustrationImage||art.illustrationImage}/>}
      {running&&<><div className="coach-count" aria-hidden="true">{run.count}</div><p className="coach-unit">segundos</p>
       <p className="coach-remaining">{run.stage==='exercise'||run.stage==='release'?c?.mode==='reps'?(run.stage==='release'?c.reps!-run.rep:c.reps!-run.rep+1)+' repetições restantes':'Mantenha o movimento':run.stage==='prepare'?'Começamos em instantes':'Recupere o fôlego'}</p>

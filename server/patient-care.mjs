@@ -7,7 +7,7 @@ const WEEK=7*86400000;
 export function localDate(now=new Date()){const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Sao_Paulo',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(now);return ['year','month','day'].map(k=>parts.find(p=>p.type===k).value).join('-');}
 const validDate=s=>typeof s==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(s)&&!Number.isNaN(Date.parse(s))&&new Date(s).toISOString().slice(0,10)===s;
 const daysBefore=(date,n)=>new Date(Date.parse(date)-n*86400000).toISOString().slice(0,10);
-export function createPatientCareHandler({db,required,body,reject,json,audit,rate,origin,secure,dummyHash,revokeProfessionalSession}){
+export function createPatientCareHandler({db,required,body:readBody,reject,json,audit,rate,origin,secure,dummyHash,revokeProfessionalSession}){
  const cookieName=secure?'__Host-unifisio-patient':'unifisio_patient';
  const publicPatient=p=>({id:p.id,name:p.name,email:p.email});
  const cookie=(value,clear=false)=>`${cookieName}=${clear?'':value}; Path=/; HttpOnly; SameSite=Lax${clear?'; Max-Age=0':''}${secure?'; Secure':''}`;
@@ -16,6 +16,9 @@ export function createPatientCareHandler({db,required,body,reject,json,audit,rat
  function patientRequired(req){const p=patientUser(req);if(!p)reject(401,'Entre na área do paciente para acessar.');return p;}
  function session(p){const t=token();db.prepare('INSERT INTO patient_sessions(token_hash,patient_id,expires_at) VALUES(?,?,?)').run(digest(t),p.id,Date.now()+WEEK);return t;}
  function clinician(req){const u=required(req);if(u.role==='reader')reject(403,'Seu acesso é de consulta.');return u;}
+ // A request body can arrive after the professional session was revoked.
+ // Recheck access after reading it, before any clinical mutation proceeds.
+ async function body(req){const input=await readBody(req);if(new URL(req.url).pathname.startsWith('/api/care/'))clinician(req);return input;}
  function owned(id,u){if(typeof id!=='string'||id.length>100)reject(400,'Paciente inválido.');const p=db.prepare('SELECT * FROM patients WHERE id=?').get(id);if(!p||(u.role!=='admin'&&p.owner_id!==u.id))reject(404,'Paciente não encontrado.');return p;}
  function revision(p,row){const table=row.task_id?'care_logs':row.patient_id?'care_plans':'patients';const current=db.prepare('SELECT revision FROM '+table+' WHERE id=?').get(row.id);if(!Number.isSafeInteger(p.revision)||p.revision!==current?.revision)reject(409,'O registro foi atualizado. Recarregue antes de salvar.');}
  function invite(p,u){const t=token(),now=new Date().toISOString(),kind=p.password_hash?'reset':'activate',expires=Date.now()+(kind==='reset'?3600000:WEEK);db.prepare('UPDATE patient_invites SET used_at=? WHERE patient_id=? AND used_at IS NULL').run(Date.now(),p.id);db.prepare('INSERT INTO patient_invites(id,token_hash,patient_id,kind,expires_at,created_by,created_at) VALUES(?,?,?,?,?,?,?)').run(randomUUID(),digest(t),p.id,kind,expires,u.id,now);audit(u.id,'patient_access_link_created',p.id);return {link:origin+'/paciente#convite-paciente='+encodeURIComponent(t),expires_at:expires,kind};}
