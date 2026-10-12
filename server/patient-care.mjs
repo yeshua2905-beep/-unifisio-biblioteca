@@ -20,7 +20,7 @@ export function createPatientCareHandler({db,required,body,reject,json,audit,rat
  function invite(p,u){const t=token(),now=new Date().toISOString(),kind=p.password_hash?'reset':'activate',expires=Date.now()+(kind==='reset'?3600000:WEEK);db.prepare('UPDATE patient_invites SET used_at=? WHERE patient_id=? AND used_at IS NULL').run(Date.now(),p.id);db.prepare('INSERT INTO patient_invites(id,token_hash,patient_id,kind,expires_at,created_by,created_at) VALUES(?,?,?,?,?,?,?)').run(randomUUID(),digest(t),p.id,kind,expires,u.id,now);audit(u.id,'patient_access_link_created',p.id);return {link:origin+'/paciente#convite-paciente='+encodeURIComponent(t),expires_at:expires,kind};}
  function tasks(planId){return db.prepare('SELECT * FROM care_tasks WHERE plan_id=? ORDER BY position').all(planId).map(t=>{const {coach_config,...task}=t,coach=JSON.parse(coach_config||'{}');return {...task,days:JSON.parse(t.days),...(coach.mode?{coach}:{})}});}
  function plans(patientId,patientOnly=false){return db.prepare(`SELECT p.*,u.name AS author_name FROM care_plans p JOIN users u ON u.id=p.author_id WHERE patient_id=? ${patientOnly?"AND p.status IN ('active','completed')":""} ORDER BY p.created_at DESC,p.rowid DESC`).all(patientId).map(p=>({...p,tasks:tasks(p.id)}));}
- function measurements(patientId){return db.prepare('SELECT m.*,p.title AS plan_title FROM care_measurements m JOIN care_plans p ON p.id=m.plan_id WHERE m.patient_id=? ORDER BY m.performed_date DESC,m.before_at DESC LIMIT 500').all(patientId);}
+ function measurements(patientId){return db.prepare('SELECT m.*,p.title AS plan_title FROM care_measurements m JOIN care_plans p ON p.id=m.plan_id WHERE m.patient_id=? ORDER BY m.performed_date DESC,m.before_at DESC LIMIT 500').all(patientId).map(m=>({...m,corrections:db.prepare('SELECT phase,previous_eva,previous_borg,new_eva,new_borg,reason,created_at FROM care_measurement_corrections WHERE measurement_id=? ORDER BY created_at DESC,rowid DESC LIMIT 5').all(m.id)}));}
  function logs(patientId){return db.prepare('SELECT l.*,t.title AS task_title,t.plan_id,p.title AS plan_title FROM care_logs l JOIN care_tasks t ON t.id=l.task_id JOIN care_plans p ON p.id=t.plan_id WHERE l.patient_id=? ORDER BY l.performed_date DESC,l.updated_at DESC LIMIT 500').all(patientId).map(l=>({...l,feedback:db.prepare('SELECT f.id,f.text,f.created_at,u.name AS author_name FROM care_feedback f JOIN users u ON u.id=f.author_id WHERE log_id=? ORDER BY f.created_at').all(l.id)}));}
  function coachValues(input,kind){
   if(input===undefined||input===null)return undefined;
@@ -47,9 +47,11 @@ export function createPatientCareHandler({db,required,body,reject,json,audit,rat
    const patient=patientRequired(req),input=await body(req);
    if(typeof input.plan_id!=='string'||input.plan_id.length>100||!validDate(input.performed_date)||!['before','after'].includes(input.phase))reject(400,'Registro de sessão inválido.');
    if(!Number.isInteger(input.eva)||input.eva<0||input.eva>100)reject(400,'Marque a posição da dor na EVA.');
+   if(input.action!==undefined&&input.action!=='correct')reject(400,'Ação inválida.');
    if(input.borg_scale!==undefined&&!['rpe6_20','modified0_10'].includes(input.borg_scale))reject(400,'Escala de esforço inválida.');
    let id;
    transaction(db,()=>{
+    if(!db.prepare('SELECT id FROM patients WHERE id=? AND active=1').get(patient.id))reject(401,'Entre novamente na área do paciente.');
     const plan=db.prepare("SELECT * FROM care_plans WHERE id=? AND patient_id=? AND status IN ('active','completed')").get(input.plan_id,patient.id);
     if(!plan)reject(404,'Plano não disponível.');
     const old=db.prepare('SELECT * FROM care_measurements WHERE patient_id=? AND plan_id=? AND performed_date=?').get(patient.id,plan.id,input.performed_date);
@@ -59,6 +61,17 @@ export function createPatientCareHandler({db,required,body,reject,json,audit,rat
     if(old){if(!Number.isSafeInteger(input.revision)||input.revision!==old.revision)reject(409,'A sessão foi atualizada. Recarregue antes de salvar.');}
     else if(input.revision!==undefined)reject(409,'Recarregue a sessão antes de salvar.');
     const now=new Date().toISOString(),today=localDate();
+    if(input.action==='correct'){
+     if(!old)reject(409,'Não existe resposta salva para corrigir.');
+     if(input.performed_date<daysBefore(today,29)||input.performed_date>today)reject(400,'Correções estão disponíveis para os últimos 30 dias.');
+     if(input.phase==='after'&&!old.after_at)reject(409,'Preencha primeiro a resposta depois de terminar.');
+     const reason=safeString(input.reason,1000);if(!reason||reason.length<3)reject(400,'Descreva brevemente o motivo da correção.');
+     const previousEva=old[input.phase==='before'?'eva_before':'eva_after'],previousBorg=old[input.phase==='before'?'borg_before':'borg_after'];
+     if(input.eva===previousEva&&input.borg===previousBorg)reject(400,'As respostas não foram alteradas.');
+     id=old.id;db.prepare('INSERT INTO care_measurement_corrections(id,measurement_id,patient_id,phase,previous_eva,previous_borg,new_eva,new_borg,reason,created_at) VALUES(?,?,?,?,?,?,?,?,?,?)').run(randomUUID(),id,patient.id,input.phase,previousEva,previousBorg,input.eva,input.borg,reason,now);
+     const fields=input.phase==='before'?'eva_before=?,borg_before=?':'eva_after=?,borg_after=?';db.prepare('UPDATE care_measurements SET '+fields+',revision=revision+1 WHERE id=?').run(input.eva,input.borg,id);
+     audit(null,'patient_scales_'+input.phase+'_corrected',id);return;
+    }
     if(input.phase==='before'){
      if(old)reject(409,'O registro anterior ao exercício já foi salvo.');
      if(plan.status!=='active'||input.performed_date!==today||today<plan.start_date||today>plan.end_date||!tasks(plan.id).some(t=>t.kind==='exercise'&&t.days.includes(new Date(today+'T12:00:00Z').getUTCDay())))reject(400,'Registre antes de iniciar os exercícios programados para hoje.');

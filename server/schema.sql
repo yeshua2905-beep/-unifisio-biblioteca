@@ -55,3 +55,6 @@ CREATE TABLE IF NOT EXISTS care_function_logs(id TEXT PRIMARY KEY,patient_id TEX
 CREATE INDEX IF NOT EXISTS idx_function_logs_patient ON care_function_logs(patient_id,performed_date);
 CREATE TABLE IF NOT EXISTS care_progress_notes(id TEXT PRIMARY KEY,patient_id TEXT NOT NULL REFERENCES patients(id),author_id TEXT NOT NULL REFERENCES users(id),text TEXT NOT NULL,created_at TEXT NOT NULL);
 CREATE INDEX IF NOT EXISTS idx_progress_notes_patient ON care_progress_notes(patient_id,created_at);
+
+CREATE TABLE IF NOT EXISTS care_measurement_corrections(id TEXT PRIMARY KEY,measurement_id TEXT NOT NULL REFERENCES care_measurements(id),patient_id TEXT NOT NULL REFERENCES patients(id),phase TEXT NOT NULL CHECK(phase IN ('before','after')),previous_eva INTEGER NOT NULL,previous_borg REAL NOT NULL,new_eva INTEGER NOT NULL,new_borg REAL NOT NULL,reason TEXT NOT NULL,created_at TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS idx_measurement_corrections ON care_measurement_corrections(measurement_id,created_at);
