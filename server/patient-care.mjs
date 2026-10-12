@@ -1,3 +1,4 @@
+import {imageFormat} from './image-format.mjs';
 import {createPatientProgress} from './patient-progress.mjs';
 import {randomUUID} from 'node:crypto';
 import {safeString,validEmail,passwordValid,hashPassword,verifyPassword,token,digest} from './security.mjs';
@@ -31,7 +32,16 @@ export function createPatientCareHandler({db,required,body,reject,json,audit,rat
   const command=input.command===undefined?undefined:safeString(input.command,80);
   if(input.command!==undefined&&!command)reject(400,'Informe um comando curto para o movimento (até 80 caracteres).');
   if(input.releaseSeconds!==undefined&&(!Number.isInteger(input.releaseSeconds)||input.releaseSeconds<0||input.releaseSeconds>60))reject(400,'Use de 0 a 60 segundos para relaxar entre repetições.');
-  return {mode:input.mode,sets:input.sets,restSeconds:input.restSeconds,...(input.mode==='reps'?{reps:input.reps,repSeconds:input.repSeconds}:{seconds:input.seconds}),...(command===undefined?{}:{command}),...(input.releaseSeconds===undefined?{}:{releaseSeconds:input.releaseSeconds})};
+  const illustration=input.illustration;
+  if(illustration!==undefined&&!['auto','squat','lunge','step','calf','seated','knee','hamstring','bridge','hip','side','hinge','quadruped','supine','plank','push','raise','row','elbow','rotation','wrist','hand','foot','neck','walk','balance','general','custom'].includes(illustration))reject(400,'Selecione uma ilustração válida.');
+  let illustrationImage;
+  if(illustration==='custom'){
+   if(typeof input.illustrationImage!=='string'||input.illustrationImage.length>340000)reject(400,'Envie a imagem específica do exercício com até 250 KB.');
+   const match=input.illustrationImage.match(/^data:(image\/(?:png|jpeg|webp));base64,([A-Za-z0-9+/]+={0,2})$/);
+   if(!match)reject(400,'Envie uma imagem JPG, PNG ou WebP válida.');
+   try{const bytes=Buffer.from(match[2],'base64'),format=imageFormat(bytes);if(bytes.length>250000||format.mime!==match[1])throw Error('Formato');illustrationImage=input.illustrationImage}catch{reject(400,'A imagem do exercício é inválida.');}
+  }
+  return {mode:input.mode,sets:input.sets,restSeconds:input.restSeconds,...(input.mode==='reps'?{reps:input.reps,repSeconds:input.repSeconds}:{seconds:input.seconds}),...(command===undefined?{}:{command}),...(input.releaseSeconds===undefined?{}:{releaseSeconds:input.releaseSeconds}),...(illustration===undefined?{}:{illustration}),...(illustrationImage?{illustrationImage}:{})};
  }
  function planValues(p){const title=safeString(p.title,180),goal=safeString(p.goal??'',2000),instructions=safeString(p.instructions??'',4000);if(!title||goal===null||instructions===null||!validDate(p.start_date)||!validDate(p.end_date)||p.end_date<p.start_date||Date.parse(p.end_date)-Date.parse(p.start_date)>366*86400000)reject(400,'Confira título e período do plano (até um ano).');if(!Array.isArray(p.tasks)||p.tasks.length>30)reject(400,'Use até 30 tarefas por plano.');const entries=p.tasks.map(t=>{if(!t||typeof t!=='object')reject(400,'Tarefa inválida.');const values={};for(const [key,max] of Object.entries({title:180,steps:6000,dose:2000,equipment:180,restriction:3000,url:2000})){values[key]=safeString(t[key]??'',max);if(values[key]===null)reject(400,'Confira os textos das tarefas.');}if(!['exercise','conduct'].includes(t.kind)||!values.title||!values.steps||!values.dose||!Array.isArray(t.days)||!t.days.length||t.days.length>7||new Set(t.days).size!==t.days.length||t.days.some(d=>!Number.isInteger(d)||d<0||d>6))reject(400,'Informe tipo, título, execução, dose e dias de cada tarefa.');if(values.url){let url;try{url=new URL(values.url)}catch{reject(400,'Link inválido.');}if(!['http:','https:'].includes(url.protocol))reject(400,'Use links http ou https.');}return {...values,kind:t.kind,days:t.days,coach:coachValues(t.coach,t.kind)};});return {title,goal,instructions,start_date:p.start_date,end_date:p.end_date,tasks:entries};}
  function saveTasks(id,entries){const insert=db.prepare('INSERT INTO care_tasks(id,plan_id,kind,title,steps,dose,days,equipment,restriction,url,position,coach_config) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)');entries.forEach((t,i)=>insert.run(randomUUID(),id,t.kind,t.title,t.steps,t.dose,JSON.stringify(t.days),t.equipment,t.restriction,t.url,i,JSON.stringify(t.coach||{})));}
