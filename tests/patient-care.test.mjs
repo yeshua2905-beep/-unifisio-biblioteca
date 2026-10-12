@@ -28,6 +28,27 @@ test('Paciente tem autenticação isolada, plano individual, diário e retornos 
   const second=await call('/api/care/patients','POST',{name:'Outro paciente',email:'dois@example.org'},cookies.admin);assert.equal((await call('/api/care/patients/'+second.data.id)).status,404);
   assert.equal((await call('/api/care/patients')).data.patients.length,1);
   const today=localDate(),future=new Date(Date.parse(today)+86400000).toISOString().slice(0,10);
+  // Daily scales must work without a published plan, on both interfaces.
+  const dailyPath='/api/care/patients/'+pid+'/daily-scales';
+  const daily={performed_date:today,moment:'now',eva:50,borg:0};
+  assert.equal((await call('/api/patient/daily-scales','POST',daily,'')).status,401);
+  assert.equal((await call(dailyPath,'POST',daily,cookies.reader)).status,403);
+  assert.equal((await call('/api/care/patients/'+second.data.id+'/daily-scales','POST',daily)).status,404);
+  assert.equal((await call(dailyPath,'POST',daily,cookies.professional,'https://evil.example')).status,403);
+  for(const invalid of [{eva:-1},{eva:101},{eva:1.5},{borg:11},{borg:1.5},{borg:null},{moment:'invalid'},{performed_date:future}])assert.equal((await call(dailyPath,'POST',{...daily,...invalid})).status,400);
+  assert.equal((await call(dailyPath,'POST',daily)).status,201);
+  let dailyRow=(await call('/api/patient/dashboard','GET',undefined,pc)).data.dailyScales[0];
+  assert.equal(dailyRow.eva,50);assert.equal(dailyRow.borg,0);assert.equal(dailyRow.author_name,'professional');
+  assert.equal((await call('/api/patient/daily-scales','POST',{...daily,eva:70,borg:0.5,revision:dailyRow.revision},pc)).status,201);
+  assert.equal((await call(dailyPath,'POST',{...daily,revision:dailyRow.revision})).status,409);
+  dailyRow=(await call('/api/care/patients/'+pid)).data.dailyScales[0];
+  assert.equal(dailyRow.eva,70);assert.equal(dailyRow.borg,0.5);assert.equal(dailyRow.author_id,null);
+  assert.equal(dailyRow.history[0].eva,50);assert.equal(dailyRow.history[0].author_name,'professional');
+  assert.equal((await call(dailyPath,'POST',{...daily,eva:20,borg:3,revision:dailyRow.revision})).status,201);
+  dailyRow=(await call('/api/patient/dashboard','GET',undefined,pc)).data.dailyScales[0];
+  assert.equal(dailyRow.eva,20);assert.equal(dailyRow.borg,3);assert.equal(dailyRow.history.length,2);
+  assert.equal((await call('/api/patient/daily-scales','POST',{...daily,moment:'after'},pc)).status,201);
+  assert.equal((await call('/api/patient/dashboard','GET',undefined,pc)).data.plans.length,0);
   const draft={title:'Plano individual',goal:'Objetivo acordado',instructions:'Orientação exclusiva para o paciente',start_date:today,end_date:future,tasks:[{kind:'exercise',title:'Tarefa prescrita',steps:'Instrução selecionada pelo profissional',dose:'Dose individual',days:[0,1,2,3,4,5,6],url:'https://example.org/video'},{kind:'conduct',title:'Orientação de casa',steps:'Conduta registrada',dose:'Frequência registrada',days:[0,1,2,3,4,5,6]}]};
   for(const invalid of [{...draft,end_date:'2026-02-30'},{...draft,tasks:[{...draft.tasks[0],days:[]}]},{...draft,tasks:[{...draft.tasks[0],url:'javascript:alert(1)'}]},{...draft,tasks:[{...draft.tasks[0],days:[7]}]}])assert.equal((await call('/api/care/patients/'+pid+'/plans','POST',invalid)).status,400);
   const created=await call('/api/care/patients/'+pid+'/plans','POST',draft);assert.equal(created.status,201);const planId=created.data.id;
@@ -74,6 +95,7 @@ test('Paciente tem autenticação isolada, plano individual, diário e retornos 
   assert.equal((await call('/api/patient/measurements','POST',{...modified,phase:'after',borg:0,revision:modifiedSession.revision},pc)).status,201);
   app.close();app=await createApp(options);assert.equal((await call('/api/patient/dashboard','GET',undefined,pc)).data.measurements.find(m=>m.id===session.id).eva_after,0);assert.equal((await call('/api/patient/dashboard','GET',undefined,pc)).data.measurements.find(m=>m.id===session.id).borg_before,6);assert.equal((await call('/api/patient/dashboard','GET',undefined,pc)).data.logs[0].feedback[0].text,'Retorno do profissional');
   modifiedSession=(await call('/api/patient/dashboard','GET',undefined,pc)).data.measurements.find(m=>m.plan_id===newer.data.id);assert.equal(modifiedSession.borg_after,0);assert.equal(modifiedSession.borg_before,0.5);assert.equal(modifiedSession.borg_scale,'modified0_10');
+  dailyRow=(await call('/api/patient/dashboard','GET',undefined,pc)).data.dailyScales.find(r=>r.moment==='now');assert.equal(dailyRow.eva,20);assert.equal(dailyRow.borg,3);assert.equal(dailyRow.history.length,2);
   const reset=await call('/api/care/patients/'+pid+'/access','POST',{}),rt=new URL(reset.data.link).hash.slice('#convite-paciente='.length);assert.equal(reset.data.kind,'reset');const changed=await call('/api/patient/auth/accept','POST',{token:rt,password:'Uma nova senha longa e segura'},'');assert.equal(changed.status,200);assert.equal((await call('/api/patient/dashboard','GET',undefined,pc)).status,401);
   assert.equal((await call('/api/patient/auth/login','POST',{email:'um@example.org',password},'')).status,401);
   assert.equal((await call('/api/patient/auth/password','POST',{currentPassword:'Uma nova senha longa e segura',password},changed.cookie)).status,200);

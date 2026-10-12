@@ -58,3 +58,15 @@ CREATE INDEX IF NOT EXISTS idx_progress_notes_patient ON care_progress_notes(pat
 
 CREATE TABLE IF NOT EXISTS care_measurement_corrections(id TEXT PRIMARY KEY,measurement_id TEXT NOT NULL REFERENCES care_measurements(id),patient_id TEXT NOT NULL REFERENCES patients(id),phase TEXT NOT NULL CHECK(phase IN ('before','after')),previous_eva INTEGER NOT NULL,previous_borg REAL NOT NULL,new_eva INTEGER NOT NULL,new_borg REAL NOT NULL,reason TEXT NOT NULL,created_at TEXT NOT NULL);
 CREATE INDEX IF NOT EXISTS idx_measurement_corrections ON care_measurement_corrections(measurement_id,created_at);
+
+CREATE TABLE IF NOT EXISTS care_daily_scales(
+ id TEXT PRIMARY KEY,patient_id TEXT NOT NULL REFERENCES patients(id),performed_date TEXT NOT NULL,
+ moment TEXT NOT NULL CHECK(moment IN ('now','before','after')),
+ eva INTEGER NOT NULL CHECK(eva BETWEEN 0 AND 100),borg REAL NOT NULL CHECK(borg IN (0,0.5,1,2,3,4,5,6,7,8,9,10)),
+ author_id TEXT REFERENCES users(id),revision INTEGER NOT NULL DEFAULT 1,created_at TEXT NOT NULL,updated_at TEXT NOT NULL,
+ UNIQUE(patient_id,performed_date,moment)
+);
+CREATE TABLE IF NOT EXISTS care_daily_scale_history(
+ id TEXT PRIMARY KEY,record_id TEXT NOT NULL REFERENCES care_daily_scales(id),eva INTEGER NOT NULL,borg REAL NOT NULL,
+ author_id TEXT REFERENCES users(id),revision INTEGER NOT NULL,created_at TEXT NOT NULL
+);

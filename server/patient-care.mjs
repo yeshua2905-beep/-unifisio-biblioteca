@@ -21,6 +21,7 @@ export function createPatientCareHandler({db,required,body,reject,json,audit,rat
  function tasks(planId){return db.prepare('SELECT * FROM care_tasks WHERE plan_id=? ORDER BY position').all(planId).map(t=>{const {coach_config,...task}=t,coach=JSON.parse(coach_config||'{}');return {...task,days:JSON.parse(t.days),...(coach.mode?{coach}:{})}});}
  function plans(patientId,patientOnly=false){return db.prepare(`SELECT p.*,u.name AS author_name FROM care_plans p JOIN users u ON u.id=p.author_id WHERE patient_id=? ${patientOnly?"AND p.status IN ('active','completed')":""} ORDER BY p.created_at DESC,p.rowid DESC`).all(patientId).map(p=>({...p,tasks:tasks(p.id)}));}
  function measurements(patientId){return db.prepare('SELECT m.*,p.title AS plan_title FROM care_measurements m JOIN care_plans p ON p.id=m.plan_id WHERE m.patient_id=? ORDER BY m.performed_date DESC,m.before_at DESC LIMIT 500').all(patientId).map(m=>({...m,corrections:db.prepare('SELECT phase,previous_eva,previous_borg,new_eva,new_borg,reason,created_at FROM care_measurement_corrections WHERE measurement_id=? ORDER BY created_at DESC,rowid DESC LIMIT 5').all(m.id)}));}
+ function dailyScales(patientId){return db.prepare('SELECT s.*,u.name AS author_name FROM care_daily_scales s LEFT JOIN users u ON u.id=s.author_id WHERE s.patient_id=? ORDER BY s.performed_date DESC,s.updated_at DESC LIMIT 500').all(patientId).map(s=>({...s,history:db.prepare('SELECT h.*,u.name AS author_name FROM care_daily_scale_history h LEFT JOIN users u ON u.id=h.author_id WHERE h.record_id=? ORDER BY h.revision DESC').all(s.id)}));}
  function logs(patientId){return db.prepare('SELECT l.*,t.title AS task_title,t.plan_id,p.title AS plan_title FROM care_logs l JOIN care_tasks t ON t.id=l.task_id JOIN care_plans p ON p.id=t.plan_id WHERE l.patient_id=? ORDER BY l.performed_date DESC,l.updated_at DESC LIMIT 500').all(patientId).map(l=>({...l,feedback:db.prepare('SELECT f.id,f.text,f.created_at,u.name AS author_name FROM care_feedback f JOIN users u ON u.id=f.author_id WHERE log_id=? ORDER BY f.created_at').all(l.id)}));}
  function coachValues(input,kind){
   if(input===undefined||input===null)return undefined;
@@ -34,6 +35,26 @@ export function createPatientCareHandler({db,required,body,reject,json,audit,rat
  const progress=createPatientProgress({db,patientRequired,clinician,owned,body,reject,json,audit,localDate,validDate,daysBefore});
  const handle=async function(req,url,ip){const path=url.pathname,method=req.method;
   if(path==='/api/patient/function-logs'||/^\/api\/care\/patients\/[^/]+\/(function-goals|progress-notes)$/.test(path)||/^\/api\/care\/function-goals\/[^/]+$/.test(path))return progress.handle(req,path,method);
+  const dailyMatch=path.match(/^\/api\/care\/patients\/([^/]+)\/daily-scales$/);
+  if((path==='/api/patient/daily-scales'||dailyMatch)&&method==='POST'){
+   const user=dailyMatch?clinician(req):null,p=dailyMatch?owned(dailyMatch[1],user):patientRequired(req),input=await body(req),today=localDate();
+   if(!p.active)reject(409,'Reative o paciente para registrar as escalas.');
+   if(!validDate(input.performed_date)||input.performed_date>today||input.performed_date<daysBefore(today,29)||(!dailyMatch&&input.performed_date!==today))reject(400,'Selecione uma data válida: hoje para o paciente ou os últimos 30 dias para o profissional.');
+   if(!['now','before','after'].includes(input.moment)||!Number.isInteger(input.eva)||input.eva<0||input.eva>100||![0,0.5,1,2,3,4,5,6,7,8,9,10].includes(input.borg))reject(400,'Selecione o momento, a dor de 0 a 10 e o esforço de 0 a 10.');
+   let id;
+   transaction(db,()=>{
+    const old=db.prepare('SELECT * FROM care_daily_scales WHERE patient_id=? AND performed_date=? AND moment=?').get(p.id,input.performed_date,input.moment),now=new Date().toISOString();
+    if(old){
+     if(!Number.isSafeInteger(input.revision)||input.revision!==old.revision)reject(409,'Este registro mudou. Atualize a página antes de salvar.');
+     db.prepare('INSERT INTO care_daily_scale_history(id,record_id,eva,borg,author_id,revision,created_at) VALUES(?,?,?,?,?,?,?)').run(randomUUID(),old.id,old.eva,old.borg,old.author_id,old.revision,old.updated_at);
+     id=old.id;db.prepare('UPDATE care_daily_scales SET eva=?,borg=?,author_id=?,revision=revision+1,updated_at=? WHERE id=?').run(input.eva,input.borg,user?.id||null,now,id);
+    }else{
+     if(input.revision!==undefined)reject(409,'Atualize a página antes de salvar.');
+     id=randomUUID();db.prepare('INSERT INTO care_daily_scales(id,patient_id,performed_date,moment,eva,borg,author_id,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?,?)').run(id,p.id,input.performed_date,input.moment,input.eva,input.borg,user?.id||null,now,now);
+    }
+    audit(user?.id||null,'daily_scales_saved',id);
+   });return json({id},201);
+  }
   if(path==='/api/patient/auth/me'&&method==='GET'){const p=patientUser(req);return json({patient:p?publicPatient(p):null})}
   if(path==='/api/patient/auth/login'&&method==='POST'){const input=await body(req),email=safeString(input.email,254)?.toLowerCase()||'';rate(ip,'patient:'+email);const password=typeof input.password==='string'&&input.password.length<=128?input.password:'';const p=db.prepare('SELECT * FROM patients WHERE email=?').get(email);const valid=await verifyPassword(password,p?.password_hash||dummyHash);if(!valid||!p?.active)reject(401,'E-mail ou senha inválidos.');revokeProfessionalSession(req);return json({patient:publicPatient(p)},200,{'Set-Cookie':cookie(session(p))})}
   if(path==='/api/patient/auth/logout'&&method==='POST'){const raw=rawCookie(req);if(raw)db.prepare('DELETE FROM patient_sessions WHERE token_hash=?').run(digest(raw));return json({ok:true},200,{'Set-Cookie':cookie('',true)})}
@@ -42,7 +63,7 @@ export function createPatientCareHandler({db,required,body,reject,json,audit,rat
    if(!passwordValid(input.password))reject(400,'Use uma senha de 12 a 128 caracteres.');const hash=await hashPassword(input.password);transaction(db,()=>{const live=db.prepare('SELECT i.id FROM patient_invites i JOIN patients p ON p.id=i.patient_id WHERE i.id=? AND i.used_at IS NULL AND i.expires_at>? AND p.active=1').get(i.id,Date.now());if(!live)reject(400,'Este link não está mais disponível.');db.prepare('UPDATE patients SET password_hash=?,updated_at=? WHERE id=?').run(hash,new Date().toISOString(),i.patient_id);db.prepare('UPDATE patient_invites SET used_at=? WHERE patient_id=? AND used_at IS NULL').run(Date.now(),i.patient_id);db.prepare('DELETE FROM patient_sessions WHERE patient_id=?').run(i.patient_id);audit(null,'patient_access_activated',i.patient_id);revokeProfessionalSession(req)});const p=db.prepare('SELECT * FROM patients WHERE id=?').get(i.patient_id);return json({patient:publicPatient(p)},200,{'Set-Cookie':cookie(session(p))});
   }
   if(path==='/api/patient/auth/password'&&method==='POST'){const p=patientRequired(req),input=await body(req);rate(ip,'patient-password:'+p.id);if(!passwordValid(input.password))reject(400,'Use uma senha de 12 a 128 caracteres.');if(typeof input.currentPassword!=='string'||input.currentPassword.length>128||!await verifyPassword(input.currentPassword,p.password_hash))reject(400,'A senha atual não confere.');const hash=await hashPassword(input.password);transaction(db,()=>{db.prepare('UPDATE patients SET password_hash=?,updated_at=? WHERE id=?').run(hash,new Date().toISOString(),p.id);db.prepare('DELETE FROM patient_sessions WHERE patient_id=?').run(p.id);audit(null,'patient_password_changed',p.id)});return json({ok:true},200,{'Set-Cookie':cookie(session(p))})}
-  if(path==='/api/patient/dashboard'&&method==='GET'){const p=patientRequired(req);return json({patient:publicPatient(p),today:localDate(),plans:plans(p.id,true),logs:logs(p.id),measurements:measurements(p.id),...progress.data(p.id)})}
+  if(path==='/api/patient/dashboard'&&method==='GET'){const p=patientRequired(req);return json({patient:publicPatient(p),today:localDate(),plans:plans(p.id,true),logs:logs(p.id),measurements:measurements(p.id),dailyScales:dailyScales(p.id),...progress.data(p.id)})}
   if(path==='/api/patient/measurements'&&method==='POST'){
    const patient=patientRequired(req),input=await body(req);
    if(typeof input.plan_id!=='string'||input.plan_id.length>100||!validDate(input.performed_date)||!['before','after'].includes(input.phase))reject(400,'Registro de sessão inválido.');
@@ -99,7 +120,7 @@ export function createPatientCareHandler({db,required,body,reject,json,audit,rat
   }
   const patientMatch=path.match(/^\/api\/care\/patients\/([^/]+)(?:\/(access|plans))?$/);
   if(patientMatch){const p=owned(patientMatch[1],u),action=patientMatch[2];
-   if(!action&&method==='GET')return json({patient:{id:p.id,name:p.name,email:p.email,phone:p.phone,active:!!p.active,revision:p.revision,has_access:!!p.password_hash},today:localDate(),plans:plans(p.id),logs:logs(p.id),measurements:measurements(p.id),...progress.data(p.id)});
+   if(!action&&method==='GET')return json({patient:{id:p.id,name:p.name,email:p.email,phone:p.phone,active:!!p.active,revision:p.revision,has_access:!!p.password_hash},today:localDate(),plans:plans(p.id),logs:logs(p.id),measurements:measurements(p.id),dailyScales:dailyScales(p.id),...progress.data(p.id)});
    if(!action&&method==='PATCH'){const input=await body(req);revision(input,p);if(typeof input.active!=='boolean')reject(400,'Situação inválida.');transaction(db,()=>{db.prepare('UPDATE patients SET active=?,revision=revision+1,updated_at=? WHERE id=?').run(input.active?1:0,new Date().toISOString(),p.id);if(!input.active){db.prepare('DELETE FROM patient_sessions WHERE patient_id=?').run(p.id);db.prepare('UPDATE patient_invites SET used_at=? WHERE patient_id=? AND used_at IS NULL').run(Date.now(),p.id)}audit(u.id,input.active?'patient_reactivated':'patient_suspended',p.id)});return json({ok:true});}
    if(action==='access'&&method==='POST'){if(!p.active)reject(409,'Reative o paciente para criar um link.');return json(transaction(db,()=>invite(p,u)),201);}
    if(action==='plans'&&method==='POST'){if(!p.active)reject(409,'Reative o paciente para criar um plano.');const v=planValues(await body(req)),id=randomUUID(),now=new Date().toISOString();transaction(db,()=>{db.prepare("INSERT INTO care_plans(id,patient_id,author_id,title,goal,instructions,start_date,end_date,status,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?,'draft',?,?)").run(id,p.id,u.id,v.title,v.goal,v.instructions,v.start_date,v.end_date,now,now);saveTasks(id,v.tasks);audit(u.id,'care_plan_drafted',id)});return json({id},201);}
