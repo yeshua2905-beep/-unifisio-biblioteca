@@ -9,10 +9,11 @@ import {nextCoachTick} from './coach-timing.mjs';
 type Sound='voice'|'beep'|'off';
 type Stage='ready'|'prepare'|'exercise'|'release'|'rest'|'next'|'finished';
 type Run={stage:Stage;set:number;rep:number;count:number;paused:boolean};
+function initialSound():Sound{try{const saved=window.localStorage.getItem('unifisio-coach-sound');if(saved==='off'||saved==='beep'||saved==='voice'&&'speechSynthesis' in window&&'SpeechSynthesisUtterance' in window)return saved}catch{}return typeof window!=='undefined'&&'speechSynthesis' in window&&'SpeechSynthesisUtterance' in window?'voice':'beep'}
 const initial:Run={stage:'ready',set:1,rep:1,count:0,paused:false};
 const bounded=(value:string,min:number,max:number)=>value!==''&&Number.isInteger(Number(value))&&Number(value)>=min&&Number(value)<=max;
 export default function ExerciseCoach({task,onReview,onClose}:{task:CareTask;onReview:()=>void;onClose:()=>void}){
- const [sound,setSound]=useState<Sound>(typeof window!=='undefined'&&'speechSynthesis' in window?'voice':'beep'),[voices,setVoices]=useState<SpeechSynthesisVoice[]>([]),[message,setMessage]=useState('');
+ const [sound,setSound]=useState<Sound>(initialSound),[voices,setVoices]=useState<SpeechSynthesisVoice[]>([]),[message,setMessage]=useState('');
  const [mode,setMode]=useState<'reps'|'time'>(task.coach?.mode||'reps'),[sets,setSets]=useState(task.coach?.sets.toString()||''),[reps,setReps]=useState(task.coach?.reps?.toString()||''),[seconds,setSeconds]=useState(task.coach?.seconds?.toString()||''),[repSeconds,setRepSeconds]=useState(task.coach?.repSeconds?.toString()||''),[restSeconds,setRestSeconds]=useState(task.coach?.restSeconds.toString()||'');
  const [command,setCommand]=useState(task.coach?.command||'Execute'),[releaseSeconds,setReleaseSeconds]=useState(task.coach?.releaseSeconds?.toString()||'0');
  const [art,setArt]=useState<Pick<CoachConfig,'illustration'|'illustrationImage'>>({illustration:task.coach?.illustration||'auto',illustrationImage:task.coach?.illustrationImage});
@@ -51,7 +52,7 @@ export default function ExerciseCoach({task,onReview,onClose}:{task:CareTask;onR
   }
   return beep(cueId);
  }
- function chooseSound(value:Sound){stopSound();soundRef.current=value;setSound(value);setMessage('');if(value!=='off')void cue('Um. Dois. Três.')}
+ function chooseSound(value:Sound){stopSound();soundRef.current=value;setSound(value);try{window.localStorage.setItem('unifisio-coach-sound',value)}catch{}setMessage('');if(value!=='off')void cue('Um. Dois. Três.')}
  function testAudio(){setMessage('');void cue('Um. Dois. Três.')}
  useEffect(()=>{
   root.current?.focus({preventScroll:true});root.current?.scrollIntoView({block:'start',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
@@ -94,12 +95,13 @@ export default function ExerciseCoach({task,onReview,onClose}:{task:CareTask;onR
  const duration=run.stage==='exercise'?(c?.mode==='reps'?c.repSeconds:c?.seconds):run.stage==='release'?c?.releaseSeconds:run.stage==='prepare'?3:c?.restSeconds;
  const fill=duration?Math.min(100,Math.max(0,(duration-run.count)/duration*100)):0;
  const label=run.paused?'Pausado':run.stage==='prepare'?'Prepare-se':run.stage==='release'?'Relaxe':run.stage==='rest'?'Descanse':run.stage==='next'?'Próxima série':run.stage==='finished'?'Concluído':c?.command||'Execute';
+ const audioControls=<fieldset className="coach-audio"><legend>Acompanhar com</legend>{([{value:'voice',label:'Voz',icon:Volume2},{value:'beep',label:'Som',icon:Volume2},{value:'off',label:'Silencioso',icon:VolumeX}] as const).map(option=><label key={option.value} className={sound===option.value?'selected':''}><input type="radio" name="coach-sound" value={option.value} checked={sound===option.value} disabled={option.value==='voice'&&!voiceAvailable} onChange={()=>chooseSound(option.value)}/><option.icon size={18}/>{option.label}</label>)}{sound!=='off'&&<button type="button" className="coach-test" onClick={testAudio}><Volume2 size={18}/> Testar áudio</button>}</fieldset>;
  return <section ref={root} tabIndex={-1} className="exercise-coach" aria-label={'Guia de treino: '+task.title}>
-  <header className="coach-header"><button type="button" className="coach-back" onClick={onClose} aria-label="Voltar aos exercícios"><ArrowLeft size={22}/></button><div><span className="eyebrow">GUIA DE EXERCÍCIOS</span><h3>{task.title}</h3></div><span className="coach-timer-label">Timer</span></header>
+  <header className="coach-header"><button type="button" className="coach-back" onClick={()=>{reset();onClose()}} aria-label="Voltar aos exercícios"><ArrowLeft size={22}/></button><div><span className="eyebrow">GUIA DE EXERCÍCIOS</span><h3>{task.title}</h3></div><span className="coach-timer-label">Timer</span></header>
   {run.stage==='ready'?<div className="coach-ready">
    <ExerciseArt title={task.title} kind={art.illustration} custom={art.illustrationImage} small/><div className="coach-dose"><strong>Sua prescrição</strong><p className="preserve">{task.dose}</p></div>
    {task.coach&&<div className="coach-dose-chips"><span>{sets} séries</span><span>{mode==='reps'?reps+' repetições':seconds+' s por série'}</span>{mode==='reps'&&<span>{repSeconds} s por repetição</span>}<span>{restSeconds} s de descanso</span></div>}
-   <fieldset className="coach-audio"><legend>Acompanhar com</legend>{([{value:'voice',label:'Voz',icon:Volume2},{value:'beep',label:'Som',icon:Volume2},{value:'off',label:'Silencioso',icon:VolumeX}] as const).map(option=><label key={option.value} className={sound===option.value?'selected':''}><input type="radio" name="coach-sound" value={option.value} checked={sound===option.value} disabled={option.value==='voice'&&!voiceAvailable} onChange={()=>chooseSound(option.value)}/><option.icon size={18}/>{option.label}</label>)}{sound!=='off'&&<button type="button" className="coach-test" onClick={testAudio}><Volume2 size={18}/> Testar áudio</button>}</fieldset>
+   {audioControls}
    {message&&<p className="coach-message" role="status">{message}</p>}
    {task.coach&&<button type="button" className="primary coach-main" onClick={()=>void start()} disabled={!valid}><Play size={22}/> Iniciar exercício</button>}
    <details className="coach-settings" open={task.coach?undefined:true}><summary>{task.coach?'Ver configuração da contagem':'Configurar conforme a prescrição'}</summary>
@@ -123,7 +125,8 @@ export default function ExerciseCoach({task,onReview,onClose}:{task:CareTask;onR
     </div>
    </div>
    {message&&<p className="coach-message" role="status">{message}</p>}
-   <div className="coach-controls">{running&&<button type="button" className="primary coach-main" onClick={()=>void pause()}>{run.paused?<Play size={22}/>:<Pause size={22}/>} {run.paused?'Continuar':'Pausar'}</button>}{run.stage==='next'&&<button type="button" className="primary coach-main" onClick={()=>void nextSet()}><Play size={22}/> Iniciar próxima série</button>}{run.stage==='finished'&&<button type="button" className="primary coach-main" onClick={onReview}><Check size={20}/> Registrar como foi</button>}
+   {audioControls}
+   <div className="coach-controls">{running&&<button type="button" className="primary coach-main" onClick={()=>void pause()}>{run.paused?<Play size={22}/>:<Pause size={22}/>} {run.paused?'Continuar':'Pausar'}</button>}{run.stage==='next'&&<button type="button" className="primary coach-main" onClick={()=>void nextSet()}><Play size={22}/> Iniciar próxima série</button>}{run.stage==='finished'&&<button type="button" className="primary coach-main" onClick={()=>{stopSound();onReview()}}><Check size={20}/> Registrar como foi</button>}
     <div className="coach-bottom-controls"><button type="button" className="coach-test" onClick={()=>chooseSound(sound==='off'?(voiceAvailable?'voice':'beep'):'off')}>{sound==='off'?<VolumeX size={20}/>:<Volume2 size={20}/>} {sound==='off'?'Ativar áudio':'Silenciar'}</button><button type="button" className="secondary" onClick={reset}><RotateCcw size={18}/>{run.stage==='finished'?'Novo treino':'Reiniciar'}</button></div>
    </div>
    <p className="coach-footer">Mantenha esta tela aberta. Sair dela pausa a contagem.</p>

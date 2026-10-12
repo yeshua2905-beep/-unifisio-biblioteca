@@ -17,7 +17,7 @@ export function createPatientProgress({db,patientRequired,clinician,owned,body,r
    if(!validDate(input.performed_date)||input.performed_date>today||input.performed_date<daysBefore(today,29))reject(400,'Escolha uma data dentro dos últimos 30 dias.');
    const comment=safeString(input.comment??'',1000);if(comment===null)reject(400,'Use até 1.000 caracteres na observação.');
    let id;transaction(db,()=>{
-    if(!db.prepare('SELECT id FROM patients WHERE id=? AND active=1').get(patient.id))reject(401,'Entre novamente na área do paciente.');
+    patientRequired(req);
     const goal=db.prepare('SELECT * FROM care_function_goals WHERE id=? AND patient_id=? AND active=1').get(input.goal_id,patient.id);if(!goal)reject(404,'Atividade funcional não disponível.');
     if(input.performed_date<saoDate(goal.created_at))reject(400,'A data deve ser igual ou posterior à inclusão da atividade.');
     const old=db.prepare('SELECT * FROM care_function_logs WHERE patient_id=? AND goal_id=? AND performed_date=?').get(patient.id,goal.id,input.performed_date);if(old)revision(input,old);else if(input.revision!==undefined)reject(409,'Recarregue os registros antes de salvar.');

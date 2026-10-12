@@ -8,7 +8,14 @@ export const statusNames={done:'Realizada',partial:'Parcial',skipped:'Não reali
 export const planStatus={draft:'Rascunho',active:'Em acompanhamento',completed:'Encerrado',archived:'Arquivado'};
 export const dateLabel=(s:string)=>new Date(s+'T12:00:00Z').toLocaleDateString('pt-BR',{timeZone:'America/Sao_Paulo'});
 export const moveDate=(s:string,n:number)=>new Date(Date.parse(s)+n*86400000).toISOString().slice(0,10);
-export async function careRequest(url:string,method='GET',payload?:unknown){const r=await fetch(url,{method,cache:'no-store',...(payload===undefined?{}:{headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})});const d=await r.json();if(!r.ok){const e=new Error(d.error||'Não foi possível concluir.') as Error&{status:number};e.status=r.status;throw e;}return d;}
+export async function careRequest(url:string,method='GET',payload?:unknown){
+ let r:Response;
+ try{r=await fetch(url,{method,cache:'no-store',...(payload===undefined?{}:{headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})})}
+ catch{throw new Error(method==='GET'?'Não foi possível conectar. Verifique sua conexão e tente novamente.':'A conexão foi interrompida. Atualize o acompanhamento para conferir se o registro foi salvo antes de tentar novamente.')}
+ let d:any;
+ try{d=await r.json()}catch{const e=new Error('Não foi possível confirmar a resposta do sistema. Atualize o acompanhamento e confira seus registros.') as Error&{status:number};e.status=r.status;throw e}
+ if(!r.ok){const e=new Error(d.error||'Não foi possível concluir. Tente novamente.') as Error&{status:number};e.status=r.status;throw e;}return d;
+}
 export function taskDays(task:CareTask){return task.days.length===7?'Todos os dias':task.days.map(d=>dayNames[d]).join(', ')}
 
 export type CareMeasurement={id:string;plan_id:string;plan_title:string;performed_date:string;eva_before:number;borg_before:number;borg_scale?:'rpe6_20'|'modified0_10';before_at:string;corrections?:{phase:'before'|'after';previous_eva:number;previous_borg:number;new_eva:number;new_borg:number;reason:string;created_at:string}[];eva_after:number|null;borg_after:number|null;after_at:string|null;revision:number};
