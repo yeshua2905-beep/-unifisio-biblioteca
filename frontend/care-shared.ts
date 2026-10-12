@@ -15,6 +15,6 @@ export type CareMeasurement={id:string;plan_id:string;plan_title:string;performe
 export type FunctionalGoal={id:string;title:string;active:boolean;revision:number;created_at:string;author_name:string};
 export type FunctionalLog={id:string;goal_id:string;goal_title:string;performed_date:string;score:number;comment:string;revision:number;created_at:string;updated_at:string};
 export type ProgressNote={id:string;text:string;author_name:string;created_at:string};
-export type CoachConfig={mode:'reps'|'time';sets:number;reps?:number;seconds?:number;repSeconds?:number;restSeconds:number};
+export type CoachConfig={mode:'reps'|'time';sets:number;reps?:number;seconds?:number;repSeconds?:number;restSeconds:number;command?:string;releaseSeconds?:number};
 
 export type DailyScale={id:string;performed_date:string;moment:'now'|'before'|'after';eva:number;borg:number;author_id:string|null;author_name:string|null;revision:number;updated_at:string;history:{id:string;eva:number;borg:number;author_name:string|null;revision:number;created_at:string}[]};
