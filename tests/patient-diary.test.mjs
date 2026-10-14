@@ -22,6 +22,7 @@ test('Diário independente de planos e metas: privacidade, edição concorrente,
   for(const bad of [{performed_date:'2026-02-30'},{performed_date:new Date(Date.parse(today)+86400000).toISOString().slice(0,10)},{performed_date:new Date(Date.parse(today)-30*86400000).toISOString().slice(0,10)},{feedback:'x'.repeat(2001)},{complaints:{}},{perception:'  ',complaints:'',feedback:''}])assert.equal((await call('/api/patient/diary','POST',{...payload,...bad},pc)).status,400);
   assert.equal((await call('/api/patient/diary','POST',payload,pc)).status,201);
   let row=(await call('/api/patient/dashboard','GET',undefined,pc)).data.diaryEntries[0];assert.equal(row.perception,payload.perception);assert.equal(row.revision,1);
+  assert.equal((await call('/api/care/patients','GET',undefined,pro)).data.patients.find(p=>p.id==='one').last_record,today);
   assert.equal((await call('/api/patient/diary','POST',payload,pc)).status,409);
   // A supplied foreign ID cannot select another patient's record: ownership comes from the session.
   assert.equal((await call('/api/patient/diary','POST',{performed_date:today,perception:'Meu relato',id:row.id,patient_id:'one'},pc2)).status,201);
