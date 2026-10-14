@@ -6,6 +6,8 @@ COPY frontend ./frontend
 COPY public ./public
 COPY server ./server
 COPY tests ./tests
+COPY scripts ./scripts
+COPY dist ./dist
 COPY index.html tsconfig.json vite.config.mjs ./
 RUN npx tsc --noEmit && npm test && npm run build
 
