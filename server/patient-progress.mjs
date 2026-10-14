@@ -4,12 +4,29 @@ import {safeString} from './security.mjs';
 const saoDate=value=>{const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Sao_Paulo',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(value));return ['year','month','day'].map(k=>parts.find(p=>p.type===k).value).join('-')};
 export function createPatientProgress({db,patientRequired,clinician,owned,body,reject,json,audit,localDate,validDate,daysBefore}){
  function data(patientId){return {
+  diaryEntries:db.prepare('SELECT id,performed_date,perception,complaints,feedback,revision,created_at,updated_at FROM care_patient_diary WHERE patient_id=? ORDER BY performed_date DESC LIMIT 500').all(patientId),
   functionalGoals:db.prepare('SELECT g.id,g.title,g.active,g.revision,g.created_at,u.name AS author_name FROM care_function_goals g JOIN users u ON u.id=g.author_id WHERE g.patient_id=? ORDER BY g.active DESC,g.created_at,g.rowid').all(patientId).map(g=>({...g,active:!!g.active})),
   functionalLogs:db.prepare('SELECT l.*,g.title AS goal_title FROM care_function_logs l JOIN care_function_goals g ON g.id=l.goal_id WHERE l.patient_id=? ORDER BY l.performed_date DESC,l.updated_at DESC LIMIT 1500').all(patientId),
   progressNotes:db.prepare('SELECT n.id,n.text,n.created_at,u.name AS author_name FROM care_progress_notes n JOIN users u ON u.id=n.author_id WHERE n.patient_id=? ORDER BY n.created_at DESC,n.rowid DESC LIMIT 100').all(patientId)
  }}
  function revision(input,row){if(!Number.isSafeInteger(input.revision)||input.revision!==row.revision)reject(409,'O registro foi atualizado. Recarregue antes de salvar.');}
  async function handle(req,path,method){
+  if(path==='/api/patient/diary'&&method==='POST'){
+   const patient=patientRequired(req),input=await body(req),today=localDate();
+   if(!validDate(input.performed_date)||input.performed_date>today||input.performed_date<daysBefore(today,29))reject(400,'Escolha uma data dentro dos últimos 30 dias.');
+   const fields=['perception','complaints','feedback'],values=fields.map(k=>safeString(input[k]??'',2000));
+   if(values.some(v=>v===null))reject(400,'Use até 2.000 caracteres em cada campo.');
+   if(!values.some(Boolean))reject(400,'Escreva em pelo menos um dos campos do diário.');
+   let id;transaction(db,()=>{
+    patientRequired(req);
+    const old=db.prepare('SELECT * FROM care_patient_diary WHERE patient_id=? AND performed_date=?').get(patient.id,input.performed_date);
+    if(old)revision(input,old);else if(input.revision!==undefined)reject(409,'Recarregue o diário antes de salvar.');
+    id=old?.id||randomUUID();const now=new Date().toISOString();
+    if(old)db.prepare('INSERT INTO care_patient_diary_history(entry_id,perception,complaints,feedback,revision,created_at) VALUES(?,?,?,?,?,?)').run(old.id,old.perception,old.complaints,old.feedback,old.revision,old.updated_at);
+    db.prepare('INSERT INTO care_patient_diary(id,patient_id,performed_date,perception,complaints,feedback,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(patient_id,performed_date) DO UPDATE SET perception=excluded.perception,complaints=excluded.complaints,feedback=excluded.feedback,updated_at=excluded.updated_at,revision=care_patient_diary.revision+1').run(id,patient.id,input.performed_date,...values,now,now);
+    audit(null,old?'patient_diary_updated':'patient_diary_created',id);
+   });return json({id},201);
+  }
   if(path==='/api/patient/function-logs'&&method==='POST'){
    const patient=patientRequired(req),input=await body(req),today=localDate();
    if(typeof input.goal_id!=='string'||input.goal_id.length>100)reject(400,'Atividade funcional inválida.');

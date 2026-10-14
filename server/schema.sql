@@ -56,6 +56,10 @@ CREATE INDEX IF NOT EXISTS idx_function_logs_patient ON care_function_logs(patie
 CREATE TABLE IF NOT EXISTS care_progress_notes(id TEXT PRIMARY KEY,patient_id TEXT NOT NULL REFERENCES patients(id),author_id TEXT NOT NULL REFERENCES users(id),text TEXT NOT NULL,created_at TEXT NOT NULL);
 CREATE INDEX IF NOT EXISTS idx_progress_notes_patient ON care_progress_notes(patient_id,created_at);
 
+CREATE TABLE IF NOT EXISTS care_patient_diary(id TEXT PRIMARY KEY,patient_id TEXT NOT NULL REFERENCES patients(id),performed_date TEXT NOT NULL,perception TEXT NOT NULL DEFAULT '',complaints TEXT NOT NULL DEFAULT '',feedback TEXT NOT NULL DEFAULT '',revision INTEGER NOT NULL DEFAULT 1,created_at TEXT NOT NULL,updated_at TEXT NOT NULL,UNIQUE(patient_id,performed_date));
+CREATE INDEX IF NOT EXISTS idx_patient_diary_date ON care_patient_diary(patient_id,performed_date);
+CREATE TABLE IF NOT EXISTS care_patient_diary_history(id INTEGER PRIMARY KEY AUTOINCREMENT,entry_id TEXT NOT NULL REFERENCES care_patient_diary(id),perception TEXT NOT NULL,complaints TEXT NOT NULL,feedback TEXT NOT NULL,revision INTEGER NOT NULL,created_at TEXT NOT NULL);
+
 CREATE TABLE IF NOT EXISTS care_measurement_corrections(id TEXT PRIMARY KEY,measurement_id TEXT NOT NULL REFERENCES care_measurements(id),patient_id TEXT NOT NULL REFERENCES patients(id),phase TEXT NOT NULL CHECK(phase IN ('before','after')),previous_eva INTEGER NOT NULL,previous_borg REAL NOT NULL,new_eva INTEGER NOT NULL,new_borg REAL NOT NULL,reason TEXT NOT NULL,created_at TEXT NOT NULL);
 CREATE INDEX IF NOT EXISTS idx_measurement_corrections ON care_measurement_corrections(measurement_id,created_at);
 

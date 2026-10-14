@@ -50,7 +50,7 @@ export function createPatientCareHandler({db,required,body:readBody,reject,json,
  function saveTasks(id,entries){const insert=db.prepare('INSERT INTO care_tasks(id,plan_id,kind,title,steps,dose,days,equipment,restriction,url,position,coach_config) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)');entries.forEach((t,i)=>insert.run(randomUUID(),id,t.kind,t.title,t.steps,t.dose,JSON.stringify(t.days),t.equipment,t.restriction,t.url,i,JSON.stringify(t.coach||{})));}
  const progress=createPatientProgress({db,patientRequired,clinician,owned,body,reject,json,audit,localDate,validDate,daysBefore});
  const handle=async function(req,url,ip){const path=url.pathname,method=req.method;
-  if(path==='/api/patient/function-logs'||/^\/api\/care\/patients\/[^/]+\/(function-goals|progress-notes)$/.test(path)||/^\/api\/care\/function-goals\/[^/]+$/.test(path))return progress.handle(req,path,method);
+  if(path==='/api/patient/diary'||path==='/api/patient/function-logs'||/^\/api\/care\/patients\/[^/]+\/(function-goals|progress-notes)$/.test(path)||/^\/api\/care\/function-goals\/[^/]+$/.test(path))return progress.handle(req,path,method);
   const dailyMatch=path.match(/^\/api\/care\/patients\/([^/]+)\/daily-scales$/);
   if((path==='/api/patient/daily-scales'||dailyMatch)&&method==='POST'){
    const user=dailyMatch?clinician(req):null,p=dailyMatch?owned(dailyMatch[1],user):patientRequired(req),input=await body(req),today=localDate();
