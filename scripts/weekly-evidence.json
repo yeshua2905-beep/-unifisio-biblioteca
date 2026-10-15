@@ -1,0 +1,33 @@
+{
+  "version": "2026-10-15-v1",
+  "method": "Busca dirigida, não exaustiva. Inclusões verificadas nas fontes primárias e comparadas ao catálogo do repositório. Análise exploratória distinguida de ensaio independente. Sem classificação formal própria de risco de viés ou fator de impacto presumido.",
+  "items": [
+    {
+      "id": "evidence-20261015-lombar-cochrane",
+      "title": "Dor lombar: tratamentos não farmacológicos — síntese Cochrane (2025)",
+      "category": "Coluna",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nOverview de 31 revisões Cochrane, 644 ensaios e 97.183 adultos; avaliação independente com AMSTAR 2 e GRADE. Busca até abril de 2023.\n\nRESULTADOS\nNa lombalgia crônica, exercício versus nenhum tratamento/cuidados usuais: dor −15,2/100 (IC95% −18,3 a −12,2) e função −6,8/100 (−8,3 a −5,3), certeza moderada. Na aguda, manter atividades provavelmente oferece pequeno benefício frente ao repouso. Tração na crônica provavelmente não reduz dor frente à tração simulada.\n\nAPLICAÇÃO — INTERPRETAÇÃO DA CURADORIA\nSustenta reabilitação ativa e acompanhamento funcional. Os resultados não estabelecem um exercício universalmente superior, nem equivalência entre controles ativos e placebo.\n\nLIMITAÇÕES\nPublicação em 2025 não significa busca até 2025: quase três quartos das revisões antecedem 2020. Dez revisões tiveram baixa confiança metodológica. Resultados e certeza variam conforme intervenção, duração e comparador; segurança permanece incerta.\n\nCuradoria assistida: 15/10/2026. Fator de impacto não verificado. Sem avaliação formal própria RoB 2/AMSTAR 2; limitações descritas acima.",
+      "reference": "Rizzo RRN, Cashin AG, Wand BM et al. Non-pharmacological and non-surgical treatments for low back pain in adults: an overview of Cochrane reviews. Cochrane Database Syst Rev. 2025;3:CD014691. DOI:10.1002/14651858.CD014691.pub2. PMID:40139265.",
+      "url": "https://www.cochrane.org/pt/evidence/CD014691_what-are-likely-benefits-and-harms-non-medicine-and-non-surgical-treatments-non-specific-low-back"
+    },
+    {
+      "id": "evidence-20261015-lombar-walkback-secundaria",
+      "title": "WalkBack: duração das recorrências — análise exploratória (2025)",
+      "category": "Coluna",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO\nAnálise secundária exploratória do WalkBack, já incluído no acervo. Avaliou a primeira recorrência em 596 participantes; não é replicação independente. Caminhada progressiva e educação versus nenhum tratamento.\n\nRESULTADOS\nMediana de recuperação: 3 versus 4 dias; HR para recuperação 1,30 (IC95% 1,10–1,53). Não houve diferença entre grupos na dor média ou interferência nas atividades. Pior dor: diferença −0,34/10 (−0,65 a −0,03).\n\nAPLICAÇÃO — INTERPRETAÇÃO DA CURADORIA\nComplementa os dados de prevenção: eventual recorrência pode ser um pouco mais curta, sem promessa de grande redução de intensidade. Não demonstra que caminhar durante uma crise aguda reproduza esse efeito.\n\nLIMITAÇÕES\nBenefícios pequenos e relevância clínica incerta, conforme os autores. Seleção de quem apresentou recorrência e natureza exploratória exigem cautela causal. O programa combina caminhada e educação.\n\nCuradoria assistida: 15/10/2026. Fator de impacto não verificado. Sem avaliação formal própria RoB 2/AMSTAR 2; limitações descritas acima.",
+      "reference": "Pocovi NC, Graham PL, Adelaide A et al. Effect of a Walking Plus Education Program on the Duration and Severity of Recurrences of Low Back Pain: A Secondary Exploratory Analysis of the WalkBack Trial. J Orthop Sports Phys Ther. 2025;55(9):596–601. DOI:10.2519/jospt.2025.13361. PMID:40875587.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40875587/"
+    },
+    {
+      "id": "evidence-20261015-aquiles-insercional-compressao",
+      "title": "Aquiles insercional: carga com menor compressão — ensaio randomizado (2025)",
+      "category": "Tornozelo e pé",
+      "kind": "Artigo científico",
+      "summary": "MÉTODO E QUALIDADE\nEnsaio randomizado, avaliador mascarado, 42 praticantes de esporte com tendinopatia insercional crônica. Comparou dois programas progressivos. O de menor compressão limitava dorsiflexão, retirava alongamento de panturrilha e incluía elevação do calcanhar. Análise por intenção de tratar.\n\nRESULTADOS\nVISA-A favoreceu menor compressão: diferença 12,9 pontos em 12 semanas (IC95% 6,2–19,6) e 10,4 em 24 semanas (3,7–17,1). Os intervalos incluem ganhos inferiores ao limiar clínico de 10 pontos citado pelos autores.\n\nAPLICAÇÃO — INTERPRETAÇÃO DA CURADORIA\nNa inserção, considerar carga progressiva com amplitude inicialmente adaptada e menor compressão. Evitar transpor automaticamente exercícios em degrau da tendinopatia da porção média para a insercional.\n\nLIMITAÇÕES\nAmostra pequena, população esportiva e seguimento limitado a 24 semanas. Intervenção com múltiplos componentes: não isola o efeito da elevação de calcanhar ou da retirada do alongamento.\n\nCuradoria assistida: 15/10/2026. Fator de impacto não verificado. Sem avaliação formal própria RoB 2/AMSTAR 2; limitações descritas acima.",
+      "reference": "Pringels L, Capelleman R, Van den Abeele A et al. Effectiveness of reducing tendon compression in the rehabilitation of insertional Achilles tendinopathy: a randomised clinical trial. Br J Sports Med. 2025;59(9):640–650. DOI:10.1136/bjsports-2024-109138. PMID:40011018.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40011018/"
+    }
+  ]
+}
