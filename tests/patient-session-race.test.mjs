@@ -35,7 +35,7 @@ test('Revogar a sessão profissional durante o envio bloqueia alterações clín
  const app=await createApp({dataDir:resolve(dir,'data'),publicUrl:origin,staticDir:resolve(dir,'public')});
  try{
   const now=new Date().toISOString(),hash=await hashPassword('Senha longa somente para teste');
-  app.db.prepare('INSERT INTO users(id,email,name,password_hash,role,created_at) VALUES(?,?,?,?,?,?)').run('pro','pro@example.org','Profissional',hash,'professional',now);
+  app.db.prepare('INSERT INTO users(id,email,name,password_hash,role,created_at) VALUES(?,?,?,?,?,?)').run('pro','pro@example.org','Profissional',hash,'admin',now);
   app.db.prepare('INSERT INTO patients(id,email,name,owner_id,created_at,updated_at) VALUES(?,?,?,?,?,?)').run('patient','patient@example.org','Paciente','pro',now,now);
   const cases=[['daily-scales',{performed_date:localDate(),moment:'now',eva:50,borg:3},'care_daily_scales'],['function-goals',{title:'Subir escadas'},'care_function_goals'],['progress-notes',{text:'Mantenha o acompanhamento.'},'care_progress_notes']];
   for(const [action,payload,table] of cases){

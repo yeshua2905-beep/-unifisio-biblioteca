@@ -12,7 +12,7 @@ test('Paciente tem autenticação isolada, plano individual, diário e retornos 
  const dir=await mkdtemp(resolve(tmpdir(),'patient-care-'));await mkdir(resolve(dir,'public'));await writeFile(resolve(dir,'public/index.html'),'<!doctype html>');const options={dataDir:resolve(dir,'data'),publicUrl:origin,staticDir:resolve(dir,'public')};let app=await createApp(options);
  try{
   const password='Senha longa apenas para testes',hash=await hashPassword(password),cookies={};for(const role of ['admin','professional','reader'])app.db.prepare('INSERT INTO users(id,email,name,password_hash,role,created_at) VALUES(?,?,?,?,?,?)').run(role,role+'@example.org',role,hash,role,new Date().toISOString());
-  async function call(path,method='GET',payload,cookie=cookies.professional,requestOrigin=origin){const res=await app.handle(new Request(origin+path,{method,headers:{Cookie:cookie||'',Origin:requestOrigin,'Content-Type':'application/json'},...(payload===undefined?{}:{body:JSON.stringify(payload)})}));return {status:res.status,data:await res.json(),cookie:res.headers.get('set-cookie')?.split(';')[0],rawCookie:res.headers.get('set-cookie')}}
+  async function call(path,method='GET',payload,cookie=cookies.admin,requestOrigin=origin){const res=await app.handle(new Request(origin+path,{method,headers:{Cookie:cookie||'',Origin:requestOrigin,'Content-Type':'application/json'},...(payload===undefined?{}:{body:JSON.stringify(payload)})}));return {status:res.status,data:await res.json(),cookie:res.headers.get('set-cookie')?.split(';')[0],rawCookie:res.headers.get('set-cookie')}}
   for(const role of ['admin','professional','reader'])cookies[role]=(await call('/api/auth/login','POST',{email:role+'@example.org',password},'')).cookie;
   assert.equal((await call('/api/care/patients','GET',undefined,cookies.reader)).status,403);assert.equal((await call('/api/patient/dashboard')).status,401);
   const patient=await call('/api/care/patients','POST',{name:'Paciente Um',email:'um@example.org'});assert.equal(patient.status,201);const pid=patient.data.id,activation=new URL(patient.data.link).hash.slice('#convite-paciente='.length);
@@ -25,25 +25,25 @@ test('Paciente tem autenticação isolada, plano individual, diário e retornos 
   for(const path of ['/api/materials','/api/users','/api/activity','/api/storage','/api/catalog','/api/care/patients','/api/images','/api/protocol-exercises?targetKind=guide&targetId=lca'])assert.equal((await call(path,'GET',undefined,pc)).status,401,path);
   assert.equal((await call('/api/materials','POST',{},pc)).status,401);assert.equal((await call('/api/patient/dashboard','GET',undefined,'')).status,401);
   assert.equal((await call('/api/care/patients','GET',undefined,cookies.admin)).data.patients[0].email,'um@example.org');
-  const second=await call('/api/care/patients','POST',{name:'Outro paciente',email:'dois@example.org'},cookies.admin);assert.equal((await call('/api/care/patients/'+second.data.id)).status,404);
-  assert.equal((await call('/api/care/patients')).data.patients.length,1);
+  const second=await call('/api/care/patients','POST',{name:'Outro paciente',email:'dois@example.org'},cookies.admin);assert.equal((await call('/api/care/patients/'+second.data.id)).status,200);
+  assert.equal((await call('/api/care/patients')).data.patients.length,2);
   const today=localDate(),future=new Date(Date.parse(today)+86400000).toISOString().slice(0,10);
   // Daily scales must work without a published plan, on both interfaces.
   const dailyPath='/api/care/patients/'+pid+'/daily-scales';
   const daily={performed_date:today,moment:'now',eva:50,borg:0};
   assert.equal((await call('/api/patient/daily-scales','POST',daily,'')).status,401);
   assert.equal((await call(dailyPath,'POST',daily,cookies.reader)).status,403);
-  assert.equal((await call('/api/care/patients/'+second.data.id+'/daily-scales','POST',daily)).status,404);
+  assert.equal((await call('/api/care/patients/'+second.data.id+'/daily-scales','POST',daily,cookies.professional)).status,403);
   assert.equal((await call(dailyPath,'POST',daily,cookies.professional,'https://evil.example')).status,403);
   for(const invalid of [{eva:-1},{eva:101},{eva:1.5},{borg:11},{borg:1.5},{borg:null},{moment:'invalid'},{performed_date:future}])assert.equal((await call(dailyPath,'POST',{...daily,...invalid})).status,400);
   assert.equal((await call(dailyPath,'POST',daily)).status,201);
   let dailyRow=(await call('/api/patient/dashboard','GET',undefined,pc)).data.dailyScales[0];
-  assert.equal(dailyRow.eva,50);assert.equal(dailyRow.borg,0);assert.equal(dailyRow.author_name,'professional');
+  assert.equal(dailyRow.eva,50);assert.equal(dailyRow.borg,0);assert.equal(dailyRow.author_name,'admin');
   assert.equal((await call('/api/patient/daily-scales','POST',{...daily,eva:70,borg:0.5,revision:dailyRow.revision},pc)).status,201);
   assert.equal((await call(dailyPath,'POST',{...daily,revision:dailyRow.revision})).status,409);
   dailyRow=(await call('/api/care/patients/'+pid)).data.dailyScales[0];
   assert.equal(dailyRow.eva,70);assert.equal(dailyRow.borg,0.5);assert.equal(dailyRow.author_id,null);
-  assert.equal(dailyRow.history[0].eva,50);assert.equal(dailyRow.history[0].author_name,'professional');
+  assert.equal(dailyRow.history[0].eva,50);assert.equal(dailyRow.history[0].author_name,'admin');
   assert.equal((await call(dailyPath,'POST',{...daily,eva:20,borg:3,revision:dailyRow.revision})).status,201);
   dailyRow=(await call('/api/patient/dashboard','GET',undefined,pc)).data.dailyScales[0];
   assert.equal(dailyRow.eva,20);assert.equal(dailyRow.borg,3);assert.equal(dailyRow.history.length,2);
@@ -82,7 +82,7 @@ test('Paciente tem autenticação isolada, plano individual, diário e retornos 
   assert.equal((await call('/api/patient/dashboard','GET',undefined,pc)).data.logs[0].feedback[0].text,'Retorno do profissional');
   const secondToken=new URL(second.data.link).hash.slice('#convite-paciente='.length),secondPc=(await call('/api/patient/auth/accept','POST',{token:secondToken,password},'')).cookie;
   assert.equal((await call('/api/patient/dashboard','GET',undefined,secondPc)).data.logs.length,0);assert.equal((await call('/api/patient/dashboard','GET',undefined,secondPc)).data.measurements.length,0);assert.equal((await call('/api/patient/measurements','POST',measurement,secondPc)).status,404);assert.equal((await call('/api/patient/logs','POST',log,secondPc)).status,404);assert.equal((await call('/api/care/logs/'+row.id+'/feedback','POST',{text:'Intruso'},secondPc)).status,401);
-  const anotherLogPlan=await call('/api/care/patients/'+second.data.id+'/plans','POST',draft,cookies.admin);assert.equal((await call('/api/care/plans/'+anotherLogPlan.data.id,'PUT',{...draft,revision:1})).status,404);
+  const anotherLogPlan=await call('/api/care/patients/'+second.data.id+'/plans','POST',draft,cookies.admin);assert.equal((await call('/api/care/plans/'+anotherLogPlan.data.id,'PUT',{...draft,revision:1},cookies.professional)).status,403);
   detail=(await call('/api/care/patients/'+pid)).data;plan=detail.plans[0];assert.equal((await call('/api/care/plans/'+plan.id,'PUT',{...draft,revision:plan.revision})).status,409);
   const newer=await call('/api/care/patients/'+pid+'/plans','POST',{...draft,title:'Nova versão'});assert.equal((await call('/api/care/plans/'+newer.data.id,'PATCH',{status:'active',revision:1})).status,200);
   dash=(await call('/api/patient/dashboard','GET',undefined,pc)).data;assert.equal(dash.plans.filter(p=>p.status==='active').length,1);assert.equal(dash.plans.find(p=>p.id===plan.id).status,'completed');assert.equal(dash.logs[0].task_title,'Tarefa prescrita');assert.equal((await call('/api/patient/logs','POST',{...log,revision:row.revision},pc)).status,404);

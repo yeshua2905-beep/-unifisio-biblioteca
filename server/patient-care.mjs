@@ -15,7 +15,7 @@ export function createPatientCareHandler({db,required,body:readBody,reject,json,
  function patientUser(req){const raw=rawCookie(req);return raw?db.prepare('SELECT p.* FROM patients p JOIN patient_sessions s ON s.patient_id=p.id WHERE s.token_hash=? AND s.expires_at>? AND p.active=1').get(digest(raw),Date.now())||null:null;}
  function patientRequired(req){const p=patientUser(req);if(!p)reject(401,'Entre na área do paciente para acessar.');return p;}
  function session(p){const t=token();db.prepare('INSERT INTO patient_sessions(token_hash,patient_id,expires_at) VALUES(?,?,?)').run(digest(t),p.id,Date.now()+WEEK);return t;}
- function clinician(req){const u=required(req);if(u.role==='reader')reject(403,'Seu acesso é de consulta.');return u;}
+ function clinician(req){const u=required(req);if(u.role!=='admin')reject(403,'A área de pacientes é exclusiva para administradores.');return u;}
  // A request body can arrive after the professional session was revoked.
  // Recheck access after reading it, before any clinical mutation proceeds.
  async function body(req){const input=await readBody(req);if(new URL(req.url).pathname.startsWith('/api/care/'))clinician(req);return input;}
@@ -50,6 +50,7 @@ export function createPatientCareHandler({db,required,body:readBody,reject,json,
  function saveTasks(id,entries){const insert=db.prepare('INSERT INTO care_tasks(id,plan_id,kind,title,steps,dose,days,equipment,restriction,url,position,coach_config) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)');entries.forEach((t,i)=>insert.run(randomUUID(),id,t.kind,t.title,t.steps,t.dose,JSON.stringify(t.days),t.equipment,t.restriction,t.url,i,JSON.stringify(t.coach||{})));}
  const progress=createPatientProgress({db,patientRequired,clinician,owned,body,reject,json,audit,localDate,validDate,daysBefore});
  const handle=async function(req,url,ip){const path=url.pathname,method=req.method;
+  if(path.startsWith('/api/care/'))clinician(req);
   if(path==='/api/patient/diary'||path==='/api/patient/function-logs'||/^\/api\/care\/patients\/[^/]+\/(function-goals|progress-notes)$/.test(path)||/^\/api\/care\/function-goals\/[^/]+$/.test(path))return progress.handle(req,path,method);
   const dailyMatch=path.match(/^\/api\/care\/patients\/([^/]+)\/daily-scales$/);
   if((path==='/api/patient/daily-scales'||dailyMatch)&&method==='POST'){
