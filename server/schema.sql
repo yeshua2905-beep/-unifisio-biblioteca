@@ -74,3 +74,20 @@ CREATE TABLE IF NOT EXISTS care_daily_scale_history(
  id TEXT PRIMARY KEY,record_id TEXT NOT NULL REFERENCES care_daily_scales(id),eva INTEGER NOT NULL,borg REAL NOT NULL,
  author_id TEXT REFERENCES users(id),revision INTEGER NOT NULL,created_at TEXT NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS care_assessments(
+ patient_id TEXT PRIMARY KEY REFERENCES patients(id),
+ content TEXT NOT NULL,
+ revision INTEGER NOT NULL DEFAULT 1,
+ author_id TEXT NOT NULL REFERENCES users(id),
+ updated_at TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS care_assessment_history(
+ id INTEGER PRIMARY KEY,
+ patient_id TEXT NOT NULL REFERENCES patients(id),
+ content TEXT NOT NULL,
+ revision INTEGER NOT NULL,
+ author_id TEXT NOT NULL REFERENCES users(id),
+ updated_at TEXT NOT NULL,
+ UNIQUE(patient_id,revision)
+);
