@@ -27,7 +27,7 @@ export default function PatientManagement(){
  </section>;
 }
 function PatientFollowup({id,initialLink,onBack}:{id:string;initialLink:string;onBack:()=>void}){
- const [data,setData]=useState<CareDashboard|null>(null),[error,setError]=useState(''),[link,setLink]=useState(initialLink),[tab,setTab]=useState('Prescrição'),[editor,setEditor]=useState<Draft|null>(null),[busy,setBusy]=useState(false),[logsCount,setLogsCount]=useState(12),[assessmentDirty,setAssessmentDirty]=useState(false);
+ const [data,setData]=useState<CareDashboard|null>(null),[error,setError]=useState(''),[link,setLink]=useState(initialLink),[tab,setTab]=useState('Anamnese e conduta'),[editor,setEditor]=useState<Draft|null>(null),[busy,setBusy]=useState(false),[logsCount,setLogsCount]=useState(12),[assessmentDirty,setAssessmentDirty]=useState(false);
  const requestVersion=useRef(0);
  async function load(silent=false){const version=++requestVersion.current;if(!silent)setError('');try{const fresh=await careRequest('/api/care/patients/'+id);if(version===requestVersion.current){setData(fresh);setError('')}}catch(e){if(version!==requestVersion.current)return;const message=e instanceof Error?e.message:'Não foi possível carregar.';if(silent)toast.error('Não foi possível atualizar os relatos. '+message);else setError(message)}}
  useEffect(()=>{void load();return()=>{requestVersion.current++}},[id]);

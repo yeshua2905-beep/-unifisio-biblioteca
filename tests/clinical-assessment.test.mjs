@@ -37,3 +37,14 @@ test('Anamnese persiste com histórico, controle de edição e acesso exclusivo 
  app.db.close();app=await createApp(options);assert.equal((await call(path)).data.assessment.conduct,'Conduta revisada pelo profissional');
  }finally{app.db.close();await rm(dir,{recursive:true,force:true})}
 });
+
+test('Rascunho incorpora informações preenchidas e mostra lacunas sem inferir diagnóstico',()=>{
+ const v={context:'general',triage:'clear',factors:[],complaint:'Dor no joelho',symptoms:'Dor nas escadas',history:'Três semanas',goals:'Voltar ao esporte',limitations:'Escadas',exam:'Força registrada',hypothesis:'Hipótese em avaliação',restrictions:'Sem restrições identificadas',routine:'Treino duas vezes',health:'Exames informados',sleep:'Sono interrompido',beliefs:'Receio de agachar',triageNotes:'Triagem realizada'};
+ const result=suggestAssessment(v);
+ for(const key of ['complaint','symptoms','history','goals','limitations','exam','hypothesis','restrictions','routine','health','sleep','beliefs','triageNotes'])assert.ok(result.conduct.includes(v[key]),key);
+ assert.deepEqual(result.missingFields,[]);
+ assert.deepEqual(suggestAssessment({...v,exam:'',restrictions:' '}).missingFields,['Exame físico e medidas funcionais','Restrições e precauções']);
+ const long={...v};for(const key of ['complaint','symptoms','history','goals','limitations','exam','hypothesis','restrictions','routine','health','sleep','beliefs','triageNotes'])long[key]='x'.repeat(4000);
+ long.factors=['Carga e rotina','Força e capacidade funcional','Sono e recuperação','Peso corporal','Medos e expectativas','Outros'].map(name=>({name,relevance:'possible',rationale:'y'.repeat(1000)}));
+ const bounded=suggestAssessment(long);assert.ok(bounded.conduct.length<=4000);assert.ok(bounded.patientExplanation.length<=4000);assert.ok(bounded.conduct.includes('…'));
+});
