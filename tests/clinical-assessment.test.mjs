@@ -35,5 +35,13 @@ test('Anamnese persiste com histórico, controle de edição e acesso exclusivo 
  assert.equal((await call(path,'GET',undefined,accepted.cookie)).status,401);
  const dashboard=await call('/api/patient/dashboard','GET',undefined,accepted.cookie);assert.equal(dashboard.status,200);assert.equal(JSON.stringify(dashboard.data).includes('Conduta revisada pelo profissional'),false);
  app.db.close();app=await createApp(options);assert.equal((await call(path)).data.assessment.conduct,'Conduta revisada pelo profissional');
+ const brief=await call(path,'PUT',{mode:'brief',history:'História clínica resumida',diagnosis:'Diagnóstico informado',revision:2});
+ assert.equal(brief.status,200);assert.equal(brief.data.assessment.history,'História clínica resumida');
+ assert.equal(brief.data.assessment.goals,draft.goals);assert.equal(brief.data.assessment.factors[0].name,'Peso corporal');
+ assert.equal(brief.data.assessment.conduct,'Conduta revisada pelo profissional');
+ assert.equal((await call(path+'/suggest','POST',{mode:'brief',history:' ',diagnosis:'Teste'})).status,400);
+ assert.equal((await call(path,'PUT',{mode:'brief',history:'Concorrente',diagnosis:'Teste',revision:2})).status,409);
+ assert.equal(app.db.prepare('SELECT count(*) AS n FROM care_assessment_history').get().n,2);
+
  }finally{app.db.close();await rm(dir,{recursive:true,force:true})}
 });
