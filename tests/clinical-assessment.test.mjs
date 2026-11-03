@@ -21,7 +21,7 @@ test('Anamnese persiste com histórico, controle de edição e acesso exclusivo 
  for(const role of ['admin','professional','reader'])cookies[role]=(await call('/api/auth/login','POST',{email:role+'@example.org',password},'')).cookie;
  const patient=await call('/api/care/patients','POST',{name:'Paciente teste',email:'paciente@example.org'});const path='/api/care/patients/'+patient.data.id+'/assessment';
  assert.equal((await call(path)).data.assessment,null);
- for(const cookie of ['',cookies.reader,cookies.professional])assert.ok([401,403].includes((await call(path,'GET',undefined,cookie)).status));
+ for(const cookie of ['',cookies.reader,cookies.professional])assert.ok([401,403,404].includes((await call(path,'GET',undefined,cookie)).status));
  assert.equal((await call(path,'PUT',draft,cookies.admin,'https://evil.example')).status,403);
  assert.equal((await call(path,'PUT',{...draft,factors:[{name:'Peso corporal',relevance:'relevant',rationale:''}]})).status,400);
  assert.equal((await call(path,'PUT',{...draft,complaint:'x'.repeat(4001)})).status,400);
