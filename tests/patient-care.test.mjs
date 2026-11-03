@@ -33,7 +33,7 @@ test('Paciente tem autenticação isolada, plano individual, diário e retornos 
   const daily={performed_date:today,moment:'now',eva:50,borg:0};
   assert.equal((await call('/api/patient/daily-scales','POST',daily,'')).status,401);
   assert.equal((await call(dailyPath,'POST',daily,cookies.reader)).status,403);
-  assert.equal((await call('/api/care/patients/'+second.data.id+'/daily-scales','POST',daily,cookies.professional)).status,403);
+  assert.equal((await call('/api/care/patients/'+second.data.id+'/daily-scales','POST',daily,cookies.professional)).status,404);
   assert.equal((await call(dailyPath,'POST',daily,cookies.professional,'https://evil.example')).status,403);
   for(const invalid of [{eva:-1},{eva:101},{eva:1.5},{borg:11},{borg:1.5},{borg:null},{moment:'invalid'},{performed_date:future}])assert.equal((await call(dailyPath,'POST',{...daily,...invalid})).status,400);
   assert.equal((await call(dailyPath,'POST',daily)).status,201);
