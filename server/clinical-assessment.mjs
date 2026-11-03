@@ -1,11 +1,15 @@
+import {generateBriefAssessment} from './assessment-ai.mjs';
 import {transaction} from './database.mjs';
 import {safeString} from './security.mjs';
-export const assessmentFields=['complaint','history','symptoms','limitations','goals','health','routine','sleep','beliefs','exam','hypothesis','restrictions','triageNotes','conduct','patientExplanation','reassessment'];
+export const assessmentFields=['diagnosis','conductHistory','conductDiagnosis','complaint','history','symptoms','limitations','goals','health','routine','sleep','beliefs','exam','hypothesis','restrictions','triageNotes','conduct','patientExplanation','reassessment'];
 export const factorNames=['Carga e rotina','Força e capacidade funcional','Sono e recuperação','Peso corporal','Medos e expectativas','Outros'];
 export function assessmentValues(input,reject){
  if(!input||typeof input!=='object'||Array.isArray(input))reject(400,'Dados da anamnese inválidos.');
  const value={};
+ if(input.mode!==undefined&&!['brief','structured'].includes(input.mode))reject(400,'Modo de anamnese inválido.');
+ value.mode=input.mode||'structured';
  for(const key of assessmentFields){value[key]=safeString(input[key]??'',4000);if(value[key]===null)reject(400,'Use até 4.000 caracteres por campo.');}
+ input={triage:'unassessed',context:'general',factors:[],...input};
  if(!['unassessed','clear','refer'].includes(input.triage))reject(400,'Confira a triagem clínica.');
  if(!['general','knee_oa'].includes(input.context))reject(400,'Confira o contexto clínico.');
  value.triage=input.triage;value.context=input.context;
@@ -23,15 +27,25 @@ export function suggestAssessment(v){
  conduct.push(`Restrições e precauções: ${v.restrictions||'confirmar antes da prescrição.'}`,'Definir dose e critérios de progressão/regressão individualmente; revisar resposta durante e após as atividades.');
  return {conduct:conduct.join('\n\n'),patientExplanation:`Vamos trabalhar para ${v.goals||'melhorar a atividade que é mais importante para você'}. Os fatores discutidos são pontos para avaliar e acompanhar; não são uma prova isolada da causa da sua dor. O plano será ajustado à sua capacidade e à sua resposta.`,reassessment:'Definir a data de revisão. Repetir a mesma medida funcional e de sintomas, comparar com o início e registrar tolerância e adesão. Ajustar a conduta conforme os resultados.',sources:v.context==='knee_oa'?[{title:'NICE NG226 — exercício e manejo do peso na osteoartrite (adultos)',url:'https://www.nice.org.uk/guidance/ng226/chapter/Recommendations',reviewed:'2026-10-19'}]:[]};
 }
-export function createClinicalAssessment({db,clinician,owned,body,reject,json,audit}){
+export function createClinicalAssessment({db,clinician,owned,body,reject,json,audit,rate}){
  const data=id=>{const row=db.prepare('SELECT * FROM care_assessments WHERE patient_id=?').get(id);return row?{...JSON.parse(row.content),revision:row.revision,updated_at:row.updated_at,author_name:db.prepare('SELECT name FROM users WHERE id=?').get(row.author_id)?.name}:null;};
  return async(req,path,method)=>{
   const match=path.match(/^\/api\/care\/patients\/([^/]+)\/assessment(?:\/(suggest))?$/);if(!match)return null;
   const user=clinician(req);owned(match[1],user);
   if(method==='GET'&&!match[2])return json({assessment:data(match[1])});
   if((method==='PUT'&&!match[2])||(method==='POST'&&match[2]==='suggest')){
-   const input=await body(req),v=assessmentValues(input,reject);
-   if(match[2])return json({suggestion:suggestAssessment(v)});
+   const input=await body(req);
+   const previous=data(match[1]);
+   const v=assessmentValues(match[2]?input:{...previous,...input},reject);
+   if(match[2]){
+    if(v.mode!=='brief')return json({suggestion:suggestAssessment(v)});
+    if(!v.history.trim()||!v.diagnosis.trim())reject(400,'Preencha a história clínica e o diagnóstico para gerar a conduta.');
+    rate?.('assessment:'+user.id,'assessment:'+user.id);
+    let suggestion;
+    try{suggestion=await generateBriefAssessment(v)}catch(e){reject(e.status||502,e.message)}
+    const liveUser=clinician(req);owned(match[1],liveUser);
+    return json({suggestion});
+   }
    transaction(db,()=>{const liveUser=clinician(req);owned(match[1],liveUser);const old=db.prepare('SELECT * FROM care_assessments WHERE patient_id=?').get(match[1]);if((old&&input.revision!==old.revision)||(!old&&input.revision!==undefined))reject(409,'A anamnese foi atualizada. Reabra esta aba antes de salvar. Seu texto continua na tela para copiar.');const now=new Date().toISOString();if(old)db.prepare('INSERT INTO care_assessment_history(patient_id,content,revision,author_id,updated_at) VALUES(?,?,?,?,?)').run(old.patient_id,old.content,old.revision,old.author_id,old.updated_at);db.prepare('INSERT INTO care_assessments(patient_id,content,author_id,updated_at) VALUES(?,?,?,?) ON CONFLICT(patient_id) DO UPDATE SET content=excluded.content,author_id=excluded.author_id,updated_at=excluded.updated_at,revision=care_assessments.revision+1').run(match[1],JSON.stringify(v),liveUser.id,now);audit(liveUser.id,'clinical_assessment_saved',match[1]);});
    return json({assessment:data(match[1])});
   }
