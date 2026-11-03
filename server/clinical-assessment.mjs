@@ -1,6 +1,6 @@
 import {transaction} from './database.mjs';
 import {safeString} from './security.mjs';
-export const assessmentFields=['complaint','history','symptoms','limitations','goals','health','routine','sleep','beliefs','exam','hypothesis','restrictions','triageNotes','conduct','patientExplanation','reassessment'];
+export const assessmentFields=['diagnosis','complaint','history','symptoms','limitations','goals','health','routine','sleep','beliefs','exam','hypothesis','restrictions','triageNotes','conduct','patientExplanation','reassessment'];
 export const factorNames=['Carga e rotina','Força e capacidade funcional','Sono e recuperação','Peso corporal','Medos e expectativas','Outros'];
 export function assessmentValues(input,reject){
  if(!input||typeof input!=='object'||Array.isArray(input))reject(400,'Dados da anamnese inválidos.');
@@ -15,6 +15,11 @@ export function assessmentValues(input,reject){
 }
 // Structured drafting only: never infer a diagnosis or a causal factor from free text.
 export function suggestAssessment(v){
+ if(v.diagnosis?.trim()){
+  if(!v.history?.trim())return {conduct:'Informe a história clínica.',patientExplanation:'Precisamos concluir a avaliação.',reassessment:'Completar a avaliação clínica.',sources:[]};
+  return {conduct:['Diagnóstico informado: '+v.diagnosis,'História clínica: '+v.history,'Planejamento preliminar: verificar sinais de alerta, restrições, exame físico e capacidade funcional antes de definir intervenções. Após a avaliação, selecionar exercícios, dose, frequência e critérios de progressão conforme a resposta clínica.','Atenção: este sistema usa regras fixas e não interpreta o texto livre como inteligência artificial. Esta proposta não é prescrição pronta.'].join('\n\n'),patientExplanation:'O plano será individualizado após avaliação das suas necessidades e capacidades.',reassessment:'Estabelecer medidas funcionais, prazo de revisão e critérios de progressão após avaliação.',sources:[]};
+ }
+
  if(v.triage!=='clear')return {conduct:v.triage==='refer'?'Prioridade: esclarecer os sinais de alerta e organizar avaliação/encaminhamento conforme a urgência clínica. Não iniciar progressão automática de exercícios.':'Completar a triagem clínica antes de formular a conduta.',patientExplanation:'Precisamos concluir a avaliação para definir os próximos passos com segurança.',reassessment:'Registrar resultado da avaliação e encaminhamento antes de avançar.',sources:[]};
  const factors=v.factors.filter(f=>['possible','relevant'].includes(f.relevance));
  const conduct=[`Objetivo acordado: ${v.goals||'definir com o paciente uma atividade prioritária e uma medida de progresso.'}`,`Limitação a abordar: ${v.limitations||'registrar capacidade atual na atividade escolhida.'}`,`Avaliação necessária: ${v.exam||'documentar exame físico e medidas funcionais antes de selecionar e dosar exercícios.'}`];
